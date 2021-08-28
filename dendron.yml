@@ -40,5 +40,7 @@ site:
         action: useVault
         payload:
             - vault
+    author: Sameep
+    logo: vault/logo.gif
 initializeRemoteVaults: true
 dendronVersion: 0.56.0
