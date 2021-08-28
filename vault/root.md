@@ -1,11 +1,10 @@
 ---
 id: akryOQYxjAxbjUIMcu8LN
-title: Root
+title: Curated Notes
 desc: ''
-updated: 1630121476598
+updated: 1630150480330
 created: 1629975412335
 ---
-# Welcome to curated notes
 
 You have reached the home page of my curated notes. I am a third year student pursuing Computer Science and Engineering at Ahmedabad University.
 
