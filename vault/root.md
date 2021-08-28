@@ -1,6 +1,6 @@
 ---
 id: akryOQYxjAxbjUIMcu8LN
-title: Curated Notes
+title: Root
 desc: ''
 updated: 1630121476598
 created: 1629975412335
