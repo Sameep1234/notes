@@ -2,9 +2,11 @@
 id: akryOQYxjAxbjUIMcu8LN
 title: Root
 desc: ''
-updated: 1629975412335
+updated: 1630121476598
 created: 1629975412335
 ---
-# Welcome to Dendron
+# Welcome to curated notes
 
-This is the root of your dendron vault. If you decide to publish your entire vault, this will be your landing page. You are free to customize any part of this page except the frontmatter on top. 
+You have reached the home page of my curated notes. I am a third year student pursuing Computer Science and Engineering at Ahmedabad University.
+
+Feel free to use this resource to its best potential and reach out to me on [Linkedin](https://www.linkedin.com/in/sameep-vani/) and do checkout my [GitHub](https://github.com/Sameep1234)
