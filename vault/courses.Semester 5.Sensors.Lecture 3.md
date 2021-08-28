@@ -6,7 +6,6 @@ updated: 1630119416102
 created: 1630119416102
 ---
 
-# Lecture 3: 
 ### Points
 * With one value of x, take many values of y and then take the average
 * Error can occur at input as well as output side
