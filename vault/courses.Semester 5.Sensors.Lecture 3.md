@@ -49,4 +49,4 @@ created: 1630119416102
     * Input Pins (6 Analog Pins)
     * Battery Connector/Receptor
     * Output Pins (Analog)
-# **Some part left**
+#  **Some part left**
