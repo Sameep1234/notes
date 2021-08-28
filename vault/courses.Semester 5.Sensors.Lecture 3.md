@@ -14,6 +14,7 @@ created: 1630119416102
 > Measures how much discrepancy (difference) is likely to be in the sample mean and the population mean.
 
 * Std Dev = Spread of data around the mean
+
 ![](/assets/images/2021-08-27-09-42-54.png)
 * In excel, multiply by sqrt(nx) and divide by sqrt(nx-1) to get the correct result
 ![](/assets/images/2021-08-27-09-44-23.png)
