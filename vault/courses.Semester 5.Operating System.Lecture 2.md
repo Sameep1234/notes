@@ -2,11 +2,11 @@
 id: YWtnvQOHrej4digmZkK86
 title: Lecture 2
 desc: ''
-updated: 1630176706761
+updated: 1630212516278
 created: 1630169451366
 ---
 
-# Evolution, Kernel and System Calls
+# Evolution of OS and Kernel
 
 ## Evolution of OS
 * Serial Processing
@@ -92,5 +92,11 @@ created: 1630169451366
         * Disadvantages
             * Performance overhead to change the mode.
         * Eg. Mach, MINIX, Windows NT Client-Server
-    * Modules
-    * Hybrid Approach
+    * Modules - Most moedern OS implement kernel modules
+        * Loadable kernel module
+        * Uses OOP
+        * Similar to layers but is more flexible
+        * Eg. Device Drivers (These are loaded as needed within the kernel)
+        * Solaris Modular Approach
+    * Hybrid Approach - Combines multiple approaches to address performance, security and usability.
+        * Eg. Linux and Solaris = monolithich + modular, windows = monolithic + microkernel and Mac OS and IOS = Darwin which is microkernel and BSD Unix kernel implemented over layered model
