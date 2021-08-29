@@ -2,11 +2,11 @@
 id: Oj3uiXKth6ZgUASqln4Vi
 title: Lecture 3
 desc: ''
-updated: 1630213402259
+updated: 1630215776285
 created: 1630211824085
 ---
 
-# System Calls
+# System Calls and Architecture of UNIX
 
 ## Intro to system calls
 * System calls is the most important and crucial concept in OS. It is basically a link connecting user to the OS.
@@ -22,3 +22,24 @@ created: 1630211824085
 * Details are hidden from programmer by API.
 
 ## Relationship between API, System Call and OS
+
+![](/assets/images/2021-08-29-10-48-06.png)
+
+## Types of system calls
+* File Management - Eg. create, open, close etc.
+* Device Management - request, release, read, write etc.
+* Protection - control access, get and set permissions etc.
+* Information maintenance - get time, set process etc.
+* Communications - create, delete communication, send or recieve messages etc.
+
+### Architecture of UNIX
+
+* ![](/assets/images/2021-08-29-11-08-15.png)
+
+* Linux is based on UNIX but is more complicated than UNIX.
+* UNIX system follows monolithic approach
+* UNIX System Kernel
+
+![](/assets/images/2021-08-29-11-10-53.png)
+
+* **In Linux or UNIX, everything is in terms of files. Thus, it becomes crucial to understand file system.**
