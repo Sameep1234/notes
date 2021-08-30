@@ -2,7 +2,7 @@
 id: yTD0dP4MoWNKpCeht3Wz3
 title: Lecture 1
 desc: ''
-updated: 1630249598785
+updated: 1630298399783
 created: 1630119208038
 ---
 
@@ -26,8 +26,29 @@ created: 1630119208038
 
 ## Extra Points
 * Engineering applications always require accurate measurement and control over physical quanities.
+* It is easy to transmit signal in electrical form.
+* We might need to process the signal and it is easier to perform operations in electrical form.
+* Thus, we need sensors.
 
 ## Transducers and Sensors
 * Convert one form of signal to another form.
 * If you convert non-electrical signal to an electrical signal, it is called a sensor.
 * Thus, sensors are subset of transducers.
+* Actuator is device converting electrical to non-electrical signal.
+
+## Sensor Calibration
+![](/assets/images/2021-08-30-10-01-01.png)
+
+> We need curve fitting to obtain equation from the data points.
+
+## Curve Fitting
+* Process of finding suitable equation between y and x when table of values of x and y is known.
+* Polynomial form in general case
+* Steps in excel
+    * Select the data points.
+    * Go to insert.
+    * Select scatter plot.
+    * Chart will appear.
+    * Right click on any data point on the chart and select trendline option.
+    * Choose Polynomial and select the appropriate order.
+    * **Check the display equation in chart option.**
