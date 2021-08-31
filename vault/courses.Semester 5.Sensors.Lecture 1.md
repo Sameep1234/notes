@@ -2,7 +2,7 @@
 id: yTD0dP4MoWNKpCeht3Wz3
 title: Lecture 1
 desc: ''
-updated: 1630298399783
+updated: 1630401937341
 created: 1630119208038
 ---
 
@@ -51,4 +51,4 @@ created: 1630119208038
     * Chart will appear.
     * Right click on any data point on the chart and select trendline option.
     * Choose Polynomial and select the appropriate order.
-    * **Check the display equation in chart option.**
+    * **Check the display equation and display R^2 in chart option.**
