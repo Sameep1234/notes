@@ -2,17 +2,17 @@
 id: 0cHUe8OjK8Sb4TkMg9EhP
 title: Lecture 4
 desc: ''
-updated: 1630232549068
+updated: 1630431550375
 created: 1630228148528
 ---
 
 # Process: Description and Control
 
-## Requirements of OS for Process Management
+## Requirements of OS as a Process Manager
 * Interleave the execution of multiple processes. Here we assume that there is always a single processor system.
 * Allocate resources to processes and protect them from each other.
-* Enable process to share and exchange information.
-* Enabale synchronization among processes.
+* Enable process to share and exchange information. Eg. Parent and Child processes.
+* Enable synchronization among processes.
 
 ## Process
 * Program in execution.
@@ -28,7 +28,7 @@ created: 1630228148528
 * Indentifier - Unique ID of each process
 * State - Current situation of the process (Either running or not running)
 * Priority - Self explanatory
-* Program Counter - Info. about next process to be executed
+* Program Counter - Keeps information about next process to be executed
 * Memory pointers - Pointers to program code and data to be processed. Along with this, it also includes shared memory blocks.
 * Context data
 * I/O status information - Eg. List of files in use by the process etc.
@@ -47,13 +47,13 @@ created: 1630228148528
 * Thus, you allocate certain span of time to each process and once it gets finished, immediately another process starts.
 * It gives an appearance that every process runs at the same time because the total time taken by all the process combined is really small.
 * **Trace - List of instructions that are executed by a process.**
-* **Dispatcher - Program that switches the processor from one process to another.** It is a type of short term scheduler
+* **Dispatcher - Program that switches the processor from one process to another.** It is a type of short term scheduler.
 
 ## Execution of Processes by Processor
 * Suppose that there are some processes which have a lot of instructions to execute. This might take time which is greater than the allocated one.
 * So in the middle of the execution of a process, dispatcher stops the execution and decides which process should go next.
 * Once decided, either execution of new process starts or execution of old process continues.
-* Then, suppose there is an I/O request. Since this is a slow operation, the dispatcher will allow another process to run of the processor/
+* Then, suppose there is an I/O request. Since this is a slow operation, the dispatcher will allow another process to run on the processor.
 * This goes on and on untill all the processes are executed.
 
 > The above method is from **processor POV** and is called **interleaving of processes** and the OS manages this through **dispatcher**. From **process POV**, the process gets executed sequencially.
@@ -68,7 +68,7 @@ created: 1630228148528
 * Thus, to manage all these processes, we need **queue** as the data structure.
 
 ## Note
-
+* The below picture lists conditions under which a process can be created or terminated.
 * ![](/assets/images/2021-08-29-15-16-50.png)
 
 * Process spawning means event where a process creates a new process.
@@ -97,14 +97,12 @@ created: 1630228148528
 
 * ![](/assets/images/2021-08-29-15-36-29.png)
 
-* Ready/Blocked process can enter directly to exit state when its parent process has terminated or the process is terminated by the OS.
-
+* Ready and Blocked process can enter directly to exit state when its parent process has terminated or the process is terminated by the OS.
 * When process spawning occurs, then child process is created in the new state.
-
 * Hang state is equivalent to blocked/waiting state.
 
 ## Multiple Blocked Queue
-* Suppose there are 10 processes which re in blocked queue waiting for HDD to get accesible and there are 90 processes that are in hand mode.
+* Suppose there are 10 processes which are in blocked queue waiting for HDD to get accesible and there are 90 processes that are in hang mode.
 * Now once HDD is ready to be accessed, OS will have to search this blocked queue and move all these processes to ready state.
 * This is again time consuming and complex. Hence multiple blocked queue model emerged.
 

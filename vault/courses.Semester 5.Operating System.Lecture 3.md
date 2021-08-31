@@ -2,24 +2,24 @@
 id: Oj3uiXKth6ZgUASqln4Vi
 title: Lecture 3
 desc: ''
-updated: 1630215776285
+updated: 1630430971753
 created: 1630211824085
 ---
 
 # System Calls and Architecture of UNIX
 
 ## Intro to system calls
-* System calls is the most important and crucial concept in OS. It is basically a link connecting user to the OS.
-* Formally, it is aprogramming interface to use the services provided by the OS. They are the programs that help give access to the functionalities provided by the OS.
+* System calls are the most important and crucial concept in OS. It is basically a link connecting user to the OS.
+* Formally, it is a **programming interface (like waiter connecting customers to kitchen in a restaurant)** to use the services provided by the OS. They are the programs that help give access to the functionalities provided by the OS.
 *  They are written in a high-level language like C or C++.
-* POSIX API is used in Linux and Win32 API is used in windows.
+* POSIX API is used for Linux and Win32 API is used for windows.
 
 ## Implementation of System Call
-* Associated with each system call.
+* Associated with each function call. Eg. If you call a function printf() in C, then it internally calls an associated system call telling the OS to display the written part on the scree.
 * Every OS have a list of system call along with ID's.
 * System call interface maintains a table with ID's as indices.
-* This interface invokes a particular system call in OS kernel and returns the status and return values if any.
-* Details are hidden from programmer by API.
+* This interface invokes a particular system call in OS kernel and returns the status and return-values if any.
+* Details are hidden from programmer by the API.
 
 ## Relationship between API, System Call and OS
 
@@ -36,7 +36,8 @@ created: 1630211824085
 
 * ![](/assets/images/2021-08-29-11-08-15.png)
 
-* Linux is based on UNIX but is more complicated than UNIX.
+* UNIX is an OS just like Linux.
+* In fact linux is based on UNIX but is more complicated than UNIX.
 * UNIX system follows monolithic approach
 * UNIX System Kernel
 

@@ -27,6 +27,7 @@ scratch:
     dateFormat: y.MM.dd.HHmmss
     addBehavior: asOwnDomain
 site:
+    siteFaviconPath: vault/favicon.png
     assetsPrefix: notes
     siteUrl: https://sameep1234.github.io
     copyAssets: true

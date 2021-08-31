@@ -171,7 +171,7 @@
     <meta itemprop="headline" content="Lecture 2">
     
     <meta itemprop="datePublished" content="2021-08-28T22:20:51+00:00">
-    <meta itemprop="dateModified" content="2021-08-29T10:18:36+00:00">
+    <meta itemprop="dateModified" content="2021-08-31T22:51:25+00:00">
 
     <div class="page__inner-wrap">
 
@@ -193,14 +193,14 @@
 </ul>
 <h2 id="serial-processing"><a aria-hidden="true" class="anchor-heading" href="#serial-processing"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Serial Processing</h2>
 <ul>
-<li>There was no OS</li>
+<li>There was no OS.</li>
 <li>To run the program, we would have to type a command for everything.</li>
-<li>Job is a set of instructions along with the data on which the instructions need to be executed</li>
+<li>A program at that time was called a job which is a set of instructions along with the data on which the instructions need to be executed.</li>
 <li>Issues
 <ul>
 <li>Scheduling
 <ul>
-<li>Fixed amount of time</li>
+<li>Fixed amount of time allocated to each instruction.</li>
 <li>Conflict between instructions requiring more or less time.</li>
 </ul>
 </li>
@@ -214,35 +214,34 @@
 </ul>
 <h2 id="simple-batch-system"><a aria-hidden="true" class="anchor-heading" href="#simple-batch-system"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Simple Batch System</h2>
 <ul>
-<li>Monitor Program were used which were kind of OS - A very rudimentary OS</li>
-<li>It is a software that controls the sequence of events</li>
-<li>No direct access to users unlike Serial Processing</li>
+<li>Monitor Program were used which were kind of OS - A very rudimentary OS.</li>
+<li>It is a software that controls the sequence of events.</li>
+<li>No direct access to users unlike Serial Processing.</li>
 <li>Job is submitted to an operator who batches similar instructions together and places them on the input device/hardware.</li>
 <li>In this way, the time consumed is averaged out and the processor can be utilized to its maximum.</li>
-<li>Control is given back to monitor after program gets terminated</li>
+<li>Control is given back to monitor after program gets terminated.</li>
 </ul>
 <blockquote>
-<p>Monitor controls the sequence of events. Resident monitor is softwware always in memory. It reads in job and gives control. Job in turn returns the control back to monitor</p>
+<p>Monitor is a special program that manages execution of each program in the <strong>batch</strong>. It controls the sequence of events. Resident monitor (another name for simple monitor) is software always in memory. It reads in job and gives control to the processor which in turn returns the control back to monitor</p>
 </blockquote>
 <blockquote>
-<p>Processor executes instructions from the memory i.e monitor. Then user programs are executed. Gains control from monitor to execute the task and once completed returns the control to monitor.</p>
+<p>Processor executes instructions from the memory i.e monitor which resides in the memory. It gains control from monitor to execute the task and once completed returns the control to monitor.</p>
 </blockquote>
 <blockquote>
-<p>JCL (Job control language) - Programming language provides instruction to the monitor about the compiler and data to be used</p>
+<p>JCL (Job control language) - It is a programming language that provides instruction to the monitor about the compiler and data to be used.</p>
 </blockquote>
 <ul>
 <li>
 <p>Modes of operation</p>
 <ul>
-<li>User mode - Programs submitted by the user to the memory are executed in this mode. <strong>Not all instructions may be executed</strong> (Normal Mode)</li>
-<li>Kernal mode - Part of a modern OS that actually performs I/O Management, Process Management etc. Nowadays, we have many other utility programs running which are a part of OS, but kernal is the most important one which manages the above mentioned things. (Admin Mode
-)</li>
+<li>User mode (Analogy: Normal Mode) - Programs submitted by the user to the memory are executed in this mode. <strong>Not all instructions may be executed.</strong></li>
+<li>Kernal mode (Analogy: Admin Mode) - Part of a modern OS that actually performs I/O Management, Process Management etc. Nowadays, we have many other utility programs running which are a part of OS, but kernal is the most important one which manages the above mentioned things.</li>
 </ul>
 </li>
 <li>
 <p>Issues</p>
 <ul>
-<li>Processor remains idle</li>
+<li>Processor remains idle.</li>
 <li>Slow compared to processor even with automatic job sequence.</li>
 </ul>
 </li>
@@ -265,10 +264,10 @@
 <p><img src="/notes/assets/images/2021-08-29-00-06-36.png"></p>
 <h2 id="os-structure"><a aria-hidden="true" class="anchor-heading" href="#os-structure"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>OS Structure</h2>
 <ul>
-<li>For general purpose OS, the program is very large.</li>
+<li><em>For general purpose OS, the program is very large.</em></li>
 <li>Ways to structure OS
 <ul>
-<li>Monolitic Approach - Everything combined in one place.
+<li>Monolitic Approach (Analofy coding in C where there are no classes) - Everything combined in one place.
 <ul>
 <li>Eg. Older LINUX and UNIX</li>
 <li>Advantages
@@ -287,11 +286,11 @@
 <li>Layered Approach - OS divided into number of layers.
 <ul>
 <li>Layer 0 = hardware and Layer n = user interface layer</li>
-<li>Layer used functions and services of <strong>only lower-level layers</strong></li>
+<li>A particular layer can use functions and services of <strong>lower-level layers only (layers below it).</strong></li>
 <li>Eg. Older windows versions</li>
 </ul>
 </li>
-<li>Microkernels - Move as much functionalities as possible to user mode. 
+<li>Microkernels - Move as much functionalities as possible to user mode from kernel mode. 
 <ul>
 <li>Unlike that in layered and monolithic where majority of the functionalities is available in only kernal mode.</li>
 <li>I\O and interrupt management, primitive memory management, inter-process communication and basic scheduling were kept in kernel mode.</li>
@@ -299,7 +298,7 @@
 <li>Advantages
 <ul>
 <li>Time is reduced significantly as the time to change the mode from user to kernel and vice versa is almost completely diminished.</li>
-<li>Porting of OS to newer architecture becomes easier.</li>
+<li>Porting of OS to newer architecture becomes easier (will be covered in upcoming lectures).</li>
 <li>More reliable because less code is running in kernel mode.</li>
 <li>More secure as less code has to be valudated in kernel.</li>
 </ul>
@@ -314,11 +313,11 @@
 </li>
 <li>Modules - Most moedern OS implement kernel modules
 <ul>
-<li>Loadable kernel module</li>
+<li>These are loadable kernel module</li>
 <li>Uses OOP</li>
 <li>Similar to layers but is more flexible</li>
 <li>Eg. Device Drivers (These are loaded as needed within the kernel)</li>
-<li>Solaris Modular Approach</li>
+<li>Solaris Modular Approach (will be covered in upcoming lectures).</li>
 </ul>
 </li>
 <li>Hybrid Approach - Combines multiple approaches to address performance, security and usability.
