@@ -2,9 +2,11 @@
 id: 2p4SrKmDTQWH2LLlK15oP
 title: Lecture 3
 desc: ''
-updated: 1630406485199
+updated: 1630432583017
 created: 1630406115130
 ---
+
+# Best Fit, Measurement and Control Systems
 
 ## Points
 * With one value of x, take many values of y and then take the average
@@ -21,7 +23,9 @@ created: 1630406115130
 > Degree of reproducibility of a measurement
 
 * Accuracy and precision are different. **Outputs** for calculation is close enough then your calculation is precise but accuracy depends on the whether the output values are close to the actual value means it is accurate.
-* It is also possible that the output is more accurate and less precice and vice versa.
+* It is also possible that the output is more accurate and less precise and vice versa.
+![](/assets/images/2021-08-31-23-19-59.png)
+
 ## Resolution
 > Smallest measurable increment
 
@@ -31,11 +35,13 @@ created: 1630406115130
 > Span: Linear operating range
 
 * This means that the relationship between two values must be a linear relation.
+
 > Range: Simple range (No explanation needed)
 
 ## Best Fit Line
 ![](/assets/images/2021-08-27-10-03-26.png)
 * Error is the difference between best fit value and the actual value.
+
 ![](/assets/images/2021-08-27-10-09-13.png)
 > We take n-2 because measured values are mean and not true values and two variables are involved.
 
