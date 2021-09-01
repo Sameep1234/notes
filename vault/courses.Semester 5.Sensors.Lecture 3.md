@@ -2,7 +2,7 @@
 id: 2p4SrKmDTQWH2LLlK15oP
 title: Lecture 3
 desc: ''
-updated: 1630432583017
+updated: 1630516069933
 created: 1630406115130
 ---
 
@@ -46,13 +46,40 @@ created: 1630406115130
 > We take n-2 because measured values are mean and not true values and two variables are involved.
 
 ## Computerized measurement and control systems
+
 ## Development of software
 > Question to think: How to store the software or computer program in the circuit board?
 
 * General purpose computer is required to build a software for specific purpose computer.
+* Write the code in the laptop and then upload the code on the board.
+
 ## Arduino Board
 * Components
     * Input Pins (6 Analog Pins)
     * Battery Connector/Receptor
     * Output Pins (Analog)
-#  **Some part left**
+    * USB Connector
+    * 14 Digital pins which can be used as either input or output i.e the pins are configurable.
+* Voltages range from 0V to 5V.
+* PWM - Pulse wave modulated (Explained in further letures).
+* On the actual arduino board, they are represented by a '~' sign.
+* Pin13 has built in LED for testing and hence doesn't require any external LED's in order to test the program.
+
+## Analog to Digital converter
+* For a 10 bit ADC which is generally found in arduino, there would be 1024 values starting from 0 and going to 1023 with increment as 1.
+* This, means that value corresponding to 1023 is 5V.
+* **ADC are linear.**
+
+## Sampling rate of ADC
+* Sampling rate = 9650 samples/sec. This is fixed for an arduino board.
+* Maximum theoretical frequency of the input analog signal is half of this.
+
+## Pulse Wave Modulation (PWM)
+![](/assets/images/2021-09-01-22-26-19.png)
+* As seen in the above figure, Tw is the pulse width and T is the time period of the wave.
+* Average value of periodic wave = $\frac{Area under one time period}{Time period}$
+* Duty cycle ranges from 0 to 255 corresponding to 0% and 100% respectively.
+
+## Program Structure
+* ![](/assets/images/2021-09-01-22-31-18.png)
+* **Statements under setup function will be executed only once and vice versa for loops.**
