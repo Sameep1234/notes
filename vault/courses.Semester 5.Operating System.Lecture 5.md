@@ -107,4 +107,4 @@ created: 1630463553632
 * User identifier (To which user this process belongs to?)
 
 ## Processor state information
-* Need to watch lecture again from here.
+* Need to watch lecture again from here. 
