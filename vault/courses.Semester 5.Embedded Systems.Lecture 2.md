@@ -1,100 +1,42 @@
 ---
-id: EeN4Bb9OzCECuhZ4gwGLz
+id: f1JA4Zfw5Wt9QVFQZUokW
 title: Lecture 2
 desc: ''
-updated: 1630761538460
-created: 1630758416637
+updated: 1630820936096
+created: 1630817213184
 ---
 
-# Selection and Coding
+# Timers
 
-> #### This was the lab session but theory was taught.
+## Timers in AVR
+* ![](/assets/images/2021-09-05-10-37-02.png)
+* ATMEGA32
+    * Timer 0: 8-bit
+    * Timer 1: 16-bit
+    * Timer 2: 8 bit
+* Example
+    * ![](/assets/images/2021-09-05-10-48-08.png)
+    * Complex Solution
+    ![](/assets/images/2021-09-05-10-50-57.png)
 
-## Criteria's to select microcontroller
-* Computational need - Efficiency, cost etc.
-    * 8-bit vs 16-bit vs 32-bit
-    * Speed
-    * Power Consumption
-    * Packaging
-        * Space
-        * Assembling
-        * Prototyping end product
-    * Amount of RAM and ROM on chip
-    * No. of I/O pins
-    * No. of timers
-    * Upgradability to new versions
-    * Cost per unit
-* Availability of software development tools
-    * Availability of
-        * Assemblers
-        * Debugger
-        * COde-efficient C-language compiler
-        * Technical Support
-        * In-house and outside expertise
-* Reliable source of microcontroller
-    * Number of companies supplying controller.
-    * Are they reliable?
-    * Will it support in future?
+## Components
+* TCCR: Timer/Counter Control Register
+    * 8-bit register
+    * ![](/assets/images/2021-09-05-11-18-21.png)
+    * When you put 000, timer stops if it is running.
+    * Other information given in the image above.
+* TOV: Timer Overflow
+* TCNT: Timer/Counter Register
+    * 8-bit register that increments count.
+    * It is a read/write register.
+    * Increments every clock cycle
+    * Overflows occur at 0xFF.
+    * ![](/assets/images/2021-09-05-11-02-40.png)
+* OCR: Output Compare Register
+    * It is a read/write 8-bit register.
+    * Continuously compared with counter value.
+    * 
+* OCF: Output Compare Flag
 
-> We would be using AVR Microcontrollers
-
-## Harvard vs Princeton
-* Harvard
-![](/assets/images/2021-09-04-18-21-51.png)
-* Princeton
-* ![](/assets/images/2021-09-04-18-22-18.png)
-
-## RISC vs CISC
-* CISC
-    * Complex Instruction Set Computing
-    * Single instruction can execute several low-level operations (including load from memory, artihmetic operations and memory store).
-    * Capability of multi-step operations.
-* RISC
-    * Reduced Instruction Set Compution
-    * Low complexity
-        * Speed-up
-        * Less errors in implementation
-    * Less transistors
-    * More space and registers
-* Conclusion
-![](/assets/images/2021-09-04-18-30-30.png)
-
-## AVR Microcontrollers
-* Follows Harvard Architecture
-* Follows RISC architecture with CISC instruction set
-* Full-form - Advanced Virtual RISC
-* 8 Bit Bus (For our application)
-* Pin count between 8 to 100
-* Scalable
-* 32 working registers
-    * All connected to ALU
-* Single Cycle Execution
-    * One instruction per external clock
-    * Low power consumption
-* Efficient core
-* High system level integration
-
-## Extra points
-* ![](/assets/images/2021-09-04-18-37-03.png)
-* For ATMEGA Ports, we have 4 ports each 8 bit.
-* Each pin is configurable
-* Types of configuration
-    * Input with internal pull-up
-    * Input with no pull-up
-    * Output (Driven Low)
-    * Output (Driven High)
-* Each Port will have **3 main registers**
-    * DDRx - Data Direction Register
-        * For configuring data direction (whether input or output)
-    * PORTx - Port output/Driver Register
-        * Output Mode
-    * PINx - Port Input Register
-        * Reading Mode
-
-> **How to give direction?**
-
-* For any Pin, if it is defined 0, then it represents input pin and vice versa.
-
-## Examples of Program
-* ![](/assets/images/2021-09-04-18-45-38.png)
-* ![](/assets/images/2021-09-04-18-48-57.png)
+## Circuit (Timer 0)
+![](/assets/images/2021-09-05-10-59-49.png)
