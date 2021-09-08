@@ -42,5 +42,6 @@ site:
             - vault
     author: Sameep
     logo: vault/logo.gif
+    ga_tracking: G-VZ67P3SVZE
 initializeRemoteVaults: true
 dendronVersion: 0.56.0
