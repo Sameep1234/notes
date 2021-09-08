@@ -2,7 +2,7 @@
 id: 0MwJpw5Ai8WlLrE5bLyaQ
 title: Lecture 4
 desc: ''
-updated: 1630242932994
+updated: 1631075367016
 created: 1630240499817
 ---
 
@@ -56,3 +56,12 @@ created: 1630240499817
 ![](/assets/images/2021-08-29-18-45-11.png)
 
 * This is **atomic** density.
+* FCC Structure
+    * Case 1 (100)
+        * Linear Density = $\frac{number of atoms}{length of the vector}$ = $\frac{1}{a}$
+        * Planar Density = $\frac{number of atoms}{area of the plane}$ = $\frac{2}{a^2}$
+    * Case 2 (110)
+        * Linear Density = $\frac{2}{\sqrt{2}a}$
+        * Planar Desity = $\frac{2}{\sqrt{2}a^2}$
+    * Case 3 (111)
+        * Linear Density = $\frac{1}{\sqrt{3}a}$
