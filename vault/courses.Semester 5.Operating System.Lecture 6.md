@@ -2,7 +2,7 @@
 id: iulDI2JKiPfwvpMA31XAa
 title: Lecture 6
 desc: ''
-updated: 1630898377574
+updated: 1631167141681
 created: 1630895369961
 ---
 
@@ -69,7 +69,38 @@ created: 1630895369961
 * init process works only in kernel mode.
 * Some other process that execute only in kernel mode include dispatcher etc.
 * States
-    * Two extra states
     * ![](/assets/images/2021-09-06-08-47-29.png)
+    * Fork is the system call used to create new process.
+    * Two extra states
     * Blocking state is called sleep state.
-    * 
+    * Zombie state means that process is executed but some imformation realted to data structure and all is still saved for accounting purposes.
+    * Here running state is divided into two parts viz user running state and kernel running state.
+    * At a time, a process can be in either user running state or kernel running state but **not both.**
+    * Preempted is almost similar to ready to run in memory state. In fact they are managed by a common combined queue.
+* UNIX Process Image
+    * A process in UNIX is a set of DS that provide the OS with all the information necessary to manage and dispatch processes.
+    * Process image in UNIX can be categorized as follows
+        * User-Level Context
+            * ![](/assets/images/2021-09-09-11-14-50.png)
+        * Register Context
+            * ![](/assets/images/2021-09-09-11-15-08.png)
+        * System-Level Context
+            * ![](/assets/images/2021-09-09-11-15-54.png)
+            * Most of the information regarding PCB is maintained in process table and they **must be accessible to kernel.**
+            * U Area - Most of the process control information is present in U area. This is also a part of PCB. However, majority of information related to PCB is present in Process table.
+            * Information in U area is accessible to a process only if it is in running state.
+            * 1st and 3rd are static DS means they will not change during the life of a process.
+            * 2nd and 4th are dynamic data structure and will change according to various states of the process.
+* Process Creation in UNIX
+    * fork() is used to create new processes.
+    * ![](/assets/images/2021-09-09-11-26-30.png)
+    ![](/assets/images/2021-09-09-11-27-38.png)
+    * If returned value is 0, it means it is child process and vice versa.
+    * Once child is created, then it depends on the situation which one will execute.
+            
+## Extra Points
+> What is in process table?
+* ![](/assets/images/2021-09-09-11-22-44.png)
+
+> What is in U area?
+* ![](/assets/images/2021-09-09-11-23-18.png)

@@ -181,7 +181,7 @@
     <meta itemprop="headline" content="Lecture 6">
     
     <meta itemprop="datePublished" content="2021-09-06T07:59:29+00:00">
-    <meta itemprop="dateModified" content="2021-09-06T08:49:37+00:00">
+    <meta itemprop="dateModified" content="2021-09-09T11:29:01+00:00">
 
     <div class="page__inner-wrap">
 
@@ -294,13 +294,69 @@
 <li>Some other process that execute only in kernel mode include dispatcher etc.</li>
 <li>States
 <ul>
-<li>Two extra states</li>
 <li><img src="/notes/assets/images/2021-09-06-08-47-29.png"></li>
+<li>Fork is the system call used to create new process.</li>
+<li>Two extra states</li>
 <li>Blocking state is called sleep state.</li>
-<li></li>
+<li>Zombie state means that process is executed but some imformation realted to data structure and all is still saved for accounting purposes.</li>
+<li>Here running state is divided into two parts viz user running state and kernel running state.</li>
+<li>At a time, a process can be in either user running state or kernel running state but <strong>not both.</strong></li>
+<li>Preempted is almost similar to ready to run in memory state. In fact they are managed by a common combined queue.</li>
 </ul>
 </li>
-</ul><span id="navId" data="iulDI2JKiPfwvpMA31XAa"></span>
+<li>UNIX Process Image
+<ul>
+<li>A process in UNIX is a set of DS that provide the OS with all the information necessary to manage and dispatch processes.</li>
+<li>Process image in UNIX can be categorized as follows
+<ul>
+<li>User-Level Context
+<ul>
+<li><img src="/notes/assets/images/2021-09-09-11-14-50.png"></li>
+</ul>
+</li>
+<li>Register Context
+<ul>
+<li><img src="/notes/assets/images/2021-09-09-11-15-08.png"></li>
+</ul>
+</li>
+<li>System-Level Context
+<ul>
+<li><img src="/notes/assets/images/2021-09-09-11-15-54.png"></li>
+<li>Most of the information regarding PCB is maintained in process table and they <strong>must be accessible to kernel.</strong></li>
+<li>U Area - Most of the process control information is present in U area. This is also a part of PCB. However, majority of information related to PCB is present in Process table.</li>
+<li>Information in U area is accessible to a process only if it is in running state.</li>
+<li>1st and 3rd are static DS means they will not change during the life of a process.</li>
+<li>2nd and 4th are dynamic data structure and will change according to various states of the process.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Process Creation in UNIX
+<ul>
+<li>fork() is used to create new processes.</li>
+<li><img src="/notes/assets/images/2021-09-09-11-26-30.png">
+<img src="/notes/assets/images/2021-09-09-11-27-38.png"></li>
+<li>If returned value is 0, it means it is child process and vice versa.</li>
+<li>Once child is created, then it depends on the situation which one will execute.
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="extra-points"><a aria-hidden="true" class="anchor-heading" href="#extra-points"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Extra Points</h2>
+<blockquote>
+<p>What is in process table?</p>
+<ul>
+<li><img src="/notes/assets/images/2021-09-09-11-22-44.png"></li>
+</ul>
+</blockquote>
+<blockquote>
+<p>What is in U area?</p>
+<ul>
+<li><img src="/notes/assets/images/2021-09-09-11-23-18.png"></li>
+</ul>
+</blockquote><span id="navId" data="iulDI2JKiPfwvpMA31XAa"></span>
 
                 
       </section>
