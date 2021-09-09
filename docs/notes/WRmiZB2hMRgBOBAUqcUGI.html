@@ -181,7 +181,7 @@
     <meta itemprop="headline" content="Lecture 5">
     
     <meta itemprop="datePublished" content="2021-09-01T08:02:33+00:00">
-    <meta itemprop="dateModified" content="2021-09-01T09:09:49+00:00">
+    <meta itemprop="dateModified" content="2021-09-09T10:10:24+00:00">
 
     <div class="page__inner-wrap">
 
@@ -347,8 +347,98 @@
 <li>User identifier (To which user this process belongs to?)</li>
 </ul>
 <h2 id="processor-state-information"><a aria-hidden="true" class="anchor-heading" href="#processor-state-information"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Processor state information</h2>
+<blockquote>
+<p>Processor state is always <strong>stored in register.</strong></p>
+</blockquote>
 <ul>
-<li>Need to watch lecture again from here. </li>
+<li>User Visible registers
+<ul>
+<li>Most of the times they are the address registers and data registers</li>
+<li>It means that these registes can be directly visible by programs running in user-mode.</li>
+<li>Generally they are 8-32 regsiters but some RISC implementations may have over 100.</li>
+</ul>
+</li>
+<li>Control and status registers
+<ul>
+<li>Program counter - Contains address of the next instruction.</li>
+<li>Condition codes - Result of the most recent ALU operation.</li>
+<li>Status information - Contains inturrept flags and execution mode (They are also known as program/process status mode).</li>
+</ul>
+</li>
+<li>Stack Pointers (Registers)
+<ul>
+<li>Process image uses stack to maintain parameters and calling addresses for procedures and system calls.</li>
+<li>There could be multiple stacks and each stack has a stack pointer pointing to the top of the stack.</li>
+</ul>
+</li>
+</ul>
+<h2 id="process-control-information"><a aria-hidden="true" class="anchor-heading" href="#process-control-information"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Process control information</h2>
+<blockquote>
+<p>Manages additional information that is needed by the OS to control and coordinate the various active processes.</p>
+</blockquote>
+<ul>
+<li>These include the following
+<ul>
+<li><img src="/notes/assets/images/2021-09-09-10-01-56.png"></li>
+<li>IPC stands for Inter-process communication</li>
+<li>Process privileges includes "What area can be accessed by the process" or "Which mode?" etc.</li>
+</ul>
+</li>
+<li>Scheduling and State information
+<ul>
+<li><img src="/notes/assets/images/2021-09-09-10-03-54.png"></li>
+</ul>
+</li>
+<li>Data Structuring
+<ul>
+<li><img src="/notes/assets/images/2021-09-09-10-04-13.png"></li>
+<li>For each state (blocked, ready etc.) there would be one queue and generally they are made using linked list.</li>
+</ul>
+</li>
+<li>IPC
+<ul>
+<li><img src="/notes/assets/images/2021-09-09-10-05-14.png"></li>
+<li>It occurs when two process talk to each other</li>
+</ul>
+</li>
+<li>Process privileges
+<ul>
+<li><img src="/notes/assets/images/2021-09-09-10-05-56.png"></li>
+<li>What kind of file, area of memory etc.</li>
+</ul>
+</li>
+<li>Memory Management
+<ul>
+<li><img src="/notes/assets/images/2021-09-09-10-06-58.png"></li>
+</ul>
+</li>
+<li>Resource Ownership and Utilization
+<ul>
+<li><img src="/notes/assets/images/2021-09-09-10-06-39.png"></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<h2 id="what-does-process-image-contain"><a aria-hidden="true" class="anchor-heading" href="#what-does-process-image-contain"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>What does Process image contain?</h2>
+<ul>
+<li><img src="/notes/assets/images/2021-09-09-10-08-11.png"></li>
+</ul>
+</blockquote>
+<h2 id="role-of-pcb"><a aria-hidden="true" class="anchor-heading" href="#role-of-pcb"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Role of PCB</h2>
+<ul>
+<li>It is the most important DS.</li>
+<li>It contains most of the information regarding a process excpet stack pointers.</li>
+<li>It manages the processes.</li>
+<li>Thus, it requires protection.
+<ul>
+<li>If not done then,
+<ul>
+<li>It may damage the block and destroy OS's ability to manage the processes.</li>
+<li>Any change in design will affect many other modules of OS.</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul><span id="navId" data="WRmiZB2hMRgBOBAUqcUGI"></span>
 
                 

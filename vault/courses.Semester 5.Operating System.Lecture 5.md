@@ -2,7 +2,7 @@
 id: WRmiZB2hMRgBOBAUqcUGI
 title: Lecture 5
 desc: ''
-updated: 1630467589276
+updated: 1631162424572
 created: 1630463553632
 ---
 
@@ -107,4 +107,51 @@ created: 1630463553632
 * User identifier (To which user this process belongs to?)
 
 ## Processor state information
-* Need to watch lecture again from here. 
+> Processor state is always **stored in register.**
+
+* User Visible registers
+    * Most of the times they are the address registers and data registers
+    * It means that these registes can be directly visible by programs running in user-mode.
+    * Generally they are 8-32 regsiters but some RISC implementations may have over 100.
+* Control and status registers
+    * Program counter - Contains address of the next instruction.
+    * Condition codes - Result of the most recent ALU operation.
+    * Status information - Contains inturrept flags and execution mode (They are also known as program/process status mode).
+* Stack Pointers (Registers)
+    * Process image uses stack to maintain parameters and calling addresses for procedures and system calls.
+    * There could be multiple stacks and each stack has a stack pointer pointing to the top of the stack.
+
+## Process control information
+> Manages additional information that is needed by the OS to control and coordinate the various active processes.
+
+* These include the following
+    * ![](/assets/images/2021-09-09-10-01-56.png)
+    * IPC stands for Inter-process communication
+    * Process privileges includes "What area can be accessed by the process" or "Which mode?" etc.
+* Scheduling and State information
+    * ![](/assets/images/2021-09-09-10-03-54.png)
+* Data Structuring
+    * ![](/assets/images/2021-09-09-10-04-13.png)
+    * For each state (blocked, ready etc.) there would be one queue and generally they are made using linked list.
+* IPC
+    * ![](/assets/images/2021-09-09-10-05-14.png)
+    * It occurs when two process talk to each other
+* Process privileges
+    * ![](/assets/images/2021-09-09-10-05-56.png)
+    * What kind of file, area of memory etc.
+* Memory Management
+    * ![](/assets/images/2021-09-09-10-06-58.png)
+* Resource Ownership and Utilization
+    * ![](/assets/images/2021-09-09-10-06-39.png)
+
+> ## What does Process image contain?
+* ![](/assets/images/2021-09-09-10-08-11.png)
+
+## Role of PCB
+* It is the most important DS.
+* It contains most of the information regarding a process excpet stack pointers.
+* It manages the processes.
+* Thus, it requires protection.
+    * If not done then,
+        * It may damage the block and destroy OS's ability to manage the processes.
+        * Any change in design will affect many other modules of OS.
