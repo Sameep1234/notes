@@ -2,7 +2,7 @@
 id: FUatAGaTOUs6oPRQYOUmq
 title: Lecture 5
 desc: ''
-updated: 1631100284424
+updated: 1631154503471
 created: 1631075486165
 ---
 
@@ -36,3 +36,12 @@ created: 1631075486165
     * For SC, always calculate till 8th step and **show that 7 is absent/missing.**
     * If 7 comes in the series then multiply the whole series with 2 to get BCC structure.
     * ![](/assets/images/2021-09-08-16-50-04.png)
+
+## How to identify material based on lattice parameter?
+* First thing to **remember** is that angle is **2$\theta$** with **intensity.**
+* Then use the below image to follow the steps.
+    * ![](/assets/images/2021-09-09-07-53-22.png)
+    * **Note: 2$\theta$ values may differ based on XRD**
+    * Now, if any of the first 3 columns comes whole integer, then we get our $h^2$ + $k^2$ + $l^2$.
+    * Otherwise, we go on multiplying with 4, then with 5 and so on untill we get a whole integer and that becomes the value of $h^2$ + $k^2$ + $l^2$.
+    * To calculate a, find average of the **peaks**.
