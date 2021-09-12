@@ -1,8 +1,8 @@
 ---
 id: dEqWsqoTN4ysQg1dE14ey
-title: Continuious Integration and Continuous Deployment
+title: Continuous Integration and Continuous Deployment
 desc: ''
-updated: 1631444416922
+updated: 1631450164915
 created: 1631439712234
 ---
 
