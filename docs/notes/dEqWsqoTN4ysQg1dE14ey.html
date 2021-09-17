@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
   
-  <title>Continuious Integration and Continuous Deployment - Dendron</title>
+  <title>Continuous Integration and Continuous Deployment - Dendron</title>
   
 
   <link
@@ -57,8 +57,8 @@
 <meta name="twitter:image" content="https://sameep1234.github.io/logo.gif">
 
 
-  <meta property="og:title" content="Continuious Integration and Continuous Deployment - Dendron" />
-  <meta name="twitter:title" content="Continuious Integration and Continuous Deployment - Dendron" />
+  <meta property="og:title" content="Continuous Integration and Continuous Deployment - Dendron" />
+  <meta name="twitter:title" content="Continuous Integration and Continuous Deployment - Dendron" />
   
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-VZ67P3SVZE"></script>
@@ -142,7 +142,7 @@
       
         
           <nav aria-label="Breadcrumb" class="breadcrumb-nav">
-            <ol class="breadcrumb-nav-list"><li class="breadcrumb-nav-list-item"><a href="https://sameep1234.github.io/notes">Curated Notes</a></li><li class="breadcrumb-nav-list-item"><a href="https://sameep1234.github.io/notes/notes/3ONxZ3Khb7nFPdLxlV1ib.html">Stepwellradio</a></li><li class="breadcrumb-nav-list-item"><a href="https://sameep1234.github.io/notes/notes/xm1zwK8k3nHvutw0hqXhh.html">Steptech</a></li><li class="breadcrumb-nav-list-item">Continuious Integration and Continuous Deployment</li></ol>
+            <ol class="breadcrumb-nav-list"><li class="breadcrumb-nav-list-item"><a href="https://sameep1234.github.io/notes">Curated Notes</a></li><li class="breadcrumb-nav-list-item"><a href="https://sameep1234.github.io/notes/notes\3ONxZ3Khb7nFPdLxlV1ib.html">Stepwellradio</a></li><li class="breadcrumb-nav-list-item"><a href="https://sameep1234.github.io/notes/notes\xm1zwK8k3nHvutw0hqXhh.html">Steptech</a></li><li class="breadcrumb-nav-list-item">Continuous Integration and Continuous Deployment</li></ol>
           </nav>
         
       
@@ -178,10 +178,10 @@
 <div id="main" role="main">
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Continuious Integration and Continuous Deployment">
+    <meta itemprop="headline" content="Continuous Integration and Continuous Deployment">
     
     <meta itemprop="datePublished" content="2021-09-12T15:11:52+00:00">
-    <meta itemprop="dateModified" content="2021-09-12T16:30:16+00:00">
+    <meta itemprop="dateModified" content="2021-09-12T18:19:37+00:00">
 
     <div class="page__inner-wrap">
 
@@ -191,7 +191,7 @@
 
         
 
-        <h1 id="continuious-integration-and-continuous-deployment"><a aria-hidden="true" class="anchor-heading" href="#continuious-integration-and-continuous-deployment"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Continuious Integration and Continuous Deployment</h1>
+        <h1 id="continuous-integration-and-continuous-deployment"><a aria-hidden="true" class="anchor-heading" href="#continuous-integration-and-continuous-deployment"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Continuous Integration and Continuous Deployment</h1>
 <h2 id="using-github-actions"><a aria-hidden="true" class="anchor-heading" href="#using-github-actions"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Using Github actions</h2>
 <h3 id="continuous-integrations-ci"><a aria-hidden="true" class="anchor-heading" href="#continuous-integrations-ci"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Continuous Integrations (CI)</h3>
 <ul>
@@ -213,7 +213,7 @@
 <li>build: We specify whether we are building or deploying (write deploy instead of build to let it know that its a deploy script)</li>
 <li>runs-on: Remote desktop offered by <strong>github.</strong></li>
 <li>steps: Self-explanatory</li>
-<li>uses: preferable keep it actions/checkout<a href="https://sameep1234.github.io/notes/notes/user.v2.html">@v2</a>. It implies that we are just building and not deploying. For deploying we will need to "ssh" into the server and hence we will need to change this.</li>
+<li>uses: preferable keep it actions/checkout<a title="Private" style="color: brown" href="https://wiki.dendron.so/notes/hfyvYGJZQiUwQaaxQO27q.html" target="_blank">@v2 (Private)</a>. It implies that we are just building and not deploying. For deploying we will need to "ssh" into the server and hence we will need to change this.</li>
 <li>name: name of the script</li>
 <li>uses: Since, we selected python, keep it as it is.</li>
 <li>with: Specify the version, for us it would be a python version.</li>
@@ -264,7 +264,7 @@ pip <span class="token function">install</span> pytest
 <li>Replace the <strong>name</strong> with anything relavant.</li>
 <li>Then type the following without any tabs or indentation. <strong>Note that the following should be exactly below name and without a hypen (-)</strong>
 <ul>
-<li>uses: appleboy/ssh-action<a href="https://sameep1234.github.io/notes/notes/user.master.html">@master</a></li>
+<li>uses: appleboy/ssh-action<a title="Private" style="color: brown" href="https://wiki.dendron.so/notes/hfyvYGJZQiUwQaaxQO27q.html" target="_blank">@master (Private)</a></li>
 <li>This allows github to "ssh" into our server.</li>
 </ul>
 </li>
@@ -283,7 +283,7 @@ pip <span class="token function">install</span> pytest
 <li>Provide your newly created <strong>private key</strong> and name it anything relevant.</li>
 <li>Now "ssh" into the server and under .ssh/authorized_keys, place the newly created <strong>public key</strong> in it.</li>
 <li>Now go back on github site and add the with section shown in the below image. Make sure it is exactly the same except changing the secrets name accoring to what you have added in github secrets.</li>
-<li><img src="/notes/CD.png"></li>
+<li><img src="/notes/assets/images/2021-09-12-18-19-36.png"></li>
 <li><strong>Make sure that you change the secrets with your respective server.</strong></li>
 <li>With the same indentation as that of host, key etc. write script for deployment.</li>
 <li>script: |
