@@ -2,7 +2,7 @@
 id: 3Ez0kXjxHUD43Yc6H2vMR
 title: Lecture 2
 desc: ''
-updated: 1630149630340
+updated: 1631841095380
 created: 1630125793681
 ---
 
@@ -72,6 +72,7 @@ Here Nav = avogadro's number, $\rho$ = mass density and A = atomic mass
 ![](/assets/images/2021-08-28-16-12-56.png)
 
 * Fnet = Fr + Fa. At equilibrium Fnet = 0
+* Usually the distance between the two atoms at equilibrium position is 0.3nm.
 
 ## Potential Energy
 
@@ -79,30 +80,54 @@ Here Nav = avogadro's number, $\rho$ = mass density and A = atomic mass
 
 * Energy is integration of foice wrt the radius.
 * Enet = Ea + Er.
+* **Relation between force and energy is that energy is integration of force.**
 
 ![](/assets/images/2021-08-28-16-17-07.png)
 
 * Attraction energy = -A/r and Repulsive energy = B/power(r,n)
-* E0 = Bonding energy at minimum distance. This means that it is the energy required to seperate two atoms.
+* E0 = Bonding energy at minimum distance. This means that it is the energy required to seperate two atoms to an infinite seperation.
 * It the curve above is deep, this implies that the material is rigid and inflexible and vice versa.
 * If the double derivative of the energy (equivalent to single derivative of force equation) equation at r = r0 is less than 0 then it is stable and vice versa.
 * To find the equalibrium position, make the single derivative of the energy equation (equivalent to the force equation) equal to 0.
+* The mechanical stiffness (elasticity) of a material is dependent on the shapr of its F vs r diagram.
+* Steep curve means relatively stiff and vice versa.
 
 ## Ionic Bonding
+* Generally takes place between metals and non-metals. There is a complete transfer of electron.
 * **Difference between electronegativity is of prime importance. Ionic bonding only occurs between atoms with large differences in electronegativity.**
 * Cation = Positive Ion, Anion = Negative Ion
 * Primary Bonding means that electrons are completely transferred. Atoms do so to acheive stable configuration. Such type of bonding is very strong (columbic force in case of ionic bonding). (Eg. Ionic, Covalent and Metallic)
-* Ionic bonds are non-directional whereas covalent bonds are directional in nature.
+* Ionic bonds are non-directional whereas covalent bonds are directional in nature. **Non-directional means that the magnitude of bond is equal in all directions around an ion.**
 * Secondary Bonding means that electrons are shared. This type of bonding is weaker compared to primary bonding. (Eg. inert gases (H2, Cl2) or permanet dipoles (H20, HCl))
 * Enet (due to all attractions and repulsions) is known as **madelung energy**.
+* The predominant bonding in **ceramic materials** is **ionic.**
 
 ## Covalent Bonding
 * **Covalent bonding occurs between atoms with small differences in electronegativity.**
+* The stable electroninc configuration is achieved by **sharing of electrons**.
+* Generally occur between non-metals and is directional bond.
+* Number of colvalent bonds is determined by the number of valence electrons.
 * Percent of ionic characters:
 
 ![](/assets/images/2021-08-28-16-46-57.png)
 
 * Here Xa and Xb are the electronegativities of elements a and b. Greater the difference between electronegativities, greater is the ionic bonding and vice versa.
+
+## Metallic Bonding
+* Found in metals and their alloys.
+* According to the model presented, the valence electrons are not bound to any particular atom in the solid and are more or less free to drift throughout the entire metal.
+* Thus, these are called as electron clound as the electrons are all over the metal.
+* The remaining non-valence electrons and nucleus form the ion core and **posses a net positive charge** equal to total valence electrons charge per atom.
+* The free electrons sheild the positively charged ion cores from mutually repulsive electrostatic forces along with acting as a **glue**.
+* Because of the availability of free electrons, metals are a good conductor of heat and electricity.
+
+## Van der waals bodning
+* All the above mentioned bonds are **primary** bonds and this type of bond is **secondary** in nature.
+* It is weaker as compared to primary bonds.
+* It is virtually ubiquitous but presence of primary bonds diminishes their effect.
+* Usually found between **inert gases**.
+* Dipoles are formed which exists whenever there is some separation of positive and negative portions of an atom or molecule.
+* Hydrogen bonding is a special type of secondary bonding that exists metweeb some molecules that have hydrogen as one of its constituents.
 
 ## Summary of Bonding
 
