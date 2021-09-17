@@ -1,8 +1,8 @@
 ---
 id: dEqWsqoTN4ysQg1dE14ey
-title: Continuious Integration and Continuous Deployment
+title: Continuous Integration and Continuous Deployment
 desc: ''
-updated: 1631444416922
+updated: 1631450977498
 created: 1631439712234
 ---
 
@@ -78,7 +78,7 @@ created: 1631439712234
     * Provide your newly created **private key** and name it anything relevant.
     * Now "ssh" into the server and under .ssh/authorized_keys, place the newly created **public key** in it.
     * Now go back on github site and add the with section shown in the below image. Make sure it is exactly the same except changing the secrets name accoring to what you have added in github secrets.
-    * ![](CD.png)
+    * ![](/assets/images/2021-09-12-18-19-36.png)
     * **Make sure that you change the secrets with your respective server.**
     * With the same indentation as that of host, key etc. write script for deployment.
     * script: |
