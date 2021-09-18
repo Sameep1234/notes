@@ -2,7 +2,7 @@
 id: 0MwJpw5Ai8WlLrE5bLyaQ
 title: Lecture 4
 desc: ''
-updated: 1631075367016
+updated: 1631896303807
 created: 1630240499817
 ---
 
@@ -26,6 +26,10 @@ created: 1630240499817
 * To represent family of planes, use curly brackets.
 * To represent family of directions, use angular brackets.
 * There should not be comma between numbers in either of the cases.
+* Negative coordinates are also possible and are represented by a bar over the number.
+* For hcp, the coordinate system is different and contains one more extra coordinate in the xy plane.
+* We calculate it using the below formula.
+    * ![](/assets/images/2021-09-17-21-44-05.png)
 
 
 > Why are planes in a lattice important?
@@ -47,7 +51,10 @@ created: 1630240499817
 ![](/assets/images/2021-08-29-18-27-28.png)
 
 ## How to draw planes?
-* Quite confusing, read book
+* First get the miller indices.
+* **Be careful about what is given, if intercepts are given the  calculate miller indices otherwise directly use miller indices provided.**
+* Simply select an origin and the plane must pass through the miller indices.
+* Make sure to treat miller indices as simple coordinates.
 
 ## Angle between planes
 ![](/assets/images/2021-08-29-18-43-28.png)
@@ -65,3 +72,9 @@ created: 1630240499817
         * Planar Desity = $\frac{2}{\sqrt{2}a^2}$
     * Case 3 (111)
         * Linear Density = $\frac{1}{\sqrt{3}a}$
+
+## Points to Ponder
+* For the area for calculation of planar density, follow these steps
+    * Imagine the plane and the crystal lattice.
+    * Use [this site](http://calistry.org/calculate/latticePlanesMillerIndices) for better visualization.
+    * The corner atoms will contribute 1/4 to the area, the face atoms will contribute 1/2 to the area and the body centered atoms will contribute 1 to the area.
