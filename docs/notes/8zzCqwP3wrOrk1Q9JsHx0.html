@@ -181,7 +181,7 @@
     <meta itemprop="headline" content="Lecture 5">
     
     <meta itemprop="datePublished" content="2021-09-02T13:04:31+00:00">
-    <meta itemprop="dateModified" content="2021-09-02T13:56:01+00:00">
+    <meta itemprop="dateModified" content="2021-09-19T14:36:20+00:00">
 
     <div class="page__inner-wrap">
 
@@ -195,64 +195,60 @@
 <h1 id="control-systems"><a aria-hidden="true" class="anchor-heading" href="#control-systems"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Control Systems</h1>
 <h2 id="introduction"><a aria-hidden="true" class="anchor-heading" href="#introduction"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Introduction</h2>
 <ul>
-<li>
-<p>System which controls a physical quantity.</p>
-</li>
-<li>
-<p>Components of control system</p>
+<li>System which controls a physical quantity.</li>
+<li>Components of control system
 <ul>
 <li>Control element (Eg. Timer)</li>
 <li>Plant (Eg. Heating coil)</li>
 </ul>
 </li>
-<li>
-<p>Type of control system</p>
+<li>Type of control system
 <ul>
-<li>
-<p>Open Loop: Control action is independent of the control variable.</p>
+<li>Open Loop: Control action is independent of the control variable.
 <ul>
 <li>We must assume the timer setting to be correct.</li>
 <li>Block Diagram
 <img src="/notes/assets/images/2021-09-02-13-09-13.png"></li>
 </ul>
 </li>
-<li>
-<p>Closed Loop: User will have manual control.</p>
+<li>Closed Loop: Control action is dependent of the control variable.
 <ul>
+<li>User will have manual control.</li>
 <li>Feedback recieved with the help of human senses. Can also be used as feedback in automatic control systems. For this, the feedback has to be electrical.</li>
 <li>This means that the control action depends on the output variable.</li>
 </ul>
 </li>
-<li>
-<p>There are various other factors which can't be known and hence are assumed to be constant. For example, ageing and changes in load weight. </p>
+<li>There are various other factors which can't be known and hence are assumed to be constant. For example, ageing and changes in load weight. </li>
+</ul>
+</li>
+</ul>
 <h2 id="steady-state-calculation"><a aria-hidden="true" class="anchor-heading" href="#steady-state-calculation"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Steady state calculation</h2>
 <p><img src="/notes/assets/images/2021-09-02-13-20-17.png"></p>
-</li>
-<li>
-<p>A is the gain of the amplifier. It is dimensionless. Also called as the loop gain.</p>
-</li>
-<li>
-<p>Km is the motor constant. Upto Km, we will get the <strong>speed</strong> of the motor.</p>
-</li>
-<li>
-<p>Ks is the sensor constant. Speed sensors input is speed and output is voltage. Dimension of Ks is opposite to that of Km. Ks = <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>V</mi><mi>f</mi></mrow><mi>N</mi></mfrac></mrow><annotation encoding="application/x-tex">\frac{Vf}{N}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.277216em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9322159999999999em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.10903em;">N</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.446108em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.22222em;">V</span><span class="mord mathnormal mtight" style="margin-right:0.10764em;">f</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span>.</p>
-</li>
-<li>
-<p>N = rpm</p>
+<ul>
+<li>A is the gain of the amplifier. It is dimensionless. Also called as the loop gain.</li>
+<li>Km is the motor constant. Upto Km, we will get the <strong>speed</strong> of the motor.</li>
+<li>Ks is the sensor constant. Speed sensors input is speed and output is voltage. Dimension of Ks is opposite tso that of Km. Ks = <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>V</mi><mi>f</mi></mrow><mi>N</mi></mfrac></mrow><annotation encoding="application/x-tex">\frac{Vf}{N}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.277216em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9322159999999999em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.10903em;">N</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.446108em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.22222em;">V</span><span class="mord mathnormal mtight" style="margin-right:0.10764em;">f</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span>.</li>
+<li>N = speed in rpm.</li>
+<li>A<em>Km</em>Ks is called the loop gain of the system. So larger its value, the smaller is the difference and hence we get almost equal value to Vs.</li>
+<li>So it is better to obtain loop gain of 100 and it is achievable.</li>
+</ul>
 <h2 id="specification-of-control-systems"><a aria-hidden="true" class="anchor-heading" href="#specification-of-control-systems"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Specification of control systems</h2>
+<ul>
+<li>Accuracy of output in steady state.</li>
+<li>Speed of response.</li>
+<li>Feedback (Improves both).
+<ul>
+<li>Because of this, the effective time constant is reduced and hence speed and accuracy is improved.</li>
+</ul>
 </li>
-<li>
-<p>Accuracy of output in steady state.</p>
-</li>
-<li>
-<p>Speed of response.</p>
-</li>
-<li>
-<p>Feedback (Improves both).</p>
+</ul>
 <h2 id="steps-in-analysis-of-control-system"><a aria-hidden="true" class="anchor-heading" href="#steps-in-analysis-of-control-system"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Steps in analysis of control system</h2>
 <p><img src="/notes/assets/images/2021-09-02-13-49-06.png"></p>
-<h1 id="some-part-left"><a aria-hidden="true" class="anchor-heading" href="#some-part-left"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a><strong>Some Part Left</strong></h1>
-</li>
+<h2 id="example-of-oven"><a aria-hidden="true" class="anchor-heading" href="#example-of-oven"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Example of Oven</h2>
+<ul>
+<li>Block Diagram
+<ul>
+<li></li>
 </ul>
 </li>
 </ul><span id="navId" data="8zzCqwP3wrOrk1Q9JsHx0"></span>
