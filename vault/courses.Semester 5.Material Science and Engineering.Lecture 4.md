@@ -2,15 +2,21 @@
 id: 0MwJpw5Ai8WlLrE5bLyaQ
 title: Lecture 4
 desc: ''
-updated: 1631075367016
+updated: 1631844415715
 created: 1630240499817
 ---
 
 # Directions and Planes
 
+## Points to ponder (**Lecture 3**)
+* Each corner atom in a unit cell contribute 1/8 in cubes and 1/6 in hex.
+* Body center atom contribute 1 and face atoms contribute 1/2.
+* For hcp number of atoms in the unit cell is 6. (3 BC (contribute 1), 2 FC (contribute 1/2), 12 Corner (contribute 1/6))
+
 ## Density Computation
 * $\rho$ = $\frac{nA}{VcNa}$
 * Here $\rho$ is the density, n is the number of atoms in a unit cell, A is the atomic mass of the element, Vc is the volume of unit cell and Na is the avogadro's number.
+* **Note that this density is theoretical and not measured. There is some discrepancy between the two.**
 
 ## Crystal Directions
 > These include linear density and planar density
@@ -26,6 +32,7 @@ created: 1630240499817
 * To represent family of planes, use curly brackets.
 * To represent family of directions, use angular brackets.
 * There should not be comma between numbers in either of the cases.
+* Lattice parameters include the three edge lengths (a, b, c) and the three interaxial angles ($\alpha$, $\beta$, $\gamma$).
 
 
 > Why are planes in a lattice important?
