@@ -28,7 +28,7 @@ scratch:
     addBehavior: asOwnDomain
 site:
     assetsPrefix: notes
-    siteUrl: https://sameep1234.github.io/notes
+    siteUrl: https://sameep1234.github.io
     copyAssets: true
     siteHierarchies:
         - root
