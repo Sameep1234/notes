@@ -27,12 +27,13 @@ scratch:
     dateFormat: y.MM.dd.HHmmss
     addBehavior: asOwnDomain
 site:
-    siteUrl: 'https://sameep1234.github.io/notes'
+    siteUrl: 'https://sameep1234.github.io/notes/notes'
     copyAssets: true
     siteHierarchies:
         - root
     siteRootDir: docs
     usePrettyRefs: true
+    title: ''
     description: Personal knowledge space
     duplicateNoteBehavior:
         action: useVault
