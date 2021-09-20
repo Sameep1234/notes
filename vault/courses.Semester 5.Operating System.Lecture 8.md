@@ -22,6 +22,13 @@ created: 1631672853178
 * ![](/assets/images/2021-09-20-08-14-00.png)
 * It is one of the most fair strategy in the **real world.**
 * w = waiting time.
+* For better efficiency TAT should be as low as possible.
+* Normalized TAT is relative delay and it represents how much a process needs to wait.
+* We can't have normalized TAT less than 1 because service time can never be more than TAT.
+* Issues
+    * A short process may have to wait a very long time before it can execute.
+    * ![](/assets/images/2021-09-20-08-33-39.png)
+    * 
 
 ## Extra Points
 * DMA - Data memory access is a hardware circuit through which all the data is transfered after an I/O is available.
