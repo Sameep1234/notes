@@ -33,7 +33,6 @@ site:
         - root
     siteRootDir: docs
     usePrettyRefs: true
-    title: Curated Notes
     description: Personal knowledge space
     duplicateNoteBehavior:
         action: useVault
