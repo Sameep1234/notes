@@ -1,10 +1,11 @@
 ---
-id: Oj3uiXKth6ZgUASqln4Vi
+id: 6IOrGgBzjNQfDz1zCdaUA
 title: Lecture 3
 desc: ''
 updated: 1630430971753
 created: 1630211824085
 ---
+
 
 # System Calls and Architecture of UNIX
 

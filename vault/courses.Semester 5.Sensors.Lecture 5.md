@@ -1,10 +1,11 @@
 ---
-id: 8zzCqwP3wrOrk1Q9JsHx0
+id: KzrsbwIvpC6O1heU07aE8
 title: Lecture 5
 desc: ''
 updated: 1632043925100
 created: 1630568071794
 ---
+
 
 # Control Systems
 

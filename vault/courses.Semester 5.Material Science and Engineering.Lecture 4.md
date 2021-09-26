@@ -1,10 +1,11 @@
 ---
-id: 0MwJpw5Ai8WlLrE5bLyaQ
+id: I1PO0ihLIMeh7Cn6TsjTi
 title: Lecture 4
 desc: ''
 updated: 1631896303807
 created: 1630240499817
 ---
+
 
 # Directions and Planes
 

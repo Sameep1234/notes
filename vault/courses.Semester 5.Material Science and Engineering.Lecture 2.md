@@ -1,10 +1,11 @@
 ---
-id: 3Ez0kXjxHUD43Yc6H2vMR
+id: A4kgsbl05UtouzLAJUWsX
 title: Lecture 2
 desc: ''
 updated: 1631841095380
 created: 1630125793681
 ---
+
 
 # Atomic Structure, Bonding and Energy
 
