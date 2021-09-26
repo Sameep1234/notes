@@ -256,7 +256,18 @@
 <blockquote>
 <p>Program to generate a square wave of time perios 150 microseconds on PIN 1 of PORT A. Assume cystal frequency = 1MHz. use timer in CTC mode.</p>
 </blockquote>
-<h3 id="explanation-left"><a aria-hidden="true" class="anchor-heading" href="#explanation-left"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a><strong>Explanation left.</strong></h3>
+<ul>
+<li>Note that the delay of 150 microseconds is for the whole wave.</li>
+<li>Thus, if we need a delay for only one wave, we need to use a delay of 75 microseconds.</li>
+<li>Now we want to write the value of OCR0.</li>
+<li>Make sure to change the value of TCCR0 for CTC mode.</li>
+<li>Now, the time duration will depend not only on TCNT0 but also on OCR0.</li>
+<li>In normal mode, we are concerned with FF - TCNT0 value but here we are concerned with OCR0 - TCNT0 which must be 75.</li>
+<li>Note that one must always be careful about which flag are we going to use.</li>
+<li>In <strong>normal mode</strong>, we are waiting for <strong>overflow flag</strong> whereas in <strong>CTC mode</strong> we are waiting for the <strong>compare flag</strong>.</li>
+<li>For simplicity, you can put TCNT0 value to be 0 and OCR0 value to be 75. <strong>The concept remains the same i.e OCR-TCNT should be 75.</strong></li>
+<li></li>
+</ul>
 <pre class="language-c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&#x3C;avr/io.h></span></span>
 
 <span class="token keyword">void</span> <span class="token function">T0Delay</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
