@@ -34,9 +34,9 @@ created: 1630817213184
     * ![](/assets/images/2021-09-05-11-02-40.png)
 * OCR: Output Compare Register
     * It is a read/write 8-bit register.
-    * Continuously compared with counter value.
-    * 
-* OCF: Output Compare Flag
+    * Continuously compared with counter value i.e TCNT value.
+* OCF: Output Compare flag
+    * If the value compared by the OCR matches the value in TCNT, this flag will be turned on to represent the overflow.
 
 ## Circuit (Timer 0)
 ![](/assets/images/2021-09-05-10-59-49.png)

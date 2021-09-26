@@ -67,7 +67,10 @@ int main() {
 
 > Program to generate a square wave of time perios 150 microseconds on PIN 1 of PORT A. Assume cystal frequency = 1MHz. use timer in CTC mode.
 
-### **Explanation left.**
+* Note that the delay of 150 microseconds is for the whole wave.
+* Thus, if we need a delay for only one wave, we need to use a delay of 75 microseconds.
+* Now we want to write the value of OCR0.
+* 
 ```c
 #include<avr/io.h>
 
