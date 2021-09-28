@@ -45,7 +45,17 @@ created: 1631672853178
     * ![](/assets/images/2021-09-20-08-33-39.png)
 
 ## Round Robin (RR)
-* 
+* ![](/assets/images/2021-09-28-12-18-13.png)
+* It is a type of **preemptive** FCFS.
+* Simple explanation
+    * There will be a queue.
+    * The process will run for some time.
+    * If the process is not completed, that process is blocked and put into ready queue.
+    * The next process runs.
+* Time given to each and every process is called time slice or **time quantum.**. It is represented by "q".
+* Example
+    * For the below example, the time quantum is 4. Thus, if a process is not finished after 4 units of time, it will be placed at last in the ready queue.
+    * ![](notes/assets/images/2021-09-28-12-26-01.png)
 
 ## Extra Points
 * DMA - Data memory access (DMA) is a hardware circuit through which all the data is transfered after an I/O is available.
