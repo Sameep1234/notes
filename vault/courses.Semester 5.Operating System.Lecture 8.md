@@ -1,5 +1,5 @@
 ---
-id: pgUnaIZNOzcnS8OQ602Bx
+id: NURMuGKZefETPwS4DLdXi
 title: Lecture 8
 desc: ''
 updated: 1632105946469
@@ -33,7 +33,7 @@ created: 1631672853178
 * If a process spends most of its time in processor, then it is called CPU bound and vice versa.
 * Example of I/O bound process includes chatting. It uses I/O for most of the time because it is waiting for the user to enter the values.
 
-## FCFS
+## First Come First Serve (FCFS)
 * ![](/assets/images/2021-09-20-08-14-00.png)
 * It is one of the most fair strategy in the **real world.**
 * w = waiting time.
@@ -44,6 +44,8 @@ created: 1631672853178
     * A short process may have to wait a very long time before it can execute.
     * ![](/assets/images/2021-09-20-08-33-39.png)
 
+## Round Robin (RR)
+* 
 
 ## Extra Points
 * DMA - Data memory access (DMA) is a hardware circuit through which all the data is transfered after an I/O is available.
