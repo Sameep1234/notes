@@ -27,8 +27,8 @@ scratch:
     dateFormat: y.MM.dd.HHmmss
     addBehavior: asOwnDomain
 site:
+    siteUrl: 'https://sameep1234.github.io/notes'
     assetsPrefix: notes
-    siteUrl: 'https://sameep1234.github.io'
     copyAssets: true
     siteHierarchies:
         - root
