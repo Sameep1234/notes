@@ -58,6 +58,29 @@ created: 1631672853178
     * ![](/assets/images/2021-09-28-12-26-01.png)
     * Now we have the same example but with q = 1.
     * ![](/assets/images/2021-09-28-12-40-19.png)
+    * Note here that the Mean NTAT for q = 4 is better than that when q = 1.
+    * Depending on the implementation of OS, these can be either pre defined or may be changed during the execution.
+* Issues
+    * ![](/assets/images/2021-09-28-12-44-01.png)
+* Thus, the ideal value of time quantum is slightly greater than the time required for a typical process interaction.
+* Relative Treatment
+    * ![](/assets/images/2021-09-28-13-24-26.png)
+
+## Virtual Round Robin
+* ![](/assets/images/2021-09-28-13-26-40.png)
+* In this strategy, we are assigning priority to I/O blocked processes by maintaining different queues.
+
+## Shortest Process Next (SPN)
+* ![](/assets/images/2021-09-28-15-00-03.png)
+* Example
+    * In the below example, the time shown is wrong and do your own calculation.
+    * ![](/assets/images/2021-09-28-15-03-17.png)
+    * ![](/assets/images/2021-09-28-15-03-30.png)
+* Issues
+    * ![](/assets/images/2021-09-28-15-03-48.png)
+    * Having knowledge of service time is one of the biggest overhead in **all the algorithms seen till now.**
+    * For interactive process, it is the most difficult job because the value can never be known.
+    * This is because, the process will have to wait for either I/O or for any user input.
 
 ## Extra Points
 * DMA - Data memory access (DMA) is a hardware circuit through which all the data is transfered after an I/O is available.

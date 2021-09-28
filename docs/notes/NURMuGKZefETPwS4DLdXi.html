@@ -270,7 +270,46 @@
 <li>Example
 <ul>
 <li>For the below example, the time quantum is 4. Thus, if a process is not finished after 4 units of time, it will be placed at last in the ready queue.</li>
-<li><img src="/notes/notes/assets/images/2021-09-28-12-26-01.png"></li>
+<li><img src="/notes/assets/images/2021-09-28-12-26-01.png"></li>
+<li>Now we have the same example but with q = 1.</li>
+<li><img src="/notes/assets/images/2021-09-28-12-40-19.png"></li>
+<li>Note here that the Mean NTAT for q = 4 is better than that when q = 1.</li>
+<li>Depending on the implementation of OS, these can be either pre defined or may be changed during the execution.</li>
+</ul>
+</li>
+<li>Issues
+<ul>
+<li><img src="/notes/assets/images/2021-09-28-12-44-01.png"></li>
+</ul>
+</li>
+<li>Thus, the ideal value of time quantum is slightly greater than the time required for a typical process interaction.</li>
+<li>Relative Treatment
+<ul>
+<li><img src="/notes/assets/images/2021-09-28-13-24-26.png"></li>
+</ul>
+</li>
+</ul>
+<h2 id="virtual-round-robin"><a aria-hidden="true" class="anchor-heading" href="#virtual-round-robin"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Virtual Round Robin</h2>
+<ul>
+<li><img src="/notes/assets/images/2021-09-28-13-26-40.png"></li>
+<li>In this strategy, we are assigning priority to I/O blocked processes by maintaining different queues.</li>
+</ul>
+<h2 id="shortest-process-next-spn"><a aria-hidden="true" class="anchor-heading" href="#shortest-process-next-spn"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Shortest Process Next (SPN)</h2>
+<ul>
+<li><img src="/notes/assets/images/2021-09-28-15-00-03.png"></li>
+<li>Example
+<ul>
+<li>In the below example, the time shown is wrong and do your own calculation.</li>
+<li><img src="/notes/assets/images/2021-09-28-15-03-17.png"></li>
+<li><img src="/notes/assets/images/2021-09-28-15-03-30.png"></li>
+</ul>
+</li>
+<li>Issues
+<ul>
+<li><img src="/notes/assets/images/2021-09-28-15-03-48.png"></li>
+<li>Having knowledge of service time is one of the biggest overhead in <strong>all the algorithms seen till now.</strong></li>
+<li>For interactive process, it is the most difficult job because the value can never be known.</li>
+<li>This is because, the process will have to wait for either I/O or for any user input.</li>
 </ul>
 </li>
 </ul>
