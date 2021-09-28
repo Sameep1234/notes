@@ -56,7 +56,8 @@ created: 1631672853178
 * Example
     * For the below example, the time quantum is 4. Thus, if a process is not finished after 4 units of time, it will be placed at last in the ready queue.
     * ![](/assets/images/2021-09-28-12-26-01.png)
-    * 
+    * Now we have the same example but with q = 1.
+    * ![](/assets/images/2021-09-28-12-40-19.png)
 
 ## Extra Points
 * DMA - Data memory access (DMA) is a hardware circuit through which all the data is transfered after an I/O is available.
