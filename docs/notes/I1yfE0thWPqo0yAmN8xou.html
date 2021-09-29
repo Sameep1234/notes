@@ -211,27 +211,46 @@
 </li>
 <li>Now for example, lets say we want to make INT0 interrupt on falling edge triggered. For this, we choose the value of MCUCR = 0x02.</li>
 <li>For INT2, rising edge trigger, write MCUCSR = 0x40. We made D6 to be 1 because the MCUCSR has PIN6 dedicated to interrupt 2.</li>
-<li><strong>Make sure that if INT2 is asked, you change D6 of MCUCSR and if INT1 or INT0 is asked, you chance (D2, D3) and </strong></li>
+<li><strong>Make sure that if INT2 is asked, you change D6 of MCUCSR and if INT1 or INT0 is asked, you chance (D2, D3) and (D0, D1) respectively.</strong></li>
 </ul>
-<p><img src="/notes/assets/images/2021-09-27-11-41-28.png"></p>
+<h2 id="gifr"><a aria-hidden="true" class="anchor-heading" href="#gifr"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>GIFR</h2>
+<ul>
+<li>General Interrupt Flag Register.</li>
+<li><img src="/notes/assets/images/2021-09-29-11-01-33.png"></li>
+<li>Programmer need not worry of clearing the flag as it will be done automatically.</li>
+</ul>
+<h2 id="minimum-timing-of-interrupt-signal"><a aria-hidden="true" class="anchor-heading" href="#minimum-timing-of-interrupt-signal"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Minimum timing of Interrupt Signal</h2>
+<ul>
+<li>Minimum timing of interrupt signal means what should be the minimum time for which the interrupt should last so that it is considered as an interrupt and not as a noise.</li>
+<li><img src="/notes/assets/images/2021-09-29-11-03-22.png"></li>
+</ul>
+<h2 id="examples"><a aria-hidden="true" class="anchor-heading" href="#examples"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Examples</h2>
+<ul>
+<li><img src="/notes/assets/images/2021-09-29-11-07-25.png"></li>
+</ul>
 <pre class="language-c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&#x3C;avr/io.h></span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&#x3C;avr/interrupt.h></span></span>
 
 <span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
 <span class="token punctuation">{</span>
-    DDRC <span class="token operator">=</span> <span class="token number">0x08</span><span class="token punctuation">;</span>
-    PORTD <span class="token operator">=</span> <span class="token number">1</span><span class="token operator">&#x3C;&#x3C;</span><span class="token number">2</span><span class="token punctuation">;</span>
+    DDRC <span class="token operator">=</span> <span class="token number">0x08</span><span class="token punctuation">;</span> <span class="token comment">// Define PortC.3 as output</span>
+    PORTD <span class="token operator">=</span> <span class="token number">0x02</span><span class="token punctuation">;</span> <span class="token comment">// Interrupt comes here. We can also write PORTD = 1&#x3C;&#x3C;2;</span>
+    GICR <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token operator">&#x3C;&#x3C;</span>INT0<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Enable external interrupt 0</span>
+    <span class="token function">sei</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Enables global interrupts</span>
 
-    <span class="token function">sei</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Enables global interrupt</span>
-
-    <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Wait here</span>
+    MCUCR <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token comment">// Level triggered mode</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Run forever</span>
 <span class="token punctuation">}</span>
 
-<span class="token function">ISR</span> <span class="token punctuation">(</span>TIMER0_vect<span class="token punctuation">)</span>
+<span class="token function">ISR</span> <span class="token punctuation">(</span>INT0_vect<span class="token punctuation">)</span>
 <span class="token punctuation">{</span>
-    PORTC <span class="token operator">^=</span> <span class="token number">0x08</span><span class="token punctuation">;</span>
+    PORTC <span class="token operator">^=</span> <span class="token number">0x08</span><span class="token punctuation">;</span> <span class="token comment">// Toggling whenever INT0 goes low</span>
 <span class="token punctuation">}</span>
-</code></pre><span id="navId" data="I1yfE0thWPqo0yAmN8xou"></span>
+</code></pre>
+<h2 id="interrupt-priority"><a aria-hidden="true" class="anchor-heading" href="#interrupt-priority"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Interrupt Priority</h2>
+<ul>
+<li><img src="/notes/assets/images/2021-09-29-11-28-58.png"></li>
+</ul><span id="navId" data="I1yfE0thWPqo0yAmN8xou"></span>
 
                 
       </section>
