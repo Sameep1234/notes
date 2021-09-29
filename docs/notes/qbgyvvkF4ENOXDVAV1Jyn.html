@@ -181,7 +181,7 @@
     <meta itemprop="headline" content="Lecture 5">
     
     <meta itemprop="datePublished" content="2021-09-20T11:04:08+00:00">
-    <meta itemprop="dateModified" content="2021-09-20T11:16:31+00:00">
+    <meta itemprop="dateModified" content="2021-09-29T07:47:08+00:00">
 
     <div class="page__inner-wrap">
 
@@ -216,21 +216,26 @@
 <h2 id="interrupt"><a aria-hidden="true" class="anchor-heading" href="#interrupt"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Interrupt</h2>
 <ul>
 <li>While the microcontroller is waiting for the overflow flag to change, we are not using it. That's not desirable.</li>
+<li>The above mentioned process is called polling method because we are continuously checking the value of flag.</li>
 <li>Polling vs Interrupt
 <ul>
 <li><img src="/notes/assets/images/2021-09-20-11-23-47.png"></li>
 </ul>
 </li>
 <li><img src="/notes/assets/images/2021-09-20-11-24-22.png"></li>
+<li><strong>Always remember that the timer operations are performed under Interrupt subroutine whereas the main task other than timer is done in main function.</strong></li>
 <li>Example
 <ul>
 <li><img src="/notes/assets/images/2021-09-20-11-25-23.png"></li>
 <li>Note that we are simultaneously doing two things.</li>
-<li><strong>UNDERSTAND PROGRAM FROM RECORDING</strong></li>
+<li>Here we are performing bitwise OR operation on DDRB to make PIN 5 as output but it is not necessary. We can simply assign it too like we used to do.</li>
+<li>Then we assign value of TCNT0 that will run 32 times. Roughly it means it is FF - 32.</li>
+<li>Then, in the main function, we perform the task of transferring data from PORTD to PINC.</li>
+<li>Now inside ISR, we reassign value of TCNT0 and toggle the PORTB.</li>
 </ul>
 </li>
-<li><strong>Upon reset, all interrupts are disabled and to enable interrupt set MSB of status register to activate all interrupts.</strong></li>
-<li>Set bits of individual interrupts in the control registers.</li>
+<li><strong>Upon reset, all interrupts are disabled and to enable interrupt set MSB of status register to activate all interrupts. This means enabling global interrupts.</strong></li>
+<li><strong>Set bits of individual interrupts in the control registers. This means enabling local interrupts.</strong></li>
 <li>Status Registers
 <ul>
 <li><img src="/notes/assets/images/2021-09-20-11-33-07.png"></li>
@@ -238,13 +243,28 @@
 </ul>
 </li>
 <li><img src="/notes/assets/images/2021-09-20-11-34-26.png"></li>
+<li>sei() and cli() enables and disables <strong>global interrupt</strong> respectively.</li>
 <li>TIMSK - Timer interrupt mask register
 <ul>
 <li><img src="/notes/assets/images/2021-09-20-11-36-05.png"></li>
+<li>This means that if you set the appropriate bit (for us, since we are using timer0, we set TOIE0 = 1).</li>
+<li>Thus, we write TIMSK = (1&#x3C;&#x3C;TCIE0) for enabling <strong>local interrupt.</strong></li>
 </ul>
 </li>
+<li>Interrupt Sub-routine (ISR)</li>
+<li><img src="/notes/assets/images/2021-09-29-07-48-38.png"></li>
+<li>TIMER0_OVF_vect means that we are sending overflow flag as a parameter to ISR which will enable the overflow flag <strong>on interrupt</strong> and set the program counter's value to the corresponding location.</li>
+<li>Now inside ISR, we perform timer related operations i.e reassigning TCNT0 value and toggling PORTB's value for generating square.</li>
 </ul>
-<h1 id="left"><a aria-hidden="true" class="anchor-heading" href="#left"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a><strong>LEFT</strong></h1><span id="navId" data="qbgyvvkF4ENOXDVAV1Jyn"></span>
+<h2 id="steps-in-executing-an-interrupt"><a aria-hidden="true" class="anchor-heading" href="#steps-in-executing-an-interrupt"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Steps in executing an interrupt</h2>
+<ul>
+<li><img src="/notes/assets/images/2021-09-29-07-53-22.png"></li>
+<li></li>
+</ul>
+<h2 id="extra-points"><a aria-hidden="true" class="anchor-heading" href="#extra-points"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Extra Points</h2>
+<ul>
+<li><img src="/notes/assets/images/2021-09-29-07-52-43.png"></li>
+</ul><span id="navId" data="qbgyvvkF4ENOXDVAV1Jyn"></span>
 
                 
       </section>
