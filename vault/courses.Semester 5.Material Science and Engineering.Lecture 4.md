@@ -1,14 +1,11 @@
 ---
-id: 0MwJpw5Ai8WlLrE5bLyaQ
+id: xHxDUG8iqUqgr7wIZANqW
 title: Lecture 4
 desc: ''
-<<<<<<< HEAD
 updated: 1631896303807
-=======
-updated: 1631844415715
->>>>>>> 7a04b69391f86b2d46560e697c100dfcd66235c4
 created: 1630240499817
 ---
+
 
 # Directions and Planes
 
@@ -36,14 +33,11 @@ created: 1630240499817
 * To represent family of planes, use curly brackets.
 * To represent family of directions, use angular brackets.
 * There should not be comma between numbers in either of the cases.
-<<<<<<< HEAD
 * Negative coordinates are also possible and are represented by a bar over the number.
 * For hcp, the coordinate system is different and contains one more extra coordinate in the xy plane.
 * We calculate it using the below formula.
     * ![](/assets/images/2021-09-17-21-44-05.png)
-=======
 * Lattice parameters include the three edge lengths (a, b, c) and the three interaxial angles ($\alpha$, $\beta$, $\gamma$).
->>>>>>> 7a04b69391f86b2d46560e697c100dfcd66235c4
 
 
 > Why are planes in a lattice important?

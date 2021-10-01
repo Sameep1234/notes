@@ -1,5 +1,5 @@
 ---
-id: 7wBsWBHoR3vbDDtihibEN
+id: HOzNrQ5eIdYwVKfS3eKpN
 title: Lecture 6
 desc: ''
 updated: 1632046535963

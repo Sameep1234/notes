@@ -1,5 +1,5 @@
 ---
-id: BlpXuBQFGZmvzQLAsOVc2
+id: xgA3JX9zJHk5PtKltHPFL
 title: Lecture 4
 desc: ''
 updated: 1631515853885
@@ -67,7 +67,16 @@ int main() {
 
 > Program to generate a square wave of time perios 150 microseconds on PIN 1 of PORT A. Assume cystal frequency = 1MHz. use timer in CTC mode.
 
-### **Explanation left.**
+* Note that the delay of 150 microseconds is for the whole wave.
+* Thus, if we need a delay for only one wave, we need to use a delay of 75 microseconds.
+* Now we want to write the value of OCR0.
+* Make sure to change the value of TCCR0 for CTC mode.
+* Now, the time duration will depend not only on TCNT0 but also on OCR0.
+* In normal mode, we are concerned with FF - TCNT0 value but here we are concerned with OCR0 - TCNT0 which must be 75.
+* Note that one must always be careful about which flag are we going to use.
+* In **normal mode**, we are waiting for **overflow flag** whereas in **CTC mode** we are waiting for the **compare flag**.
+* For simplicity, you can put TCNT0 value to be 0 and OCR0 value to be 75. **The concept remains the same i.e OCR-TCNT should be 75.**
+* 
 ```c
 #include<avr/io.h>
 
@@ -89,3 +98,6 @@ int main() {
     return 0;
 }
 ```
+* Now suppose, we star the value of TCNT0 with 200, then how will the OCR value change?
+* For this case, we find the extra distance i.e find from where is "rolls over".
+* Thus, the value of OCR must be 19 becuase from 200 to 256, we would have covered 56 values and then 19 values remain to provide a proper delay of 75 microseconds.

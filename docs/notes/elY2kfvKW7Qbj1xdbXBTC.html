@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
   
-  <title>Lecture 8 - Dendron</title>
+  <title>Lecture 8 - Sameep</title>
   
 
   <link
@@ -57,8 +57,8 @@
 <meta name="twitter:image" content="https://sameep1234.github.io/logo.gif">
 
 
-  <meta property="og:title" content="Lecture 8 - Dendron" />
-  <meta name="twitter:title" content="Lecture 8 - Dendron" />
+  <meta property="og:title" content="Lecture 8 - Sameep" />
+  <meta name="twitter:title" content="Lecture 8 - Sameep" />
   
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-VZ67P3SVZE"></script>
@@ -130,7 +130,7 @@
           
             <div class="search">
               <div class="search-input-wrap">
-                <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search Dendron" aria-label="Search Dendron" autocomplete="off">
+                <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search Sameep" aria-label="Search Sameep" autocomplete="off">
                 <label for="search-input" class="search-label"><svg viewBox="0 0 24 24" class="search-icon"><use xlink:href="#svg-search"></use></svg></label>
               </div>
               <div id="search-results" class="search-results"></div>
@@ -142,7 +142,7 @@
       
         
           <nav aria-label="Breadcrumb" class="breadcrumb-nav">
-            <ol class="breadcrumb-nav-list"><li class="breadcrumb-nav-list-item"><a href="https://sameep1234.github.io/notes">Curated Notes</a></li><li class="breadcrumb-nav-list-item"><a href="https://sameep1234.github.io/notes/notes/Jq5ki9jf1QLTdc3DYLRW4.html">Courses</a></li><li class="breadcrumb-nav-list-item"><a href="https://sameep1234.github.io/notes/notes/O93aKwUCEnkxTR7S8V2eZ.html">Semester 5</a></li><li class="breadcrumb-nav-list-item"><a href="https://sameep1234.github.io/notes/notes/OGq6U8MXIG3wwETNLR4b6.html">Operating System</a></li><li class="breadcrumb-nav-list-item">Lecture 8</li></ol>
+            <ol class="breadcrumb-nav-list"><li class="breadcrumb-nav-list-item"><a href="https://sameep1234.github.io/notes">Curated Notes</a></li><li class="breadcrumb-nav-list-item"><a href="https://sameep1234.github.io/notes/notes\Jq5ki9jf1QLTdc3DYLRW4.html">Courses</a></li><li class="breadcrumb-nav-list-item"><a href="https://sameep1234.github.io/notes/notes\O93aKwUCEnkxTR7S8V2eZ.html">Semester 5</a></li><li class="breadcrumb-nav-list-item"><a href="https://sameep1234.github.io/notes/notes\OGq6U8MXIG3wwETNLR4b6.html">Operating System</a></li><li class="breadcrumb-nav-list-item">Lecture 8</li></ol>
           </nav>
         
       
@@ -181,7 +181,7 @@
     <meta itemprop="headline" content="Lecture 8">
     
     <meta itemprop="datePublished" content="2021-09-15T07:57:33+00:00">
-    <meta itemprop="dateModified" content="2021-09-15T07:57:33+00:00">
+    <meta itemprop="dateModified" content="2021-09-20T08:15:46+00:00">
 
     <div class="page__inner-wrap">
 
@@ -191,7 +191,43 @@
 
         
 
-        <h1 id="lecture-8"><a aria-hidden="true" class="anchor-heading" href="#lecture-8"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Lecture 8</h1><span id="navId" data="elY2kfvKW7Qbj1xdbXBTC"></span>
+        <h1 id="lecture-8"><a aria-hidden="true" class="anchor-heading" href="#lecture-8"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Lecture 8</h1>
+<h1 id="uniprocessor-scheduling-algorithms"><a aria-hidden="true" class="anchor-heading" href="#uniprocessor-scheduling-algorithms"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Uniprocessor Scheduling Algorithms</h1>
+<ul>
+<li>We would be discussing only short-term scheduling.</li>
+<li>They mainly include dispatching techniques.</li>
+<li>Algorithms available
+<ul>
+<li><img src="/notes/assets/images/2021-09-20-08-08-03.png"></li>
+</ul>
+</li>
+<li><img src="/notes/assets/images/2021-09-20-08-10-10.png"></li>
+<li>Normalized TAT is better quantity.</li>
+</ul>
+<h2 id="cpu-bound-and-io-bound"><a aria-hidden="true" class="anchor-heading" href="#cpu-bound-and-io-bound"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>CPU Bound and I/O Bound</h2>
+<ul>
+<li>If a process spends most of its time in processor, then it is called CPU bound and vice versa is I/O bound.</li>
+</ul>
+<h2 id="fcfs"><a aria-hidden="true" class="anchor-heading" href="#fcfs"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>FCFS</h2>
+<ul>
+<li><img src="/notes/assets/images/2021-09-20-08-14-00.png"></li>
+<li>It is one of the most fair strategy in the <strong>real world.</strong></li>
+<li>w = waiting time.</li>
+<li>For better efficiency TAT should be as low as possible.</li>
+<li>Normalized TAT is relative delay and it represents how much a process needs to wait.</li>
+<li>We can't have normalized TAT less than 1 because service time can never be more than TAT.</li>
+<li>Issues
+<ul>
+<li>A short process may have to wait a very long time before it can execute.</li>
+<li><img src="/notes/assets/images/2021-09-20-08-33-39.png"></li>
+<li></li>
+</ul>
+</li>
+</ul>
+<h2 id="extra-points"><a aria-hidden="true" class="anchor-heading" href="#extra-points"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Extra Points</h2>
+<ul>
+<li>DMA - Data memory access is a hardware circuit through which all the data is transfered after an I/O is available.</li>
+</ul><span id="navId" data="elY2kfvKW7Qbj1xdbXBTC"></span>
 
                 
       </section>

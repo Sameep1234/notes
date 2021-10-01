@@ -1,10 +1,11 @@
 ---
-id: YWtnvQOHrej4digmZkK86
+id: tnSuyez7yM35xHlqvVkkd
 title: Lecture 2
 desc: ''
 updated: 1630430485504
 created: 1630169451366
 ---
+
 
 # Evolution of OS and Kernel
 

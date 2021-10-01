@@ -18,7 +18,7 @@ lookup:
         selectionType: selectionExtract
 journal:
     dailyDomain: daily
-    name: journal
+    name: journalc
     dateFormat: y.MM.dd
     addBehavior: childOfDomain
     firstDayOfWeek: 1
@@ -27,14 +27,14 @@ scratch:
     dateFormat: y.MM.dd.HHmmss
     addBehavior: asOwnDomain
 site:
-    assetsPrefix: notes
     siteUrl: https://sameep1234.github.io
+    assetsPrefix: notes
     copyAssets: true
     siteHierarchies:
         - root
     siteRootDir: docs
     usePrettyRefs: true
-    title: Dendron
+    title: 'Sameep'
     description: Personal knowledge space
     duplicateNoteBehavior:
         action: useVault

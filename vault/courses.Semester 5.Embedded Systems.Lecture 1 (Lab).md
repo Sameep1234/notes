@@ -1,9 +1,9 @@
 ---
-id: EeN4Bb9OzCECuhZ4gwGLz
-title: Lecture 2
+id: Gr1HMwOJEhZvObmD17aTi
+title: Lecture 1 (Lab)
 desc: ''
-updated: 1630761538460
-created: 1630758416637
+updated: 1632801343461
+created: 1632801343461
 ---
 
 # Selection and Coding
