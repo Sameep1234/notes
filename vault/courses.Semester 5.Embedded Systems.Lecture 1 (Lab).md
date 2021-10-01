@@ -2,7 +2,7 @@
 id: Gr1HMwOJEhZvObmD17aTi
 title: Lecture 1 (Lab)
 desc: ''
-updated: 1632801343461
+updated: 1633113352753
 created: 1632801343461
 ---
 
@@ -28,7 +28,7 @@ created: 1632801343461
     * Availability of
         * Assemblers
         * Debugger
-        * COde-efficient C-language compiler
+        * Code-efficient C-language compiler
         * Technical Support
         * In-house and outside expertise
 * Reliable source of microcontroller
@@ -46,11 +46,11 @@ created: 1632801343461
 
 ## RISC vs CISC
 * CISC
-    * Complex Instruction Set Computing
+    * Complex Instruction Set Computer
     * Single instruction can execute several low-level operations (including load from memory, artihmetic operations and memory store).
     * Capability of multi-step operations.
 * RISC
-    * Reduced Instruction Set Compution
+    * Reduced Instruction Set Computer
     * Low complexity
         * Speed-up
         * Less errors in implementation
@@ -76,7 +76,7 @@ created: 1632801343461
 
 ## Extra points
 * ![](/assets/images/2021-09-04-18-37-03.png)
-* For ATMEGA Ports, we have 4 ports each 8 bit.
+* For ATMEGA, we have 4 ports each of 8 bit.
 * Each pin is configurable
 * Types of configuration
     * Input with internal pull-up

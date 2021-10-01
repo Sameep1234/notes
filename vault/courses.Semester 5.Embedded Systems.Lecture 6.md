@@ -18,7 +18,7 @@ created: 1632723062497
 * **Note that 00 corresponds to lower level interrupt which means on connecting group or providing 0, this interrupt will get triggered and on connecting Vcc or providing 1, this interrupt will be disabled.**
 * Interrupt 2
     * ![](/assets/images/2021-09-29-10-50-01.png)
-    * **Note that there is onyl one bit for interrupt 2 and hence only 2 possible combinations ar shown in the image above.**
+    * **Note that there is only one bit for interrupt 2 and hence only 2 possible combinations ar shown in the image above.**
 * Now for example, lets say we want to make INT0 interrupt on falling edge triggered. For this, we choose the value of MCUCR = 0x02.
 * For INT2, rising edge trigger, write MCUCSR = 0x40. We made D6 to be 1 because the MCUCSR has PIN6 dedicated to interrupt 2.
 * **Make sure that if INT2 is asked, you change D6 of MCUCSR and if INT1 or INT0 is asked, you chance (D2, D3) and (D0, D1) respectively.**
@@ -41,7 +41,7 @@ created: 1632723062497
 int main()
 {
     DDRC = 0x08; // Define PortC.3 as output
-    PORTD = 0x02; // Interrupt comes here. We can also write PORTD = 1<<2;
+    PORTD = 0x04; // Interrupt comes here.
     GICR = (1<<INT0); // Enable external interrupt 0
     sei(); // Enables global interrupts
 

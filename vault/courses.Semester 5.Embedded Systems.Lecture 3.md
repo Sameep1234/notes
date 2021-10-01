@@ -9,13 +9,14 @@ created: 1630905993189
 # Timer (Cont.)
 
 ## Extra Points
-* If prescaling is applied, we multiply the time period of the AVR microcontroller.
+* If prescaling is applied, we multiply the time period of the AVR microcontroller by the same amount as the prescaling ratio.
+* Prescaler simply means that we are increasing the time period of the clock. Consequently, we are decreasing the frequency of the clock.
 * Time Delay
     * Hex Value
         * ![](/assets/images/2021-09-06-11-10-19.png)
     * Decimal Value
         * ![](/assets/images/2021-09-06-11-11-09.png)
-* TO clear any flag, write logic **"1"** to it.
+* To clear any flag, write logic **"1"** to it.
 
 ## Steps for programming
 * ![](/assets/images/2021-09-06-11-23-39.png)
@@ -35,6 +36,7 @@ created: 1630905993189
 * Thus, multiply the prescaler to clock time period to get the adequate delay.
 * Overflow flag is located on 0th bit. Hence to check overflow we check TIFR & 0x1 to be 0.
 * **Make sure that to reset the flag by putting "1" to the flag.**
+* The reason for this could be understood using an analogy. These are not the direct registers. These like control registers which means they act as a switch. We are pressing the "reset" switch (by putting "1") and in turn it is telling the actual register to reset the values. Thus, instead of 0, we are passing 1.
 * Example questions
     * ![](/assets/images/2021-09-06-11-40-28.png)
     * ![](/assets/images/2021-09-06-11-42-27.png)
@@ -43,21 +45,21 @@ created: 1630905993189
 #include<avr/io.h>
 
 void T0Delay() {
-    TCNT0 = 0xBA;
-    TCCR0 = 0x02;
-    while((TIFR & 0x1) == 0);
-    TCCR0 = 0;
-    TIFR = 0x1;
+    TCNT0 = 0xBA; // Calculated using the formula
+    TCCR0 = 0x02; // 1:8 prescaler value using the table
+    while((TIFR & 0x1) == 0); // Continuously run until flag is activated
+    TCCR0 = 0; // Stop the clock
+    TIFR = 0x1; // Reset the values.
 }
 
 void main() {
-	DDRB = 0x10;
-	while(1)
+	DDRB = 0x10; // PORTB.4 is declared as output pin
+	while(1) // Run forever
 	{
-		PORTB = 0x10;
-        T0Delay();
-        PORTB = 0x00;
-        T0Delay();
+		PORTB = 0x10; // Turn on
+        T0Delay(); // Apply delay
+        PORTB = 0x00; // Turn off
+        T0Delay(); // Apply delay
 	}
 }
 ```

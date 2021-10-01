@@ -29,12 +29,13 @@ created: 1630817213184
 * TCNT: Timer/Counter Register
     * 8-bit register that increments count.
     * It is a read/write register.
-    * Increments every clock cycle
-    * Overflows occur at 0xFF.
+    * **Increments every clock cycle.**
+    * Overflow occurs at 0xFF.
     * ![](/assets/images/2021-09-05-11-02-40.png)
 * OCR: Output Compare Register
     * It is a read/write 8-bit register.
     * Continuously compared with counter value i.e TCNT value.
+    * Used majorly when we are using timer in CTC mode.
 * OCF: Output Compare flag
     * If the value compared by the OCR matches the value in TCNT, this flag will be turned on to represent the overflow.
 
