@@ -2,7 +2,7 @@
 id: wIwPNNBh5jeugRuj1Bhsv
 title: Lecture 1
 desc: ''
-updated: 1630739211730
+updated: 1633112144176
 created: 1630119232624
 ---
 
@@ -23,11 +23,11 @@ created: 1630119232624
 
 > Now in embedded system, we are moving from microprocessor to microcontroller.
 
-* Key difference between them is that microprocessor, you can use multiple chips whereas for microcontroller, you can't use that.
+* Key difference between them is that in microprocessor you can use multiple chips externally whereas for microcontroller, you can't use that.
 
 ## Extra Points
-* When system performance is critical then use microprocessors
-* When issues of space, power and rapid development are critical then use microcontrollers.
+* When system performance is critical then use microprocessors because we can manage the RAM and ROM.
+* When issues of space, power and rapid development are critical then use microcontrollers because microcontrollers have built in chips and thus, space and time to develop is less.
 
 > What is embedded system?
 
@@ -35,12 +35,12 @@ created: 1630119232624
 * A way of working, organizing or performing one or many tasks according to a fixed set of rules, program or plan is called a **system**.
 * A system that has the following two properties is called an embedded system.
     * software embedded into a computer hardware.
-    * which makes a system dedicated for an application or specififc part of an application or product or part of a larger system.
-* It is a dedicated purpose software embedded in a computer hardware.
+    * which makes a system dedicated for an application or specific part of an application or product or part of a larger system.
+* It has a dedicated purpose software embedded in a computer hardware.
 
 ## Classification
 * Stand Alone
-    * Designed to perform a very specific task **reprtitively**.
+    * Designed to perform a very specific task **repetitively**.
     * Non-reactive to the environment conditions.
     * Simplest form of ES.
 * Real Time
