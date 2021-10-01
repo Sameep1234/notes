@@ -206,7 +206,7 @@
 <li>Interrupt 2
 <ul>
 <li><img src="/notes/assets/images/2021-09-29-10-50-01.png"></li>
-<li><strong>Note that there is onyl one bit for interrupt 2 and hence only 2 possible combinations ar shown in the image above.</strong></li>
+<li><strong>Note that there is only one bit for interrupt 2 and hence only 2 possible combinations ar shown in the image above.</strong></li>
 </ul>
 </li>
 <li>Now for example, lets say we want to make INT0 interrupt on falling edge triggered. For this, we choose the value of MCUCR = 0x02.</li>
@@ -234,7 +234,7 @@
 <span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
 <span class="token punctuation">{</span>
     DDRC <span class="token operator">=</span> <span class="token number">0x08</span><span class="token punctuation">;</span> <span class="token comment">// Define PortC.3 as output</span>
-    PORTD <span class="token operator">=</span> <span class="token number">0x02</span><span class="token punctuation">;</span> <span class="token comment">// Interrupt comes here. We can also write PORTD = 1&#x3C;&#x3C;2;</span>
+    PORTD <span class="token operator">=</span> <span class="token number">0x04</span><span class="token punctuation">;</span> <span class="token comment">// Interrupt comes here.</span>
     GICR <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token operator">&#x3C;&#x3C;</span>INT0<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Enable external interrupt 0</span>
     <span class="token function">sei</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Enables global interrupts</span>
 

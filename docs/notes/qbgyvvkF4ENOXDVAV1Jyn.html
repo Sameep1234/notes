@@ -223,7 +223,7 @@
 </ul>
 </li>
 <li><img src="/notes/assets/images/2021-09-20-11-24-22.png"></li>
-<li><strong>Always remember that the timer operations are performed under Interrupt subroutine whereas the main task other than timer is done in main function.</strong></li>
+<li><strong>Always remember that the timer operations are performed under interrupt service routine whereas the main task other than timer is done in main function.</strong></li>
 <li>Example
 <ul>
 <li><img src="/notes/assets/images/2021-09-20-11-25-23.png"></li>
@@ -248,12 +248,13 @@
 <li>sei() and cli() enables and disables <strong>global interrupt</strong> respectively.</li>
 <li>TIMSK - Timer interrupt mask register
 <ul>
+<li>Note that right now we are concerned with <strong>internal interrupt</strong> only.</li>
 <li><img src="/notes/assets/images/2021-09-20-11-36-05.png"></li>
 <li>This means that if you set the appropriate bit (for us, since we are using timer0, we set TOIE0 = 1).</li>
 <li>Thus, we write TIMSK = (1&#x3C;&#x3C;TCIE0) for enabling <strong>local interrupt.</strong></li>
 </ul>
 </li>
-<li>Interrupt Sub-routine (ISR)</li>
+<li>interrupt service routine (ISR) (VECTOR TABLE)</li>
 <li><img src="/notes/assets/images/2021-09-29-07-48-38.png"></li>
 <li>TIMER0_OVF_vect means that we are sending overflow flag as a parameter to ISR which will enable the overflow flag <strong>on interrupt</strong> and set the program counter's value to the corresponding location.</li>
 <li>Now inside ISR, we perform timer related operations i.e reassigning TCNT0 value and toggling PORTB's value for generating square.</li>

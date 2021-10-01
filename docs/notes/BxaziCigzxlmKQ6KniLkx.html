@@ -142,7 +142,7 @@
       
         
           <nav aria-label="Breadcrumb" class="breadcrumb-nav">
-            <ol class="breadcrumb-nav-list"><li class="breadcrumb-nav-list-item"><a href="https://sameep1234.github.io/notes">Curated Notes</a></li><li class="breadcrumb-nav-list-item"><a href="https://sameep1234.github.io/notes/notes\Jq5ki9jf1QLTdc3DYLRW4.html">Courses</a></li><li class="breadcrumb-nav-list-item"><a href="https://sameep1234.github.io/notes/notes\O93aKwUCEnkxTR7S8V2eZ.html">Semester 5</a></li><li class="breadcrumb-nav-list-item"><a href="https://sameep1234.github.io/notes/notes\a1PatlsCiz7PYsL111lFm.html">Embedded Systems</a></li><li class="breadcrumb-nav-list-item">Lecture 3</li></ol>
+            <ol class="breadcrumb-nav-list"><li class="breadcrumb-nav-list-item"><a href="https://sameep1234.github.io/notes">Curated Notes</a></li><li class="breadcrumb-nav-list-item"><a href="https://sameep1234.github.io/notes/notes/Jq5ki9jf1QLTdc3DYLRW4.html">Courses</a></li><li class="breadcrumb-nav-list-item"><a href="https://sameep1234.github.io/notes/notes/O93aKwUCEnkxTR7S8V2eZ.html">Semester 5</a></li><li class="breadcrumb-nav-list-item"><a href="https://sameep1234.github.io/notes/notes/a1PatlsCiz7PYsL111lFm.html">Embedded Systems</a></li><li class="breadcrumb-nav-list-item">Lecture 3</li></ol>
           </nav>
         
       
@@ -195,7 +195,8 @@
 <h1 id="timer-cont"><a aria-hidden="true" class="anchor-heading" href="#timer-cont"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Timer (Cont.)</h1>
 <h2 id="extra-points"><a aria-hidden="true" class="anchor-heading" href="#extra-points"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Extra Points</h2>
 <ul>
-<li>If prescaling is applied, we multiply the time period of the AVR microcontroller.</li>
+<li>If prescaling is applied, we multiply the time period of the AVR microcontroller by the same amount as the prescaling ratio.</li>
+<li>Prescaler simply means that we are increasing the time period of the clock. Consequently, we are decreasing the frequency of the clock.</li>
 <li>Time Delay
 <ul>
 <li>Hex Value
@@ -210,7 +211,7 @@
 </li>
 </ul>
 </li>
-<li>TO clear any flag, write logic <strong>"1"</strong> to it.</li>
+<li>To clear any flag, write logic <strong>"1"</strong> to it.</li>
 </ul>
 <h2 id="steps-for-programming"><a aria-hidden="true" class="anchor-heading" href="#steps-for-programming"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Steps for programming</h2>
 <ul>
@@ -253,6 +254,9 @@
 <p><strong>Make sure that to reset the flag by putting "1" to the flag.</strong></p>
 </li>
 <li>
+<p>The reason for this could be understood using an analogy. These are not the direct registers. These like control registers which means they act as a switch. We are pressing the "reset" switch (by putting "1") and in turn it is telling the actual register to reset the values. Thus, instead of 0, we are passing 1.</p>
+</li>
+<li>
 <p>Example questions</p>
 <ul>
 <li><img src="/notes/assets/images/2021-09-06-11-40-28.png"></li>
@@ -264,21 +268,21 @@
 <pre class="language-c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&#x3C;avr/io.h></span></span>
 
 <span class="token keyword">void</span> <span class="token function">T0Delay</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    TCNT0 <span class="token operator">=</span> <span class="token number">0xBA</span><span class="token punctuation">;</span>
-    TCCR0 <span class="token operator">=</span> <span class="token number">0x02</span><span class="token punctuation">;</span>
-    <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token punctuation">(</span>TIFR <span class="token operator">&#x26;</span> <span class="token number">0x1</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    TCCR0 <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-    TIFR <span class="token operator">=</span> <span class="token number">0x1</span><span class="token punctuation">;</span>
+    TCNT0 <span class="token operator">=</span> <span class="token number">0xBA</span><span class="token punctuation">;</span> <span class="token comment">// Calculated using the formula</span>
+    TCCR0 <span class="token operator">=</span> <span class="token number">0x02</span><span class="token punctuation">;</span> <span class="token comment">// 1:8 prescaler value using the table</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token punctuation">(</span>TIFR <span class="token operator">&#x26;</span> <span class="token number">0x1</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Continuously run until flag is activated</span>
+    TCCR0 <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token comment">// Stop the clock</span>
+    TIFR <span class="token operator">=</span> <span class="token number">0x1</span><span class="token punctuation">;</span> <span class="token comment">// Reset the values.</span>
 <span class="token punctuation">}</span>
 
 <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-	DDRB <span class="token operator">=</span> <span class="token number">0x10</span><span class="token punctuation">;</span>
-	<span class="token keyword">while</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+	DDRB <span class="token operator">=</span> <span class="token number">0x10</span><span class="token punctuation">;</span> <span class="token comment">// PORTB.4 is declared as output pin</span>
+	<span class="token keyword">while</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token comment">// Run forever</span>
 	<span class="token punctuation">{</span>
-		PORTB <span class="token operator">=</span> <span class="token number">0x10</span><span class="token punctuation">;</span>
-        <span class="token function">T0Delay</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        PORTB <span class="token operator">=</span> <span class="token number">0x00</span><span class="token punctuation">;</span>
-        <span class="token function">T0Delay</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		PORTB <span class="token operator">=</span> <span class="token number">0x10</span><span class="token punctuation">;</span> <span class="token comment">// Turn on</span>
+        <span class="token function">T0Delay</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Apply delay</span>
+        PORTB <span class="token operator">=</span> <span class="token number">0x00</span><span class="token punctuation">;</span> <span class="token comment">// Turn off</span>
+        <span class="token function">T0Delay</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Apply delay</span>
 	<span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 </code></pre>
