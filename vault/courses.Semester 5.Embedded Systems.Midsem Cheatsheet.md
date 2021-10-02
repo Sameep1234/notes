@@ -2,7 +2,7 @@
 id: Wp0PuPlAflgZkI7giECyy
 title: Midsem Cheatsheet
 desc: ''
-updated: 1633151288354
+updated: 1633174919802
 created: 1633151288354
 ---
 
@@ -24,3 +24,14 @@ created: 1633151288354
     * ![](/assets/images/2021-10-02-15-30-58.png)
 * Interrupt Addresses
     * ![](/assets/images/2021-10-02-15-32-50.png)
+
+## Important Circuits
+* AVR Port Pins
+    * ![](/assets/images/2021-10-02-16-46-14.png)
+
+
+## Past mid sem paper doubts
+* 2020
+    * Q2
+    * Q4
+    * Q5 (c, f)
