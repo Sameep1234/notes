@@ -9,10 +9,6 @@ created: 1633151288354
 ## Important Tables
 * TCCR0
     * ![](/assets/images/2021-10-02-15-26-06.png)
-* TCCR1A
-    * ![](/assets/images/2021-10-02-15-26-54.png)
-* TCCR1B
-    * ![](/assets/images/2021-10-02-15-27-23.png)
 * TCCR2
     * ![](/assets/images/2021-10-02-15-28-48.png)
 * Interrupt Vector Table
