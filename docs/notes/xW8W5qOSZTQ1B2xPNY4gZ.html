@@ -374,7 +374,29 @@
 <blockquote>
 <p>Assume that the INT0 pin is connected to a switch that is normally high. Write a program that toggles PORTC.3 <strong>only once</strong> whenever INTO pin goes low.</p>
 </blockquote>
-<pre class="language-c"><code class="language-c"></code></pre><span id="navId" data="xW8W5qOSZTQ1B2xPNY4gZ"></span>
+<pre class="language-c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&#x3C;avr/io.h></span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&#x3C;avr/interrupt.h></span></span>
+
+<span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    DDRC <span class="token operator">=</span> <span class="token number">0x04</span><span class="token punctuation">;</span> <span class="token comment">// Declare PORTC.3 as output</span>
+    PORTD <span class="token operator">=</span> <span class="token number">0x04</span><span class="token punctuation">;</span> <span class="token comment">// Activate External pull-up</span>
+
+    MCUCR <span class="token operator">=</span> <span class="token number">0x02</span><span class="token punctuation">;</span> <span class="token comment">// INT0 is falling edge triggered</span>
+    GICR <span class="token operator">=</span> <span class="token number">0x40</span><span class="token punctuation">;</span> <span class="token comment">// Enable INT0 local interrupt</span>
+    <span class="token function">sei</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Enable global interrupts</span>
+
+    <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Run forever and do nothing</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">ISR</span><span class="token punctuation">(</span>INT0_vect<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    PORTC <span class="token operator">^=</span> <span class="token number">0x04</span><span class="token punctuation">;</span> <span class="token comment">// Toggle PORTC.3</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<blockquote>
+<p>Not clear understanding of Question 6.</p>
+</blockquote><span id="navId" data="xW8W5qOSZTQ1B2xPNY4gZ"></span>
 
                 
       </section>
