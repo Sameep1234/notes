@@ -192,211 +192,7 @@
         
 
         <h1 id="extra-practice-questions"><a aria-hidden="true" class="anchor-heading" href="#extra-practice-questions"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Extra Practice Questions</h1>
-<h2 id="question-1"><a aria-hidden="true" class="anchor-heading" href="#question-1"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Question 1</h2>
-<blockquote>
-<p>Program to toggle PB4 every 2ms. Use Timer1, Normal Mode and no prescaler and assume clock frequency = 8MHz.</p>
-</blockquote>
-<pre class="language-c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&#x3C;avr/io.h></span></span>
-
-<span class="token keyword">void</span> <span class="token function">T1Delay</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-    TCNT1 <span class="token operator">=</span> <span class="token number">49536</span><span class="token punctuation">;</span> <span class="token comment">// TCNT1 Value for 2ms delay</span>
-    
-    TCCR1 <span class="token operator">=</span> <span class="token number">0x0001</span><span class="token punctuation">;</span> <span class="token comment">// TCCR1 value for normal mode, no prescaling.</span>
-    <span class="token comment">/* Can also be written as follows
-        TCCR1H = 0x00;
-        TCCR1L = 0x01; 
-    */</span>
-    
-    <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token punctuation">(</span>TIFR <span class="token operator">&#x26;</span> <span class="token number">0x04</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Run until timer1 TOV1 flag overflows</span>
-
-    TIFR <span class="token operator">=</span> <span class="token number">0x04</span><span class="token punctuation">;</span> <span class="token comment">// Reset flags</span>
-    TCCR1 <span class="token operator">=</span> <span class="token number">0x0000</span><span class="token punctuation">;</span> <span class="token comment">// Stop clock</span>
-<span class="token punctuation">}</span>
-
-<span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-    DDRB <span class="token operator">=</span> <span class="token number">0x10</span><span class="token punctuation">;</span> <span class="token comment">// Declare PORTB.4 as output</span>
-    <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token comment">// Run forever</span>
-    <span class="token punctuation">{</span>
-        PORTB <span class="token operator">^=</span> <span class="token number">0x10</span><span class="token punctuation">;</span> <span class="token comment">// Toggle PORTB.4</span>
-        <span class="token function">T1Delay</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Apply delay</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-</code></pre>
-<h2 id="question-2"><a aria-hidden="true" class="anchor-heading" href="#question-2"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Question 2</h2>
-<blockquote>
-<p>Assuming that a 1Hz clock pulse is fed into into pin T0 (PB0), use the TOV0 flag to extend Timer0 to a 16-bit counter and display the counter on PORTC and PORTD</p>
-</blockquote>
-<pre class="language-c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&#x3C;avr/io.h></span></span>
-
-<span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-    DDRC <span class="token operator">=</span> <span class="token number">0xFF</span><span class="token punctuation">;</span> <span class="token comment">// Declare PORTC as output</span>
-    DDRD <span class="token operator">=</span> <span class="token number">0xFF</span><span class="token punctuation">;</span> <span class="token comment">// Declare PORTD as output</span>
-
-    PORTB <span class="token operator">=</span> <span class="token number">0x01</span><span class="token punctuation">;</span> <span class="token comment">// Activate pull up</span>
-    
-    TCCR0 <span class="token operator">=</span> <span class="token number">0x06</span><span class="token punctuation">;</span> <span class="token comment">// TCCR value for external clock</span>
-    TCNT <span class="token operator">=</span> <span class="token number">0x00</span><span class="token punctuation">;</span> <span class="token comment">// Start counter from 0</span>
-
-    <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token comment">// Run forever</span>
-    <span class="token punctuation">{</span>
-        PORTC <span class="token operator">=</span> TCNT0<span class="token punctuation">;</span> <span class="token comment">// Transfer content of TCNT0 to PORTC</span>
-        <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token punctuation">(</span>TIFR <span class="token operator">&#x26;</span> <span class="token number">0x01</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token comment">// Run untill roll over</span>
-        <span class="token punctuation">{</span>
-            PORTC <span class="token operator">=</span> TCNT0<span class="token punctuation">;</span> <span class="token comment">// Transfer continuously to PORTC</span>
-        <span class="token punctuation">}</span>
-
-        TIFR <span class="token operator">=</span> <span class="token number">0x01</span><span class="token punctuation">;</span> <span class="token comment">// Reset flags</span>
-        PORTD <span class="token operator">+=</span> <span class="token number">1</span><span class="token punctuation">;</span> <span class="token comment">// Increment PORTD</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-</code></pre>
-<h2 id="question-3"><a aria-hidden="true" class="anchor-heading" href="#question-3"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Question 3</h2>
-<blockquote>
-<p>Assume 1Hz external clock is fed to PB1 (T1). Program for counter1 in rising edge mode to count the pulses and display the TCNT1H and TCNT1L registers on PORTD and PORTC, respectively</p>
-</blockquote>
-<pre class="language-c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&#x3C;avr/io.h></span></span>
-
-<span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-    PORTB <span class="token operator">=</span> <span class="token number">0x02</span><span class="token punctuation">;</span> <span class="token comment">// Activate pull-up</span>
-
-    DDRC <span class="token operator">=</span> <span class="token number">0xFF</span><span class="token punctuation">;</span> <span class="token comment">// Output mode for PORTC</span>
-    DDRD <span class="token operator">=</span> <span class="token number">0x0FF</span><span class="token punctuation">;</span> <span class="token comment">// Output mode for PORTD</span>
-
-    TCCR1 <span class="token operator">=</span> <span class="token number">0x0006</span><span class="token punctuation">;</span> <span class="token comment">// External clock source, no prescaling</span>
-
-    TCNT1 <span class="token operator">=</span> <span class="token number">0x0000</span><span class="token punctuation">;</span> <span class="token comment">// Set count to 0</span>
-
-    <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token comment">// Run forever</span>
-    <span class="token punctuation">{</span>
-        <span class="token comment">// Perform the required task</span>
-        PORTC <span class="token operator">=</span> TCNT1L<span class="token punctuation">;</span>
-        PORTD <span class="token operator">=</span> TCNT1H<span class="token punctuation">;</span>
-
-        <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token punctuation">(</span>TIFR <span class="token operator">&#x26;</span> <span class="token number">0x04</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>
-        <span class="token punctuation">{</span>
-            PORTC <span class="token operator">=</span> TCNT1L<span class="token punctuation">;</span>
-            PORTD <span class="token operator">=</span> TCNT1H<span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-
-        TIFR <span class="token operator">=</span> <span class="token number">0x04</span><span class="token punctuation">;</span> <span class="token comment">// Reset Flag</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-</code></pre>
-<h2 id="question-4"><a aria-hidden="true" class="anchor-heading" href="#question-4"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Question 4</h2>
-<blockquote>
-<p>Using Timer0 and Timer1 interrupts, generate square waves on pins PB1 and PB7 respectively while transferring data from PORTC to PORTD</p>
-</blockquote>
-<pre class="language-c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&#x3C;avr/io.h></span></span>
-<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&#x3C;avr/interrupt.h></span></span>
-
-<span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-    DDRB <span class="token operator">=</span> <span class="token number">0x82</span><span class="token punctuation">;</span> <span class="token comment">// Declare pins B2 and B7 as output</span>
-    DDRC <span class="token operator">=</span> <span class="token number">0x00</span><span class="token punctuation">;</span> <span class="token comment">// Input PORTC</span>
-    DDRD <span class="token operator">=</span> <span class="token number">0xFF</span><span class="token punctuation">;</span> <span class="token comment">// Output PORTD</span>
-
-    TCNT0 <span class="token operator">=</span> <span class="token number">0x00</span><span class="token punctuation">;</span> <span class="token comment">// Start timer0 from 0 i.e max delay</span>
-    TCNT1H <span class="token operator">=</span> <span class="token number">0x00</span><span class="token punctuation">;</span>
-    TCNT1L <span class="token operator">=</span> <span class="token number">0x00</span><span class="token punctuation">;</span> <span class="token comment">// Start timer1 from 0 i.e max delay</span>
-
-    TCCR0 <span class="token operator">=</span> <span class="token number">0x01</span><span class="token punctuation">;</span> <span class="token comment">// Normal mode, no prescaler timer0</span>
-    TCCR1 <span class="token operator">=</span> <span class="token number">0x0001</span><span class="token punctuation">;</span> <span class="token comment">// Normal mode, no prescaler timer1</span>
-
-    TIMSK <span class="token operator">=</span> <span class="token number">0x05</span><span class="token punctuation">;</span> <span class="token comment">// Enable local interrupt for timer1 and timer0</span>
-    <span class="token function">sei</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Enable global interrupts</span>
-
-    <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token comment">// Run forever</span>
-    <span class="token punctuation">{</span>
-        PORTD <span class="token operator">=</span> PINC<span class="token punctuation">;</span> <span class="token comment">// Transfer data from PORTC to PORTD</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-
-<span class="token function">ISR</span><span class="token punctuation">(</span>TIMER0_OVF_vect<span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-    TCNT0 <span class="token operator">=</span> <span class="token number">0x00</span><span class="token punctuation">;</span> <span class="token comment">// Reset timer0 again</span>
-    PORTB <span class="token operator">^=</span> <span class="token number">0x02</span><span class="token punctuation">;</span> <span class="token comment">// Toggle PORTB.1</span>
-<span class="token punctuation">}</span>
-
-<span class="token function">ISR</span> <span class="token punctuation">(</span>TIMER1_OVF_vect<span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-    TCNT1 <span class="token operator">=</span> <span class="token number">0x0000</span><span class="token punctuation">;</span> <span class="token comment">// Reset timer1 again</span>
-    PORTB <span class="token operator">^=</span> <span class="token number">0x80</span><span class="token punctuation">;</span> <span class="token comment">// Toggle PORTB.7</span>
-<span class="token punctuation">}</span>
-</code></pre>
-<h2 id="question-5"><a aria-hidden="true" class="anchor-heading" href="#question-5"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Question 5</h2>
-<blockquote>
-<p>Using Timer0 and Timer1 interrupts, write a program in which PORTA counts up everytime Timer1 overflows (after every 1 sec it overflows) and a pulse is fed into Timer0 where Timer0 is used as counter and counts up. Furthermore whenever the counter reaches 200, it will toggle the pin PORTB.6. All these should happen while transferring data from PORTC to PORTD. Assume XTAL = 1MHz.</p>
-</blockquote>
-<pre class="language-c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&#x3C;avr/io.h></span></span>
-<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&#x3C;avr/interrupt.h></span></span>
-
-<span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-    DDRB <span class="token operator">=</span> <span class="token number">0x40</span><span class="token punctuation">;</span> <span class="token comment">// Declare PORTB.4 as output pin</span>
-    DDRA <span class="token operator">=</span> <span class="token number">0xFF</span><span class="token punctuation">;</span> <span class="token comment">// Declare whole PORTA as output</span>
-    DDRD <span class="token operator">=</span> <span class="token number">0xFF</span><span class="token punctuation">;</span> <span class="token comment">// Declare whole PORTD as output</span>
-    DDRC <span class="token operator">=</span> <span class="token number">0x00</span><span class="token punctuation">;</span> <span class="token comment">// Declare PORTC as input</span>
-
-    PORTB <span class="token operator">=</span> <span class="token number">0x01</span><span class="token punctuation">;</span> <span class="token comment">// Activate pull-up</span>
-
-    TCNT0 <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">200</span> <span class="token comment">// Load Initial value of TCNT0</span>
-    TCNT1 <span class="token operator">=</span> <span class="token number">34286</span> <span class="token comment">// Value for 1 sec delay using 1:256 prescaler</span>
-
-    TCCR0 <span class="token operator">=</span> <span class="token number">0x06</span> <span class="token comment">// External clock, falling edge, no prescaler</span>
-    TCCR1 <span class="token operator">=</span> <span class="token number">0x0004</span><span class="token punctuation">;</span> <span class="token comment">// Normal mode, 1:256 prescaler</span>
-
-    TIMSK <span class="token operator">=</span> <span class="token number">0x05</span><span class="token punctuation">;</span>  <span class="token comment">// Enable local interrupts for Timer1 and Timer0</span>
-    <span class="token function">sei</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Enable Global interrupts</span>
-
-    <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token comment">// Run forever</span>
-    <span class="token punctuation">{</span>
-        PORTD <span class="token operator">=</span> PINC<span class="token punctuation">;</span> <span class="token comment">// Transfer data as required</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-
-<span class="token function">ISR</span><span class="token punctuation">(</span>TIMER0_OVF_vect<span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-    TCNT0 <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">200</span><span class="token punctuation">;</span> <span class="token comment">// Reset count value timer0</span>
-    PORTB <span class="token operator">^=</span> <span class="token number">0x40</span><span class="token punctuation">;</span> <span class="token comment">//Toggle PORTB.6 </span>
-<span class="token punctuation">}</span>
-
-<span class="token function">ISR</span><span class="token punctuation">(</span>TIMER1_OVF_vect<span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-    TCNT1 <span class="token operator">=</span> <span class="token number">34286</span><span class="token punctuation">;</span> <span class="token comment">// Reset count value timer1</span>
-    PORTA<span class="token operator">++</span><span class="token punctuation">;</span> <span class="token comment">// Increment value as mentioned</span>
-<span class="token punctuation">}</span>
-</code></pre>
-<h2 id="question-6"><a aria-hidden="true" class="anchor-heading" href="#question-6"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Question 6</h2>
-<blockquote>
-<p>Assume that the INT0 pin is connected to a switch that is normally high. Write a program that toggles PORTC.3 <strong>only once</strong> whenever INTO pin goes low.</p>
-</blockquote>
-<pre class="language-c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&#x3C;avr/io.h></span></span>
-<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&#x3C;avr/interrupt.h></span></span>
-
-<span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-    DDRC <span class="token operator">=</span> <span class="token number">0x04</span><span class="token punctuation">;</span> <span class="token comment">// Declare PORTC.3 as output</span>
-    PORTD <span class="token operator">=</span> <span class="token number">0x04</span><span class="token punctuation">;</span> <span class="token comment">// Activate External pull-up</span>
-
-    MCUCR <span class="token operator">=</span> <span class="token number">0x02</span><span class="token punctuation">;</span> <span class="token comment">// INT0 is falling edge triggered</span>
-    GICR <span class="token operator">=</span> <span class="token number">0x40</span><span class="token punctuation">;</span> <span class="token comment">// Enable INT0 local interrupt</span>
-    <span class="token function">sei</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Enable global interrupts</span>
-
-    <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Run forever and do nothing</span>
-<span class="token punctuation">}</span>
-
-<span class="token function">ISR</span><span class="token punctuation">(</span>INT0_vect<span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-    PORTC <span class="token operator">^=</span> <span class="token number">0x04</span><span class="token punctuation">;</span> <span class="token comment">// Toggle PORTC.3</span>
-<span class="token punctuation">}</span>
-</code></pre>
-<blockquote>
-<p>Not clear understanding of Question 6.</p>
-</blockquote>
+<h2 id="folder-link-mid-sem-papers"><a aria-hidden="true" class="anchor-heading" href="#folder-link-mid-sem-papers"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a><a href="https://drive.google.com/drive/u/1/folders/15O5LCqepDlY5TIxaXk68Lii8eqqHUiuG">Folder Link Mid sem Papers</a></h2>
 <h2 id="mid-sem-2020-q6"><a aria-hidden="true" class="anchor-heading" href="#mid-sem-2020-q6"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Mid sem 2020 Q6</h2>
 <pre class="language-c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&#x3C;avr/io.h></span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&#x3C;avr/interrupt.h></span></span>
@@ -630,56 +426,238 @@
 
 <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
 <span class="token punctuation">{</span>
-    DDRD <span class="token operator">=</span> <span class="token number">0x10</span><span class="token punctuation">;</span>
+    DDRD <span class="token operator">=</span> <span class="token number">0xFF</span><span class="token punctuation">;</span>
+    DDRA <span class="token operator">=</span> <span class="token number">0x00</span><span class="token punctuation">;</span>
+    DDRC <span class="token operator">=</span> <span class="token number">0xFF</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> x<span class="token punctuation">;</span>
+
+    GICR <span class="token operator">=</span> <span class="token number">0x40</span><span class="token punctuation">;</span> <span class="token comment">// Local interrupt</span>
+    MCUCR <span class="token operator">=</span> <span class="token number">0x02</span><span class="token punctuation">;</span> <span class="token comment">// Mode</span>
+    <span class="token function">sei</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Global interrupt</span>
 
     <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        x <span class="token operator">=</span> PINA<span class="token punctuation">;</span>
+        PORTC <span class="token operator">=</span> <span class="token punctuation">(</span>x <span class="token operator">>></span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">ISR</span><span class="token punctuation">(</span>TIMER0_COMP_vect<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    PORTD <span class="token operator">^=</span> <span class="token number">0x10</span><span class="token punctuation">;</span>
+    <span class="token function">T0Delay</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">ISR</span><span class="token punctuation">(</span>INT0_vect<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    PORTD<span class="token punctuation">.</span>b5 <span class="token operator">^=</span> <span class="token number">1</span><span class="token punctuation">;</span> 
 <span class="token punctuation">}</span>
 </code></pre>
-<!-- 
-```c
-x = PINA
-y = PINB
-xTemp = x & 0x0F;
-yTemp = y & 0x0F;
-if(xTemp even)
-{
-    yTemp = yTemp <! 4;
-}
-else
-{
-    xTemp = xTemp <! 4;
-}
-    PORTC = (xTemp | yTemp);
+<h2 id="question-1"><a aria-hidden="true" class="anchor-heading" href="#question-1"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Question 1</h2>
+<blockquote>
+<p>Program to toggle PB4 every 2ms. Use Timer1, Normal Mode and no prescaler and assume clock frequency = 8MHz.</p>
+</blockquote>
+<pre class="language-c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&#x3C;avr/io.h></span></span>
 
-```
+<span class="token keyword">void</span> <span class="token function">T1Delay</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    TCNT1 <span class="token operator">=</span> <span class="token number">49536</span><span class="token punctuation">;</span> <span class="token comment">// TCNT1 Value for 2ms delay</span>
+    
+    TCCR1 <span class="token operator">=</span> <span class="token number">0x0001</span><span class="token punctuation">;</span> <span class="token comment">// TCCR1 value for normal mode, no prescaling.</span>
+    <span class="token comment">/* Can also be written as follows
+        TCCR1H = 0x00;
+        TCCR1L = 0x01; 
+    */</span>
+    
+    <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token punctuation">(</span>TIFR <span class="token operator">&#x26;</span> <span class="token number">0x04</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Run until timer1 TOV1 flag overflows</span>
 
-```c
-DDRA = 0xFF;
-DDRB = 0x00;
-DDRD = 0x01;
-DDRC = 0xFF;
+    TIFR <span class="token operator">=</span> <span class="token number">0x04</span><span class="token punctuation">;</span> <span class="token comment">// Reset flags</span>
+    TCCR1 <span class="token operator">=</span> <span class="token number">0x0000</span><span class="token punctuation">;</span> <span class="token comment">// Stop clock</span>
+<span class="token punctuation">}</span>
 
-PORTC = 0x00;
+<span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    DDRB <span class="token operator">=</span> <span class="token number">0x10</span><span class="token punctuation">;</span> <span class="token comment">// Declare PORTB.4 as output</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token comment">// Run forever</span>
+    <span class="token punctuation">{</span>
+        PORTB <span class="token operator">^=</span> <span class="token number">0x10</span><span class="token punctuation">;</span> <span class="token comment">// Toggle PORTB.4</span>
+        <span class="token function">T1Delay</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Apply delay</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="question-2"><a aria-hidden="true" class="anchor-heading" href="#question-2"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Question 2</h2>
+<blockquote>
+<p>Assuming that a 1Hz clock pulse is fed into into pin T0 (PB0), use the TOV0 flag to extend Timer0 to a 16-bit counter and display the counter on PORTC and PORTD</p>
+</blockquote>
+<pre class="language-c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&#x3C;avr/io.h></span></span>
 
-while(1)
-{
-    PORTA = TCNT0;
-    if(TCNT0 > 100)
-    {
-        TCNT0 = 0x00;
-    }
-}
+<span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    DDRC <span class="token operator">=</span> <span class="token number">0xFF</span><span class="token punctuation">;</span> <span class="token comment">// Declare PORTC as output</span>
+    DDRD <span class="token operator">=</span> <span class="token number">0xFF</span><span class="token punctuation">;</span> <span class="token comment">// Declare PORTD as output</span>
 
-ISR(INT0_vect)
-{
-    PORTD ^= 0x01;
-}
+    PORTB <span class="token operator">=</span> <span class="token number">0x01</span><span class="token punctuation">;</span> <span class="token comment">// Activate pull up</span>
+    
+    TCCR0 <span class="token operator">=</span> <span class="token number">0x06</span><span class="token punctuation">;</span> <span class="token comment">// TCCR value for external clock</span>
+    TCNT <span class="token operator">=</span> <span class="token number">0x00</span><span class="token punctuation">;</span> <span class="token comment">// Start counter from 0</span>
 
-ISR(INT1_vect)
-{
-    PORTC++;
-}
-``` --><span id="navId" data="xW8W5qOSZTQ1B2xPNY4gZ"></span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token comment">// Run forever</span>
+    <span class="token punctuation">{</span>
+        PORTC <span class="token operator">=</span> TCNT0<span class="token punctuation">;</span> <span class="token comment">// Transfer content of TCNT0 to PORTC</span>
+        <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token punctuation">(</span>TIFR <span class="token operator">&#x26;</span> <span class="token number">0x01</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token comment">// Run untill roll over</span>
+        <span class="token punctuation">{</span>
+            PORTC <span class="token operator">=</span> TCNT0<span class="token punctuation">;</span> <span class="token comment">// Transfer continuously to PORTC</span>
+        <span class="token punctuation">}</span>
+
+        TIFR <span class="token operator">=</span> <span class="token number">0x01</span><span class="token punctuation">;</span> <span class="token comment">// Reset flags</span>
+        PORTD <span class="token operator">+=</span> <span class="token number">1</span><span class="token punctuation">;</span> <span class="token comment">// Increment PORTD</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="question-3"><a aria-hidden="true" class="anchor-heading" href="#question-3"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Question 3</h2>
+<blockquote>
+<p>Assume 1Hz external clock is fed to PB1 (T1). Program for counter1 in rising edge mode to count the pulses and display the TCNT1H and TCNT1L registers on PORTD and PORTC, respectively</p>
+</blockquote>
+<pre class="language-c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&#x3C;avr/io.h></span></span>
+
+<span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    PORTB <span class="token operator">=</span> <span class="token number">0x02</span><span class="token punctuation">;</span> <span class="token comment">// Activate pull-up</span>
+
+    DDRC <span class="token operator">=</span> <span class="token number">0xFF</span><span class="token punctuation">;</span> <span class="token comment">// Output mode for PORTC</span>
+    DDRD <span class="token operator">=</span> <span class="token number">0x0FF</span><span class="token punctuation">;</span> <span class="token comment">// Output mode for PORTD</span>
+
+    TCCR1 <span class="token operator">=</span> <span class="token number">0x0006</span><span class="token punctuation">;</span> <span class="token comment">// External clock source, no prescaling</span>
+
+    TCNT1 <span class="token operator">=</span> <span class="token number">0x0000</span><span class="token punctuation">;</span> <span class="token comment">// Set count to 0</span>
+
+    <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token comment">// Run forever</span>
+    <span class="token punctuation">{</span>
+        <span class="token comment">// Perform the required task</span>
+        PORTC <span class="token operator">=</span> TCNT1L<span class="token punctuation">;</span>
+        PORTD <span class="token operator">=</span> TCNT1H<span class="token punctuation">;</span>
+
+        <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token punctuation">(</span>TIFR <span class="token operator">&#x26;</span> <span class="token number">0x04</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            PORTC <span class="token operator">=</span> TCNT1L<span class="token punctuation">;</span>
+            PORTD <span class="token operator">=</span> TCNT1H<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        TIFR <span class="token operator">=</span> <span class="token number">0x04</span><span class="token punctuation">;</span> <span class="token comment">// Reset Flag</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="question-4"><a aria-hidden="true" class="anchor-heading" href="#question-4"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Question 4</h2>
+<blockquote>
+<p>Using Timer0 and Timer1 interrupts, generate square waves on pins PB1 and PB7 respectively while transferring data from PORTC to PORTD</p>
+</blockquote>
+<pre class="language-c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&#x3C;avr/io.h></span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&#x3C;avr/interrupt.h></span></span>
+
+<span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    DDRB <span class="token operator">=</span> <span class="token number">0x82</span><span class="token punctuation">;</span> <span class="token comment">// Declare pins B2 and B7 as output</span>
+    DDRC <span class="token operator">=</span> <span class="token number">0x00</span><span class="token punctuation">;</span> <span class="token comment">// Input PORTC</span>
+    DDRD <span class="token operator">=</span> <span class="token number">0xFF</span><span class="token punctuation">;</span> <span class="token comment">// Output PORTD</span>
+
+    TCNT0 <span class="token operator">=</span> <span class="token number">0x00</span><span class="token punctuation">;</span> <span class="token comment">// Start timer0 from 0 i.e max delay</span>
+    TCNT1H <span class="token operator">=</span> <span class="token number">0x00</span><span class="token punctuation">;</span>
+    TCNT1L <span class="token operator">=</span> <span class="token number">0x00</span><span class="token punctuation">;</span> <span class="token comment">// Start timer1 from 0 i.e max delay</span>
+
+    TCCR0 <span class="token operator">=</span> <span class="token number">0x01</span><span class="token punctuation">;</span> <span class="token comment">// Normal mode, no prescaler timer0</span>
+    TCCR1 <span class="token operator">=</span> <span class="token number">0x0001</span><span class="token punctuation">;</span> <span class="token comment">// Normal mode, no prescaler timer1</span>
+
+    TIMSK <span class="token operator">=</span> <span class="token number">0x05</span><span class="token punctuation">;</span> <span class="token comment">// Enable local interrupt for timer1 and timer0</span>
+    <span class="token function">sei</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Enable global interrupts</span>
+
+    <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token comment">// Run forever</span>
+    <span class="token punctuation">{</span>
+        PORTD <span class="token operator">=</span> PINC<span class="token punctuation">;</span> <span class="token comment">// Transfer data from PORTC to PORTD</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">ISR</span><span class="token punctuation">(</span>TIMER0_OVF_vect<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    TCNT0 <span class="token operator">=</span> <span class="token number">0x00</span><span class="token punctuation">;</span> <span class="token comment">// Reset timer0 again</span>
+    PORTB <span class="token operator">^=</span> <span class="token number">0x02</span><span class="token punctuation">;</span> <span class="token comment">// Toggle PORTB.1</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">ISR</span> <span class="token punctuation">(</span>TIMER1_OVF_vect<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    TCNT1 <span class="token operator">=</span> <span class="token number">0x0000</span><span class="token punctuation">;</span> <span class="token comment">// Reset timer1 again</span>
+    PORTB <span class="token operator">^=</span> <span class="token number">0x80</span><span class="token punctuation">;</span> <span class="token comment">// Toggle PORTB.7</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="question-5"><a aria-hidden="true" class="anchor-heading" href="#question-5"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Question 5</h2>
+<blockquote>
+<p>Using Timer0 and Timer1 interrupts, write a program in which PORTA counts up everytime Timer1 overflows (after every 1 sec it overflows) and a pulse is fed into Timer0 where Timer0 is used as counter and counts up. Furthermore whenever the counter reaches 200, it will toggle the pin PORTB.6. All these should happen while transferring data from PORTC to PORTD. Assume XTAL = 1MHz.</p>
+</blockquote>
+<pre class="language-c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&#x3C;avr/io.h></span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&#x3C;avr/interrupt.h></span></span>
+
+<span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    DDRB <span class="token operator">=</span> <span class="token number">0x40</span><span class="token punctuation">;</span> <span class="token comment">// Declare PORTB.4 as output pin</span>
+    DDRA <span class="token operator">=</span> <span class="token number">0xFF</span><span class="token punctuation">;</span> <span class="token comment">// Declare whole PORTA as output</span>
+    DDRD <span class="token operator">=</span> <span class="token number">0xFF</span><span class="token punctuation">;</span> <span class="token comment">// Declare whole PORTD as output</span>
+    DDRC <span class="token operator">=</span> <span class="token number">0x00</span><span class="token punctuation">;</span> <span class="token comment">// Declare PORTC as input</span>
+
+    PORTB <span class="token operator">=</span> <span class="token number">0x01</span><span class="token punctuation">;</span> <span class="token comment">// Activate pull-up</span>
+
+    TCNT0 <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">200</span> <span class="token comment">// Load Initial value of TCNT0</span>
+    TCNT1 <span class="token operator">=</span> <span class="token number">34286</span> <span class="token comment">// Value for 1 sec delay using 1:256 prescaler</span>
+
+    TCCR0 <span class="token operator">=</span> <span class="token number">0x06</span> <span class="token comment">// External clock, falling edge, no prescaler</span>
+    TCCR1 <span class="token operator">=</span> <span class="token number">0x0004</span><span class="token punctuation">;</span> <span class="token comment">// Normal mode, 1:256 prescaler</span>
+
+    TIMSK <span class="token operator">=</span> <span class="token number">0x05</span><span class="token punctuation">;</span>  <span class="token comment">// Enable local interrupts for Timer1 and Timer0</span>
+    <span class="token function">sei</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Enable Global interrupts</span>
+
+    <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token comment">// Run forever</span>
+    <span class="token punctuation">{</span>
+        PORTD <span class="token operator">=</span> PINC<span class="token punctuation">;</span> <span class="token comment">// Transfer data as required</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">ISR</span><span class="token punctuation">(</span>TIMER0_OVF_vect<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    TCNT0 <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">200</span><span class="token punctuation">;</span> <span class="token comment">// Reset count value timer0</span>
+    PORTB <span class="token operator">^=</span> <span class="token number">0x40</span><span class="token punctuation">;</span> <span class="token comment">//Toggle PORTB.6 </span>
+<span class="token punctuation">}</span>
+
+<span class="token function">ISR</span><span class="token punctuation">(</span>TIMER1_OVF_vect<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    TCNT1 <span class="token operator">=</span> <span class="token number">34286</span><span class="token punctuation">;</span> <span class="token comment">// Reset count value timer1</span>
+    PORTA<span class="token operator">++</span><span class="token punctuation">;</span> <span class="token comment">// Increment value as mentioned</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="question-6"><a aria-hidden="true" class="anchor-heading" href="#question-6"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Question 6</h2>
+<blockquote>
+<p>Assume that the INT0 pin is connected to a switch that is normally high. Write a program that toggles PORTC.3 <strong>only once</strong> whenever INTO pin goes low.</p>
+</blockquote>
+<pre class="language-c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&#x3C;avr/io.h></span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&#x3C;avr/interrupt.h></span></span>
+
+<span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    DDRC <span class="token operator">=</span> <span class="token number">0x04</span><span class="token punctuation">;</span> <span class="token comment">// Declare PORTC.3 as output</span>
+    PORTD <span class="token operator">=</span> <span class="token number">0x04</span><span class="token punctuation">;</span> <span class="token comment">// Activate External pull-up</span>
+
+    MCUCR <span class="token operator">=</span> <span class="token number">0x02</span><span class="token punctuation">;</span> <span class="token comment">// INT0 is falling edge triggered</span>
+    GICR <span class="token operator">=</span> <span class="token number">0x40</span><span class="token punctuation">;</span> <span class="token comment">// Enable INT0 local interrupt</span>
+    <span class="token function">sei</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Enable global interrupts</span>
+
+    <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Run forever and do nothing</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">ISR</span><span class="token punctuation">(</span>INT0_vect<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    PORTC <span class="token operator">^=</span> <span class="token number">0x04</span><span class="token punctuation">;</span> <span class="token comment">// Toggle PORTC.3</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<blockquote>
+<p>Not clear understanding of Question 6.</p>
+</blockquote><span id="navId" data="xW8W5qOSZTQ1B2xPNY4gZ"></span>
 
                 
       </section>
