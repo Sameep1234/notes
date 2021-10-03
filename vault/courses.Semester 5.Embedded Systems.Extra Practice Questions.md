@@ -2,7 +2,7 @@
 id: xW8W5qOSZTQ1B2xPNY4gZ
 title: Extra Practice Questions
 desc: ''
-updated: 1633150517035
+updated: 1633244028732
 created: 1633146584123
 ---
 
@@ -215,3 +215,279 @@ ISR(INT0_vect)
 ```
 
 > Not clear understanding of Question 6.
+
+## Mid sem 2020 Q6
+```c
+#include<avr/io.h>
+#include<avr/interrupt.h>
+
+T0delay(){
+
+    TCNT0 = 0;
+    OCR0 = 75;
+    TCCR0 = 0x08;
+    while(TIFR&0X02 == 0){}
+    TCCR0 = 0x00;
+    TIFR = 0x02;
+}
+
+void main()
+{
+    DDRA = 0x0F;
+    int i;
+    int temp;
+    while(1)
+    {
+        for (i=7;i>=0;i-=2)
+        {
+            temp = 1<<i;
+            temp = temp | (1<<(i-1));
+            PORTA = temp;
+            T0delay();
+        }
+    } 
+}
+```
+
+## Mid sem 2020 Q7
+```c
+#include<avr/io.h>
+#include<avr/interrupt.h>
+
+T0delay(){
+    TCNT0 = 156;
+    TCCR0 = 0X01;
+    While(TIFR & 0X01 == 0);
+    TCCR0 = 0;
+    TIFR = 0X01;
+}
+int counter = 0;
+void main()
+{
+    int bin,x,d2,d1;
+    DDRD = 0XFF;
+
+    DDRC = 0XFF;
+    DDRB = 0XFF;
+
+    DDRA = 0X00; // INPUT
+
+    MCUCR = 0x03;
+    GICR = 0x40;
+    TIMSK = 0x01;
+    sei();
+
+    while(1){
+        bin = pinA;
+        x = bin/10;
+        d1 = bin%10;
+        d2 = x%10;
+        PORTB = d1;
+        PORTC = d2;
+    }
+}
+
+ISR(TIMER0_OVF_vect){
+    PORTD.b7 = 1;
+    T0delay();
+    PORTD.b7 = 0;
+    T0delay();
+}
+
+ISR(INT0_vect){
+    counter++;
+    if(counter<120){
+        PORTD.b5 = 1;
+        PORT.b6 = 0;
+    }
+    else{
+        PORT.b6 = 1;
+        PORT.b5 = 0;
+    }
+}
+```
+
+## Mid sem 2019 Q5
+```c
+#include<avr/io.h>
+
+void main(){
+    DDRA = 0x00;
+    DDRB = 0x00;
+    DDRC = 0XFF;
+
+    int x,y, combined;
+    x = PINA & 0x0F;
+    y = PINB & 0X0F;
+    if(x%2 ==0){
+        combined = y<<4 | x;
+        PORTC = combined;
+    }
+    else{
+        combined = x<<4 | y;
+        PORTC = combined;
+    }
+}
+```
+
+## Mid sem 2019 Q6
+```c
+#include<avr/io.h>
+#include<avr/interrupt.h>
+
+T0delay(){
+
+    TCNT0 = 163;
+    TCCR0 = 0x02; // Prescaler of 1:8
+    while(TIFR&0X01 == 0){}
+    TCCR0 = 0x00;
+    TIFR = 0x01;
+}
+
+void main()
+{
+    DDRA = 0x0F;
+    int i;
+    while(1)
+    {
+        for (i=0;i<=7;i++)
+        {
+            PORTA = 1<<i;
+            T0delay();
+        }
+    } 
+}
+```
+
+## Mid sem 2019 Q7
+```c
+#include<avr/io.h>
+#include<avr/interrupt.h>
+
+void main(){
+    DDRA = 0XFF;
+    DDRB = 0x00;
+    DDRD = 0X01;
+
+    MCUCR = 0x0B;
+    GICR = 0xC0;
+    sei();    
+
+    PORTB = 0x01; // Activate Pull-up
+    while(1){
+        if(PORTA <= 100)
+            PORTA ++;
+        else 
+            PORTA = 0x00;
+    }
+}
+
+ISR(INT0_vect){
+    PORTD.b0 ^= 1;
+}
+
+ISR(INT1_vect)
+{
+    PORTC++;
+}
+```
+
+## Mid sem 2018 Q4
+```c
+#include<avr/io.h>
+
+void main()
+{
+    DDRA = 0x00;
+    DDRB = DDRC = DDRD = 0xFF;
+    int x, d1,d2,d3, y;
+
+    while(1)
+    {
+        x = PINA;
+        y = x / 10;
+        d1 = x % 10;
+        d2 = y % 10;
+        d3 = y / 10;
+
+        PORTB = d1;
+        PORTC = d2;
+        PORTD = d3;
+    }
+}
+```
+
+## Mid sem 2018 Q5
+```c
+#include<avr/io.h>
+
+void T0Delay()
+{
+    TCCR0 = 0x01;
+    TCNT0 = 206;
+    while((TIFR & 0x01) == 0);
+    TIFR = 0x01;
+    TCCR0 = 0x00;
+}
+
+void main()
+{
+    DDRB = 0xFF;
+    int i, temp;
+
+    while(1)
+    {
+        for(i=0;i<8;i++)
+        {
+            temp = 1<<i;
+            PORTB = temp | 1<<(7-i);
+            T0Delay();
+        }
+    }
+}
+```
+
+## Mid sem 2018 Q6
+```c
+#include<avr/io.h>
+#include<avr/interrupt.h>
+
+void T0Delay()
+{
+    TCCR0 = 0x08;
+    TCNT0 = 0;
+    OCR0 = 50;
+    while((TIFR & 0x02) == 0);
+    TIFR = 0x02;
+    TCCR0 = 0x00;
+}
+
+void main()
+{
+    DDRD = 0xFF;
+    DDRA = 0x00;
+    DDRC = 0xFF;
+    int x;
+
+    GICR = 0x40; // Local interrupt
+    MCUCR = 0x02; // Mode
+    sei(); // Global interrupt
+
+    while(1)
+    {
+        x = PINA;
+        PORTC = (x >> 1);
+    }
+}
+
+ISR(TIMER0_COMP_vect)
+{
+    PORTD ^= 0x10;
+    T0Delay();
+}
+
+ISR(INT0_vect)
+{
+    PORTD.b5 ^= 1; 
+}
+```
