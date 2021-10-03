@@ -33,9 +33,3 @@ created: 1633151288354
 
 ## Hex To Decimal Code
 * ![](/assets/images/2021-10-03-11-46-00.png)
-
-## Past mid sem paper doubts
-* 2020
-    * Q2
-    * Q4
-    * Q5 (c, f)
