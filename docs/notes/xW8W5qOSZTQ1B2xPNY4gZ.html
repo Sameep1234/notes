@@ -181,7 +181,7 @@
     <meta itemprop="headline" content="Extra Practice Questions">
     
     <meta itemprop="datePublished" content="2021-10-02T09:19:44+00:00">
-    <meta itemprop="dateModified" content="2021-10-03T12:23:48+00:00">
+    <meta itemprop="dateModified" content="2021-10-03T13:31:39+00:00">
 
     <div class="page__inner-wrap">
 
@@ -193,6 +193,7 @@
 
         <h1 id="extra-practice-questions"><a aria-hidden="true" class="anchor-heading" href="#extra-practice-questions"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Extra Practice Questions</h1>
 <h2 id="folder-link-mid-sem-papers"><a aria-hidden="true" class="anchor-heading" href="#folder-link-mid-sem-papers"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a><a href="https://drive.google.com/drive/u/1/folders/15O5LCqepDlY5TIxaXk68Lii8eqqHUiuG">Folder Link Mid sem Papers</a></h2>
+<h2 id="past-year-mid-sem-solutions"><a aria-hidden="true" class="anchor-heading" href="#past-year-mid-sem-solutions"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a><a href="https://drive.google.com/file/d/1fr7RTkFWCfk1MBbgnFHZYbqGLAFldIR3/view?usp=sharing">Past year mid sem solutions</a></h2>
 <h2 id="mid-sem-2020-q6"><a aria-hidden="true" class="anchor-heading" href="#mid-sem-2020-q6"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Mid sem 2020 Q6</h2>
 <pre class="language-c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&#x3C;avr/io.h></span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&#x3C;avr/interrupt.h></span></span>
@@ -200,8 +201,8 @@
 <span class="token function">T0delay</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
 
     TCNT0 <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-    OCR0 <span class="token operator">=</span> <span class="token number">75</span><span class="token punctuation">;</span>
-    TCCR0 <span class="token operator">=</span> <span class="token number">0x08</span><span class="token punctuation">;</span>
+    OCR0 <span class="token operator">=</span> <span class="token number">94</span><span class="token punctuation">;</span> <span class="token comment">// 1:8 Prescaled value for OCR0</span>
+    TCCR0 <span class="token operator">=</span> <span class="token number">0x0A</span><span class="token punctuation">;</span> <span class="token comment">// 1:8 Prescaler value</span>
     <span class="token keyword">while</span><span class="token punctuation">(</span>TIFR<span class="token operator">&#x26;</span><span class="token number">0X02</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
     TCCR0 <span class="token operator">=</span> <span class="token number">0x00</span><span class="token punctuation">;</span>
     TIFR <span class="token operator">=</span> <span class="token number">0x02</span><span class="token punctuation">;</span>
@@ -216,6 +217,7 @@
     <span class="token punctuation">{</span>
         <span class="token keyword">for</span> <span class="token punctuation">(</span>i<span class="token operator">=</span><span class="token number">7</span><span class="token punctuation">;</span>i<span class="token operator">>=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">-=</span><span class="token number">2</span><span class="token punctuation">)</span>
         <span class="token punctuation">{</span>
+            PORTA <span class="token operator">=</span> <span class="token number">0x00</span><span class="token punctuation">;</span>
             temp <span class="token operator">=</span> <span class="token number">1</span><span class="token operator">&#x3C;&#x3C;</span>i<span class="token punctuation">;</span>
             temp <span class="token operator">=</span> temp <span class="token operator">|</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token operator">&#x3C;&#x3C;</span><span class="token punctuation">(</span>i<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
             PORTA <span class="token operator">=</span> temp<span class="token punctuation">;</span>
@@ -337,11 +339,13 @@
     DDRB <span class="token operator">=</span> <span class="token number">0x00</span><span class="token punctuation">;</span>
     DDRD <span class="token operator">=</span> <span class="token number">0X01</span><span class="token punctuation">;</span>
 
+    TCCR0 <span class="token operator">=</span> <span class="token number">0x07</span><span class="token punctuation">;</span>
+    
     MCUCR <span class="token operator">=</span> <span class="token number">0x0B</span><span class="token punctuation">;</span>
     GICR <span class="token operator">=</span> <span class="token number">0xC0</span><span class="token punctuation">;</span>
     <span class="token function">sei</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    
 
-    PORTB <span class="token operator">=</span> <span class="token number">0x01</span><span class="token punctuation">;</span> <span class="token comment">// Activate Pull-up</span>
+    PORTD <span class="token operator">=</span> <span class="token number">0x0D</span><span class="token punctuation">;</span> <span class="token comment">// Activate Pull-up INT0 and INT1</span>
     <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
         <span class="token keyword">if</span><span class="token punctuation">(</span>PORTA <span class="token operator">&#x3C;=</span> <span class="token number">100</span><span class="token punctuation">)</span>
             PORTA <span class="token operator">++</span><span class="token punctuation">;</span>
@@ -416,7 +420,7 @@
 
 <span class="token keyword">void</span> <span class="token function">T0Delay</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
 <span class="token punctuation">{</span>
-    TCCR0 <span class="token operator">=</span> <span class="token number">0x08</span><span class="token punctuation">;</span>
+    TCCR0 <span class="token operator">=</span> <span class="token number">0x09</span><span class="token punctuation">;</span>
     TCNT0 <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
     OCR0 <span class="token operator">=</span> <span class="token number">50</span><span class="token punctuation">;</span>
     <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token punctuation">(</span>TIFR <span class="token operator">&#x26;</span> <span class="token number">0x02</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -431,9 +435,12 @@
     DDRC <span class="token operator">=</span> <span class="token number">0xFF</span><span class="token punctuation">;</span>
     <span class="token keyword">int</span> x<span class="token punctuation">;</span>
 
-    GICR <span class="token operator">=</span> <span class="token number">0x40</span><span class="token punctuation">;</span> <span class="token comment">// Local interrupt</span>
-    MCUCR <span class="token operator">=</span> <span class="token number">0x02</span><span class="token punctuation">;</span> <span class="token comment">// Mode</span>
+    GICR <span class="token operator">=</span> <span class="token number">0x40</span><span class="token punctuation">;</span> <span class="token comment">// Local external interrupt</span>
+    MCUCR <span class="token operator">=</span> <span class="token number">0x02</span><span class="token punctuation">;</span> <span class="token comment">// Mode for external interrupt</span>
+    TIMSK <span class="token operator">=</span> <span class="token number">0x02</span><span class="token punctuation">;</span> <span class="token comment">// Timer interrupt</span>
     <span class="token function">sei</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Global interrupt</span>
+
+    PORTD <span class="token operator">=</span> <span class="token number">0x04</span><span class="token punctuation">;</span> <span class="token comment">// Activate pull-up</span>
 
     <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
     <span class="token punctuation">{</span>

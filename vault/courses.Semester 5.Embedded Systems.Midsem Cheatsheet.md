@@ -26,6 +26,8 @@ created: 1633151288354
 * ![](/assets/images/2021-10-03-11-40-27.png)
 * Interrupt Addresses
     * ![](/assets/images/2021-10-02-15-32-50.png)
+## Pull Up
+* ![](/assets/images/2021-10-03-13-44-02.png)
 
 ## Important Circuits
 * AVR Port Pins

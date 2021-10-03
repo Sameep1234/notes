@@ -2,11 +2,13 @@
 id: xW8W5qOSZTQ1B2xPNY4gZ
 title: Extra Practice Questions
 desc: ''
-updated: 1633244028732
+updated: 1633248099143
 created: 1633146584123
 ---
 
 ## [Folder Link Mid sem Papers](https://drive.google.com/drive/u/1/folders/15O5LCqepDlY5TIxaXk68Lii8eqqHUiuG)
+
+## [Past year mid sem solutions](https://drive.google.com/file/d/1fr7RTkFWCfk1MBbgnFHZYbqGLAFldIR3/view?usp=sharing)
 
 ## Mid sem 2020 Q6
 ```c
@@ -16,8 +18,8 @@ created: 1633146584123
 T0delay(){
 
     TCNT0 = 0;
-    OCR0 = 75;
-    TCCR0 = 0x08;
+    OCR0 = 94; // 1:8 Prescaled value for OCR0
+    TCCR0 = 0x0A; // 1:8 Prescaler value
     while(TIFR&0X02 == 0){}
     TCCR0 = 0x00;
     TIFR = 0x02;
@@ -32,6 +34,7 @@ void main()
     {
         for (i=7;i>=0;i-=2)
         {
+            PORTA = 0x00;
             temp = 1<<i;
             temp = temp | (1<<(i-1));
             PORTA = temp;
@@ -161,11 +164,13 @@ void main(){
     DDRB = 0x00;
     DDRD = 0X01;
 
+    TCCR0 = 0x07;
+    
     MCUCR = 0x0B;
     GICR = 0xC0;
     sei();    
 
-    PORTB = 0x01; // Activate Pull-up
+    PORTD = 0x0D; // Activate Pull-up INT0 and INT1
     while(1){
         if(PORTA <= 100)
             PORTA ++;
@@ -246,7 +251,7 @@ void main()
 
 void T0Delay()
 {
-    TCCR0 = 0x08;
+    TCCR0 = 0x09;
     TCNT0 = 0;
     OCR0 = 50;
     while((TIFR & 0x02) == 0);
@@ -261,9 +266,12 @@ void main()
     DDRC = 0xFF;
     int x;
 
-    GICR = 0x40; // Local interrupt
-    MCUCR = 0x02; // Mode
+    GICR = 0x40; // Local external interrupt
+    MCUCR = 0x02; // Mode for external interrupt
+    TIMSK = 0x02; // Timer interrupt
     sei(); // Global interrupt
+
+    PORTD = 0x04; // Activate pull-up
 
     while(1)
     {
