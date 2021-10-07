@@ -1,10 +1,11 @@
 ---
-id: Wp0PuPlAflgZkI7giECyy
+id: qMpsaD6D6921XHB3c5uGO
 title: Midsem Cheatsheet
 desc: ''
 updated: 1633174919802
 created: 1633151288354
 ---
+
 
 ## Important Tables
 ## TCCR0

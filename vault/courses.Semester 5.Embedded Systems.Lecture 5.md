@@ -1,10 +1,11 @@
 ---
-id: qbgyvvkF4ENOXDVAV1Jyn
+id: 5wViI9PfViPdTHOr2uC8v
 title: Lecture 5
 desc: ''
 updated: 1632881828985
 created: 1632116048406
 ---
+
 
 # Timer (Cont.) and Interrupt
 
