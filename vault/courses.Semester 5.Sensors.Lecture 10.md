@@ -31,4 +31,4 @@ created: 1633599517028
         * ![](/assets/images/2021-10-07-15-31-44.png)
 * Merits and Demerits
     * ![](/assets/images/2021-10-07-15-25-34.png)
-* ![](/assets/images/2021-10-07-15-26-41.png)
+* ![](/assets/images/2021-10-07-15-26-41.png) 
