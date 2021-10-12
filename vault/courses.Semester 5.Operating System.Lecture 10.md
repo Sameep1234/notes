@@ -1,5 +1,5 @@
 ---
-id: 2z0ywzUW4CTwlbD6poGnM
+id: HaLC0S6nmXGxECDqZ0RXF
 title: Lecture 10
 desc: ''
 updated: 1632849363575
