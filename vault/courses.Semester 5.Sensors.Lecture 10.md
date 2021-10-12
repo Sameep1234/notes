@@ -1,6 +1,6 @@
 ---
 id: cm0T0M2FN7PhQ9KjtJ4g9
-title: Lecture 19
+title: Lecture 10
 desc: ''
 updated: 1633600658724
 created: 1633599517028
