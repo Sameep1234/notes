@@ -2,7 +2,7 @@
 id: XV4krgl1Xqw99yjO9sLyX
 title: Lecture 11
 desc: ''
-updated: 1634037272109
+updated: 1634062754283
 created: 1634037178840
 ---
 
@@ -75,4 +75,32 @@ created: 1634037178840
 * ![](/assets/images/2021-10-12-17-23-12.png)
 
 ## Categories of Thread Implementation
-* 
+* User Level Threads (ULT)
+    * ![](/assets/images/2021-10-12-19-32-18.png)
+    * Java supports ULT.
+    * Suppose that a thread is running and makes a system call.
+    * Since, it made a system call, it must go through the kernel.
+    * The kernel is not aware about the thread, it is only aware about the process and thus, the whole process gets blocked.
+    * Overall, the process state and thread state may not change simultaneously or concurrently.
+    * Advantage
+        * ![](/assets/images/2021-10-12-19-41-26.png)
+        * ![](/assets/images/2021-10-12-19-41-38.png)
+        * The different scheduling is done only for application and not done by the kernel as kernel is not aware about the threads.
+        * ![](/assets/images/2021-10-12-19-43-51.png)
+    * Disadvantage
+        * ![](/assets/images/2021-10-12-19-44-22.png)
+        * ![](/assets/images/2021-10-12-19-44-39.png)
+* Kernel Level Threads (KLT)
+    * ![](/assets/images/2021-10-12-22-45-15.png)
+    * Advantages
+        * ![](/assets/images/2021-10-12-23-45-11.png)
+    * Disadvantages
+        * ![](/assets/images/2021-10-12-23-45-33.png)
+
+## Combined Approach
+* ![](/assets/images/2021-10-12-23-49-04.png)
+* Eg. Solaris uses this approach.
+
+## Thread and Process
+* ![](/assets/images/2021-10-12-23-49-57.png)
+* For 1:M, at a time, a thread belongs to one process.
