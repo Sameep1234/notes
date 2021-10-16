@@ -46,3 +46,8 @@ created: 1634387534028
 * ![](/assets/images/2021-10-16-18-30-29.png)
 * The wood pulp becomes white due to bleaching.
 * **Even though it breaks lignin and hemicellulose, it does not harm the cellulose chain.**
+
+## Extra Points
+* Rag paper is made of 100% pure cellulose and is the best paper.
+* This can be obtained only from chemical process as the wood pulp can be dissolved almost completely releasing the pure cellulose.
+* They also dissolve hemicellulose and lignin.
