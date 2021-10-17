@@ -204,7 +204,76 @@
 <li><img src="/notes/assets/images/2021-10-13-10-20-57.png"></li>
 <li><img src="/notes/assets/images/2021-10-13-10-22-07.png"></li>
 <li>Note that bolt is a global variable.</li>
-<li></li>
+<li>Thus, at a time only one process can be in the critical section.</li>
+</ul>
+<h2 id="exchange-instruction"><a aria-hidden="true" class="anchor-heading" href="#exchange-instruction"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Exchange Instruction</h2>
+<ul>
+<li>The instruction exchanges the contents of a register with that of a memory location.</li>
+<li><img src="/notes/assets/images/2021-10-17-23-08-36.png"></li>
+<li><img src="/notes/assets/images/2021-10-17-23-15-14.png"></li>
+</ul>
+<h2 id="advantages-of-hardware-approach"><a aria-hidden="true" class="anchor-heading" href="#advantages-of-hardware-approach"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Advantages of Hardware Approach</h2>
+<ul>
+<li><img src="/notes/assets/images/2021-10-17-23-12-09.png"></li>
+</ul>
+<h2 id="disadvantages-of-hardware-approach"><a aria-hidden="true" class="anchor-heading" href="#disadvantages-of-hardware-approach"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Disadvantages of Hardware Approach</h2>
+<ul>
+<li><img src="/notes/assets/images/2021-10-17-23-15-45.png"></li>
+<li><img src="/notes/assets/images/2021-10-17-23-17-31.png"></li>
+</ul>
+<h2 id="software-approaches"><a aria-hidden="true" class="anchor-heading" href="#software-approaches"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Software Approaches</h2>
+<ul>
+<li>When you write your own program, you try to achieve mutual exclusion.</li>
+<li>Attempt 1
+<ul>
+<li><img src="/notes/assets/images/2021-10-17-23-19-32.png"></li>
+<li>Suppose process 0 needs to enter into critical section every hour and process 1 needs to enter the critical section 1000 times in an hour.</li>
+<li>Now, it is suppose process 0 exits the critical section and allows process 1 to enter.</li>
+<li>turn variable is set 0 for the next 1 hour because process 0 is not going to go in the critical section.</li>
+<li>This means that process 1 will suffer.</li>
+<li>Secondly, if one process fails, the other process is permanently blocked.</li>
+</ul>
+</li>
+<li>Attempt 2
+<ul>
+<li><img src="/notes/assets/images/2021-10-17-23-24-37.png"></li>
+<li>In this attempt, we continuously check the flag of other process and if it is false, then only enter the critical section.</li>
+<li>Furthermore, lock the critical section by toggling the flag and once the process leaves the critical section, toggle the flag to free the critical section for other processes.</li>
+<li>Lets say process 0 gets switched after executing the first line.</li>
+<li>The problem is obvious then. <strong>We can't acheive mutual exclusion.</strong></li>
+</ul>
+</li>
+<li>Attempt 3
+<ul>
+<li><img src="/notes/assets/images/2021-10-17-23-42-42.png"></li>
+<li>Deadlock situation can arrise if one instruction per process is executed.</li>
+</ul>
+</li>
+<li>Attempt 4
+<ul>
+<li><img src="/notes/assets/images/2021-10-17-23-46-03.png"></li>
+<li>Livelock situation can arrise if delay are same because both will check at the same time.</li>
+<li>Similar situation can arrise if one instruction is executed at a time.</li>
+</ul>
+</li>
+</ul>
+<h2 id="dekkers-algorithm"><a aria-hidden="true" class="anchor-heading" href="#dekkers-algorithm"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Dekker's Algorithm</h2>
+<ul>
+<li><img src="/notes/assets/images/2021-10-17-23-49-52.png"></li>
+<li><img src="/notes/assets/images/2021-10-17-23-50-05.png"></li>
+<li>Each process first says that I want to enter with turning flag = true.</li>
+<li>Then it checks other processes and whether they are in the critical section or not by checking flag as well as turn variables.</li>
+<li>Then waits if both are true and vice versa.</li>
+</ul>
+<h2 id="petersons-algorithm"><a aria-hidden="true" class="anchor-heading" href="#petersons-algorithm"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Peterson's Algorithm</h2>
+<ul>
+<li><img src="/notes/assets/images/2021-10-17-23-53-55.png"></li>
+<li>It is reduced and less complex then dekker's algorithm.</li>
+<li>Correctness
+<ul>
+<li><img src="/notes/assets/images/2021-10-17-23-54-58.png"></li>
+</ul>
+</li>
 </ul><span id="navId" data="DNVMAERWrj3HKJidtLnpT"></span>
 
                 
