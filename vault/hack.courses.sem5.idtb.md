@@ -2,7 +2,7 @@
 id: WQrJBrU3nLhJrZ2MZeSjV
 title: Idtb
 desc: ''
-updated: 1635257992833
+updated: 1635320227502
 created: 1635257992833
 stub: true
 ---
@@ -145,3 +145,165 @@ Relatively permenant change in ones behaviour due to an experience(affecting one
 ## Zone of proximal development
 ![](/assets/images/2021-09-13-14-49-31.png)
 * You will need help to bring the 
+## Learning
+Relatively permenant change in ones behaviour due to an experience(affecting ones sensory systems)
+## Classical conditioning
+* Conditioned Stimulus - condition that accompanies natural stimulus
+* Unonditioned Stimulus - natural event
+* Conditioned Response - behaviour for conditioned stimulus
+* Unconditioned Response - how do we react naturally
+## Operant Conditioning
+* Behvaiour is function of consequences
+## Social Learning Theory
+* Individuals learn by observing others and gaining experiencing   
+* **Vicarious reinforceents** - Not necessary to behave in perticular manner to know output, you can observe and and reinforce some actions
+* People respond on how they percieve and define consequences NOT to the objective consequences. **_Can be different_**
+## Johari window
+![](/assets/images/2021-09-06-08-29-17.png)
+![](/assets/images/2021-09-06-08-29-42.png)
+![](/assets/images/2021-09-06-08-30-03.png)
+![](/assets/images/2021-09-06-08-30-19.png)
+## Piaget's Theory
+* Children learn by exploring and playing
+
+## Zone of proximal development
+![](/assets/images/2021-09-13-14-49-31.png)
+* You will need help to bring the outermost layer to innermost layer
+* What to do with the conflicts arizing from differnt perpectives.
+* **Perception** is to organize and interpret sensory to give meaning to our environment
+* Perception is influenced by
+    * **Perceiver -**
+        * Attitude
+        * Motives
+        * Interests
+        * Experiences
+        * Expectations
+    * **Target**
+        * Novety
+        * Motion
+        * Sounds
+        * Background
+        * Proximity
+        * Similarity
+        * Size
+    * **Situation/ Context**
+        * Time
+
+
+1. Perciever:  
+* Motives of the girl were different
+* Attitude of the man/ hero + the one who hit the car towards the preg lady.
+* Expectation in 1st part, girl thought he will support her
+
+2. Target - Sounds-music when boy gets out of the car
+* background - crowd
+* similarity - the hitter and the hero was of same strength in boys version
+
+3. Time/ situation - barren/time when no one was there 
+
+* How to resolve conflict?
+    1. motive and interest
+    2. intention
+# Attribution theory
+* whether the behaviour can be attributed ot a person or a situation
+* person - internal attributon (scared easily ,from pppy)
+* environment - exernal attribution
+## 3 ques to know External or Internal Attribution (DISCCO CAB)
+* How does this person behave in different situation?
+![](/assets/images/2021-09-17-14-59-21.png)
+* How others behave in similar situation?
+![](/assets/images/2021-09-17-15-00-32.png)
+* How this person behaved overtime in the similar tasks?
+![](/assets/images/2021-09-17-15-01-35.png)
+![](/assets/images/2021-09-17-15-07-52.png)
+## What is necessary for making judgement?
+![](/assets/images/2021-09-17-15-29-04.png)
+* THere are errors and bias in our judgement 
+    1. ![](/assets/images/2021-09-17-15-30-45.png)
+## **Shortcuts in judging others**
+* Funamental attribution error - when we judge oothers, we tend to over estimate the effects of other factors.
+* Selective Perception - tendency to choose to inetrpret what one sees based on ones intrerest, background, experience and attitude.
+![](/assets/images/2021-09-17-15-49-31.png)
+![](/assets/images/2021-09-17-15-51-10.png)
+
+Contrast effect - you are an interviewer, 1st,2nd,3rd candidate is pathetic, 4th slight bet ter. score to 4th is slight higher than the ideal score.
+           
+**I** didnt **kill** **18** **children**.
+
+employee - get to kno wabout interests and expectations about your boss
+- motive
+- interests
+- expecttatoions are key drivers.
+
+## Assignment 1 - Explain 3 concepts by observing by surroundings or record videos/ enact. Combined 5 mmin total.
+## Assignment 2 - take a webseris or videos, explain any 3 concepts from the class discussion. and explain how they are visible
+
+
+> personality: sum of ways in which an individulal reacts to and interacts with others personality and infuence the behavior
+
+## How to measure personality??
+tests to assess some1s personality
+1. personality tetst: self report | observer ratingi
+weakness of self report: biases, we want to be desirable how society percieves to be good.
+observer rating: ONly when we have suff exp; interac might not be suff enough, biases, can take longer time 
+
+## What influences our personality:
+1. situation and fctors
+2. people we are closer to
+3. ENVIRONMENT - 60%
+4. HERIDITY - gender reflexes 40%
+5. personality traits: stable char. of an individual
+
+## Myers-Briggs Type indicator (MBTI) - FOR JUDGING PERSONALITY by letters
+1. extrovet vs introvert (E|I)
+2. sensing vs intutive(S|N)
+- practical, focus on ddetails | uncinciuous opinions
+3. thinking vs feeling(T|F)
+4. judging vs perceptive(J|P)
+- need structure | flexi and spontanous
+
+it forces indivudual to fit into one of the dimensions
+
+## Big 5 personality model
+1. conscientiousness (Dhoni)
+responsible dependeble, persistent and organized
+are inclined towards OCB: going abv and beyond yr call of duty
+2. Emotional stability| opposite: nuroticism
+- calm, self confid, can work in changing env
+3. extraversion
+- sociable, gregarious,assertive( true to  your stand firmly)
+4. Openness to experience
+- to be intellectually curious, creative and imaginative.
+
+# Situation strength theory
+## Factors taht determing strength of situation
+1. Clarity: duties and responsibility
+* if I am clear in how to behave => Strong situation
+* Eg: Nurse, we in 5 star hotel
+2. Consistency: Degree to which cues regarding work duties and responsibilities are compatible
+* High consistency =>  strong scenario
+* nurse vs manager
+3. Constraints: extent to which freedom to decide acc to his or her own wishes
+* org: bank teller(fix work to do) vs professor(varied acc to faculties- less constraints)
+4. Consequences
+* breaking a law can have huge consequences
+
+> manager - balance the need of situation strength
+
+## Trait Activation Theory
+* Some situations or events activate a trait more than others
+* an sales person job,extraversion will be the quality
+## Attitudes and Comonents
+* Evaluative statements or judgements about people/object
+* Attitude is evaluative statements or judgements about variuos things
+* Attitude ALWAYS have feelings associated with it
+* 3 components of Attitude
+1. Affective: emotional or feeling component
+2. Cognitive: opinion or belief segment of attitude
+3. Behavioural: intention/ actual to behave towards something
+
+
+  
+
+
+
