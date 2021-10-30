@@ -7,7 +7,8 @@ Leetcode
 [
 https://www.hackerrank.com/
 ]
-(Hackerrank
+(
+Hackerrank
 )
 [
 https://codeforces.com/g
@@ -15,3 +16,9 @@ https://codeforces.com/g
 (
 Codeforces
 )
+[https://www.codechef.com/
+]
+(Codechef)
+[
+https://www.hackerearth.com/]
+(Hackerearth)
