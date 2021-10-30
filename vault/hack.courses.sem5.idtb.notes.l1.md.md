@@ -1,10 +1,11 @@
 ---
-id: eoa2IppGvxVCqk7xfETyQ
+id: PcIRhUHtXxFEUGrUw8PxB
 title: L1
 desc: ''
 updated: 1635257988168
 created: 1635257988168
 ---
+
 ## What is Psychology? 
 * Psychology is the science of **behaviour** and the **mind**; it includes the application of the **science** to solve human problems.
 * Unconscious knowledge are operations that are stored in your mind and helps to organise and react to information

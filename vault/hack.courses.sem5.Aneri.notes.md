@@ -1,10 +1,11 @@
 ---
-id: 9LXMlhA79pPQX3y948lvb
+id: o4lpeVLhAptB7K3iOvep7
 title: notes
 desc: ''
 updated: 1635320552907
 created: 1635320547815
 ---
+
 
 * **Transducers** : 1 type of signal to another
 * **Signals** : Non electrical to electrical signal 

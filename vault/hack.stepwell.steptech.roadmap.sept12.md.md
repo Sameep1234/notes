@@ -1,10 +1,11 @@
 ---
-id: fl2b0eEic0XCe5lpsTQSB
+id: TxlpDOD12iNDdZJ430woD
 title: Sept12
 desc: ''
 updated: 1635256160569
 created: 1635256160569
 ---
+
 
 ### Entry points 
 * [GAnalytics](https://support.google.com/analytics/answer/1008080?hl=en#zippy=%2Cin-this-article), [Snowplow](https://towardsdatascience.com/what-is-snowplow-and-do-i-need-it-cbe30fcb302b) 
