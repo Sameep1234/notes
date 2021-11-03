@@ -12,7 +12,7 @@ created: 1634535324275
 ```c
 #include<avr/io.h>
 
-int main()
+int main() 
 {
     DDRA = DDRB = 0xFF; // Common Cathode PORTA output
     while(1)
