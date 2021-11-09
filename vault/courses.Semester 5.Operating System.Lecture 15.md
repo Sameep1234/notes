@@ -1,10 +1,11 @@
 ---
-id: QCe86DSQhp1Q22bFbfKDX
+id: g00gG5RiPotsjv6xxjV5a
 title: Lecture 15
 desc: ''
 updated: 1635914442743
 created: 1635077358801
 ---
+
 ## Producer/Consumer (Cont.)
 
 > The question was what would happen if we changed the order in which semaphores are released?

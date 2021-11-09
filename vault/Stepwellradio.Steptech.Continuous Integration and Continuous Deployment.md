@@ -1,10 +1,11 @@
 ---
-id: U0qOIfpT7EhTQEKw8ZvA4
+id: 1sqv73SXcW1dbK563MWh1
 title: Continuous Integration and Continuous Deployment
 desc: ''
 updated: 1631450977498
 created: 1631439712234
 ---
+
 
 
 ## Using Github actions

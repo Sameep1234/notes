@@ -1,10 +1,11 @@
 ---
-id: Sax5SijNehbstCBpnmDqd
+id: FjnEH5toyyGyyIpRtRodC
 title: Lecture 2 (Lab)
 desc: ''
 updated: 1630813364714
 created: 1630777809064
 ---
+
 ## Coding Program and Examples
 
 ## Extra Points

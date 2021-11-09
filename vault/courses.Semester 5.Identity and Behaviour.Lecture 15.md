@@ -1,10 +1,11 @@
 ---
-id: NNUvjvLoGnALXVTrF7uV5
+id: dIHU5I2fuNmAVSwR5j4Oa
 title: Lecture 15
 desc: ''
 updated: 1635665533705
 created: 1635663794158
 ---
+
 
 # Situation Strength Theory and Attitudes
 

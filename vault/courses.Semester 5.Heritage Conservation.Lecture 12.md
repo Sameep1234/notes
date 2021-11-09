@@ -1,10 +1,11 @@
 ---
-id: MysriMc7fI4d7ITyeuTJL
+id: wcBxmYgYJWMiVUmPvitiq
 title: Lecture 12
 desc: ''
 updated: 1634401556028
 created: 1634401556028
 ---
+
 ## Textiles
 
 ## Properties

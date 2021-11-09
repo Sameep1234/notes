@@ -1,10 +1,11 @@
 ---
-id: hC37WUpgorZpmU8J7xuPZ
+id: A3IsGzAj8XLATmWJDXU5A
 title: Lecture 1
 desc: ''
 updated: 1633112144176
 created: 1630119232624
 ---
+
 ## Introduction to Embedded Systems
 
 ## Course Material

@@ -1,10 +1,11 @@
 ---
-id: s9CHaTSAWBQTC3p83epdT
+id: sRydRilym4SzymlFfcRS3
 title: Lecture 8
 desc: ''
 updated: 1632639950826
 created: 1632637539863
 ---
+
 ## Judgement and Attribution Theory
 
 > Recap: Behaviour is defined as observable actions.

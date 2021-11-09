@@ -1,10 +1,11 @@
 ---
-id: vX8jj4V3lhESvZWrFT7IE
+id: cRnr1Qy5VKRn50wi4GTe8
 title: Lecture 8
 desc: ''
 updated: 1632913252461
 created: 1632896897487
 ---
+
 ## Strain Sensitivity and Force Sensor
 
 ## Sensitivity and Bridge Circuit

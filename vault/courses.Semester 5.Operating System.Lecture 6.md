@@ -1,10 +1,11 @@
 ---
-id: 0LtDXV0XLrMYsvBcbUlnw
+id: z8M6lRIxUBXFlv4TDBZLP
 title: Lecture 6
 desc: ''
 updated: 1631167141681
 created: 1630895369961
 ---
+
 ## Process Control and Process Management
 
 > Process management will be studied in UNIX SVR4 file system.

@@ -1,10 +1,11 @@
 ---
-id: RDJmbGyvwY8AsaEvRobYD
+id: 7clPhd6lSg2fVQf2aTvRn
 title: Lecture 5
 desc: ''
 updated: 1631162424572
 created: 1630463553632
 ---
+
 
 ## Suspended Process
 * It is possible that at one point all the processes are waiting for I/O and processor will remain idle.

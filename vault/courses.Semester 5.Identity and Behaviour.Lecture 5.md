@@ -1,10 +1,11 @@
 ---
-id: fddzhs1pUOpj1rRdbjlHD
+id: Hb8iZ0Pj4mrwy1vfEV5re
 title: Lecture 5
 desc: ''
 updated: 1630860463712
 created: 1630858096193
 ---
+
 ## Social Learning Theory
 
 ## Social Learning Theory

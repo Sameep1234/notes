@@ -1,10 +1,11 @@
 ---
-id: qmKYkF2vVK9y7ljAkRycX
+id: 5RejZTggjV1OupQ9Ob8Og
 title: Lecture 1
 desc: ''
 updated: 1630162093225
 created: 1630119169788
 ---
+
 ## Introduction to Operating System
 
 ## Course Material

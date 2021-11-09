@@ -1,10 +1,11 @@
 ---
-id: QA96RmDQPiSXKr82Oo97Q
+id: K0kp6URgJ9SnimTcJphcx
 title: Lecture 10
 desc: ''
 updated: 1632647089386
 created: 1632640666042
 ---
+
 ## Decision Making and its related errors
 
 - When there is a problem, we make a decision and to the method is to choose one of the alternatives that we have in front of us.

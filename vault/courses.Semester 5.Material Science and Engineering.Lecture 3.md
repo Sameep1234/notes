@@ -1,10 +1,11 @@
 ---
-id: nvcTjRUZiu2dj7e2xrHDQ
+id: 7Pn2LE4nKGM3xnppbNKtx
 title: Lecture 3
 desc: ''
 updated: 1631843672053
 created: 1630149964439
 ---
+
 ## Crystal Lattice
 
 ### Sorry for the inconvinience but please refer this [site](https://unread.parthshah.ml/notes/omAwLOv3wYSYrihgzYlu4.html) for lecture 3 notes.

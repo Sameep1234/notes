@@ -1,10 +1,11 @@
 ---
-id: cUDCza2ZGqPLzC4qDXYJ4
+id: 3XHaaZqNPSJAFq6B7EP2X
 title: Lecture 6
 desc: ''
 updated: 1632723791302
 created: 1632723062497
 ---
+
 ## External Hardware Interrupts
 
 ## Activation

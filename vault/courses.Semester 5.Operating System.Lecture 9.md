@@ -1,10 +1,11 @@
 ---
-id: 6T4NCYNQMk4aRN8vAvZ0z
+id: 0Uhk8iMIRNBnAfYeBG1Ht
 title: Lecture 9
 desc: ''
 updated: 1632825583219
 created: 1632821953611
 ---
+
 ## Scheduling Algorithms (Cont.)
 
 ## Comparision (FCFS, RR, SPN)

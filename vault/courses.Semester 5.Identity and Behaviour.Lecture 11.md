@@ -1,10 +1,11 @@
 ---
-id: 9vaNAPGjQvlRc4kkFOcyt
+id: 4DCCh2hHBdpltVq4HEWyQ
 title: Lecture 11
 desc: ''
 updated: 1635656046364
 created: 1635654830571
 ---
+
 
 # Errors in Decision Making and Values
 

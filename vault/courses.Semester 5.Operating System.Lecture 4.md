@@ -1,10 +1,11 @@
 ---
-id: NhWKT5qXL21FvxgJ5gQ8d
+id: zjtKIvb0WxLBsSjJ8T8sg
 title: Lecture 4
 desc: ''
 updated: 1630431550375
 created: 1630228148528
 ---
+
 ## Process: Description and Control
 
 ## Requirements of OS as a Process Manager

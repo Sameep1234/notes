@@ -1,10 +1,11 @@
 ---
-id: q0EysX5s0d35E9EXqCe9H
+id: T92KraeaozDzY0vK436QV
 title: Lecture 10
 desc: ''
 updated: 1632849363575
 created: 1632829724691
 ---
+
 ## Scheduling Algorithm (Cont.)
 
 ## Fair-share scheduling

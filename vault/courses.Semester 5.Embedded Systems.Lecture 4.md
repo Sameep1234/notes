@@ -1,10 +1,11 @@
 ---
-id: 2gfrJVatHlxIKFBoN5ywR
+id: oSMzCzU9jSMnJHCl1447e
 title: Lecture 4
 desc: ''
 updated: 1631515853885
 created: 1631511523542
 ---
+
 ## Timers (Cont.)
 
 > Program to generate square wave of time period 100 micro second on Pin 1 of Port A and clock frequency of 1Mz

@@ -1,10 +1,11 @@
 ---
-id: yZqS3ZassMgzGRQoVUSK6
+id: 3bgfNmBJjy9QGMXUBbfdm
 title: Lecture 5
 desc: ''
 updated: 1632881828985
 created: 1632116048406
 ---
+
 ## Timer (Cont.) and Interrupt
 
 ## Difference between timer 0 and timer 2

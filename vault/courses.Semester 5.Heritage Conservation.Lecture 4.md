@@ -1,10 +1,11 @@
 ---
-id: BgcXxxpb6DisRJsyHHte4
+id: 0FioDgzoBdkgjvixTwIfa
 title: Lecture 4
 desc: ''
 updated: 1631296115136
 created: 1631276732938
 ---
+
 ## Electrochemical series and more on metals
 
 - It is the disordered state that is stable state and ordered state is the active one.

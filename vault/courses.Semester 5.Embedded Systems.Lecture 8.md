@@ -1,10 +1,11 @@
 ---
-id: LFgjcXGwM89FKc9clvsoB
+id: LkO7xEErH0QpS7h9pjGop
 title: LCD's
 desc: ''
 updated: 1635938614345
 created: 1634535324275
 ---
+
 ## 7 Segment LED and Intro to LCD and Keyboard
 
 > ![](/assets/images/2021-10-18-11-18-49.png)

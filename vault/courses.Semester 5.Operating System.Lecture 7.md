@@ -1,10 +1,11 @@
 ---
-id: javcf3PHyxIZemUP0ry6l
+id: 36z9kW3MusJ2QwFLC9yCU
 title: Lecture 7
 desc: ''
 updated: 1631260876454
 created: 1631247844382
 ---
+
 ## Process/Processor Scheduling
 
 > Note that we have assumed uniprocessor system and hence we will be studying uniprocessor scheduling

@@ -1,10 +1,11 @@
 ---
-id: RZkmBMLpapyC7rY1nlPNw
+id: 4xlgD7WfeBwYS1JyODxUT
 title: Midsem Cheatsheet
 desc: ''
 updated: 1633174919802
 created: 1633151288354
 ---
+
 
 
 ## Important Tables

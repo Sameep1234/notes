@@ -1,10 +1,11 @@
 ---
-id: 7iNhoSnYasmhzWLuw5QX7
+id: sjDNc2DRFAZ8LSFjWvcu0
 title: Lecture 1 (Lab)
 desc: ''
 updated: 1633113352753
 created: 1632801343461
 ---
+
 ## Selection and Coding
 
 > #### This was the lab session but theory was taught.

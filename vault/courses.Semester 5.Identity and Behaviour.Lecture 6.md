@@ -1,10 +1,11 @@
 ---
-id: gl2WcsaH8CXocpJY34IWL
+id: Rz2Z0FU78qgo7Z71N9CfP
 title: Lecture 6
 desc: ''
 updated: 1631427512954
 created: 1631424905773
 ---
+
 ## Piaget's and Theory
 
 ## Piaget's Theory

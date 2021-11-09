@@ -1,10 +1,11 @@
 ---
-id: QV2gxSOckuI5zG62O2Sxl
+id: UkVqC9tIYjFtHLMGIZjdP
 title: Lecture 14
 desc: ''
 updated: 1635663443602
 created: 1635662913029
 ---
+
 
 # Personality Models (Cont.)
 

@@ -1,10 +1,11 @@
 ---
-id: wq6jMCkSGudDzRL5oOHdI
+id: EzFAqylmlMVOhrO46M14m
 title: Lecture 1
 desc: ''
 updated: 1630848380769
 created: 1630119338517
 ---
+
 ## Introduction to IDTB
 
 ## Evaluation Scheme

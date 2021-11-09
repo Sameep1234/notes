@@ -1,10 +1,11 @@
 ---
-id: hWkZa7lXfvwxyjdkU0ey2
+id: mkROCs9jQQ5tVPzLzVXNi
 title: Lecture 10
 desc: ''
 updated: 1633600658724
 created: 1633599517028
 ---
+
 ## Temperature Sensor
 
 ## Resistance Temperature Detectors (RTD)

@@ -1,10 +1,11 @@
 ---
-id: oIHCqYCX1GptUGCcB4W1M
+id: UKIGki0vHPK3aRvwbfMJL
 title: Lecture 12
 desc: ''
 updated: 1635656402760
 created: 1635656402760
 ---
+
 
 # PJ-fit vs PO-fit and Hofstede framework
 

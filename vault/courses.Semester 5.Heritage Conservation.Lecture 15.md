@@ -1,10 +1,11 @@
 ---
-id: AxTfLkjsVSwfFSGpL22WS
+id: 54UG6OenTE0aRCaRqbb5Q
 title: Lecture 15
 desc: ''
 updated: 1634462653360
 created: 1634454839757
 ---
+
 ## Paintings (Cont.)
 
 > How to classify an oil as drying or non-drying oil?

@@ -1,10 +1,11 @@
 ---
-id: SpXfiUCnyMAY7br21tDwo
+id: rCVUcVQWmRANbFIHNzo6k
 title: Lecture 8
 desc: ''
 updated: 1632105946469
 created: 1631672853178
 ---
+
 ## Uniprocessor Scheduling Algorithms
 
 - We would be discussing only short-term scheduling.

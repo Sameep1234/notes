@@ -1,10 +1,11 @@
 ---
-id: fNPCpgaBzVAiMTXM0rbvf
+id: SWZkc7DdTNxNRy8Wd2tkK
 title: Lecture 14
 desc: ''
 updated: 1635075189235
 created: 1635075189235
 ---
+
 ## Semaphores
 
 ## Primitives

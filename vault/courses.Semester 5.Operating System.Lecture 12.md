@@ -1,10 +1,11 @@
 ---
-id: 2DXR9VSDRlyzlQ4E9Poqg
+id: KpGll9jgwuYnRppkkiNqM
 title: Lecture 12
 desc: ''
 updated: 1634062937767
 created: 1634062937767
 ---
+
 ## Concurrency
 
 ## Principles of Concurrency

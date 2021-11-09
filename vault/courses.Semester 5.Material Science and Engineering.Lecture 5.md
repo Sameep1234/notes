@@ -1,10 +1,11 @@
 ---
-id: ON0nd3gJDUiJLTKbw5354
+id: 8b9mhqeVaeU3RwyIdctOQ
 title: Lecture 5
 desc: ''
 updated: 1631936415801
 created: 1631075486165
 ---
+
 ## X-ray Diffraction (XRD)
 
 > Diffraction occurs when a eave encounters a series of regularly shaped obstacles that are capable of scattering the wave and have spacings that are comparable in magnitude to the wavelength.

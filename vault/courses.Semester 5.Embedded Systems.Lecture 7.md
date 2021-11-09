@@ -1,10 +1,11 @@
 ---
-id: QMF3DuAh6RRPSlQXcLYfj
+id: xv8mxFRFgatxB2DTzHTjj
 title: Lecture 7
 desc: ''
 updated: 1634529659508
 created: 1634529035499
 ---
+
 ## AVR Interfacing with 7 segment LEDs
 
 ## LEDs

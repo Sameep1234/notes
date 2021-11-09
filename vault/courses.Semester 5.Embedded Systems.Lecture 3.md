@@ -1,10 +1,11 @@
 ---
-id: MCPNPv2ojz35ksmo8KOhf
+id: XKgcihMxrAqw7yeah2H5J
 title: Lecture 3
 desc: ''
 updated: 1630910764458
 created: 1630905993189
 ---
+
 ## Timer (Cont.)
 
 ## Extra Points

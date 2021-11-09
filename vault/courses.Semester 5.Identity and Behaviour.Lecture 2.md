@@ -1,10 +1,11 @@
 ---
-id: 2wrY2jTIiZAARQpIh6pvX
+id: iwhlO4698omQcNVxlftUA
 title: Lecture 2
 desc: ''
 updated: 1630851678636
 created: 1630848418482
 ---
+
 ## Schools of Psychology (Cont.)
 
 ## Functionalism

@@ -1,10 +1,11 @@
 ---
-id: pqNpCLStu5xEH6DUzpCYe
+id: PTsAZTt7Lv8ccLelOBFAI
 title: Lecture 7
 desc: ''
 updated: 1631422082854
 created: 1631343362460
 ---
+
 ## Ceramic and Intro to Wood
 
 ## Firing stages of clay

@@ -1,10 +1,11 @@
 ---
-id: VwBhETboaQX8KNmQBqhpF
+id: 4fcGNlMyEYVeTXtxQAd7k
 title: Lecture 6
 desc: ''
 updated: 1632046535963
 created: 1630642633459
 ---
+
 
 ## Feedback control
 * Here we are considering the example of an engine of the car.

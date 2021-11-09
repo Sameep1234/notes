@@ -1,10 +1,11 @@
 ---
-id: wOFIdgY6zsayKwBrMmCEc
+id: tSllbyBt3ZqkFMyPDbLLE
 title: Lecture 9
 desc: ''
 updated: 1632640395823
 created: 1632640036695
 ---
+
 ## Decision Making
 
 > This lecture was dedicated to case study "Leaving" and hence there is not much notes to take.

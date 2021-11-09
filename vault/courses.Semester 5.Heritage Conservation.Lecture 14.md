@@ -1,10 +1,11 @@
 ---
-id: FX33XpJ5ZUrNaOcyLVhsQ
+id: HFGrSrOHbY9vSu2OTCDm2
 title: Lecture 14
 desc: ''
 updated: 1634453313174
 created: 1634452274637
 ---
+
 ## Paintings (Cont.)
 
 ## Types of paint

@@ -1,10 +1,11 @@
 ---
-id: Kkh8MkHK2NImM6qoTJ3a3
+id: ZtXmtQgzVVdhNp7thfrI2
 title: Metals
 desc: ''
 updated: 1631276687371
 created: 1631265091571
 ---
+
 ## Hardness of Stones and Introduction to metals
 
 ## Mohs Hardness Scale

@@ -1,10 +1,11 @@
 ---
-id: 3OaDDy8y2IYurK4sgVwu8
+id: r6YI7ZxUkVZm6G2BayyMA
 title: Lecture 16
 desc: ''
 updated: 1635670286587
 created: 1635665741115
 ---
+
 
 # Attitudes (Cont.)
 

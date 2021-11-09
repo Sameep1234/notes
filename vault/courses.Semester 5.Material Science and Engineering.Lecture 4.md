@@ -1,10 +1,11 @@
 ---
-id: EEBX03ivKmKCwvuAYDOtw
+id: 5WHoNgDkNJViUb6nfDCEY
 title: Lecture 4
 desc: ''
 updated: 1631896303807
 created: 1630240499817
 ---
+
 ## Directions and Planes
 
 ## Points to ponder (**Lecture 3**)
