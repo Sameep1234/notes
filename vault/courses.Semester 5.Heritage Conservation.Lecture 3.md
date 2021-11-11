@@ -1,10 +1,11 @@
 ---
 id: ZtXmtQgzVVdhNp7thfrI2
-title: Metals
+title: Lecture 3
 desc: ''
 updated: 1631276687371
 created: 1631265091571
 ---
+
 
 ## Hardness of Stones and Introduction to metals
 

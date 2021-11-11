@@ -1,10 +1,11 @@
 ---
 id: GSWww183ePaI3f6BfvI2G
-title: Paintings
+title: Lecture 13
 desc: ''
 updated: 1634436927596
 created: 1634435550600
 ---
+
 
 ## Textiles (Cont.)
 
