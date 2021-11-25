@@ -1,5 +1,5 @@
 ---
-id: Zjjpw5sjzZAX8mCf1tmCN
+id: 2I3jbdHKDtLSroEW0MAI2
 title: Midsem Cheatsheet
 desc: ''
 updated: 1633174919802

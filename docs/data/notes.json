@@ -11,14 +11,14 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1637849953608,
-      "created": 1637849953608,
+      "updated": 1637850531033,
+      "created": 1637850531033,
       "parent": null,
       "children": [],
       "data": {}
     },
-    "PAQSbL1rYQAohZXoEr47M": {
-      "id": "PAQSbL1rYQAohZXoEr47M",
+    "GL4YoVrbDUHLnf946YtXV": {
+      "id": "GL4YoVrbDUHLnf946YtXV",
       "title": "Curated Notes",
       "vault": {
         "fsPath": "vault"
@@ -33,14 +33,122 @@
       "parent": null,
       "children": [
         "Jq5ki9jf1QLTdc3DYLRW4",
-        "3ONxZ3Khb7nFPdLxlV1ib"
+        "3ONxZ3Khb7nFPdLxlV1ib",
+        "Z2JlSyF7TPv3hFanVQhJd"
       ],
       "data": {},
-      "contentHash": "250e1442f895f06dba982d3a97cc447f",
+      "contentHash": "e9b530a3175371dde392f83db6e59628",
       "custom": {
         "nav_order": 0,
         "permalink": "/"
       }
+    },
+    "Z2JlSyF7TPv3hFanVQhJd": {
+      "id": "Z2JlSyF7TPv3hFanVQhJd",
+      "title": "User",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "user",
+      "updated": 1637850242915,
+      "created": 1637850242915,
+      "parent": "GL4YoVrbDUHLnf946YtXV",
+      "children": [
+        "KQqTavJbMNZYJnddszn8c",
+        "ZQnKTzZ9MiNaNiQ8pG7Qr"
+      ],
+      "data": {},
+      "contentHash": "4f7d7cde4c3c684ced7921d9f6c5d89e",
+      "stub": false,
+      "custom": {
+        "stub": true
+      }
+    },
+    "ZQnKTzZ9MiNaNiQ8pG7Qr": {
+      "id": "ZQnKTzZ9MiNaNiQ8pG7Qr",
+      "title": "V2",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [
+        {
+          "from": {
+            "fname": "Stepwellradio.Steptech.Continuous Integration and Continuous Deployment",
+            "vaultName": "vault"
+          },
+          "type": "backlink",
+          "position": {
+            "start": {
+              "line": 24,
+              "column": 52,
+              "offset": 1303
+            },
+            "end": {
+              "line": 24,
+              "column": 55,
+              "offset": 1306
+            },
+            "indent": []
+          },
+          "value": "user.v2"
+        }
+      ],
+      "anchors": {},
+      "fname": "user.v2",
+      "updated": 1637850242536,
+      "created": 1637850242536,
+      "parent": "Z2JlSyF7TPv3hFanVQhJd",
+      "children": [],
+      "data": {},
+      "contentHash": "5812e5613f87971e967b3f8ed4486f99",
+      "custom": {}
+    },
+    "KQqTavJbMNZYJnddszn8c": {
+      "id": "KQqTavJbMNZYJnddszn8c",
+      "title": "Master",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [
+        {
+          "from": {
+            "fname": "Stepwellradio.Steptech.Continuous Integration and Continuous Deployment",
+            "vaultName": "vault"
+          },
+          "type": "backlink",
+          "position": {
+            "start": {
+              "line": 64,
+              "column": 36,
+              "offset": 3693
+            },
+            "end": {
+              "line": 64,
+              "column": 43,
+              "offset": 3700
+            },
+            "indent": []
+          },
+          "value": "user.master"
+        }
+      ],
+      "anchors": {},
+      "fname": "user.master",
+      "updated": 1637850242837,
+      "created": 1637850242837,
+      "parent": "Z2JlSyF7TPv3hFanVQhJd",
+      "children": [],
+      "data": {},
+      "contentHash": "aa4b20315450a28ce0a39f54ff5a417b",
+      "custom": {}
     },
     "3ONxZ3Khb7nFPdLxlV1ib": {
       "id": "3ONxZ3Khb7nFPdLxlV1ib",
@@ -55,7 +163,7 @@
       "fname": "Stepwellradio",
       "updated": 1631439712237,
       "created": 1631439712237,
-      "parent": "PAQSbL1rYQAohZXoEr47M",
+      "parent": "GL4YoVrbDUHLnf946YtXV",
       "children": [
         "xm1zwK8k3nHvutw0hqXhh"
       ],
@@ -81,7 +189,7 @@
       "created": 1631439712238,
       "parent": "3ONxZ3Khb7nFPdLxlV1ib",
       "children": [
-        "H4FmA0ufvqCb9sbTFCpq9"
+        "61s7N7vLnGC1g5R3iiIQB"
       ],
       "data": {},
       "contentHash": "475e8b3f298920b1d16d20da6fc42bd3",
@@ -90,8 +198,8 @@
         "stub": true
       }
     },
-    "H4FmA0ufvqCb9sbTFCpq9": {
-      "id": "H4FmA0ufvqCb9sbTFCpq9",
+    "61s7N7vLnGC1g5R3iiIQB": {
+      "id": "61s7N7vLnGC1g5R3iiIQB",
       "title": "Continuous Integration and Continuous Deployment",
       "vault": {
         "fsPath": "vault"
@@ -103,7 +211,7 @@
           "type": "wiki",
           "from": {
             "fname": "Stepwellradio.Steptech.Continuous Integration and Continuous Deployment",
-            "id": "H4FmA0ufvqCb9sbTFCpq9",
+            "id": "61s7N7vLnGC1g5R3iiIQB",
             "vaultName": "vault"
           },
           "value": "user.v2",
@@ -130,7 +238,7 @@
           "type": "wiki",
           "from": {
             "fname": "Stepwellradio.Steptech.Continuous Integration and Continuous Deployment",
-            "id": "H4FmA0ufvqCb9sbTFCpq9",
+            "id": "61s7N7vLnGC1g5R3iiIQB",
             "vaultName": "vault"
           },
           "value": "user.master",
@@ -183,7 +291,7 @@
       "parent": "xm1zwK8k3nHvutw0hqXhh",
       "children": [],
       "data": {},
-      "contentHash": "2cf258dc27de78d62e4b78a08c39b812",
+      "contentHash": "1ecd2d27a6855b84e7fe1b72b120d458",
       "custom": {}
     },
     "Jq5ki9jf1QLTdc3DYLRW4": {
@@ -199,7 +307,7 @@
       "fname": "courses",
       "updated": 1629976172616,
       "created": 1629976172616,
-      "parent": "PAQSbL1rYQAohZXoEr47M",
+      "parent": "GL4YoVrbDUHLnf946YtXV",
       "children": [
         "O93aKwUCEnkxTR7S8V2eZ"
       ],
@@ -254,16 +362,16 @@
       "created": 1630119208042,
       "parent": "O93aKwUCEnkxTR7S8V2eZ",
       "children": [
-        "zdBBUYEMfBPsipxsxrpwE",
-        "xVLAMOTRzWfRVwfsVMq6f",
-        "JapOEW7AAXPc4jSFRTcJA",
-        "U31XpFFA53UhxCdhfzSqT",
-        "nGhDtnqQHEdRrAS4Docl5",
-        "wh3lu5fSF6uDAI7whCJNX",
-        "WdDeERHrUwvQ8HfeoNtjQ",
-        "hSlcLbw6o7MpPY1bk9vmd",
-        "FixjaSohyPrxu4oYW2S41",
-        "NcNYuop3weMYvHJdAI25K"
+        "Jqm57aNTtP1pM6WgfkBhW",
+        "rGu03TP8FBMggz0Zyswe9",
+        "L57SuvbtLnSlaw4HqypRR",
+        "Tdjd0mPFGulZGOBl721CU",
+        "a6CT0mtRRDcyB3rU3cQni",
+        "ji2KZ3QFAkGuJB0Mvn9Je",
+        "IqotyWcCthj4L8OnoIpHt",
+        "lIhVAFZlk6FoqV0XELDC9",
+        "PWPIeH8CjkY6zLobam03W",
+        "Uz1kmV0hCjDg2vjNXhlmc"
       ],
       "data": {},
       "contentHash": "a702be17db153d2faff7d97398408ac3",
@@ -272,8 +380,8 @@
         "stub": true
       }
     },
-    "NcNYuop3weMYvHJdAI25K": {
-      "id": "NcNYuop3weMYvHJdAI25K",
+    "Uz1kmV0hCjDg2vjNXhlmc": {
+      "id": "Uz1kmV0hCjDg2vjNXhlmc",
       "title": "Lecture 9",
       "vault": {
         "fsPath": "vault"
@@ -288,11 +396,11 @@
       "parent": "BU8smu6Xa4e3tkB0iVHT9",
       "children": [],
       "data": {},
-      "contentHash": "1d1ec3f3e9dc844108d85653fb1e9b1a",
+      "contentHash": "8e923add3044dcfcd6c940689c05c344",
       "custom": {}
     },
-    "FixjaSohyPrxu4oYW2S41": {
-      "id": "FixjaSohyPrxu4oYW2S41",
+    "PWPIeH8CjkY6zLobam03W": {
+      "id": "PWPIeH8CjkY6zLobam03W",
       "title": "Lecture 8",
       "vault": {
         "fsPath": "vault"
@@ -364,11 +472,11 @@
       "parent": "BU8smu6Xa4e3tkB0iVHT9",
       "children": [],
       "data": {},
-      "contentHash": "e46cdb9e354f0754b426e84ca7b601dc",
+      "contentHash": "8d306384b53270c93985967b87fb2f56",
       "custom": {}
     },
-    "hSlcLbw6o7MpPY1bk9vmd": {
-      "id": "hSlcLbw6o7MpPY1bk9vmd",
+    "lIhVAFZlk6FoqV0XELDC9": {
+      "id": "lIhVAFZlk6FoqV0XELDC9",
       "title": "Lecture 7",
       "vault": {
         "fsPath": "vault"
@@ -419,11 +527,11 @@
       "parent": "BU8smu6Xa4e3tkB0iVHT9",
       "children": [],
       "data": {},
-      "contentHash": "5b1c217b357f0ae96c0241c13234be81",
+      "contentHash": "8d900277c4911249625d0a7fc7ba537b",
       "custom": {}
     },
-    "WdDeERHrUwvQ8HfeoNtjQ": {
-      "id": "WdDeERHrUwvQ8HfeoNtjQ",
+    "IqotyWcCthj4L8OnoIpHt": {
+      "id": "IqotyWcCthj4L8OnoIpHt",
       "title": "Lecture 6",
       "vault": {
         "fsPath": "vault"
@@ -474,11 +582,11 @@
       "parent": "BU8smu6Xa4e3tkB0iVHT9",
       "children": [],
       "data": {},
-      "contentHash": "40d930ce3cfc49424039e466ff17155a",
+      "contentHash": "104be3350f73b4bd2935b51471954b00",
       "custom": {}
     },
-    "wh3lu5fSF6uDAI7whCJNX": {
-      "id": "wh3lu5fSF6uDAI7whCJNX",
+    "ji2KZ3QFAkGuJB0Mvn9Je": {
+      "id": "ji2KZ3QFAkGuJB0Mvn9Je",
       "title": "Lecture 5",
       "vault": {
         "fsPath": "vault"
@@ -564,11 +672,11 @@
       "parent": "BU8smu6Xa4e3tkB0iVHT9",
       "children": [],
       "data": {},
-      "contentHash": "8f6bd79a4cdc94782d1b89e9afb52533",
+      "contentHash": "169c8430fdabd0ef72fdbc1397e0c8d7",
       "custom": {}
     },
-    "nGhDtnqQHEdRrAS4Docl5": {
-      "id": "nGhDtnqQHEdRrAS4Docl5",
+    "a6CT0mtRRDcyB3rU3cQni": {
+      "id": "a6CT0mtRRDcyB3rU3cQni",
       "title": "Lecture 4",
       "vault": {
         "fsPath": "vault"
@@ -598,11 +706,11 @@
       "parent": "BU8smu6Xa4e3tkB0iVHT9",
       "children": [],
       "data": {},
-      "contentHash": "5e8512ab6517eea7415f329ad68b0920",
+      "contentHash": "d87b11ad23affb9b97a49e407c37136f",
       "custom": {}
     },
-    "U31XpFFA53UhxCdhfzSqT": {
-      "id": "U31XpFFA53UhxCdhfzSqT",
+    "Tdjd0mPFGulZGOBl721CU": {
+      "id": "Tdjd0mPFGulZGOBl721CU",
       "title": "Lecture 3",
       "vault": {
         "fsPath": "vault"
@@ -716,11 +824,11 @@
       "parent": "BU8smu6Xa4e3tkB0iVHT9",
       "children": [],
       "data": {},
-      "contentHash": "185ec0aa032e932f98378abd0631a1ab",
+      "contentHash": "0425c7bdb2c7a5912ddaaacef565b15f",
       "custom": {}
     },
-    "JapOEW7AAXPc4jSFRTcJA": {
-      "id": "JapOEW7AAXPc4jSFRTcJA",
+    "L57SuvbtLnSlaw4HqypRR": {
+      "id": "L57SuvbtLnSlaw4HqypRR",
       "title": "Lecture 2",
       "vault": {
         "fsPath": "vault"
@@ -778,11 +886,11 @@
       "parent": "BU8smu6Xa4e3tkB0iVHT9",
       "children": [],
       "data": {},
-      "contentHash": "12406b906874a068c11cd5782b101ab5",
+      "contentHash": "a77dea65b6ce94f20b8a0627187d2780",
       "custom": {}
     },
-    "xVLAMOTRzWfRVwfsVMq6f": {
-      "id": "xVLAMOTRzWfRVwfsVMq6f",
+    "rGu03TP8FBMggz0Zyswe9": {
+      "id": "rGu03TP8FBMggz0Zyswe9",
       "title": "Lecture 10",
       "vault": {
         "fsPath": "vault"
@@ -819,11 +927,11 @@
       "parent": "BU8smu6Xa4e3tkB0iVHT9",
       "children": [],
       "data": {},
-      "contentHash": "e1ffb3d9b89745b78dd7ee04873b7e47",
+      "contentHash": "04aeb490c147da7a4be2dc0e1b28068a",
       "custom": {}
     },
-    "zdBBUYEMfBPsipxsxrpwE": {
-      "id": "zdBBUYEMfBPsipxsxrpwE",
+    "Jqm57aNTtP1pM6WgfkBhW": {
+      "id": "Jqm57aNTtP1pM6WgfkBhW",
       "title": "Lecture 1",
       "vault": {
         "fsPath": "vault"
@@ -895,7 +1003,7 @@
       "parent": "BU8smu6Xa4e3tkB0iVHT9",
       "children": [],
       "data": {},
-      "contentHash": "d787b4407f94d1027a0bcf19ef2b44ec",
+      "contentHash": "f8189be6cb8b0fdd0c18ae43725c0b61",
       "custom": {}
     },
     "OGq6U8MXIG3wwETNLR4b6": {
@@ -913,21 +1021,21 @@
       "created": 1630119169797,
       "parent": "O93aKwUCEnkxTR7S8V2eZ",
       "children": [
-        "L9plUnYVAhXq8qg1CdvNh",
-        "f5dlEoDzwlq3yMHhicQ2C",
-        "2PVZ3K7q7HCakDY4u1T7K",
-        "Om3BjSBwJ4msBEnMxWrYU",
-        "Jfolwo1eQQi6LKwoghU6l",
-        "yXTHl67eEyeYc1FzUSYAB",
-        "l5dCXuIC6ikFlsGj7HKMc",
-        "My1sNpVxjDW1EQ1AS5pCE",
-        "HfoOocdzgDpY7PzLqeFBr",
-        "IQvnTA2wCBuItQXHtM80g",
-        "RCeafZlOZpGJ5DG5TcImf",
-        "FjBWvGYls2rtgzvV8IzVj",
-        "FTSQw98yIYwiXeBaNJndt",
-        "VIYwqRTFVxu0NTXGRThj4",
-        "ElSbXosQc8eVTiYPgFH2n"
+        "Ixq6EKHPeFGFL5Ine7Q88",
+        "ICa9pujUqLTRQndM6chYc",
+        "oIZvJD5sS5bPfNsI1IACf",
+        "xvoRdRebJgnfxMIiHBeT1",
+        "pp3l5JXxAoNzAiAFQdqjX",
+        "9VNKwnbcB1p1GfWov2XV9",
+        "zSIKkEOjZK82QDA6gLngg",
+        "dZ8QfTe3sVhDx2ZF1TUwl",
+        "iu2NfxEcaZVlMyzqfOhzh",
+        "GDGlRMXKe6x8EjWvP07VJ",
+        "Ecn0Y4Pl4ue0F3gQQg9QX",
+        "kdXjR2ZeogN1YdeKEK4e2",
+        "OR9JnGOC5ko3czhGKOQx6",
+        "a7GkxQryidl8VcaOsqW5E",
+        "Y15Z6FWUqPX81EPSFIrUX"
       ],
       "data": {},
       "contentHash": "183a4b9274210455b85a1df189c4b522",
@@ -936,8 +1044,8 @@
         "stub": true
       }
     },
-    "ElSbXosQc8eVTiYPgFH2n": {
-      "id": "ElSbXosQc8eVTiYPgFH2n",
+    "Y15Z6FWUqPX81EPSFIrUX": {
+      "id": "Y15Z6FWUqPX81EPSFIrUX",
       "title": "Lecture 9",
       "vault": {
         "fsPath": "vault"
@@ -1002,11 +1110,11 @@
       "parent": "OGq6U8MXIG3wwETNLR4b6",
       "children": [],
       "data": {},
-      "contentHash": "b9a6a011fe507589839f06bb5fe828ee",
+      "contentHash": "de8eb226f3bdc43eabd5c6e49269adfe",
       "custom": {}
     },
-    "VIYwqRTFVxu0NTXGRThj4": {
-      "id": "VIYwqRTFVxu0NTXGRThj4",
+    "a7GkxQryidl8VcaOsqW5E": {
+      "id": "a7GkxQryidl8VcaOsqW5E",
       "title": "Lecture 8",
       "vault": {
         "fsPath": "vault"
@@ -1078,11 +1186,11 @@
       "parent": "OGq6U8MXIG3wwETNLR4b6",
       "children": [],
       "data": {},
-      "contentHash": "f5197d28b94ca90bf67ed0e9501707cc",
+      "contentHash": "1938cac5660d72eb1eb9f2640384e325",
       "custom": {}
     },
-    "FTSQw98yIYwiXeBaNJndt": {
-      "id": "FTSQw98yIYwiXeBaNJndt",
+    "OR9JnGOC5ko3czhGKOQx6": {
+      "id": "OR9JnGOC5ko3czhGKOQx6",
       "title": "Lecture 7",
       "vault": {
         "fsPath": "vault"
@@ -1175,11 +1283,11 @@
       "parent": "OGq6U8MXIG3wwETNLR4b6",
       "children": [],
       "data": {},
-      "contentHash": "26cd752a9e9909177db51a85218a0a97",
+      "contentHash": "de34cd40e84fce8d5fefbc0c6598823f",
       "custom": {}
     },
-    "FjBWvGYls2rtgzvV8IzVj": {
-      "id": "FjBWvGYls2rtgzvV8IzVj",
+    "kdXjR2ZeogN1YdeKEK4e2": {
+      "id": "kdXjR2ZeogN1YdeKEK4e2",
       "title": "Lecture 6",
       "vault": {
         "fsPath": "vault"
@@ -1244,11 +1352,11 @@
       "parent": "OGq6U8MXIG3wwETNLR4b6",
       "children": [],
       "data": {},
-      "contentHash": "20f0d6945ac381163d96b066c2b7df5b",
+      "contentHash": "313b6b7c699db3d10aa4b22ef1d66f3a",
       "custom": {}
     },
-    "RCeafZlOZpGJ5DG5TcImf": {
-      "id": "RCeafZlOZpGJ5DG5TcImf",
+    "Ecn0Y4Pl4ue0F3gQQg9QX": {
+      "id": "Ecn0Y4Pl4ue0F3gQQg9QX",
       "title": "Lecture 5",
       "vault": {
         "fsPath": "vault"
@@ -1369,11 +1477,11 @@
       "parent": "OGq6U8MXIG3wwETNLR4b6",
       "children": [],
       "data": {},
-      "contentHash": "b7159e6f52e210534c2e0412ce04b79c",
+      "contentHash": "5e87b8432c24df95e509753d14e286a4",
       "custom": {}
     },
-    "IQvnTA2wCBuItQXHtM80g": {
-      "id": "IQvnTA2wCBuItQXHtM80g",
+    "GDGlRMXKe6x8EjWvP07VJ": {
+      "id": "GDGlRMXKe6x8EjWvP07VJ",
       "title": "Lecture 4",
       "vault": {
         "fsPath": "vault"
@@ -1473,11 +1581,11 @@
       "parent": "OGq6U8MXIG3wwETNLR4b6",
       "children": [],
       "data": {},
-      "contentHash": "df85a2edbb8069a749b177a37e2e0df5",
+      "contentHash": "25fb747722157f17a95745b829f3fb72",
       "custom": {}
     },
-    "HfoOocdzgDpY7PzLqeFBr": {
-      "id": "HfoOocdzgDpY7PzLqeFBr",
+    "iu2NfxEcaZVlMyzqfOhzh": {
+      "id": "iu2NfxEcaZVlMyzqfOhzh",
       "title": "Lecture 3",
       "vault": {
         "fsPath": "vault"
@@ -1535,11 +1643,11 @@
       "parent": "OGq6U8MXIG3wwETNLR4b6",
       "children": [],
       "data": {},
-      "contentHash": "f14d0a68ca7ae16516dac59e023ddca8",
+      "contentHash": "8f10046dcb74c1b44d958c1aad4c392e",
       "custom": {}
     },
-    "My1sNpVxjDW1EQ1AS5pCE": {
-      "id": "My1sNpVxjDW1EQ1AS5pCE",
+    "dZ8QfTe3sVhDx2ZF1TUwl": {
+      "id": "dZ8QfTe3sVhDx2ZF1TUwl",
       "title": "Lecture 2",
       "vault": {
         "fsPath": "vault"
@@ -1611,11 +1719,11 @@
       "parent": "OGq6U8MXIG3wwETNLR4b6",
       "children": [],
       "data": {},
-      "contentHash": "e6e28688bfaafeab87a8c246ae57973f",
+      "contentHash": "33dfab810b940378ef4105ea00f1a1de",
       "custom": {}
     },
-    "l5dCXuIC6ikFlsGj7HKMc": {
-      "id": "l5dCXuIC6ikFlsGj7HKMc",
+    "zSIKkEOjZK82QDA6gLngg": {
+      "id": "zSIKkEOjZK82QDA6gLngg",
       "title": "Lecture 15",
       "vault": {
         "fsPath": "vault"
@@ -1645,11 +1753,11 @@
       "parent": "OGq6U8MXIG3wwETNLR4b6",
       "children": [],
       "data": {},
-      "contentHash": "b5683c943ea6f6e96e016aeebbe41dbf",
+      "contentHash": "94540e0592d53e2ace312d029020d3e7",
       "custom": {}
     },
-    "yXTHl67eEyeYc1FzUSYAB": {
-      "id": "yXTHl67eEyeYc1FzUSYAB",
+    "9VNKwnbcB1p1GfWov2XV9": {
+      "id": "9VNKwnbcB1p1GfWov2XV9",
       "title": "Lecture 14",
       "vault": {
         "fsPath": "vault"
@@ -1700,11 +1808,11 @@
       "parent": "OGq6U8MXIG3wwETNLR4b6",
       "children": [],
       "data": {},
-      "contentHash": "cb54900afafab8f62450a0e0504c74c2",
+      "contentHash": "ff35b84250675f6f05a3b5c69903870e",
       "custom": {}
     },
-    "Jfolwo1eQQi6LKwoghU6l": {
-      "id": "Jfolwo1eQQi6LKwoghU6l",
+    "pp3l5JXxAoNzAiAFQdqjX": {
+      "id": "pp3l5JXxAoNzAiAFQdqjX",
       "title": "Lecture 13",
       "vault": {
         "fsPath": "vault"
@@ -1783,11 +1891,11 @@
       "parent": "OGq6U8MXIG3wwETNLR4b6",
       "children": [],
       "data": {},
-      "contentHash": "b85752ceda6bab2944047a68b18ebf40",
+      "contentHash": "0339c385c4b77ef575c940a450b2abcb",
       "custom": {}
     },
-    "Om3BjSBwJ4msBEnMxWrYU": {
-      "id": "Om3BjSBwJ4msBEnMxWrYU",
+    "xvoRdRebJgnfxMIiHBeT1": {
+      "id": "xvoRdRebJgnfxMIiHBeT1",
       "title": "Lecture 12",
       "vault": {
         "fsPath": "vault"
@@ -1880,11 +1988,11 @@
       "parent": "OGq6U8MXIG3wwETNLR4b6",
       "children": [],
       "data": {},
-      "contentHash": "76c43a6f5ebbc24b37ed60e4a91781fc",
+      "contentHash": "c33ee13eb7520379c4024695feeb4217",
       "custom": {}
     },
-    "2PVZ3K7q7HCakDY4u1T7K": {
-      "id": "2PVZ3K7q7HCakDY4u1T7K",
+    "oIZvJD5sS5bPfNsI1IACf": {
+      "id": "oIZvJD5sS5bPfNsI1IACf",
       "title": "Lecture 11",
       "vault": {
         "fsPath": "vault"
@@ -2026,11 +2134,11 @@
       "parent": "OGq6U8MXIG3wwETNLR4b6",
       "children": [],
       "data": {},
-      "contentHash": "f2293ff173ffa076cdb6b80d66cb05cb",
+      "contentHash": "bd839cac138fe3d5ff9000c80302abcc",
       "custom": {}
     },
-    "f5dlEoDzwlq3yMHhicQ2C": {
-      "id": "f5dlEoDzwlq3yMHhicQ2C",
+    "ICa9pujUqLTRQndM6chYc": {
+      "id": "ICa9pujUqLTRQndM6chYc",
       "title": "Lecture 10",
       "vault": {
         "fsPath": "vault"
@@ -2067,11 +2175,11 @@
       "parent": "OGq6U8MXIG3wwETNLR4b6",
       "children": [],
       "data": {},
-      "contentHash": "7a701fc66fc0a199ae8fc437c16444f6",
+      "contentHash": "701da33592ae5dc06efe5e0e8b7bb859",
       "custom": {}
     },
-    "L9plUnYVAhXq8qg1CdvNh": {
-      "id": "L9plUnYVAhXq8qg1CdvNh",
+    "Ixq6EKHPeFGFL5Ine7Q88": {
+      "id": "Ixq6EKHPeFGFL5Ine7Q88",
       "title": "Lecture 1",
       "vault": {
         "fsPath": "vault"
@@ -2143,7 +2251,7 @@
       "parent": "OGq6U8MXIG3wwETNLR4b6",
       "children": [],
       "data": {},
-      "contentHash": "6f71d48178805ca9b11e133b7bd86fe2",
+      "contentHash": "a7928543154086c1e268424e0494cea9",
       "custom": {}
     },
     "SkPPj7voTTRpF7d0XMYNV": {
@@ -2161,14 +2269,14 @@
       "created": 1630119372224,
       "parent": "O93aKwUCEnkxTR7S8V2eZ",
       "children": [
-        "UDa053g4edPhatJtQLcgU",
-        "ZvvxqmkOBi4k36115zIOL",
-        "ibYQnUAtXh92Iq9wdNNZ5",
-        "1DjoLMzXw2EIrRvAhr49t",
-        "fWgMRIQUgwkxxqmJ8gUZ2",
-        "IDuzCRK8xzuKcuS1MZNUO",
-        "qPS1JISQSiBolT5uIIV2i",
-        "fsphef2KYEGEvei53eGdJ"
+        "Q713QFta7rdhGKjmG6yGO",
+        "KpnKDhNJ6ppoNYHPD0p5U",
+        "umIJsOqkB1kpOgu6c9zXH",
+        "JRS98EHNkJiBYK9Ru43oN",
+        "DNTIDG8Gap81PMCDmyRbh",
+        "L0bHZ8v0xYFU4atFiLCQU",
+        "v0dMNXqpH0PE3y7dClbgz",
+        "lWuRAl5cAM7FXdGBdvEdH"
       ],
       "data": {},
       "contentHash": "7970d3df8daff466d3c3446774e31e1f",
@@ -2177,8 +2285,8 @@
         "stub": true
       }
     },
-    "fsphef2KYEGEvei53eGdJ": {
-      "id": "fsphef2KYEGEvei53eGdJ",
+    "lWuRAl5cAM7FXdGBdvEdH": {
+      "id": "lWuRAl5cAM7FXdGBdvEdH",
       "title": "Lecture 9",
       "vault": {
         "fsPath": "vault"
@@ -2201,11 +2309,11 @@
       "parent": "SkPPj7voTTRpF7d0XMYNV",
       "children": [],
       "data": {},
-      "contentHash": "fd1fdce0b752104b7de43581cfcb8463",
+      "contentHash": "e820f696f9aabc03140fdb6f7bff7558",
       "custom": {}
     },
-    "qPS1JISQSiBolT5uIIV2i": {
-      "id": "qPS1JISQSiBolT5uIIV2i",
+    "v0dMNXqpH0PE3y7dClbgz": {
+      "id": "v0dMNXqpH0PE3y7dClbgz",
       "title": "Lecture 8",
       "vault": {
         "fsPath": "vault"
@@ -2220,11 +2328,11 @@
       "parent": "SkPPj7voTTRpF7d0XMYNV",
       "children": [],
       "data": {},
-      "contentHash": "9ffb3217bcb41199f14cca07476ce2fb",
+      "contentHash": "0c39a2bf9a004b5b6ed8bee79f608862",
       "custom": {}
     },
-    "IDuzCRK8xzuKcuS1MZNUO": {
-      "id": "IDuzCRK8xzuKcuS1MZNUO",
+    "L0bHZ8v0xYFU4atFiLCQU": {
+      "id": "L0bHZ8v0xYFU4atFiLCQU",
       "title": "Lecture 7",
       "vault": {
         "fsPath": "vault"
@@ -2239,11 +2347,11 @@
       "parent": "SkPPj7voTTRpF7d0XMYNV",
       "children": [],
       "data": {},
-      "contentHash": "5eb2d7e0f392a60d7fae86b9ecbfcc2b",
+      "contentHash": "98785f04884f2b4c107be7282dabfd67",
       "custom": {}
     },
-    "fWgMRIQUgwkxxqmJ8gUZ2": {
-      "id": "fWgMRIQUgwkxxqmJ8gUZ2",
+    "DNTIDG8Gap81PMCDmyRbh": {
+      "id": "DNTIDG8Gap81PMCDmyRbh",
       "title": "Lecture 5",
       "vault": {
         "fsPath": "vault"
@@ -2308,11 +2416,11 @@
       "parent": "SkPPj7voTTRpF7d0XMYNV",
       "children": [],
       "data": {},
-      "contentHash": "d03ed4d5f56ac5c975107ff782279814",
+      "contentHash": "f44b9ca520d48a844508b82d04814914",
       "custom": {}
     },
-    "1DjoLMzXw2EIrRvAhr49t": {
-      "id": "1DjoLMzXw2EIrRvAhr49t",
+    "JRS98EHNkJiBYK9Ru43oN": {
+      "id": "JRS98EHNkJiBYK9Ru43oN",
       "title": "Lecture 4",
       "vault": {
         "fsPath": "vault"
@@ -2398,11 +2506,11 @@
       "parent": "SkPPj7voTTRpF7d0XMYNV",
       "children": [],
       "data": {},
-      "contentHash": "aeeca4b3b911fb06da6a5032af708f16",
+      "contentHash": "a8621dc2d8932a0eeca8fed00d712336",
       "custom": {}
     },
-    "ibYQnUAtXh92Iq9wdNNZ5": {
-      "id": "ibYQnUAtXh92Iq9wdNNZ5",
+    "umIJsOqkB1kpOgu6c9zXH": {
+      "id": "umIJsOqkB1kpOgu6c9zXH",
       "title": "Lecture 3",
       "vault": {
         "fsPath": "vault"
@@ -2439,11 +2547,11 @@
       "parent": "SkPPj7voTTRpF7d0XMYNV",
       "children": [],
       "data": {},
-      "contentHash": "697825fc66b82f85c9e79b820c49785c",
+      "contentHash": "d324237ccddc4c50a5630aa96608f8dd",
       "custom": {}
     },
-    "ZvvxqmkOBi4k36115zIOL": {
-      "id": "ZvvxqmkOBi4k36115zIOL",
+    "KpnKDhNJ6ppoNYHPD0p5U": {
+      "id": "KpnKDhNJ6ppoNYHPD0p5U",
       "title": "Lecture 2",
       "vault": {
         "fsPath": "vault"
@@ -2543,11 +2651,11 @@
       "parent": "SkPPj7voTTRpF7d0XMYNV",
       "children": [],
       "data": {},
-      "contentHash": "b73f45c526a7cf6fe53fc24085d58bca",
+      "contentHash": "3bbfdd9ddb657e26fdbd6bc99e27c6ba",
       "custom": {}
     },
-    "UDa053g4edPhatJtQLcgU": {
-      "id": "UDa053g4edPhatJtQLcgU",
+    "Q713QFta7rdhGKjmG6yGO": {
+      "id": "Q713QFta7rdhGKjmG6yGO",
       "title": "Lecture 1",
       "vault": {
         "fsPath": "vault"
@@ -2598,7 +2706,7 @@
       "parent": "SkPPj7voTTRpF7d0XMYNV",
       "children": [],
       "data": {},
-      "contentHash": "e269172fd7c1be598cc25c7b51171a37",
+      "contentHash": "a561f7a8007d6d64af84993716adc52b",
       "custom": {}
     },
     "elcUWYUkVJfjM5NLR8toR": {
@@ -2616,27 +2724,27 @@
       "created": 1630119338524,
       "parent": "O93aKwUCEnkxTR7S8V2eZ",
       "children": [
-        "Y9tLU5Y8FoVBiBczeNqM6",
-        "050hPgzZoXROzuALDGTrO",
-        "9z4yUs2q0Ba7pwwlAX7SJ",
-        "aYN9cPASjAjeWELXKBPdC",
-        "tNDKYsFjKmkgKEQ7Kb4j9",
-        "j4kNUNVMygBhnqXNCbDId",
-        "Jqt9LEtwLgPbmorEF7P0I",
-        "s3zNio8O1h9oelo9VPaGM",
-        "28JSENm8v5cnwVHG0Exd6",
-        "dLMGlM8O5pi89MLT1B71q",
-        "dXXDClA07lPohDXNaCDa8",
-        "51s6dCBv2v9ovrISXFIrD",
-        "0cuPMi9amKMEFSaCJgJle",
-        "9wwUXVB4D3zgeQMnzoF58",
-        "3C5KjseRe4Q7np9HwWeWw",
-        "54GLPH3DxJDvrToELMjIG",
-        "cYjJ0oBw406SrPIVwj4Ac",
-        "rZgZpGf3BjUKznDw6ld5Y",
-        "d9TNCRjcwrC0QM6lvqJ8C",
-        "Td3yLgq27JELtjrmvFXwn",
-        "qEwTEW5bn08UJhR7ms33X"
+        "hv5ahpaOXnFXiebeJE1hT",
+        "wlNEAAHkrRVqXcCTYL6F2",
+        "qOChEPFwjnh9YDZBaVjAo",
+        "myja43P4pP0bqajAjFfeF",
+        "ejW36RwZlRKYRsFk6HZrV",
+        "x0DzeXuQr5AxDzZJvpeAl",
+        "CGUdCz1Xxi3RwJ5fGCCnL",
+        "7PZJqbHDZJ72GJC86um3V",
+        "7QiL7Wot2mw6HiR1g11Gt",
+        "eYztsyl7XHQN2NvMle5fu",
+        "yYP1zrMPHRddNcKKKoEJG",
+        "50JzdPAFvTfwTEa6KVUhX",
+        "GzngmIfl5WheSbjR3ZxKq",
+        "O9Hn8irX71AXPJjRhqNoD",
+        "7dbf1rVpM0s0SKbFhLHdq",
+        "QNwLUTFfsJz5P1NYhElYs",
+        "KLhV1AemTmvs1cV5rqLPb",
+        "l99iyW3xTPXWV3Ye1Qjmm",
+        "9waMUl3QZ9HddSi0LEUhh",
+        "JW5MTwI7nEjdPUsrqffdC",
+        "l8G1fLVTHFHMH2HcpgJHz"
       ],
       "data": {},
       "contentHash": "24ca48d1d5be85decd8cf903c197d042",
@@ -2645,8 +2753,8 @@
         "stub": true
       }
     },
-    "qEwTEW5bn08UJhR7ms33X": {
-      "id": "qEwTEW5bn08UJhR7ms33X",
+    "l8G1fLVTHFHMH2HcpgJHz": {
+      "id": "l8G1fLVTHFHMH2HcpgJHz",
       "title": "Lecture 9",
       "vault": {
         "fsPath": "vault"
@@ -2669,11 +2777,11 @@
       "parent": "elcUWYUkVJfjM5NLR8toR",
       "children": [],
       "data": {},
-      "contentHash": "3e0ec5b9749e64cfca18dc71daab1f3f",
+      "contentHash": "fd97aa5b51719aaef2b125c2cf8b8344",
       "custom": {}
     },
-    "Td3yLgq27JELtjrmvFXwn": {
-      "id": "Td3yLgq27JELtjrmvFXwn",
+    "JW5MTwI7nEjdPUsrqffdC": {
+      "id": "JW5MTwI7nEjdPUsrqffdC",
       "title": "Lecture 8",
       "vault": {
         "fsPath": "vault"
@@ -2717,11 +2825,11 @@
       "parent": "elcUWYUkVJfjM5NLR8toR",
       "children": [],
       "data": {},
-      "contentHash": "40f1aa08eb24f3814c7c9cc09396ed6b",
+      "contentHash": "9f177b9b7275273e938753ff1d7da510",
       "custom": {}
     },
-    "d9TNCRjcwrC0QM6lvqJ8C": {
-      "id": "d9TNCRjcwrC0QM6lvqJ8C",
+    "9waMUl3QZ9HddSi0LEUhh": {
+      "id": "9waMUl3QZ9HddSi0LEUhh",
       "title": "Lecture 7",
       "vault": {
         "fsPath": "vault"
@@ -2765,11 +2873,11 @@
       "parent": "elcUWYUkVJfjM5NLR8toR",
       "children": [],
       "data": {},
-      "contentHash": "72edf0507387dfb0d1927503dc925bb8",
+      "contentHash": "731a23223b87d0316a0f434f8ff610a6",
       "custom": {}
     },
-    "rZgZpGf3BjUKznDw6ld5Y": {
-      "id": "rZgZpGf3BjUKznDw6ld5Y",
+    "l99iyW3xTPXWV3Ye1Qjmm": {
+      "id": "l99iyW3xTPXWV3Ye1Qjmm",
       "title": "Lecture 6",
       "vault": {
         "fsPath": "vault"
@@ -2813,11 +2921,11 @@
       "parent": "elcUWYUkVJfjM5NLR8toR",
       "children": [],
       "data": {},
-      "contentHash": "07250e5021175aac10b919cde9505e11",
+      "contentHash": "13b164bf92a13efec74983b5fb5c2b21",
       "custom": {}
     },
-    "cYjJ0oBw406SrPIVwj4Ac": {
-      "id": "cYjJ0oBw406SrPIVwj4Ac",
+    "KLhV1AemTmvs1cV5rqLPb": {
+      "id": "KLhV1AemTmvs1cV5rqLPb",
       "title": "Lecture 5",
       "vault": {
         "fsPath": "vault"
@@ -2854,11 +2962,11 @@
       "parent": "elcUWYUkVJfjM5NLR8toR",
       "children": [],
       "data": {},
-      "contentHash": "5eb1468d58ee6315d4ec73aa8f9f7559",
+      "contentHash": "b0630eeb4cc5fd6bba6cadcb38eed973",
       "custom": {}
     },
-    "54GLPH3DxJDvrToELMjIG": {
-      "id": "54GLPH3DxJDvrToELMjIG",
+    "QNwLUTFfsJz5P1NYhElYs": {
+      "id": "QNwLUTFfsJz5P1NYhElYs",
       "title": "Lecture 4",
       "vault": {
         "fsPath": "vault"
@@ -2895,11 +3003,11 @@
       "parent": "elcUWYUkVJfjM5NLR8toR",
       "children": [],
       "data": {},
-      "contentHash": "e34956eb86911c75a414d5d277ab3e40",
+      "contentHash": "7ac0e36bb200b745cd8f4ab6a012d1ac",
       "custom": {}
     },
-    "3C5KjseRe4Q7np9HwWeWw": {
-      "id": "3C5KjseRe4Q7np9HwWeWw",
+    "7dbf1rVpM0s0SKbFhLHdq": {
+      "id": "7dbf1rVpM0s0SKbFhLHdq",
       "title": "Lecture 3",
       "vault": {
         "fsPath": "vault"
@@ -2936,11 +3044,11 @@
       "parent": "elcUWYUkVJfjM5NLR8toR",
       "children": [],
       "data": {},
-      "contentHash": "ec5e30fe5df49c0548467fab517eedf5",
+      "contentHash": "eb9792670782d10055e5feb7c9010bc6",
       "custom": {}
     },
-    "9wwUXVB4D3zgeQMnzoF58": {
-      "id": "9wwUXVB4D3zgeQMnzoF58",
+    "O9Hn8irX71AXPJjRhqNoD": {
+      "id": "O9Hn8irX71AXPJjRhqNoD",
       "title": "Lecture 21",
       "vault": {
         "fsPath": "vault"
@@ -2998,11 +3106,11 @@
       "parent": "elcUWYUkVJfjM5NLR8toR",
       "children": [],
       "data": {},
-      "contentHash": "5af00b3e42cbdb0869940fed917475b2",
+      "contentHash": "bd8268ed4e0c2cc6f948248df4c0dcd0",
       "custom": {}
     },
-    "0cuPMi9amKMEFSaCJgJle": {
-      "id": "0cuPMi9amKMEFSaCJgJle",
+    "GzngmIfl5WheSbjR3ZxKq": {
+      "id": "GzngmIfl5WheSbjR3ZxKq",
       "title": "Lecture 20",
       "vault": {
         "fsPath": "vault"
@@ -3046,11 +3154,11 @@
       "parent": "elcUWYUkVJfjM5NLR8toR",
       "children": [],
       "data": {},
-      "contentHash": "6aeb640fe454bd9b15107d49685fd90b",
+      "contentHash": "9d9273020cf3ea11723404a6fcab6d2e",
       "custom": {}
     },
-    "51s6dCBv2v9ovrISXFIrD": {
-      "id": "51s6dCBv2v9ovrISXFIrD",
+    "50JzdPAFvTfwTEa6KVUhX": {
+      "id": "50JzdPAFvTfwTEa6KVUhX",
       "title": "Lecture 2",
       "vault": {
         "fsPath": "vault"
@@ -3101,11 +3209,11 @@
       "parent": "elcUWYUkVJfjM5NLR8toR",
       "children": [],
       "data": {},
-      "contentHash": "fd7965df91c3924781f051010dc01d46",
+      "contentHash": "05f579436b7f1d4027b1b87365e3b9f1",
       "custom": {}
     },
-    "dXXDClA07lPohDXNaCDa8": {
-      "id": "dXXDClA07lPohDXNaCDa8",
+    "yYP1zrMPHRddNcKKKoEJG": {
+      "id": "yYP1zrMPHRddNcKKKoEJG",
       "title": "Lecture 19",
       "vault": {
         "fsPath": "vault"
@@ -3156,11 +3264,11 @@
       "parent": "elcUWYUkVJfjM5NLR8toR",
       "children": [],
       "data": {},
-      "contentHash": "601a325f66031ecc0833c4996acf7f22",
+      "contentHash": "496a990c9cbb4df9f88be9dcd5150903",
       "custom": {}
     },
-    "dLMGlM8O5pi89MLT1B71q": {
-      "id": "dLMGlM8O5pi89MLT1B71q",
+    "eYztsyl7XHQN2NvMle5fu": {
+      "id": "eYztsyl7XHQN2NvMle5fu",
       "title": "Lecture 18",
       "vault": {
         "fsPath": "vault"
@@ -3175,11 +3283,11 @@
       "parent": "elcUWYUkVJfjM5NLR8toR",
       "children": [],
       "data": {},
-      "contentHash": "e85157b95ab2c3f1b0f132f84cea4284",
+      "contentHash": "238a0c4cc26d63af4c29462ccb13ba0e",
       "custom": {}
     },
-    "28JSENm8v5cnwVHG0Exd6": {
-      "id": "28JSENm8v5cnwVHG0Exd6",
+    "7QiL7Wot2mw6HiR1g11Gt": {
+      "id": "7QiL7Wot2mw6HiR1g11Gt",
       "title": "Lecture 17",
       "vault": {
         "fsPath": "vault"
@@ -3244,11 +3352,11 @@
       "parent": "elcUWYUkVJfjM5NLR8toR",
       "children": [],
       "data": {},
-      "contentHash": "7613343927b8bb86b439581c40d2ac13",
+      "contentHash": "e3b5d7170c2f04f1f5fb2cb9af35566c",
       "custom": {}
     },
-    "s3zNio8O1h9oelo9VPaGM": {
-      "id": "s3zNio8O1h9oelo9VPaGM",
+    "7PZJqbHDZJ72GJC86um3V": {
+      "id": "7PZJqbHDZJ72GJC86um3V",
       "title": "Lecture 16",
       "vault": {
         "fsPath": "vault"
@@ -3299,11 +3407,11 @@
       "parent": "elcUWYUkVJfjM5NLR8toR",
       "children": [],
       "data": {},
-      "contentHash": "e1faa8a40e6f712876309cc579794ab8",
+      "contentHash": "8f8041b5088de64f005b6a50a7c30539",
       "custom": {}
     },
-    "Jqt9LEtwLgPbmorEF7P0I": {
-      "id": "Jqt9LEtwLgPbmorEF7P0I",
+    "CGUdCz1Xxi3RwJ5fGCCnL": {
+      "id": "CGUdCz1Xxi3RwJ5fGCCnL",
       "title": "Lecture 15",
       "vault": {
         "fsPath": "vault"
@@ -3354,11 +3462,11 @@
       "parent": "elcUWYUkVJfjM5NLR8toR",
       "children": [],
       "data": {},
-      "contentHash": "a7f9f49f49fc52d7b6a4bbdcb169dcd6",
+      "contentHash": "1af8c9b39f937191a447119f04867655",
       "custom": {}
     },
-    "j4kNUNVMygBhnqXNCbDId": {
-      "id": "j4kNUNVMygBhnqXNCbDId",
+    "x0DzeXuQr5AxDzZJvpeAl": {
+      "id": "x0DzeXuQr5AxDzZJvpeAl",
       "title": "Lecture 14",
       "vault": {
         "fsPath": "vault"
@@ -3416,11 +3524,11 @@
       "parent": "elcUWYUkVJfjM5NLR8toR",
       "children": [],
       "data": {},
-      "contentHash": "9c3d3f9fdfbed02f833e75a3b0768611",
+      "contentHash": "8cb9ef06961856e5795ce940e3d63f8f",
       "custom": {}
     },
-    "tNDKYsFjKmkgKEQ7Kb4j9": {
-      "id": "tNDKYsFjKmkgKEQ7Kb4j9",
+    "ejW36RwZlRKYRsFk6HZrV": {
+      "id": "ejW36RwZlRKYRsFk6HZrV",
       "title": "Lecture 13",
       "vault": {
         "fsPath": "vault"
@@ -3464,11 +3572,11 @@
       "parent": "elcUWYUkVJfjM5NLR8toR",
       "children": [],
       "data": {},
-      "contentHash": "b9925131f1c79faf0748688faa93090f",
+      "contentHash": "f0643d98a57a60526482f61c6e50e903",
       "custom": {}
     },
-    "aYN9cPASjAjeWELXKBPdC": {
-      "id": "aYN9cPASjAjeWELXKBPdC",
+    "myja43P4pP0bqajAjFfeF": {
+      "id": "myja43P4pP0bqajAjFfeF",
       "title": "Lecture 12",
       "vault": {
         "fsPath": "vault"
@@ -3519,11 +3627,11 @@
       "parent": "elcUWYUkVJfjM5NLR8toR",
       "children": [],
       "data": {},
-      "contentHash": "27c2d6e0eb079489e5748da0ac4c4fcc",
+      "contentHash": "43fd92a0b0c30c8b34c433f355a4f99e",
       "custom": {}
     },
-    "9z4yUs2q0Ba7pwwlAX7SJ": {
-      "id": "9z4yUs2q0Ba7pwwlAX7SJ",
+    "qOChEPFwjnh9YDZBaVjAo": {
+      "id": "qOChEPFwjnh9YDZBaVjAo",
       "title": "Lecture 11",
       "vault": {
         "fsPath": "vault"
@@ -3567,11 +3675,11 @@
       "parent": "elcUWYUkVJfjM5NLR8toR",
       "children": [],
       "data": {},
-      "contentHash": "449a1308f92fbd70c913c45cb627b373",
+      "contentHash": "f52f4e31487efa3c8860961d28e0f9d5",
       "custom": {}
     },
-    "050hPgzZoXROzuALDGTrO": {
-      "id": "050hPgzZoXROzuALDGTrO",
+    "wlNEAAHkrRVqXcCTYL6F2": {
+      "id": "wlNEAAHkrRVqXcCTYL6F2",
       "title": "Lecture 10",
       "vault": {
         "fsPath": "vault"
@@ -3615,11 +3723,11 @@
       "parent": "elcUWYUkVJfjM5NLR8toR",
       "children": [],
       "data": {},
-      "contentHash": "0a6d173ea97df9ba41fd66e79a899879",
+      "contentHash": "b3d85864b2d4956ba41afe2be6b7e92d",
       "custom": {}
     },
-    "Y9tLU5Y8FoVBiBczeNqM6": {
-      "id": "Y9tLU5Y8FoVBiBczeNqM6",
+    "hv5ahpaOXnFXiebeJE1hT": {
+      "id": "hv5ahpaOXnFXiebeJE1hT",
       "title": "Lecture 1",
       "vault": {
         "fsPath": "vault"
@@ -3663,7 +3771,7 @@
       "parent": "elcUWYUkVJfjM5NLR8toR",
       "children": [],
       "data": {},
-      "contentHash": "72f18fe5ebce17ff4911233d1e2ed26a",
+      "contentHash": "eb0000ad421dc1d72be98060e52c3dba",
       "custom": {}
     },
     "znYlAnqQDCB58XxxMMdIl": {
@@ -3681,21 +3789,21 @@
       "created": 1630119270428,
       "parent": "O93aKwUCEnkxTR7S8V2eZ",
       "children": [
-        "xl8nVZcZFuduzOZtZE7P8",
-        "VYa741LU8l6yakI1bVrUX",
-        "bmVrHCrxmEpDrGBR6WJcx",
-        "Wpn4kHpOo3DvUPdEDq7U4",
-        "WbNeZ84KCnyF9x7i7J4ge",
-        "pezCriv4Doh24nHw521xO",
-        "2ZUCHNuJBschqgGeW0sx9",
-        "cGzhg2CVE1aGkupQuylcD",
-        "0r8Gv069Db6UjejHy2L8K",
-        "soCjKCDR5xO1MTYufGh6w",
-        "SwQ2AzMXZBdOVkBOeDO1A",
-        "xSP8Gz74f3wXcUj9Wdd9a",
-        "bhmeWihCL8HMyrxWhSNjJ",
-        "4nfUewdkKus6g1s0XZ5be",
-        "jBXwfhYXQDCsITuym6bgP"
+        "3Ou3dyRfcSRNDVny9QH0v",
+        "yTtmP4wGYb6N10WQKLJqg",
+        "OkfgI1xCskUVlnw9hlovI",
+        "q4ALru72FPfCDOpJQ3rED",
+        "NWHNf5YLcTI1dNQdQawaU",
+        "FV5fhz0f0wIugnUdCGedi",
+        "2WTVmSJpWY9ycvoXn4XaM",
+        "qpgkXTjrBO5r0KfikvHNj",
+        "mLGI73csrg0HQRuCYaTuc",
+        "ddQYvEgBPuULdLbqptMkZ",
+        "oXwSNp9SLL9yCVY5csfAP",
+        "mIY3Oc2xjYCJ5c0va8jgO",
+        "vLONivbSds9SDKWcfennc",
+        "PTIJBj6BQldvzxzW3hXRg",
+        "msMuZ3tcxBnDKpzmZEbkN"
       ],
       "data": {},
       "contentHash": "029dbd708d88d3be73511822a2925bcc",
@@ -3704,8 +3812,8 @@
         "stub": true
       }
     },
-    "jBXwfhYXQDCsITuym6bgP": {
-      "id": "jBXwfhYXQDCsITuym6bgP",
+    "msMuZ3tcxBnDKpzmZEbkN": {
+      "id": "msMuZ3tcxBnDKpzmZEbkN",
       "title": "Lecture 9",
       "vault": {
         "fsPath": "vault"
@@ -3770,11 +3878,11 @@
       "parent": "znYlAnqQDCB58XxxMMdIl",
       "children": [],
       "data": {},
-      "contentHash": "f9668daafb38448dc667d15d1abcf1d3",
+      "contentHash": "f5c161fc83f63eaa4e6a58c74d84f259",
       "custom": {}
     },
-    "4nfUewdkKus6g1s0XZ5be": {
-      "id": "4nfUewdkKus6g1s0XZ5be",
+    "PTIJBj6BQldvzxzW3hXRg": {
+      "id": "PTIJBj6BQldvzxzW3hXRg",
       "title": "Lecture 8",
       "vault": {
         "fsPath": "vault"
@@ -3846,11 +3954,11 @@
       "parent": "znYlAnqQDCB58XxxMMdIl",
       "children": [],
       "data": {},
-      "contentHash": "cb52ae1eac28a11370d9547c0a63d95d",
+      "contentHash": "21f99801e8a6a281317ac696faeb2159",
       "custom": {}
     },
-    "bhmeWihCL8HMyrxWhSNjJ": {
-      "id": "bhmeWihCL8HMyrxWhSNjJ",
+    "vLONivbSds9SDKWcfennc": {
+      "id": "vLONivbSds9SDKWcfennc",
       "title": "Lecture 7",
       "vault": {
         "fsPath": "vault"
@@ -3964,11 +4072,11 @@
       "parent": "znYlAnqQDCB58XxxMMdIl",
       "children": [],
       "data": {},
-      "contentHash": "1149b4aaca3214f061436d52a10132a8",
+      "contentHash": "05dcd5b1f52b728cbb3a34a2fe5c0fea",
       "custom": {}
     },
-    "xSP8Gz74f3wXcUj9Wdd9a": {
-      "id": "xSP8Gz74f3wXcUj9Wdd9a",
+    "mIY3Oc2xjYCJ5c0va8jgO": {
+      "id": "mIY3Oc2xjYCJ5c0va8jgO",
       "title": "Lecture 6",
       "vault": {
         "fsPath": "vault"
@@ -4026,11 +4134,11 @@
       "parent": "znYlAnqQDCB58XxxMMdIl",
       "children": [],
       "data": {},
-      "contentHash": "7b58aa58b4941837e579aabfd31c7164",
+      "contentHash": "d08b7304c5ffc3552d5284de8d854f0c",
       "custom": {}
     },
-    "SwQ2AzMXZBdOVkBOeDO1A": {
-      "id": "SwQ2AzMXZBdOVkBOeDO1A",
+    "oXwSNp9SLL9yCVY5csfAP": {
+      "id": "oXwSNp9SLL9yCVY5csfAP",
       "title": "Lecture 5",
       "vault": {
         "fsPath": "vault"
@@ -4074,11 +4182,11 @@
       "parent": "znYlAnqQDCB58XxxMMdIl",
       "children": [],
       "data": {},
-      "contentHash": "df35f64c0d4c59df7e33e80ffe55649b",
+      "contentHash": "0a82553c8cc175745b62a2c55b7de9ae",
       "custom": {}
     },
-    "soCjKCDR5xO1MTYufGh6w": {
-      "id": "soCjKCDR5xO1MTYufGh6w",
+    "ddQYvEgBPuULdLbqptMkZ": {
+      "id": "ddQYvEgBPuULdLbqptMkZ",
       "title": "Lecture 4",
       "vault": {
         "fsPath": "vault"
@@ -4129,11 +4237,11 @@
       "parent": "znYlAnqQDCB58XxxMMdIl",
       "children": [],
       "data": {},
-      "contentHash": "e7a24f19d69363391d478375ec86d550",
+      "contentHash": "e3e1f6089fc17d17dcd2439b8dd468c0",
       "custom": {}
     },
-    "0r8Gv069Db6UjejHy2L8K": {
-      "id": "0r8Gv069Db6UjejHy2L8K",
+    "mLGI73csrg0HQRuCYaTuc": {
+      "id": "mLGI73csrg0HQRuCYaTuc",
       "title": "Lecture 3",
       "vault": {
         "fsPath": "vault"
@@ -4184,11 +4292,11 @@
       "parent": "znYlAnqQDCB58XxxMMdIl",
       "children": [],
       "data": {},
-      "contentHash": "25f299e72c23e4e2df993cbd69e2ec62",
+      "contentHash": "9cede275674c0ed23686922e36e514c1",
       "custom": {}
     },
-    "cGzhg2CVE1aGkupQuylcD": {
-      "id": "cGzhg2CVE1aGkupQuylcD",
+    "qpgkXTjrBO5r0KfikvHNj": {
+      "id": "qpgkXTjrBO5r0KfikvHNj",
       "title": "Lecture 2",
       "vault": {
         "fsPath": "vault"
@@ -4218,11 +4326,11 @@
       "parent": "znYlAnqQDCB58XxxMMdIl",
       "children": [],
       "data": {},
-      "contentHash": "cb450a46bc29524de61a490672cc50c9",
+      "contentHash": "661f64c0bde9fa7f35c81feb177ae516",
       "custom": {}
     },
-    "2ZUCHNuJBschqgGeW0sx9": {
-      "id": "2ZUCHNuJBschqgGeW0sx9",
+    "2WTVmSJpWY9ycvoXn4XaM": {
+      "id": "2WTVmSJpWY9ycvoXn4XaM",
       "title": "Lecture 15",
       "vault": {
         "fsPath": "vault"
@@ -4266,11 +4374,11 @@
       "parent": "znYlAnqQDCB58XxxMMdIl",
       "children": [],
       "data": {},
-      "contentHash": "8a226e19feb76e9f028483116fd3eb4b",
+      "contentHash": "813809ceb790f664a7af478f3286a43c",
       "custom": {}
     },
-    "pezCriv4Doh24nHw521xO": {
-      "id": "pezCriv4Doh24nHw521xO",
+    "FV5fhz0f0wIugnUdCGedi": {
+      "id": "FV5fhz0f0wIugnUdCGedi",
       "title": "Lecture 14",
       "vault": {
         "fsPath": "vault"
@@ -4356,11 +4464,11 @@
       "parent": "znYlAnqQDCB58XxxMMdIl",
       "children": [],
       "data": {},
-      "contentHash": "13a96e24a18fa946574d3466872da1ed",
+      "contentHash": "8dc74cb1a1839017e744899013246db1",
       "custom": {}
     },
-    "WbNeZ84KCnyF9x7i7J4ge": {
-      "id": "WbNeZ84KCnyF9x7i7J4ge",
+    "NWHNf5YLcTI1dNQdQawaU": {
+      "id": "NWHNf5YLcTI1dNQdQawaU",
       "title": "Lecture 13",
       "vault": {
         "fsPath": "vault"
@@ -4446,11 +4554,11 @@
       "parent": "znYlAnqQDCB58XxxMMdIl",
       "children": [],
       "data": {},
-      "contentHash": "58589432e1c935ea0326e9e1f9965df9",
+      "contentHash": "f81cc851348f86cfb985cc44652d2199",
       "custom": {}
     },
-    "Wpn4kHpOo3DvUPdEDq7U4": {
-      "id": "Wpn4kHpOo3DvUPdEDq7U4",
+    "q4ALru72FPfCDOpJQ3rED": {
+      "id": "q4ALru72FPfCDOpJQ3rED",
       "title": "Lecture 12",
       "vault": {
         "fsPath": "vault"
@@ -4508,11 +4616,11 @@
       "parent": "znYlAnqQDCB58XxxMMdIl",
       "children": [],
       "data": {},
-      "contentHash": "9c9378fb4eb11edbaab973dcf0fd2e01",
+      "contentHash": "f3b114e60c45abe907b9a9ed0ed9b933",
       "custom": {}
     },
-    "bmVrHCrxmEpDrGBR6WJcx": {
-      "id": "bmVrHCrxmEpDrGBR6WJcx",
+    "OkfgI1xCskUVlnw9hlovI": {
+      "id": "OkfgI1xCskUVlnw9hlovI",
       "title": "Lecture 11",
       "vault": {
         "fsPath": "vault"
@@ -4563,11 +4671,11 @@
       "parent": "znYlAnqQDCB58XxxMMdIl",
       "children": [],
       "data": {},
-      "contentHash": "7a2afe64fad80e905f08ed38cffd586b",
+      "contentHash": "07f64f6282b96eb4e466711bd17d97bd",
       "custom": {}
     },
-    "VYa741LU8l6yakI1bVrUX": {
-      "id": "VYa741LU8l6yakI1bVrUX",
+    "yTtmP4wGYb6N10WQKLJqg": {
+      "id": "yTtmP4wGYb6N10WQKLJqg",
       "title": "Lecture 10",
       "vault": {
         "fsPath": "vault"
@@ -4582,11 +4690,11 @@
       "parent": "znYlAnqQDCB58XxxMMdIl",
       "children": [],
       "data": {},
-      "contentHash": "d7786d60c7ac9684c1988ecbf50f2e79",
+      "contentHash": "efcdd26ea512f8c2d7622916fa2507f8",
       "custom": {}
     },
-    "xl8nVZcZFuduzOZtZE7P8": {
-      "id": "xl8nVZcZFuduzOZtZE7P8",
+    "3Ou3dyRfcSRNDVny9QH0v": {
+      "id": "3Ou3dyRfcSRNDVny9QH0v",
       "title": "Lecture 1",
       "vault": {
         "fsPath": "vault"
@@ -4616,7 +4724,7 @@
       "parent": "znYlAnqQDCB58XxxMMdIl",
       "children": [],
       "data": {},
-      "contentHash": "02152d4d54e7e8b8dda57f5cfa8beaae",
+      "contentHash": "f28e72fc492b912bf27f5eab41609511",
       "custom": {}
     },
     "a1PatlsCiz7PYsL111lFm": {
@@ -4634,19 +4742,19 @@
       "created": 1630119232629,
       "parent": "O93aKwUCEnkxTR7S8V2eZ",
       "children": [
-        "frnR5UlcoiGNw6WpxiItY",
-        "YtfPl8x71GB8LKtXrkYkQ",
-        "QVhOjeZDEoXgtf5Lo19xs",
-        "QoVym6C9o073OK37Hs54f",
-        "5FAxFWz4cUpEAUCPvyY3f",
-        "62mXPkcoZYkAvDflOnUJT",
-        "n4BEufpcVKWeg83gEF76l",
-        "I7x4dQBjaHZ67YnoXPPX8",
-        "OeA3GmY0jgXh7YV9nHCgO",
-        "FYJBomhlDCGzzuREdLFiA",
-        "dCoNLZG6KQjD3SvNjtPlu",
-        "v0re6MsmxdIhTtXO6TtvU",
-        "Zjjpw5sjzZAX8mCf1tmCN"
+        "lheZKOdjHCWZJ4Qy2gPeI",
+        "vm1sh2uLEEM9d6pyZ7syr",
+        "9TMxLEguBhbNsImEefOFX",
+        "DDPKzTAQzUFdO6TcCSSTF",
+        "E2PJ84zJUpVsfytWhaWNF",
+        "C10dnDFKygqMWaWd4pUMm",
+        "Qohet1HFuVIbSSFcZFNln",
+        "F6rwo77eZsK7lVh72shS4",
+        "M6hY9EakKnbEoGjXLVCBg",
+        "kYVvIrc2ZBNxaE7rztQ0H",
+        "bWX1sy8vnuriP2UeDbKAm",
+        "AjAwbCGQG0EQnKwLHQkjF",
+        "2I3jbdHKDtLSroEW0MAI2"
       ],
       "data": {},
       "contentHash": "c6e2fdfbb1fa14dfc4160dcde8452414",
@@ -4655,8 +4763,8 @@
         "stub": true
       }
     },
-    "Zjjpw5sjzZAX8mCf1tmCN": {
-      "id": "Zjjpw5sjzZAX8mCf1tmCN",
+    "2I3jbdHKDtLSroEW0MAI2": {
+      "id": "2I3jbdHKDtLSroEW0MAI2",
       "title": "Midsem Cheatsheet",
       "vault": {
         "fsPath": "vault"
@@ -4756,11 +4864,11 @@
       "parent": "a1PatlsCiz7PYsL111lFm",
       "children": [],
       "data": {},
-      "contentHash": "063d7bcf73a9d018025fac5927384253",
+      "contentHash": "df5b2637a38d33697d11d705a930dd5f",
       "custom": {}
     },
-    "v0re6MsmxdIhTtXO6TtvU": {
-      "id": "v0re6MsmxdIhTtXO6TtvU",
+    "AjAwbCGQG0EQnKwLHQkjF": {
+      "id": "AjAwbCGQG0EQnKwLHQkjF",
       "title": "Lecture 9",
       "vault": {
         "fsPath": "vault"
@@ -4783,11 +4891,11 @@
       "parent": "a1PatlsCiz7PYsL111lFm",
       "children": [],
       "data": {},
-      "contentHash": "58084f431b6fb15d951e5e8ad335c928",
+      "contentHash": "ae3b75779e5fa536c162f9ad382f06ad",
       "custom": {}
     },
-    "dCoNLZG6KQjD3SvNjtPlu": {
-      "id": "dCoNLZG6KQjD3SvNjtPlu",
+    "bWX1sy8vnuriP2UeDbKAm": {
+      "id": "bWX1sy8vnuriP2UeDbKAm",
       "title": "LCD's",
       "vault": {
         "fsPath": "vault"
@@ -4831,11 +4939,11 @@
       "parent": "a1PatlsCiz7PYsL111lFm",
       "children": [],
       "data": {},
-      "contentHash": "01d77eb7e4837508b4a6603498a2d11a",
+      "contentHash": "b6430ae522121fed2a7ff8e1d197faa8",
       "custom": {}
     },
-    "FYJBomhlDCGzzuREdLFiA": {
-      "id": "FYJBomhlDCGzzuREdLFiA",
+    "kYVvIrc2ZBNxaE7rztQ0H": {
+      "id": "kYVvIrc2ZBNxaE7rztQ0H",
       "title": "Lecture 7",
       "vault": {
         "fsPath": "vault"
@@ -4872,11 +4980,11 @@
       "parent": "a1PatlsCiz7PYsL111lFm",
       "children": [],
       "data": {},
-      "contentHash": "bded01efb25c67a38717d8ba9e174ed4",
+      "contentHash": "f0a13db778c9790884693ce036c3da3c",
       "custom": {}
     },
-    "OeA3GmY0jgXh7YV9nHCgO": {
-      "id": "OeA3GmY0jgXh7YV9nHCgO",
+    "M6hY9EakKnbEoGjXLVCBg": {
+      "id": "M6hY9EakKnbEoGjXLVCBg",
       "title": "Lecture 6",
       "vault": {
         "fsPath": "vault"
@@ -4941,11 +5049,11 @@
       "parent": "a1PatlsCiz7PYsL111lFm",
       "children": [],
       "data": {},
-      "contentHash": "cd7acbfd0bbe27b89d7f24e368a77e73",
+      "contentHash": "7015483446366ce140f4dc4886a02876",
       "custom": {}
     },
-    "I7x4dQBjaHZ67YnoXPPX8": {
-      "id": "I7x4dQBjaHZ67YnoXPPX8",
+    "F6rwo77eZsK7lVh72shS4": {
+      "id": "F6rwo77eZsK7lVh72shS4",
       "title": "Lecture 5",
       "vault": {
         "fsPath": "vault"
@@ -5010,11 +5118,11 @@
       "parent": "a1PatlsCiz7PYsL111lFm",
       "children": [],
       "data": {},
-      "contentHash": "775dd62a0cdda97d1025e5cd876cfbac",
+      "contentHash": "bd17eab8da8dd061a4d549b8b0d0e5d4",
       "custom": {}
     },
-    "n4BEufpcVKWeg83gEF76l": {
-      "id": "n4BEufpcVKWeg83gEF76l",
+    "Qohet1HFuVIbSSFcZFNln": {
+      "id": "Qohet1HFuVIbSSFcZFNln",
       "title": "Lecture 4",
       "vault": {
         "fsPath": "vault"
@@ -5044,11 +5152,11 @@
       "parent": "a1PatlsCiz7PYsL111lFm",
       "children": [],
       "data": {},
-      "contentHash": "1dcc40a83b82c22d4e99e4a2c830219e",
+      "contentHash": "2d797f7b7a49c4fb8a73a32d2a766f0a",
       "custom": {}
     },
-    "62mXPkcoZYkAvDflOnUJT": {
-      "id": "62mXPkcoZYkAvDflOnUJT",
+    "C10dnDFKygqMWaWd4pUMm": {
+      "id": "C10dnDFKygqMWaWd4pUMm",
       "title": "Lecture 3",
       "vault": {
         "fsPath": "vault"
@@ -5092,11 +5200,11 @@
       "parent": "a1PatlsCiz7PYsL111lFm",
       "children": [],
       "data": {},
-      "contentHash": "84a46427a89fa1732ac68f1f89b41286",
+      "contentHash": "caddd7e9b56f6986c03e6a2019fe956d",
       "custom": {}
     },
-    "5FAxFWz4cUpEAUCPvyY3f": {
-      "id": "5FAxFWz4cUpEAUCPvyY3f",
+    "E2PJ84zJUpVsfytWhaWNF": {
+      "id": "E2PJ84zJUpVsfytWhaWNF",
       "title": "Lecture 2",
       "vault": {
         "fsPath": "vault"
@@ -5140,11 +5248,11 @@
       "parent": "a1PatlsCiz7PYsL111lFm",
       "children": [],
       "data": {},
-      "contentHash": "24920103389e14f9ff7e104c19ced046",
+      "contentHash": "c2ba0614354ef78849e90d10b03222f3",
       "custom": {}
     },
-    "QoVym6C9o073OK37Hs54f": {
-      "id": "QoVym6C9o073OK37Hs54f",
+    "DDPKzTAQzUFdO6TcCSSTF": {
+      "id": "DDPKzTAQzUFdO6TcCSSTF",
       "title": "Lecture 2 (Lab)",
       "vault": {
         "fsPath": "vault"
@@ -5174,11 +5282,11 @@
       "parent": "a1PatlsCiz7PYsL111lFm",
       "children": [],
       "data": {},
-      "contentHash": "5ec5a5fe9c15405c374de0f8b419cef7",
+      "contentHash": "6fc276d46ee1a72193c3fc9b555bd320",
       "custom": {}
     },
-    "QVhOjeZDEoXgtf5Lo19xs": {
-      "id": "QVhOjeZDEoXgtf5Lo19xs",
+    "9TMxLEguBhbNsImEefOFX": {
+      "id": "9TMxLEguBhbNsImEefOFX",
       "title": "Lecture 1",
       "vault": {
         "fsPath": "vault"
@@ -5243,11 +5351,11 @@
       "parent": "a1PatlsCiz7PYsL111lFm",
       "children": [],
       "data": {},
-      "contentHash": "c55e57a0e5ba7931d1f3a28803a072d5",
+      "contentHash": "0b545dcd2dbc6742be5ea2a08a4b9afe",
       "custom": {}
     },
-    "YtfPl8x71GB8LKtXrkYkQ": {
-      "id": "YtfPl8x71GB8LKtXrkYkQ",
+    "vm1sh2uLEEM9d6pyZ7syr": {
+      "id": "vm1sh2uLEEM9d6pyZ7syr",
       "title": "Lecture 1 (Lab)",
       "vault": {
         "fsPath": "vault"
@@ -5319,11 +5427,11 @@
       "parent": "a1PatlsCiz7PYsL111lFm",
       "children": [],
       "data": {},
-      "contentHash": "87050a4c2a4e24a7db452993dd26dfed",
+      "contentHash": "7ed259719439d82d369e6cf22850a232",
       "custom": {}
     },
-    "frnR5UlcoiGNw6WpxiItY": {
-      "id": "frnR5UlcoiGNw6WpxiItY",
+    "lheZKOdjHCWZJ4Qy2gPeI": {
+      "id": "lheZKOdjHCWZJ4Qy2gPeI",
       "title": "Extra Practice Questions",
       "vault": {
         "fsPath": "vault"
@@ -5451,13 +5559,13 @@
       "parent": "a1PatlsCiz7PYsL111lFm",
       "children": [],
       "data": {},
-      "contentHash": "4a07438d3bfce449b98eb0eebe3c3ad8",
+      "contentHash": "638d00f264a0291b5ab04fc9edcb89d8",
       "custom": {}
     }
   },
   "domains": [
     {
-      "id": "PAQSbL1rYQAohZXoEr47M",
+      "id": "GL4YoVrbDUHLnf946YtXV",
       "title": "Curated Notes",
       "vault": {
         "fsPath": "vault"
@@ -5472,19 +5580,20 @@
       "parent": null,
       "children": [
         "Jq5ki9jf1QLTdc3DYLRW4",
-        "3ONxZ3Khb7nFPdLxlV1ib"
+        "3ONxZ3Khb7nFPdLxlV1ib",
+        "Z2JlSyF7TPv3hFanVQhJd"
       ],
+      "body": "\n\r\n\r\nYou have reached the home page of my curated notes. I am a third year student pursuing Computer Science and Engineering at Ahmedabad University.\r\n\r\nFeel free to use this resource to its best potential and reach out to me on [Linkedin](https://www.linkedin.com/in/sameep-vani/) and do checkout my [GitHub](https://github.com/Sameep1234)\r\n",
       "data": {},
-      "contentHash": "250e1442f895f06dba982d3a97cc447f",
+      "contentHash": "e9b530a3175371dde392f83db6e59628",
       "custom": {
         "nav_order": 0,
         "permalink": "/"
-      },
-      "body": "\n\r\n\r\nYou have reached the home page of my curated notes. I am a third year student pursuing Computer Science and Engineering at Ahmedabad University.\r\n\r\nFeel free to use this resource to its best potential and reach out to me on [Linkedin](https://www.linkedin.com/in/sameep-vani/) and do checkout my [GitHub](https://github.com/Sameep1234)\r\n"
+      }
     }
   ],
   "noteIndex": {
-    "id": "PAQSbL1rYQAohZXoEr47M",
+    "id": "GL4YoVrbDUHLnf946YtXV",
     "title": "Curated Notes",
     "vault": {
       "fsPath": "vault"
@@ -5499,15 +5608,16 @@
     "parent": null,
     "children": [
       "Jq5ki9jf1QLTdc3DYLRW4",
-      "3ONxZ3Khb7nFPdLxlV1ib"
+      "3ONxZ3Khb7nFPdLxlV1ib",
+      "Z2JlSyF7TPv3hFanVQhJd"
     ],
+    "body": "\n\r\n\r\nYou have reached the home page of my curated notes. I am a third year student pursuing Computer Science and Engineering at Ahmedabad University.\r\n\r\nFeel free to use this resource to its best potential and reach out to me on [Linkedin](https://www.linkedin.com/in/sameep-vani/) and do checkout my [GitHub](https://github.com/Sameep1234)\r\n",
     "data": {},
-    "contentHash": "250e1442f895f06dba982d3a97cc447f",
+    "contentHash": "e9b530a3175371dde392f83db6e59628",
     "custom": {
       "nav_order": 0,
       "permalink": "/"
-    },
-    "body": "\n\r\n\r\nYou have reached the home page of my curated notes. I am a third year student pursuing Computer Science and Engineering at Ahmedabad University.\r\n\r\nFeel free to use this resource to its best potential and reach out to me on [Linkedin](https://www.linkedin.com/in/sameep-vani/) and do checkout my [GitHub](https://github.com/Sameep1234)\r\n"
+    }
   },
   "vaults": [
     {
