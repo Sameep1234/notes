@@ -1,10 +1,11 @@
 ---
-id: VWODM0wXLRzlc7pAQKsFW
+id: 28JSENm8v5cnwVHG0Exd6
 title: Lecture 17
 desc: ''
 updated: 1635677816365
 created: 1635670587807
 ---
+
 
 
 # Job Dissatisfaction and Job Crafting

@@ -1,10 +1,11 @@
 ---
-id: 4fcGNlMyEYVeTXtxQAd7k
+id: WdDeERHrUwvQ8HfeoNtjQ
 title: Lecture 6
 desc: ''
 updated: 1632046535963
 created: 1630642633459
 ---
+
 
 
 ## Feedback control

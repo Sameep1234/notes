@@ -1,10 +1,11 @@
 ---
-id: 7Pn2LE4nKGM3xnppbNKtx
+id: ibYQnUAtXh92Iq9wdNNZ5
 title: Lecture 3
 desc: ''
 updated: 1631843672053
 created: 1630149964439
 ---
+
 
 ## Crystal Lattice
 

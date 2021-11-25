@@ -1,10 +1,11 @@
 ---
-id: zjtKIvb0WxLBsSjJ8T8sg
+id: IQvnTA2wCBuItQXHtM80g
 title: Lecture 4
 desc: ''
 updated: 1630431550375
 created: 1630228148528
 ---
+
 
 ## Process: Description and Control
 

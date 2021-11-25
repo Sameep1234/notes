@@ -1,10 +1,11 @@
 ---
-id: FjnEH5toyyGyyIpRtRodC
+id: QoVym6C9o073OK37Hs54f
 title: Lecture 2 (Lab)
 desc: ''
 updated: 1630813364714
 created: 1630777809064
 ---
+
 
 ## Coding Program and Examples
 

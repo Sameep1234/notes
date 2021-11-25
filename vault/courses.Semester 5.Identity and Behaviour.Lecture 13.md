@@ -1,10 +1,11 @@
 ---
-id: FhX7hQducIuOwozOeLAV3
+id: tNDKYsFjKmkgKEQ7Kb4j9
 title: Lecture 13
 desc: ''
 updated: 1635662901768
 created: 1635661694542
 ---
+
 
 
 # Personality

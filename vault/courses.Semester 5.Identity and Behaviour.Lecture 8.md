@@ -1,10 +1,11 @@
 ---
-id: sRydRilym4SzymlFfcRS3
+id: Td3yLgq27JELtjrmvFXwn
 title: Lecture 8
 desc: ''
 updated: 1632639950826
 created: 1632637539863
 ---
+
 
 ## Judgement and Attribution Theory
 

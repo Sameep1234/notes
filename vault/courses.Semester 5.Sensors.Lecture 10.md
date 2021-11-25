@@ -1,10 +1,11 @@
 ---
-id: mkROCs9jQQ5tVPzLzVXNi
+id: xVLAMOTRzWfRVwfsVMq6f
 title: Lecture 10
 desc: ''
 updated: 1633600658724
 created: 1633599517028
 ---
+
 
 ## Temperature Sensor
 

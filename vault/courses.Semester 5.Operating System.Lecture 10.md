@@ -1,10 +1,11 @@
 ---
-id: T92KraeaozDzY0vK436QV
+id: f5dlEoDzwlq3yMHhicQ2C
 title: Lecture 10
 desc: ''
 updated: 1632849363575
 created: 1632829724691
 ---
+
 
 ## Scheduling Algorithm (Cont.)
 

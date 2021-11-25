@@ -1,10 +1,11 @@
 ---
-id: SWZkc7DdTNxNRy8Wd2tkK
+id: yXTHl67eEyeYc1FzUSYAB
 title: Lecture 14
 desc: ''
 updated: 1635075189235
 created: 1635075189235
 ---
+
 
 ## Semaphores
 

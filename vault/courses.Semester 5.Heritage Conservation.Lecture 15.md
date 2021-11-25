@@ -1,10 +1,11 @@
 ---
-id: 54UG6OenTE0aRCaRqbb5Q
+id: 2ZUCHNuJBschqgGeW0sx9
 title: Lecture 15
 desc: ''
 updated: 1634462653360
 created: 1634454839757
 ---
+
 
 ## Paintings (Cont.)
 

@@ -1,10 +1,11 @@
 ---
-id: YTubF8DNYL7XWMcJgiDG3
+id: d9TNCRjcwrC0QM6lvqJ8C
 title: Lecture 7
 desc: ''
 updated: 1632637262422
 created: 1632635570056
 ---
+
 
 ## Perception and Factors
 

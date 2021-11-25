@@ -1,10 +1,11 @@
 ---
-id: HFGrSrOHbY9vSu2OTCDm2
+id: pezCriv4Doh24nHw521xO
 title: Lecture 14
 desc: ''
 updated: 1634453313174
 created: 1634452274637
 ---
+
 
 ## Paintings (Cont.)
 

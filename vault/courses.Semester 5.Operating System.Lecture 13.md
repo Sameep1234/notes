@@ -1,10 +1,11 @@
 ---
-id: xFvHP34YitP4bVKnj85UO
+id: Jfolwo1eQQi6LKwoghU6l
 title: Lecture 13
 desc: ''
 updated: 1634100353985
 created: 1634100353985
 ---
+
 
 ## Hardware and Software Approaches for Mutual Exclusion
 

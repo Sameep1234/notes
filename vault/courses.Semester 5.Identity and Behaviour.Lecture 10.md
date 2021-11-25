@@ -1,10 +1,11 @@
 ---
-id: K0kp6URgJ9SnimTcJphcx
+id: 050hPgzZoXROzuALDGTrO
 title: Lecture 10
 desc: ''
 updated: 1632647089386
 created: 1632640666042
 ---
+
 
 ## Decision Making and its related errors
 

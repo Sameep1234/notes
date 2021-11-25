@@ -1,10 +1,11 @@
 ---
-id: LkO7xEErH0QpS7h9pjGop
+id: dCoNLZG6KQjD3SvNjtPlu
 title: LCD's
 desc: ''
 updated: 1637847800570
 created: 1634535324275
 ---
+
 
 ## 7 Segment LED, LCD and 
 

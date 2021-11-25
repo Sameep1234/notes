@@ -1,10 +1,11 @@
 ---
-id: X7n2PwVS2ej0O804ritBy
+id: jBXwfhYXQDCsITuym6bgP
 title: Lecture 9
 desc: ''
 updated: 1634387534028
 created: 1634387534028
 ---
+
 
 
 ## Wood (Cont.) and Intro to Paper

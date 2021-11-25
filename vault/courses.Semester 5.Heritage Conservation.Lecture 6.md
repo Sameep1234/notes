@@ -1,10 +1,11 @@
 ---
-id: S13mRMe5KEfZGNDi8vrYA
+id: xSP8Gz74f3wXcUj9Wdd9a
 title: Lecture 6
 desc: ''
 updated: 1631340044746
 created: 1631335927151
 ---
+
 
 ## Steel and Ceramics
 

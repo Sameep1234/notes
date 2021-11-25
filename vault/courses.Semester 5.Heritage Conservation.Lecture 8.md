@@ -1,10 +1,11 @@
 ---
-id: nhetJVdm6SYHiREvRbgN8
+id: 4nfUewdkKus6g1s0XZ5be
 title: Lecture 8
 desc: ''
 updated: 1634383433970
 created: 1634381399952
 ---
+
 
 ## Wood
 

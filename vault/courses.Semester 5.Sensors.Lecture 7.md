@@ -1,10 +1,11 @@
 ---
-id: mV9vOl83yp7Z3h5QW4d6s
+id: hSlcLbw6o7MpPY1bk9vmd
 title: Lecture 7
 desc: ''
 updated: 1631854754508
 created: 1631851490710
 ---
+
 
 ## Stress and strain
 

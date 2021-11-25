@@ -1,10 +1,11 @@
 ---
-id: ZZhXX466ntkC7KeWZov6p
+id: cGzhg2CVE1aGkupQuylcD
 title: Lecture 2
 desc: ''
 updated: 1631265052720
 created: 1631265004033
 ---
+
 
 ## Observing sculptures and studying stones
 

@@ -1,10 +1,11 @@
 ---
-id: XKgcihMxrAqw7yeah2H5J
+id: 62mXPkcoZYkAvDflOnUJT
 title: Lecture 3
 desc: ''
 updated: 1630910764458
 created: 1630905993189
 ---
+
 
 ## Timer (Cont.)
 

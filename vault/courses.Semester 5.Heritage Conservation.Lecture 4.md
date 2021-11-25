@@ -1,10 +1,11 @@
 ---
-id: 0FioDgzoBdkgjvixTwIfa
+id: soCjKCDR5xO1MTYufGh6w
 title: Lecture 4
 desc: ''
 updated: 1631296115136
 created: 1631276732938
 ---
+
 
 ## Electrochemical series and more on metals
 

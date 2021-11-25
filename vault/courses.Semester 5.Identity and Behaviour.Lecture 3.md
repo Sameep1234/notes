@@ -1,10 +1,11 @@
 ---
-id: YZpSIBYO0ahxAoUtvM6x2
+id: 3C5KjseRe4Q7np9HwWeWw
 title: Lecture 3
 desc: ''
 updated: 1630852793974
 created: 1630851775590
 ---
+
 
 ## Organization-Behaviourist Model
 

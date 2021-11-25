@@ -1,10 +1,11 @@
 ---
-id: 36z9kW3MusJ2QwFLC9yCU
+id: FTSQw98yIYwiXeBaNJndt
 title: Lecture 7
 desc: ''
 updated: 1631260876454
 created: 1631247844382
 ---
+
 
 ## Process/Processor Scheduling
 

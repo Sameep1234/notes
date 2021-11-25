@@ -1,10 +1,11 @@
 ---
-id: Du5Wn6kYsMK4r8NCR7eXv
+id: JapOEW7AAXPc4jSFRTcJA
 title: Lecture 2
 desc: ''
 updated: 1630405939375
 created: 1630402164980
 ---
+
 
 ## Callibration of Sensors and Errors
 

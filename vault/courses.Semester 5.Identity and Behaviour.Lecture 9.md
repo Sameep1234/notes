@@ -1,10 +1,11 @@
 ---
-id: tSllbyBt3ZqkFMyPDbLLE
+id: qEwTEW5bn08UJhR7ms33X
 title: Lecture 9
 desc: ''
 updated: 1632640395823
 created: 1632640036695
 ---
+
 
 ## Decision Making
 

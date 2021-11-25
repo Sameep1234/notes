@@ -1,10 +1,11 @@
 ---
-id: 9895TjdHhFePvrTEJpTuz
+id: v0re6MsmxdIhTtXO6TtvU
 title: Lecture 9
 desc: ''
 updated: 1635140067611
 created: 1635140067611
 ---
+
 
 
 ## Points

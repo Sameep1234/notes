@@ -1,10 +1,11 @@
 ---
-id: 1RayjmMzdZsqnYmAC22Pu
+id: zdBBUYEMfBPsipxsxrpwE
 title: Lecture 1
 desc: ''
 updated: 1630401937341
 created: 1630119208038
 ---
+
 
 ## Introduction to course
 

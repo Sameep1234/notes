@@ -1,10 +1,11 @@
 ---
-id: EzFAqylmlMVOhrO46M14m
+id: Y9tLU5Y8FoVBiBczeNqM6
 title: Lecture 1
 desc: ''
 updated: 1630848380769
 created: 1630119338517
 ---
+
 
 ## Introduction to IDTB
 

@@ -1,10 +1,11 @@
 ---
-id: 0Uhk8iMIRNBnAfYeBG1Ht
+id: ElSbXosQc8eVTiYPgFH2n
 title: Lecture 9
 desc: ''
 updated: 1632825583219
 created: 1632821953611
 ---
+
 
 ## Scheduling Algorithms (Cont.)
 

@@ -1,10 +1,11 @@
 ---
-id: wcBxmYgYJWMiVUmPvitiq
+id: Wpn4kHpOo3DvUPdEDq7U4
 title: Lecture 12
 desc: ''
 updated: 1634401556028
 created: 1634401556028
 ---
+
 
 ## Textiles
 

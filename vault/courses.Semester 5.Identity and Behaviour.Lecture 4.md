@@ -1,10 +1,11 @@
 ---
-id: KrzCF28wYvtfs2P1b6PTI
+id: 54GLPH3DxJDvrToELMjIG
 title: Lecture 4
 desc: ''
 updated: 1630854303526
 created: 1630852825524
 ---
+
 
 ## Learning and related theories
 

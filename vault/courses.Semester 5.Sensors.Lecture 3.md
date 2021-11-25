@@ -1,10 +1,11 @@
 ---
-id: 4XPMylNKbafyOjrv3R5y1
+id: U31XpFFA53UhxCdhfzSqT
 title: Lecture 3
 desc: ''
 updated: 1630516069933
 created: 1630406115130
 ---
+
 
 ## Best Fit, Measurement and Control Systems
 

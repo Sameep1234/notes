@@ -1,10 +1,11 @@
 ---
-id: iwhlO4698omQcNVxlftUA
+id: 51s6dCBv2v9ovrISXFIrD
 title: Lecture 2
 desc: ''
 updated: 1630851678636
 created: 1630848418482
 ---
+
 
 ## Schools of Psychology (Cont.)
 
