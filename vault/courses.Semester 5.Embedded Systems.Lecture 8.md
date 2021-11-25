@@ -1,6 +1,6 @@
 ---
 id: bWX1sy8vnuriP2UeDbKAm
-title: LCD's
+title: Lecture 8
 desc: ''
 updated: 1637847800570
 created: 1634535324275
