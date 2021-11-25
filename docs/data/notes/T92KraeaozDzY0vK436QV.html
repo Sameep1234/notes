@@ -1,0 +1,56 @@
+<h1 id="lecture-10"><a aria-hidden="true" class="anchor-heading" href="#lecture-10"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Lecture 10</h1>
+<h2 id="scheduling-algorithm-cont"><a aria-hidden="true" class="anchor-heading" href="#scheduling-algorithm-cont"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Scheduling Algorithm (Cont.)</h2>
+<h2 id="fair-share-scheduling"><a aria-hidden="true" class="anchor-heading" href="#fair-share-scheduling"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Fair-share scheduling</h2>
+<ul>
+<li><img src="/notes/assets/images/2021-09-28-17-22-11.png"></li>
+<li><img src="/notes/assets/images/2021-09-28-22-08-43.png"></li>
+<li><img src="/notes/assets/images/2021-09-28-22-10-49.png"></li>
+<li><img src="/notes/assets/images/2021-09-28-22-13-43.png"></li>
+<li>The algorithms discussed till now does not include who is the user that created the process, which groups are being used etc.</li>
+<li>This algorithm takes care of such things.</li>
+<li>Please note that fair share does not necessarily mean equal, but it can also mean that if weight assigned to a process is more, the work completed by it is expected to be more in the long run.</li>
+<li>Implementation
+<ul>
+<li><img src="/notes/assets/images/2021-09-28-22-17-59.png"></li>
+<li><img src="/notes/assets/images/2021-09-28-22-23-39.png"></li>
+</ul>
+</li>
+<li>Some calculation
+<ul>
+<li><img src="/notes/assets/images/2021-09-28-22-25-10.png"></li>
+<li>CPUj(i) means time utilized by a process j till "i" interval.</li>
+<li><img src="/notes/assets/images/2021-09-28-22-29-51.png"></li>
+<li>The second point can be easily visualised with the help of formula.</li>
+</ul>
+</li>
+<li>Example
+<ul>
+<li><img src="/notes/assets/images/2021-09-28-22-37-44.png"></li>
+<li>It is given in the question that the Process B and C combined are assigned 50% and Process A alone is assigned 50% weightage.</li>
+</ul>
+</li>
+</ul>
+<h2 id="traditional-older-unix-scheduling"><a aria-hidden="true" class="anchor-heading" href="#traditional-older-unix-scheduling"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Traditional (older) UNIX Scheduling</h2>
+<ul>
+<li><img src="/notes/assets/images/2021-09-28-22-39-46.png"></li>
+<li>Some calculations
+<ul>
+<li><img src="/notes/assets/images/2021-09-28-22-42-57.png"></li>
+</ul>
+</li>
+<li><img src="/notes/assets/images/2021-09-28-22-43-23.png"></li>
+<li>The purpose of the nicej is to maintain that the priority of any particular process does not go too down with increasing value of CPUj(i) and remains between the <strong>assigned band.</strong></li>
+<li>Types of band with <strong>decreasing order of priority</strong>
+<ul>
+<li><img src="/notes/assets/images/2021-09-28-22-46-13.png"></li>
+<li>From the above figure, we can conclude that the swapper band has the highest priority whereas the user processes have the lowest priority.</li>
+</ul>
+</li>
+<li>Example
+<ul>
+<li>Note that in the below example, we are only considering <strong>user processes.</strong></li>
+<li><img src="/notes/assets/images/2021-09-28-22-49-26.png"></li>
+<li><strong>Note that the process which will be executing next will be that whose priority value is lowest which means highest priority.</strong></li>
+</ul>
+</li>
+</ul>

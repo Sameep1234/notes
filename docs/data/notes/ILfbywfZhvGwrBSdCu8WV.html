@@ -1,0 +1,49 @@
+<h1 id="lecture-3"><a aria-hidden="true" class="anchor-heading" href="#lecture-3"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Lecture 3</h1>
+<h2 id="system-calls-and-architecture-of-unix"><a aria-hidden="true" class="anchor-heading" href="#system-calls-and-architecture-of-unix"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>System Calls and Architecture of UNIX</h2>
+<h2 id="intro-to-system-calls"><a aria-hidden="true" class="anchor-heading" href="#intro-to-system-calls"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Intro to system calls</h2>
+<ul>
+<li>System calls are the most important and crucial concept in OS. It is basically a link connecting user to the OS.</li>
+<li>Formally, it is a <strong>programming interface (like waiter connecting customers to kitchen in a restaurant)</strong> to use the services provided by the OS. They are the programs that help give access to the functionalities provided by the OS.</li>
+<li>They are written in a high-level language like C or C++.</li>
+<li>POSIX API is used for Linux and Win32 API is used for windows.</li>
+</ul>
+<h2 id="implementation-of-system-call"><a aria-hidden="true" class="anchor-heading" href="#implementation-of-system-call"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Implementation of System Call</h2>
+<ul>
+<li>Associated with each function call. Eg. If you call a function printf() in C, then it internally calls an associated system call telling the OS to display the written part on the scree.</li>
+<li>Every OS have a list of system call along with ID's.</li>
+<li>System call interface maintains a table with ID's as indices.</li>
+<li>This interface invokes a particular system call in OS kernel and returns the status and return-values if any.</li>
+<li>Details are hidden from programmer by the API.</li>
+</ul>
+<h2 id="relationship-between-api-system-call-and-os"><a aria-hidden="true" class="anchor-heading" href="#relationship-between-api-system-call-and-os"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Relationship between API, System Call and OS</h2>
+<p><img src="/notes/assets/images/2021-08-29-10-48-06.png"></p>
+<h2 id="types-of-system-calls"><a aria-hidden="true" class="anchor-heading" href="#types-of-system-calls"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Types of system calls</h2>
+<ul>
+<li>File Management - Eg. create, open, close etc.</li>
+<li>Device Management - request, release, read, write etc.</li>
+<li>Protection - control access, get and set permissions etc.</li>
+<li>Information maintenance - get time, set process etc.</li>
+<li>Communications - create, delete communication, send or recieve messages etc.</li>
+</ul>
+<h3 id="architecture-of-unix"><a aria-hidden="true" class="anchor-heading" href="#architecture-of-unix"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Architecture of UNIX</h3>
+<ul>
+<li>
+<p><img src="/notes/assets/images/2021-08-29-11-08-15.png"></p>
+</li>
+<li>
+<p>UNIX is an OS just like Linux.</p>
+</li>
+<li>
+<p>In fact linux is based on UNIX but is more complicated than UNIX.</p>
+</li>
+<li>
+<p>UNIX system follows monolithic approach</p>
+</li>
+<li>
+<p>UNIX System Kernel</p>
+</li>
+</ul>
+<p><img src="/notes/assets/images/2021-08-29-11-10-53.png"></p>
+<ul>
+<li><strong>In Linux or UNIX, everything is in terms of files. Thus, it becomes crucial to understand file system.</strong></li>
+</ul>

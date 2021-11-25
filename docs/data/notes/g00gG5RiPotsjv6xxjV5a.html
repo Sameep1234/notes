@@ -1,0 +1,13 @@
+<h1 id="lecture-15"><a aria-hidden="true" class="anchor-heading" href="#lecture-15"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Lecture 15</h1>
+<h2 id="producerconsumer-cont"><a aria-hidden="true" class="anchor-heading" href="#producerconsumer-cont"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Producer/Consumer (Cont.)</h2>
+<blockquote>
+<p>The question was what would happen if we changed the order in which semaphores are released?</p>
+</blockquote>
+<ul>
+<li>Assume that in consumer, we are waiting for delay to restore. It is possible that before realeasing semaphore s, it waits for delay. Since producer is waiting for s and consumer is waiting for producer to restore delay, a condition called deadlock is created.</li>
+<li>To solve this, we use a local variable to store the value of n in consumer and we are goot to go.</li>
+</ul>
+<h2 id="solution-using-general-semaphores"><a aria-hidden="true" class="anchor-heading" href="#solution-using-general-semaphores"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Solution using General Semaphores</h2>
+<ul>
+<li><img src="/notes/assets/images/2021-10-24-17-47-13.png"></li>
+</ul>

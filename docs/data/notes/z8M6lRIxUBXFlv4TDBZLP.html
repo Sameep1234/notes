@@ -1,0 +1,166 @@
+<h1 id="lecture-6"><a aria-hidden="true" class="anchor-heading" href="#lecture-6"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Lecture 6</h1>
+<h2 id="process-control-and-process-management"><a aria-hidden="true" class="anchor-heading" href="#process-control-and-process-management"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Process Control and Process Management</h2>
+<blockquote>
+<p>Process management will be studied in UNIX SVR4 file system.</p>
+</blockquote>
+<h2 id="functions-of-os-kernel"><a aria-hidden="true" class="anchor-heading" href="#functions-of-os-kernel"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Functions of OS kernel</h2>
+<ul>
+<li><img src="/notes/assets/images/2021-09-06-08-10-29.png"></li>
+<li><img src="/notes/assets/images/2021-09-06-08-13-17.png"></li>
+<li><img src="/notes/assets/images/2021-09-06-08-13-59.png"></li>
+</ul>
+<h2 id="process-creation"><a aria-hidden="true" class="anchor-heading" href="#process-creation"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Process Creation</h2>
+<ul>
+<li>Once new process is decided to be created, OS performs following tasks
+<ul>
+<li>Assigning unique ID.</li>
+<li>Allocating space in memory.</li>
+<li>Initializing PCB (The most important part of a process).</li>
+<li>Setting up of appropriate links.</li>
+<li>Creating or expanding other data structures.</li>
+</ul>
+</li>
+</ul>
+<h2 id="process-switching"><a aria-hidden="true" class="anchor-heading" href="#process-switching"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Process Switching</h2>
+<ul>
+<li>For small amount of time, some process will run and then other will run. This time is very small and hence we see it like all the processes are running parallely.</li>
+<li>Thus, when one process goes away and other process needs to be loaded, this is called process switching.</li>
+<li>Process switching is totally different than mode switching. In a process execution, there may occur mode switching. </li>
+<li>Mode switching means switching from user to kernal mode vice versa.</li>
+</ul>
+<blockquote>
+<p>So why is process gets switched?</p>
+<ul>
+<li><img src="/notes/assets/images/2021-09-06-08-23-14.png"></li>
+</ul>
+</blockquote>
+<ul>
+<li>
+<p>Reasons for switching (Eg.)</p>
+<ul>
+<li>Clock interrupt (time slice expired)</li>
+<li>I/O Interrupt (an event occured)</li>
+<li>Memory fault (trap) - Accessing memory which is not available.</li>
+</ul>
+</li>
+<li>
+<p>Mode Switching - When a running process changes its mode from one to other.</p>
+<ul>
+<li>While switching the mode, processor state information of PCB is saved (user to kernel) and restored back (kernel to user).</li>
+<li>Mode switch, thus becomes the subset of prcess switch.</li>
+<li>Thus, process switch will take more time then mode switch.</li>
+</ul>
+</li>
+<li>
+<p>Steps in process switch</p>
+<ul>
+<li><img src="/notes/assets/images/2021-09-06-08-28-44.png"></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>Is OS a process?</p>
+<ul>
+<li>Basically OS is a code/program which is in between hardware and application that we run.</li>
+<li>Designs of OS to explain execution of OS
+<ul>
+<li><img src="/notes/assets/images/2021-09-06-08-33-06.png"></li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h2 id="different-designs"><a aria-hidden="true" class="anchor-heading" href="#different-designs"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Different designs</h2>
+<ul>
+<li>Non-process Kernel</li>
+<li>Execution within User Processes
+<ul>
+<li><img src="/notes/assets/images/2021-09-06-08-36-42.png"></li>
+</ul>
+</li>
+<li>Process-based OS
+<ul>
+<li><img src="/notes/assets/images/2021-09-06-08-37-48.png"></li>
+<li>More like microkernel architecture.</li>
+</ul>
+</li>
+</ul>
+<h2 id="process-management-in-unix-svr4"><a aria-hidden="true" class="anchor-heading" href="#process-management-in-unix-svr4"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Process management in UNIX SVR4</h2>
+<ul>
+<li>SVR4 stands for System V Release 4.</li>
+<li><strong>Most</strong> of the the OS executes in user process.</li>
+<li>System processes - Kernel mode only</li>
+<li>User Processes
+<ul>
+<li>User mode to execute user programs and utilities.</li>
+<li>Kernel mode to execture instructions that belong to kernel</li>
+</ul>
+</li>
+<li>Process with ID 1 = Linux boots and creates a swapper process which in turn creates init process with ID = 1.</li>
+<li>This init process creates all the process required to run Linux on boot up.</li>
+<li>init process works only in kernel mode.</li>
+<li>Some other process that execute only in kernel mode include dispatcher etc.</li>
+<li>States
+<ul>
+<li><img src="/notes/assets/images/2021-09-06-08-47-29.png"></li>
+<li>Fork is the system call used to create new process.</li>
+<li>Two extra states</li>
+<li>Blocking state is called sleep state.</li>
+<li>Zombie state means that process is executed but some imformation realted to data structure and all is still saved for accounting purposes.</li>
+<li>Here running state is divided into two parts viz user running state and kernel running state.</li>
+<li>At a time, a process can be in either user running state or kernel running state but <strong>not both.</strong></li>
+<li>Preempted is almost similar to ready to run in memory state. In fact they are managed by a common combined queue.</li>
+</ul>
+</li>
+<li>UNIX Process Image
+<ul>
+<li>A process in UNIX is a set of DS that provide the OS with all the information necessary to manage and dispatch processes.</li>
+<li>Process image in UNIX can be categorized as follows
+<ul>
+<li>User-Level Context
+<ul>
+<li><img src="/notes/assets/images/2021-09-09-11-14-50.png"></li>
+</ul>
+</li>
+<li>Register Context
+<ul>
+<li><img src="/notes/assets/images/2021-09-09-11-15-08.png"></li>
+</ul>
+</li>
+<li>System-Level Context
+<ul>
+<li><img src="/notes/assets/images/2021-09-09-11-15-54.png"></li>
+<li>Most of the information regarding PCB is maintained in process table and they <strong>must be accessible to kernel.</strong></li>
+<li>U Area - Most of the process control information is present in U area. This is also a part of PCB. However, majority of information related to PCB is present in Process table.</li>
+<li>Information in U area is accessible to a process only if it is in running state.</li>
+<li>1st and 3rd are static DS means they will not change during the life of a process.</li>
+<li>2nd and 4th are dynamic data structure and will change according to various states of the process.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Process Creation in UNIX
+<ul>
+<li>fork() is used to create new processes.</li>
+<li><img src="/notes/assets/images/2021-09-09-11-26-30.png">
+<img src="/notes/assets/images/2021-09-09-11-27-38.png"></li>
+<li>If returned value is 0, it means it is child process and vice versa.</li>
+<li>Once child is created, then it depends on the situation which one will execute.
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="extra-points"><a aria-hidden="true" class="anchor-heading" href="#extra-points"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Extra Points</h2>
+<blockquote>
+<p>What is in process table?</p>
+<ul>
+<li><img src="/notes/assets/images/2021-09-09-11-22-44.png"></li>
+</ul>
+</blockquote>
+<blockquote>
+<p>What is in U area?</p>
+<ul>
+<li><img src="/notes/assets/images/2021-09-09-11-23-18.png"></li>
+</ul>
+</blockquote>

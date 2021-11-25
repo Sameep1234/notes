@@ -1,0 +1,126 @@
+<h1 id="lecture-8"><a aria-hidden="true" class="anchor-heading" href="#lecture-8"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Lecture 8</h1>
+<h2 id="uniprocessor-scheduling-algorithms"><a aria-hidden="true" class="anchor-heading" href="#uniprocessor-scheduling-algorithms"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Uniprocessor Scheduling Algorithms</h2>
+<ul>
+<li>We would be discussing only short-term scheduling.</li>
+<li>They mainly include dispatching techniques.</li>
+<li>Algorithms available
+<ul>
+<li><img src="/notes/assets/images/2021-09-20-08-08-03.png"></li>
+</ul>
+</li>
+<li>Selection Function
+<ul>
+<li><img src="/notes/assets/images/2021-09-20-08-10-10.png"></li>
+</ul>
+</li>
+<li>Normalized TAT is better quantity to compare two scheduling algorithms.</li>
+<li>Normalized TAT is relative delay and it represents how much a process needs to wait.</li>
+<li>We can't have normalized TAT less than 1 because service time can never be more than TAT.</li>
+</ul>
+<h2 id="decision-mode"><a aria-hidden="true" class="anchor-heading" href="#decision-mode"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Decision Mode</h2>
+<ul>
+<li>Specifies the instants in time at which the slection functions is exercised.</li>
+<li>Two Types
+<ul>
+<li>Nonpreemptive - Once a process is in running state, it will continue until it terminates or blocks itself for I/O.
+<ul>
+<li>This means it can't be forcefully stopped.</li>
+</ul>
+</li>
+<li>Preemptive - Currently running process may be interrupted and moves to ready state by the OS.
+<ul>
+<li>This normally occurs when new process arrives, on an interrupt or periodically.</li>
+<li>In simple terms, this will occur when a new process is inserted or an interrupt is passed or periodically this premption is performed.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Normally preemptive mode is preferred even though it increases overhead because of more frequent process switching but it also prevents one process from monopolizing the processor.</li>
+<li>For example, a process requires a user input and if user is on a break, the process will block all other processes which otherwise would have ran. This is called monopolizing the processor.</li>
+</ul>
+<h2 id="cpu-bound-and-io-bound"><a aria-hidden="true" class="anchor-heading" href="#cpu-bound-and-io-bound"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>CPU Bound and I/O Bound</h2>
+<ul>
+<li>If a process spends most of its time in processor, then it is called CPU bound and vice versa.</li>
+<li>Example of I/O bound process includes chatting. It uses I/O for most of the time because it is waiting for the user to enter the values.</li>
+</ul>
+<h2 id="first-come-first-serve-fcfs"><a aria-hidden="true" class="anchor-heading" href="#first-come-first-serve-fcfs"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>First Come First Serve (FCFS)</h2>
+<ul>
+<li><img src="/notes/assets/images/2021-09-20-08-14-00.png"></li>
+<li>It is one of the most fair strategy in the <strong>real world.</strong></li>
+<li>w = waiting time.</li>
+<li>For better efficiency TAT should be as low as possible.</li>
+<li>Example
+<ul>
+<li><img src="/notes/assets/images/2021-09-28-10-54-38.png"></li>
+</ul>
+</li>
+<li>Issues
+<ul>
+<li>A short process may have to wait a very long time before it can execute.</li>
+<li><img src="/notes/assets/images/2021-09-20-08-33-39.png"></li>
+</ul>
+</li>
+</ul>
+<h2 id="round-robin-rr"><a aria-hidden="true" class="anchor-heading" href="#round-robin-rr"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Round Robin (RR)</h2>
+<ul>
+<li><img src="/notes/assets/images/2021-09-28-12-18-13.png"></li>
+<li>It is a type of <strong>preemptive</strong> FCFS.</li>
+<li>Simple explanation
+<ul>
+<li>There will be a queue.</li>
+<li>The process will run for some time.</li>
+<li>If the process is not completed, that process is blocked and put into ready queue.</li>
+<li>The next process runs.</li>
+</ul>
+</li>
+<li>Time given to each and every process is called time slice or <strong>time quantum.</strong>. It is represented by "q".</li>
+<li>Example
+<ul>
+<li>For the below example, the time quantum is 4. Thus, if a process is not finished after 4 units of time, it will be placed at last in the ready queue.</li>
+<li><img src="/notes/assets/images/2021-09-28-12-26-01.png"></li>
+<li>Now we have the same example but with q = 1.</li>
+<li><img src="/notes/assets/images/2021-09-28-12-40-19.png"></li>
+<li>Note here that the Mean NTAT for q = 4 is better than that when q = 1.</li>
+<li>Depending on the implementation of OS, these can be either pre defined or may be changed during the execution.</li>
+</ul>
+</li>
+<li>Issues
+<ul>
+<li><img src="/notes/assets/images/2021-09-28-12-44-01.png"></li>
+</ul>
+</li>
+<li>Thus, the ideal value of time quantum is slightly greater than the time required for a typical process interaction.</li>
+<li>Relative Treatment
+<ul>
+<li><img src="/notes/assets/images/2021-09-28-13-24-26.png"></li>
+</ul>
+</li>
+</ul>
+<h2 id="virtual-round-robin"><a aria-hidden="true" class="anchor-heading" href="#virtual-round-robin"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Virtual Round Robin</h2>
+<ul>
+<li><img src="/notes/assets/images/2021-09-28-13-26-40.png"></li>
+<li>In this strategy, we are assigning priority to I/O blocked processes by maintaining different queues.</li>
+</ul>
+<h2 id="shortest-process-next-spn"><a aria-hidden="true" class="anchor-heading" href="#shortest-process-next-spn"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Shortest Process Next (SPN)</h2>
+<ul>
+<li><img src="/notes/assets/images/2021-09-28-15-00-03.png"></li>
+<li>Example
+<ul>
+<li>In the below example, the time shown is wrong and do your own calculation.</li>
+<li><img src="/notes/assets/images/2021-09-28-15-03-17.png"></li>
+<li><img src="/notes/assets/images/2021-09-28-15-03-30.png"></li>
+</ul>
+</li>
+<li>Issues
+<ul>
+<li><img src="/notes/assets/images/2021-09-28-15-03-48.png"></li>
+<li>Having knowledge of service time is one of the biggest overhead in <strong>all the algorithms seen till now.</strong></li>
+<li>For interactive process, it is the most difficult job because the value can never be known.</li>
+<li>This is because, the process will have to wait for either I/O or for any user input.</li>
+</ul>
+</li>
+</ul>
+<h2 id="extra-points"><a aria-hidden="true" class="anchor-heading" href="#extra-points"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Extra Points</h2>
+<ul>
+<li>DMA - Data memory access (DMA) is a hardware circuit through which all the data is transfered after an I/O is available.</li>
+</ul>

@@ -1,0 +1,60 @@
+<h1 id="lecture-6"><a aria-hidden="true" class="anchor-heading" href="#lecture-6"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Lecture 6</h1>
+<h2 id="external-hardware-interrupts"><a aria-hidden="true" class="anchor-heading" href="#external-hardware-interrupts"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>External Hardware Interrupts</h2>
+<h2 id="activation"><a aria-hidden="true" class="anchor-heading" href="#activation"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Activation</h2>
+<ul>
+<li><img src="/notes/assets/images/2021-09-29-10-43-25.png"></li>
+<li>Now to activate external hardware interrupt, we use GICR and the first 3 LSB side bits should be set according to our use case and in correspondence with the image above.</li>
+</ul>
+<h2 id="features"><a aria-hidden="true" class="anchor-heading" href="#features"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Features</h2>
+<ul>
+<li><img src="/notes/assets/images/2021-09-29-10-45-07.png"></li>
+<li>When we set the interrupts value to be 00, it is also called as <strong>level-triggered interrupt.</strong></li>
+<li><strong>Note that 00 corresponds to lower level interrupt which means on connecting group or providing 0, this interrupt will get triggered and on connecting Vcc or providing 1, this interrupt will be disabled.</strong></li>
+<li>Interrupt 2
+<ul>
+<li><img src="/notes/assets/images/2021-09-29-10-50-01.png"></li>
+<li><strong>Note that there is only one bit for interrupt 2 and hence only 2 possible combinations ar shown in the image above.</strong></li>
+</ul>
+</li>
+<li>Now for example, lets say we want to make INT0 interrupt on falling edge triggered. For this, we choose the value of MCUCR = 0x02.</li>
+<li>For INT2, rising edge trigger, write MCUCSR = 0x40. We made D6 to be 1 because the MCUCSR has PIN6 dedicated to interrupt 2.</li>
+<li><strong>Make sure that if INT2 is asked, you change D6 of MCUCSR and if INT1 or INT0 is asked, you chance (D2, D3) and (D0, D1) respectively.</strong></li>
+</ul>
+<h2 id="gifr"><a aria-hidden="true" class="anchor-heading" href="#gifr"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>GIFR</h2>
+<ul>
+<li>General Interrupt Flag Register.</li>
+<li><img src="/notes/assets/images/2021-09-29-11-01-33.png"></li>
+<li>Programmer need not worry of clearing the flag as it will be done automatically.</li>
+</ul>
+<h2 id="minimum-timing-of-interrupt-signal"><a aria-hidden="true" class="anchor-heading" href="#minimum-timing-of-interrupt-signal"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Minimum timing of Interrupt Signal</h2>
+<ul>
+<li>Minimum timing of interrupt signal means what should be the minimum time for which the interrupt should last so that it is considered as an interrupt and not as a noise.</li>
+<li><img src="/notes/assets/images/2021-09-29-11-03-22.png"></li>
+</ul>
+<h2 id="examples"><a aria-hidden="true" class="anchor-heading" href="#examples"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Examples</h2>
+<ul>
+<li><img src="/notes/assets/images/2021-09-29-11-07-25.png"></li>
+</ul>
+<pre class="language-c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&#x3C;avr/io.h></span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&#x3C;avr/interrupt.h></span></span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    DDRC <span class="token operator">=</span> <span class="token number">0x08</span><span class="token punctuation">;</span> <span class="token comment">// Define PortC.3 as output</span>
+    PORTD <span class="token operator">=</span> <span class="token number">0x04</span><span class="token punctuation">;</span> <span class="token comment">// Interrupt comes here.</span>
+    GICR <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token operator">&#x3C;&#x3C;</span>INT0<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Enable external interrupt 0</span>
+    <span class="token function">sei</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Enables global interrupts</span>
+
+    MCUCR <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token comment">// Level triggered mode</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Run forever</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">ISR</span> <span class="token punctuation">(</span>INT0_vect<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    PORTC <span class="token operator">^=</span> <span class="token number">0x08</span><span class="token punctuation">;</span> <span class="token comment">// Toggling whenever INT0 goes low</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="interrupt-priority"><a aria-hidden="true" class="anchor-heading" href="#interrupt-priority"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Interrupt Priority</h2>
+<ul>
+<li><img src="/notes/assets/images/2021-09-29-11-28-58.png"></li>
+</ul>

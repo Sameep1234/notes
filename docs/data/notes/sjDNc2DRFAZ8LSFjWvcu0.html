@@ -1,0 +1,148 @@
+<h1 id="lecture-1-lab"><a aria-hidden="true" class="anchor-heading" href="#lecture-1-lab"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Lecture 1 (Lab)</h1>
+<h2 id="selection-and-coding"><a aria-hidden="true" class="anchor-heading" href="#selection-and-coding"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Selection and Coding</h2>
+<blockquote>
+<h4 id="this-was-the-lab-session-but-theory-was-taught"><a aria-hidden="true" class="anchor-heading" href="#this-was-the-lab-session-but-theory-was-taught"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>This was the lab session but theory was taught.</h4>
+</blockquote>
+<h2 id="criterias-to-select-microcontroller"><a aria-hidden="true" class="anchor-heading" href="#criterias-to-select-microcontroller"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Criteria's to select microcontroller</h2>
+<ul>
+<li>Computational need - Efficiency, cost etc.
+<ul>
+<li>8-bit vs 16-bit vs 32-bit</li>
+<li>Speed</li>
+<li>Power Consumption</li>
+<li>Packaging
+<ul>
+<li>Space</li>
+<li>Assembling</li>
+<li>Prototyping end product</li>
+</ul>
+</li>
+<li>Amount of RAM and ROM on chip</li>
+<li>No. of I/O pins</li>
+<li>No. of timers</li>
+<li>Upgradability to new versions</li>
+<li>Cost per unit</li>
+</ul>
+</li>
+<li>Availability of software development tools
+<ul>
+<li>Availability of
+<ul>
+<li>Assemblers</li>
+<li>Debugger</li>
+<li>Code-efficient C-language compiler</li>
+<li>Technical Support</li>
+<li>In-house and outside expertise</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reliable source of microcontroller
+<ul>
+<li>Number of companies supplying controller.</li>
+<li>Are they reliable?</li>
+<li>Will it support in future?</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>We would be using AVR Microcontrollers</p>
+</blockquote>
+<h2 id="harvard-vs-princeton"><a aria-hidden="true" class="anchor-heading" href="#harvard-vs-princeton"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Harvard vs Princeton</h2>
+<ul>
+<li>Harvard
+<img src="/notes/assets/images/2021-09-04-18-21-51.png"></li>
+<li>Princeton</li>
+<li><img src="/notes/assets/images/2021-09-04-18-22-18.png"></li>
+</ul>
+<h2 id="risc-vs-cisc"><a aria-hidden="true" class="anchor-heading" href="#risc-vs-cisc"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>RISC vs CISC</h2>
+<ul>
+<li>CISC
+<ul>
+<li>Complex Instruction Set Computer</li>
+<li>Single instruction can execute several low-level operations (including load from memory, artihmetic operations and memory store).</li>
+<li>Capability of multi-step operations.</li>
+</ul>
+</li>
+<li>RISC
+<ul>
+<li>Reduced Instruction Set Computer</li>
+<li>Low complexity
+<ul>
+<li>Speed-up</li>
+<li>Less errors in implementation</li>
+</ul>
+</li>
+<li>Less transistors</li>
+<li>More space and registers</li>
+</ul>
+</li>
+<li>Conclusion
+<img src="/notes/assets/images/2021-09-04-18-30-30.png"></li>
+</ul>
+<h2 id="avr-microcontrollers"><a aria-hidden="true" class="anchor-heading" href="#avr-microcontrollers"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>AVR Microcontrollers</h2>
+<ul>
+<li>Follows Harvard Architecture</li>
+<li>Follows RISC architecture with CISC instruction set</li>
+<li>Full-form - Advanced Virtual RISC</li>
+<li>8 Bit Bus (For our application)</li>
+<li>Pin count between 8 to 100</li>
+<li>Scalable</li>
+<li>32 working registers
+<ul>
+<li>All connected to ALU</li>
+</ul>
+</li>
+<li>Single Cycle Execution
+<ul>
+<li>One instruction per external clock</li>
+<li>Low power consumption</li>
+</ul>
+</li>
+<li>Efficient core</li>
+<li>High system level integration</li>
+</ul>
+<h2 id="extra-points"><a aria-hidden="true" class="anchor-heading" href="#extra-points"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Extra points</h2>
+<ul>
+<li><img src="/notes/assets/images/2021-09-04-18-37-03.png"></li>
+<li>For ATMEGA, we have 4 ports each of 8 bit.</li>
+<li>Each pin is configurable</li>
+<li>Types of configuration
+<ul>
+<li>Input with internal pull-up</li>
+<li>Input with no pull-up</li>
+<li>Output (Driven Low)</li>
+<li>Output (Driven High)</li>
+</ul>
+</li>
+<li>Each Port will have <strong>3 main registers</strong>
+<ul>
+<li>DDRx - Data Direction Register
+<ul>
+<li>For configuring data direction (whether input or output)</li>
+</ul>
+</li>
+<li>PORTx - Port output/Driver Register
+<ul>
+<li>Output Mode</li>
+</ul>
+</li>
+<li>PINx - Port Input Register
+<ul>
+<li>Reading Mode</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p><strong>How to give direction?</strong></p>
+</blockquote>
+<ul>
+<li>For any Pin, if it is defined 0, then it represents input pin and vice versa.</li>
+</ul>
+<h2 id="examples-of-program"><a aria-hidden="true" class="anchor-heading" href="#examples-of-program"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Examples of Program</h2>
+<ul>
+<li><img src="/notes/assets/images/2021-09-04-18-45-38.png"></li>
+<li><img src="/notes/assets/images/2021-09-04-18-48-57.png"></li>
+</ul>

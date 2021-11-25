@@ -1,0 +1,5517 @@
+{
+  "notes": {
+    "403": {
+      "id": "403",
+      "title": "This page has not yet sprouted",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "403",
+      "updated": 1637849030065,
+      "created": 1637849030066,
+      "parent": null,
+      "children": [],
+      "data": {}
+    },
+    "JEvRiJuvqz4mJX4q7zqJs": {
+      "id": "JEvRiJuvqz4mJX4q7zqJs",
+      "title": "Curated Notes",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "root",
+      "updated": 1630150480330,
+      "created": 1629975412335,
+      "parent": null,
+      "children": [
+        "Jq5ki9jf1QLTdc3DYLRW4",
+        "3ONxZ3Khb7nFPdLxlV1ib"
+      ],
+      "data": {},
+      "contentHash": "f8f9737444f7022ec433cdb6d3c7a764",
+      "custom": {
+        "nav_order": 0,
+        "permalink": "/"
+      }
+    },
+    "3ONxZ3Khb7nFPdLxlV1ib": {
+      "id": "3ONxZ3Khb7nFPdLxlV1ib",
+      "title": "Stepwellradio",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "Stepwellradio",
+      "updated": 1631439712237,
+      "created": 1631439712237,
+      "parent": "JEvRiJuvqz4mJX4q7zqJs",
+      "children": [
+        "xm1zwK8k3nHvutw0hqXhh"
+      ],
+      "data": {},
+      "contentHash": "b1ce14141c0c9a4682455e729a53734f",
+      "stub": false,
+      "custom": {
+        "stub": true
+      }
+    },
+    "xm1zwK8k3nHvutw0hqXhh": {
+      "id": "xm1zwK8k3nHvutw0hqXhh",
+      "title": "Steptech",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "Stepwellradio.Steptech",
+      "updated": 1631439712238,
+      "created": 1631439712238,
+      "parent": "3ONxZ3Khb7nFPdLxlV1ib",
+      "children": [
+        "1sqv73SXcW1dbK563MWh1"
+      ],
+      "data": {},
+      "contentHash": "475e8b3f298920b1d16d20da6fc42bd3",
+      "stub": false,
+      "custom": {
+        "stub": true
+      }
+    },
+    "1sqv73SXcW1dbK563MWh1": {
+      "id": "1sqv73SXcW1dbK563MWh1",
+      "title": "Continuous Integration and Continuous Deployment",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "Stepwellradio.Steptech.Continuous Integration and Continuous Deployment",
+            "id": "1sqv73SXcW1dbK563MWh1",
+            "vaultName": "vault"
+          },
+          "value": "user.v2",
+          "alias": "@v2",
+          "position": {
+            "start": {
+              "line": 23,
+              "column": 52,
+              "offset": 1302
+            },
+            "end": {
+              "line": 23,
+              "column": 55,
+              "offset": 1305
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "user.v2"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "Stepwellradio.Steptech.Continuous Integration and Continuous Deployment",
+            "id": "1sqv73SXcW1dbK563MWh1",
+            "vaultName": "vault"
+          },
+          "value": "user.master",
+          "alias": "@master",
+          "position": {
+            "start": {
+              "line": 63,
+              "column": 36,
+              "offset": 3692
+            },
+            "end": {
+              "line": 63,
+              "column": 43,
+              "offset": 3699
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "user.master"
+          }
+        }
+      ],
+      "anchors": {
+        "using-github-actions": {
+          "type": "header",
+          "text": "Using Github actions",
+          "value": "using-github-actions",
+          "line": 10,
+          "column": 0
+        },
+        "continuous-integrations-ci": {
+          "type": "header",
+          "text": "Continuous Integrations (CI)",
+          "value": "continuous-integrations-ci",
+          "line": 12,
+          "column": 0
+        },
+        "continuous-deployment-cd": {
+          "type": "header",
+          "text": "Continuous Deployment (CD)",
+          "value": "continuous-deployment-cd",
+          "line": 49,
+          "column": 0
+        }
+      },
+      "fname": "Stepwellradio.Steptech.Continuous Integration and Continuous Deployment",
+      "updated": 1631450977498,
+      "created": 1631439712234,
+      "parent": "xm1zwK8k3nHvutw0hqXhh",
+      "children": [],
+      "data": {},
+      "contentHash": "fa3ac018a585c88ba662fb301a409ebf",
+      "custom": {}
+    },
+    "Jq5ki9jf1QLTdc3DYLRW4": {
+      "id": "Jq5ki9jf1QLTdc3DYLRW4",
+      "title": "Courses",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "courses",
+      "updated": 1629976172616,
+      "created": 1629976172616,
+      "parent": "JEvRiJuvqz4mJX4q7zqJs",
+      "children": [
+        "O93aKwUCEnkxTR7S8V2eZ"
+      ],
+      "data": {},
+      "contentHash": "27aa13825c6350f9b69644521db8a01b",
+      "stub": false,
+      "custom": {
+        "stub": true
+      }
+    },
+    "O93aKwUCEnkxTR7S8V2eZ": {
+      "id": "O93aKwUCEnkxTR7S8V2eZ",
+      "title": "Semester 5",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "courses.Semester 5",
+      "updated": 1630119169797,
+      "created": 1630119169797,
+      "parent": "Jq5ki9jf1QLTdc3DYLRW4",
+      "children": [
+        "a1PatlsCiz7PYsL111lFm",
+        "znYlAnqQDCB58XxxMMdIl",
+        "elcUWYUkVJfjM5NLR8toR",
+        "SkPPj7voTTRpF7d0XMYNV",
+        "OGq6U8MXIG3wwETNLR4b6",
+        "BU8smu6Xa4e3tkB0iVHT9"
+      ],
+      "data": {},
+      "contentHash": "4c355f6948bd596ece5ff4745340eef9",
+      "stub": false,
+      "custom": {
+        "stub": true
+      }
+    },
+    "BU8smu6Xa4e3tkB0iVHT9": {
+      "id": "BU8smu6Xa4e3tkB0iVHT9",
+      "title": "Sensors",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "courses.Semester 5.Sensors",
+      "updated": 1630119208042,
+      "created": 1630119208042,
+      "parent": "O93aKwUCEnkxTR7S8V2eZ",
+      "children": [
+        "1RayjmMzdZsqnYmAC22Pu",
+        "mkROCs9jQQ5tVPzLzVXNi",
+        "Du5Wn6kYsMK4r8NCR7eXv",
+        "4XPMylNKbafyOjrv3R5y1",
+        "k1FruIfnDA2Kgvoa7Fy6n",
+        "Jdp4kO6C2b7VFdatt9O5P",
+        "4fcGNlMyEYVeTXtxQAd7k",
+        "mV9vOl83yp7Z3h5QW4d6s",
+        "cRnr1Qy5VKRn50wi4GTe8",
+        "YLNn0jTPADyQ6tvuxnxed"
+      ],
+      "data": {},
+      "contentHash": "a702be17db153d2faff7d97398408ac3",
+      "stub": false,
+      "custom": {
+        "stub": true
+      }
+    },
+    "YLNn0jTPADyQ6tvuxnxed": {
+      "id": "YLNn0jTPADyQ6tvuxnxed",
+      "title": "Lecture 9",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "courses.Semester 5.Sensors.Lecture 9",
+      "updated": 1632914677448,
+      "created": 1632914677448,
+      "parent": "BU8smu6Xa4e3tkB0iVHT9",
+      "children": [],
+      "data": {},
+      "contentHash": "51985fe870bae1c6b37d5c8ca6afffca",
+      "custom": {}
+    },
+    "cRnr1Qy5VKRn50wi4GTe8": {
+      "id": "cRnr1Qy5VKRn50wi4GTe8",
+      "title": "Lecture 8",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "strain-sensitivity-and-force-sensor": {
+          "type": "header",
+          "text": "Strain Sensitivity and Force Sensor",
+          "value": "strain-sensitivity-and-force-sensor",
+          "line": 8,
+          "column": 0
+        },
+        "sensitivity-and-bridge-circuit": {
+          "type": "header",
+          "text": "Sensitivity and Bridge Circuit",
+          "value": "sensitivity-and-bridge-circuit",
+          "line": 10,
+          "column": 0
+        },
+        "quater-bridge-configuration": {
+          "type": "header",
+          "text": "Quater Bridge Configuration",
+          "value": "quater-bridge-configuration",
+          "line": 27,
+          "column": 0
+        },
+        "half-bridge-configuration": {
+          "type": "header",
+          "text": "Half Bridge Configuration",
+          "value": "half-bridge-configuration",
+          "line": 31,
+          "column": 0
+        },
+        "full-bridge-configuration": {
+          "type": "header",
+          "text": "Full Bridge Configuration",
+          "value": "full-bridge-configuration",
+          "line": 35,
+          "column": 0
+        },
+        "force-sensing-resistance": {
+          "type": "header",
+          "text": "Force Sensing Resistance",
+          "value": "force-sensing-resistance",
+          "line": 42,
+          "column": 0
+        },
+        "force-vs-voltage": {
+          "type": "header",
+          "text": "Force vs Voltage",
+          "value": "force-vs-voltage",
+          "line": 52,
+          "column": 0
+        },
+        "force-alarm": {
+          "type": "header",
+          "text": "Force Alarm",
+          "value": "force-alarm",
+          "line": 59,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Sensors.Lecture 8",
+      "updated": 1632913252461,
+      "created": 1632896897487,
+      "parent": "BU8smu6Xa4e3tkB0iVHT9",
+      "children": [],
+      "data": {},
+      "contentHash": "6d03c8afab2d29d4bce70e5e464b6140",
+      "custom": {}
+    },
+    "mV9vOl83yp7Z3h5QW4d6s": {
+      "id": "mV9vOl83yp7Z3h5QW4d6s",
+      "title": "Lecture 7",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "stress-and-strain": {
+          "type": "header",
+          "text": "Stress and strain",
+          "value": "stress-and-strain",
+          "line": 8,
+          "column": 0
+        },
+        "hooks-law": {
+          "type": "header",
+          "text": "Hook's Law",
+          "value": "hooks-law",
+          "line": 10,
+          "column": 0
+        },
+        "axial-vs-transverse-force": {
+          "type": "header",
+          "text": "Axial vs Transverse force",
+          "value": "axial-vs-transverse-force",
+          "line": 19,
+          "column": 0
+        },
+        "compressive-force": {
+          "type": "header",
+          "text": "Compressive Force",
+          "value": "compressive-force",
+          "line": 25,
+          "column": 0
+        },
+        "strain-gauge": {
+          "type": "header",
+          "text": "Strain Gauge",
+          "value": "strain-gauge",
+          "line": 31,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Sensors.Lecture 7",
+      "updated": 1631854754508,
+      "created": 1631851490710,
+      "parent": "BU8smu6Xa4e3tkB0iVHT9",
+      "children": [],
+      "data": {},
+      "contentHash": "70d90476d2733cf0bb7b99a5ac68aa3f",
+      "custom": {}
+    },
+    "4fcGNlMyEYVeTXtxQAd7k": {
+      "id": "4fcGNlMyEYVeTXtxQAd7k",
+      "title": "Lecture 6",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "feedback-control": {
+          "type": "header",
+          "text": "Feedback control",
+          "value": "feedback-control",
+          "line": 9,
+          "column": 0
+        },
+        "pulse-width-modulation": {
+          "type": "header",
+          "text": "Pulse Width modulation",
+          "value": "pulse-width-modulation",
+          "line": 15,
+          "column": 0
+        },
+        "important-relationships": {
+          "type": "header",
+          "text": "Important relationships",
+          "value": "important-relationships",
+          "line": 21,
+          "column": 0
+        },
+        "h-bridge": {
+          "type": "header",
+          "text": "H bridge",
+          "value": "h-bridge",
+          "line": 26,
+          "column": 0
+        },
+        "extra-points": {
+          "type": "header",
+          "text": "Extra Points",
+          "value": "extra-points",
+          "line": 33,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Sensors.Lecture 6",
+      "updated": 1632046535963,
+      "created": 1630642633459,
+      "parent": "BU8smu6Xa4e3tkB0iVHT9",
+      "children": [],
+      "data": {},
+      "contentHash": "cdfd02349f014b06796ad65d245930b7",
+      "custom": {}
+    },
+    "Jdp4kO6C2b7VFdatt9O5P": {
+      "id": "Jdp4kO6C2b7VFdatt9O5P",
+      "title": "Lecture 5",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "control-systems": {
+          "type": "header",
+          "text": "Control Systems",
+          "value": "control-systems",
+          "line": 8,
+          "column": 0
+        },
+        "introduction": {
+          "type": "header",
+          "text": "Introduction",
+          "value": "introduction",
+          "line": 10,
+          "column": 0
+        },
+        "steady-state-calculation": {
+          "type": "header",
+          "text": "Steady state calculation",
+          "value": "steady-state-calculation",
+          "line": 28,
+          "column": 0
+        },
+        "specification-of-control-systems": {
+          "type": "header",
+          "text": "Specification of control systems",
+          "value": "specification-of-control-systems",
+          "line": 39,
+          "column": 0
+        },
+        "steps-in-analysis-of-control-system": {
+          "type": "header",
+          "text": "Steps in analysis of control system",
+          "value": "steps-in-analysis-of-control-system",
+          "line": 46,
+          "column": 0
+        },
+        "example-of-oven": {
+          "type": "header",
+          "text": "Example of Oven",
+          "value": "example-of-oven",
+          "line": 50,
+          "column": 0
+        },
+        "set-point-and-closed-system-equivalent": {
+          "type": "header",
+          "text": "Set Point and Closed system equivalent",
+          "value": "set-point-and-closed-system-equivalent",
+          "line": 68,
+          "column": 0
+        },
+        "loading-effect-in-open-loop-system": {
+          "type": "header",
+          "text": "Loading effect in Open Loop System",
+          "value": "loading-effect-in-open-loop-system",
+          "line": 79,
+          "column": 0
+        },
+        "loaded-system-with-feedback": {
+          "type": "header",
+          "text": "Loaded system with feedback",
+          "value": "loaded-system-with-feedback",
+          "line": 84,
+          "column": 0
+        },
+        "ltspice-simulation": {
+          "type": "header",
+          "text": "LTspice simulation",
+          "value": "ltspice-simulation",
+          "line": 89,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Sensors.Lecture 5",
+      "updated": 1632043925100,
+      "created": 1630568071794,
+      "parent": "BU8smu6Xa4e3tkB0iVHT9",
+      "children": [],
+      "data": {},
+      "contentHash": "ba757e5271cd32d0952e431f0396278c",
+      "custom": {}
+    },
+    "k1FruIfnDA2Kgvoa7Fy6n": {
+      "id": "k1FruIfnDA2Kgvoa7Fy6n",
+      "title": "Lecture 4",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "tinkercad": {
+          "type": "header",
+          "text": "TinkerCAD",
+          "value": "tinkercad",
+          "line": 8,
+          "column": 0
+        },
+        "extra-points": {
+          "type": "header",
+          "text": "Extra Points",
+          "value": "extra-points",
+          "line": 12,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Sensors.Lecture 4",
+      "updated": 1630518355196,
+      "created": 1630516107738,
+      "parent": "BU8smu6Xa4e3tkB0iVHT9",
+      "children": [],
+      "data": {},
+      "contentHash": "3f8bb506c8053ec35f41b2d172095395",
+      "custom": {}
+    },
+    "4XPMylNKbafyOjrv3R5y1": {
+      "id": "4XPMylNKbafyOjrv3R5y1",
+      "title": "Lecture 3",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "best-fit-measurement-and-control-systems": {
+          "type": "header",
+          "text": "Best Fit, Measurement and Control Systems",
+          "value": "best-fit-measurement-and-control-systems",
+          "line": 8,
+          "column": 0
+        },
+        "points": {
+          "type": "header",
+          "text": "Points",
+          "value": "points",
+          "line": 10,
+          "column": 0
+        },
+        "standard-error-and-standard-deviation": {
+          "type": "header",
+          "text": "Standard Error and Standard Deviation",
+          "value": "standard-error-and-standard-deviation",
+          "line": 15,
+          "column": 0
+        },
+        "precision": {
+          "type": "header",
+          "text": "Precision",
+          "value": "precision",
+          "line": 26,
+          "column": 0
+        },
+        "resolution": {
+          "type": "header",
+          "text": "Resolution",
+          "value": "resolution",
+          "line": 34,
+          "column": 0
+        },
+        "span-and-range": {
+          "type": "header",
+          "text": "Span and Range",
+          "value": "span-and-range",
+          "line": 41,
+          "column": 0
+        },
+        "best-fit-line": {
+          "type": "header",
+          "text": "Best Fit Line",
+          "value": "best-fit-line",
+          "line": 49,
+          "column": 0
+        },
+        "computerized-measurement-and-control-systems": {
+          "type": "header",
+          "text": "Computerized measurement and control systems",
+          "value": "computerized-measurement-and-control-systems",
+          "line": 59,
+          "column": 0
+        },
+        "development-of-software": {
+          "type": "header",
+          "text": "Development of software",
+          "value": "development-of-software",
+          "line": 61,
+          "column": 0
+        },
+        "arduino-board": {
+          "type": "header",
+          "text": "Arduino Board",
+          "value": "arduino-board",
+          "line": 68,
+          "column": 0
+        },
+        "analog-to-digital-converter": {
+          "type": "header",
+          "text": "Analog to Digital converter",
+          "value": "analog-to-digital-converter",
+          "line": 81,
+          "column": 0
+        },
+        "sampling-rate-of-adc": {
+          "type": "header",
+          "text": "Sampling rate of ADC",
+          "value": "sampling-rate-of-adc",
+          "line": 87,
+          "column": 0
+        },
+        "pulse-wave-modulation-pwm": {
+          "type": "header",
+          "text": "Pulse Wave Modulation (PWM)",
+          "value": "pulse-wave-modulation-pwm",
+          "line": 92,
+          "column": 0
+        },
+        "program-structure": {
+          "type": "header",
+          "text": "Program Structure",
+          "value": "program-structure",
+          "line": 100,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Sensors.Lecture 3",
+      "updated": 1630516069933,
+      "created": 1630406115130,
+      "parent": "BU8smu6Xa4e3tkB0iVHT9",
+      "children": [],
+      "data": {},
+      "contentHash": "6e469b25fe3fac95463c6194533a7aa9",
+      "custom": {}
+    },
+    "Du5Wn6kYsMK4r8NCR7eXv": {
+      "id": "Du5Wn6kYsMK4r8NCR7eXv",
+      "title": "Lecture 2",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "callibration-of-sensors-and-errors": {
+          "type": "header",
+          "text": "Callibration of Sensors and Errors",
+          "value": "callibration-of-sensors-and-errors",
+          "line": 8,
+          "column": 0
+        },
+        "advantages-of-linear-sensors": {
+          "type": "header",
+          "text": "Advantages of Linear sensors",
+          "value": "advantages-of-linear-sensors",
+          "line": 10,
+          "column": 0
+        },
+        "extra-points": {
+          "type": "header",
+          "text": "Extra Points",
+          "value": "extra-points",
+          "line": 16,
+          "column": 0
+        },
+        "algorithm-for-digital-instrument": {
+          "type": "header",
+          "text": "Algorithm for Digital instrument",
+          "value": "algorithm-for-digital-instrument",
+          "line": 24,
+          "column": 0
+        },
+        "error-and-accuracy": {
+          "type": "header",
+          "text": "Error and Accuracy",
+          "value": "error-and-accuracy",
+          "line": 33,
+          "column": 0
+        },
+        "calibration-procedure": {
+          "type": "header",
+          "text": "Calibration procedure",
+          "value": "calibration-procedure",
+          "line": 57,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Sensors.Lecture 2",
+      "updated": 1630405939375,
+      "created": 1630402164980,
+      "parent": "BU8smu6Xa4e3tkB0iVHT9",
+      "children": [],
+      "data": {},
+      "contentHash": "6511e54010064ea4e47abdff6ddfb0a9",
+      "custom": {}
+    },
+    "mkROCs9jQQ5tVPzLzVXNi": {
+      "id": "mkROCs9jQQ5tVPzLzVXNi",
+      "title": "Lecture 10",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "temperature-sensor": {
+          "type": "header",
+          "text": "Temperature Sensor",
+          "value": "temperature-sensor",
+          "line": 8,
+          "column": 0
+        },
+        "resistance-temperature-detectors-rtd": {
+          "type": "header",
+          "text": "Resistance Temperature Detectors (RTD)",
+          "value": "resistance-temperature-detectors-rtd",
+          "line": 10,
+          "column": 0
+        },
+        "thermocouples": {
+          "type": "header",
+          "text": "Thermocouples",
+          "value": "thermocouples",
+          "line": 23,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Sensors.Lecture 10",
+      "updated": 1633600658724,
+      "created": 1633599517028,
+      "parent": "BU8smu6Xa4e3tkB0iVHT9",
+      "children": [],
+      "data": {},
+      "contentHash": "70af026a3cf180bd439d7792c25e3fff",
+      "custom": {}
+    },
+    "1RayjmMzdZsqnYmAC22Pu": {
+      "id": "1RayjmMzdZsqnYmAC22Pu",
+      "title": "Lecture 1",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "introduction-to-course": {
+          "type": "header",
+          "text": "Introduction to course",
+          "value": "introduction-to-course",
+          "line": 8,
+          "column": 0
+        },
+        "course-material": {
+          "type": "header",
+          "text": "Course Material",
+          "value": "course-material",
+          "line": 10,
+          "column": 0
+        },
+        "assessment-and-evaluation": {
+          "type": "header",
+          "text": "Assessment and Evaluation",
+          "value": "assessment-and-evaluation",
+          "line": 14,
+          "column": 0
+        },
+        "absolute-grading-system": {
+          "type": "header",
+          "text": "Absolute Grading System",
+          "value": "absolute-grading-system",
+          "line": 24,
+          "column": 2
+        },
+        "extra-points": {
+          "type": "header",
+          "text": "Extra Points",
+          "value": "extra-points",
+          "line": 28,
+          "column": 0
+        },
+        "transducers-and-sensors": {
+          "type": "header",
+          "text": "Transducers and Sensors",
+          "value": "transducers-and-sensors",
+          "line": 35,
+          "column": 0
+        },
+        "sensor-calibration": {
+          "type": "header",
+          "text": "Sensor Calibration",
+          "value": "sensor-calibration",
+          "line": 42,
+          "column": 0
+        },
+        "curve-fitting": {
+          "type": "header",
+          "text": "Curve Fitting",
+          "value": "curve-fitting",
+          "line": 48,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Sensors.Lecture 1",
+      "updated": 1630401937341,
+      "created": 1630119208038,
+      "parent": "BU8smu6Xa4e3tkB0iVHT9",
+      "children": [],
+      "data": {},
+      "contentHash": "bd3877c4098c3807d3f021b761a1d322",
+      "custom": {}
+    },
+    "OGq6U8MXIG3wwETNLR4b6": {
+      "id": "OGq6U8MXIG3wwETNLR4b6",
+      "title": "Operating System",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "courses.Semester 5.Operating System",
+      "updated": 1630119169797,
+      "created": 1630119169797,
+      "parent": "O93aKwUCEnkxTR7S8V2eZ",
+      "children": [
+        "5RejZTggjV1OupQ9Ob8Og",
+        "T92KraeaozDzY0vK436QV",
+        "AMV6gT3GOLGpK2t3UpTsG",
+        "KpGll9jgwuYnRppkkiNqM",
+        "xFvHP34YitP4bVKnj85UO",
+        "SWZkc7DdTNxNRy8Wd2tkK",
+        "g00gG5RiPotsjv6xxjV5a",
+        "DSqySoYnF5H5vOJ3wxCD1",
+        "ILfbywfZhvGwrBSdCu8WV",
+        "zjtKIvb0WxLBsSjJ8T8sg",
+        "7clPhd6lSg2fVQf2aTvRn",
+        "z8M6lRIxUBXFlv4TDBZLP",
+        "36z9kW3MusJ2QwFLC9yCU",
+        "rCVUcVQWmRANbFIHNzo6k",
+        "0Uhk8iMIRNBnAfYeBG1Ht"
+      ],
+      "data": {},
+      "contentHash": "183a4b9274210455b85a1df189c4b522",
+      "stub": false,
+      "custom": {
+        "stub": true
+      }
+    },
+    "0Uhk8iMIRNBnAfYeBG1Ht": {
+      "id": "0Uhk8iMIRNBnAfYeBG1Ht",
+      "title": "Lecture 9",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "scheduling-algorithms-cont": {
+          "type": "header",
+          "text": "Scheduling Algorithms (Cont.)",
+          "value": "scheduling-algorithms-cont",
+          "line": 8,
+          "column": 0
+        },
+        "comparision-fcfs-rr-spn": {
+          "type": "header",
+          "text": "Comparision (FCFS, RR, SPN)",
+          "value": "comparision-fcfs-rr-spn",
+          "line": 10,
+          "column": 0
+        },
+        "shortest-remaining-time-srt": {
+          "type": "header",
+          "text": "Shortest Remaining Time (SRT)",
+          "value": "shortest-remaining-time-srt",
+          "line": 18,
+          "column": 0
+        },
+        "highest-response-ratio-next-hrrn": {
+          "type": "header",
+          "text": "Highest Response Ratio Next (HRRN)",
+          "value": "highest-response-ratio-next-hrrn",
+          "line": 29,
+          "column": 0
+        },
+        "comparision-spn-srt-and-hrrn": {
+          "type": "header",
+          "text": "Comparision (SPN, SRT and HRRN)",
+          "value": "comparision-spn-srt-and-hrrn",
+          "line": 42,
+          "column": 0
+        },
+        "feedback-scheduling-fb": {
+          "type": "header",
+          "text": "Feedback Scheduling (FB)",
+          "value": "feedback-scheduling-fb",
+          "line": 46,
+          "column": 0
+        },
+        "other-scheduling-algorithms": {
+          "type": "header",
+          "text": "Other Scheduling Algorithms",
+          "value": "other-scheduling-algorithms",
+          "line": 68,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Operating System.Lecture 9",
+      "updated": 1632825583219,
+      "created": 1632821953611,
+      "parent": "OGq6U8MXIG3wwETNLR4b6",
+      "children": [],
+      "data": {},
+      "contentHash": "e16e5efe2b3df6b2e3c70c4be27e2b07",
+      "custom": {}
+    },
+    "rCVUcVQWmRANbFIHNzo6k": {
+      "id": "rCVUcVQWmRANbFIHNzo6k",
+      "title": "Lecture 8",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "uniprocessor-scheduling-algorithms": {
+          "type": "header",
+          "text": "Uniprocessor Scheduling Algorithms",
+          "value": "uniprocessor-scheduling-algorithms",
+          "line": 8,
+          "column": 0
+        },
+        "decision-mode": {
+          "type": "header",
+          "text": "Decision Mode",
+          "value": "decision-mode",
+          "line": 20,
+          "column": 0
+        },
+        "cpu-bound-and-io-bound": {
+          "type": "header",
+          "text": "CPU Bound and I/O Bound",
+          "value": "cpu-bound-and-io-bound",
+          "line": 32,
+          "column": 0
+        },
+        "first-come-first-serve-fcfs": {
+          "type": "header",
+          "text": "First Come First Serve (FCFS)",
+          "value": "first-come-first-serve-fcfs",
+          "line": 37,
+          "column": 0
+        },
+        "round-robin-rr": {
+          "type": "header",
+          "text": "Round Robin (RR)",
+          "value": "round-robin-rr",
+          "line": 49,
+          "column": 0
+        },
+        "virtual-round-robin": {
+          "type": "header",
+          "text": "Virtual Round Robin",
+          "value": "virtual-round-robin",
+          "line": 72,
+          "column": 0
+        },
+        "shortest-process-next-spn": {
+          "type": "header",
+          "text": "Shortest Process Next (SPN)",
+          "value": "shortest-process-next-spn",
+          "line": 77,
+          "column": 0
+        },
+        "extra-points": {
+          "type": "header",
+          "text": "Extra Points",
+          "value": "extra-points",
+          "line": 90,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Operating System.Lecture 8",
+      "updated": 1632105946469,
+      "created": 1631672853178,
+      "parent": "OGq6U8MXIG3wwETNLR4b6",
+      "children": [],
+      "data": {},
+      "contentHash": "6ba578c7b29293d65504045d972995ae",
+      "custom": {}
+    },
+    "36z9kW3MusJ2QwFLC9yCU": {
+      "id": "36z9kW3MusJ2QwFLC9yCU",
+      "title": "Lecture 7",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "processprocessor-scheduling": {
+          "type": "header",
+          "text": "Process/Processor Scheduling",
+          "value": "processprocessor-scheduling",
+          "line": 8,
+          "column": 0
+        },
+        "sceduling": {
+          "type": "header",
+          "text": "Sceduling",
+          "value": "sceduling",
+          "line": 12,
+          "column": 0
+        },
+        "state-transition-diagram": {
+          "type": "header",
+          "text": "State transition diagram",
+          "value": "state-transition-diagram",
+          "line": 35,
+          "column": 0
+        },
+        "long-term-scheduling": {
+          "type": "header",
+          "text": "Long-Term Scheduling",
+          "value": "long-term-scheduling",
+          "line": 44,
+          "column": 0
+        },
+        "medium-term-scheduling": {
+          "type": "header",
+          "text": "Medium-Term Scheduling",
+          "value": "medium-term-scheduling",
+          "line": 52,
+          "column": 0
+        },
+        "short-term-scheduling": {
+          "type": "header",
+          "text": "Short-Term Scheduling",
+          "value": "short-term-scheduling",
+          "line": 56,
+          "column": 0
+        },
+        "priority-based-scheduling": {
+          "type": "header",
+          "text": "Priority based scheduling",
+          "value": "priority-based-scheduling",
+          "line": 88,
+          "column": 0
+        },
+        "various-scheduling-policies": {
+          "type": "header",
+          "text": "Various Scheduling Policies",
+          "value": "various-scheduling-policies",
+          "line": 97,
+          "column": 0
+        },
+        "selection-function": {
+          "type": "header",
+          "text": "Selection Function",
+          "value": "selection-function",
+          "line": 103,
+          "column": 0
+        },
+        "decision-mode": {
+          "type": "header",
+          "text": "Decision Mode",
+          "value": "decision-mode",
+          "line": 107,
+          "column": 0
+        },
+        "process-states-for-linux": {
+          "type": "header",
+          "text": "Process States for Linux",
+          "value": "process-states-for-linux",
+          "line": 121,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Operating System.Lecture 7",
+      "updated": 1631260876454,
+      "created": 1631247844382,
+      "parent": "OGq6U8MXIG3wwETNLR4b6",
+      "children": [],
+      "data": {},
+      "contentHash": "903bb5e154f39ebe08252987692f3f41",
+      "custom": {}
+    },
+    "z8M6lRIxUBXFlv4TDBZLP": {
+      "id": "z8M6lRIxUBXFlv4TDBZLP",
+      "title": "Lecture 6",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "process-control-and-process-management": {
+          "type": "header",
+          "text": "Process Control and Process Management",
+          "value": "process-control-and-process-management",
+          "line": 8,
+          "column": 0
+        },
+        "functions-of-os-kernel": {
+          "type": "header",
+          "text": "Functions of OS kernel",
+          "value": "functions-of-os-kernel",
+          "line": 12,
+          "column": 0
+        },
+        "process-creation": {
+          "type": "header",
+          "text": "Process Creation",
+          "value": "process-creation",
+          "line": 18,
+          "column": 0
+        },
+        "process-switching": {
+          "type": "header",
+          "text": "Process Switching",
+          "value": "process-switching",
+          "line": 27,
+          "column": 0
+        },
+        "different-designs": {
+          "type": "header",
+          "text": "Different designs",
+          "value": "different-designs",
+          "line": 57,
+          "column": 0
+        },
+        "process-management-in-unix-svr4": {
+          "type": "header",
+          "text": "Process management in UNIX SVR4",
+          "value": "process-management-in-unix-svr4",
+          "line": 66,
+          "column": 0
+        },
+        "extra-points": {
+          "type": "header",
+          "text": "Extra Points",
+          "value": "extra-points",
+          "line": 109,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Operating System.Lecture 6",
+      "updated": 1631167141681,
+      "created": 1630895369961,
+      "parent": "OGq6U8MXIG3wwETNLR4b6",
+      "children": [],
+      "data": {},
+      "contentHash": "8d0d3143594a91273040635516c14f7d",
+      "custom": {}
+    },
+    "7clPhd6lSg2fVQf2aTvRn": {
+      "id": "7clPhd6lSg2fVQf2aTvRn",
+      "title": "Lecture 5",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "suspended-process": {
+          "type": "header",
+          "text": "Suspended Process",
+          "value": "suspended-process",
+          "line": 9,
+          "column": 0
+        },
+        "6-state-model": {
+          "type": "header",
+          "text": "6-state model",
+          "value": "6-state-model",
+          "line": 18,
+          "column": 0
+        },
+        "7-state-model": {
+          "type": "header",
+          "text": "7-state model",
+          "value": "7-state-model",
+          "line": 28,
+          "column": 0
+        },
+        "characterisitcs-of-suspended-processes": {
+          "type": "header",
+          "text": "Characterisitcs of suspended processes",
+          "value": "characterisitcs-of-suspended-processes",
+          "line": 35,
+          "column": 0
+        },
+        "reason-for-process-suspension": {
+          "type": "header",
+          "text": "Reason for process suspension",
+          "value": "reason-for-process-suspension",
+          "line": 41,
+          "column": 0
+        },
+        "relation-between-process-and-resource": {
+          "type": "header",
+          "text": "Relation between process and resource",
+          "value": "relation-between-process-and-resource",
+          "line": 44,
+          "column": 0
+        },
+        "data-structures": {
+          "type": "header",
+          "text": "Data Structures",
+          "value": "data-structures",
+          "line": 52,
+          "column": 0
+        },
+        "physical-manifestation-of-a-process": {
+          "type": "header",
+          "text": "Physical manifestation of a process",
+          "value": "physical-manifestation-of-a-process",
+          "line": 80,
+          "column": 0
+        },
+        "process-location": {
+          "type": "header",
+          "text": "Process Location",
+          "value": "process-location",
+          "line": 91,
+          "column": 0
+        },
+        "attributes-in-pcb": {
+          "type": "header",
+          "text": "Attributes in PCB",
+          "value": "attributes-in-pcb",
+          "line": 99,
+          "column": 0
+        },
+        "process-identification": {
+          "type": "header",
+          "text": "Process Identification",
+          "value": "process-identification",
+          "line": 104,
+          "column": 0
+        },
+        "processor-state-information": {
+          "type": "header",
+          "text": "Processor state information",
+          "value": "processor-state-information",
+          "line": 109,
+          "column": 0
+        },
+        "process-control-information": {
+          "type": "header",
+          "text": "Process control information",
+          "value": "process-control-information",
+          "line": 124,
+          "column": 0
+        },
+        "what-does-process-image-contain": {
+          "type": "header",
+          "text": "What does Process image contain?",
+          "value": "what-does-process-image-contain",
+          "line": 147,
+          "column": 2
+        },
+        "role-of-pcb": {
+          "type": "header",
+          "text": "Role of PCB",
+          "value": "role-of-pcb",
+          "line": 150,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Operating System.Lecture 5",
+      "updated": 1631162424572,
+      "created": 1630463553632,
+      "parent": "OGq6U8MXIG3wwETNLR4b6",
+      "children": [],
+      "data": {},
+      "contentHash": "889eead67d4e45816b88cf27954daf08",
+      "custom": {}
+    },
+    "zjtKIvb0WxLBsSjJ8T8sg": {
+      "id": "zjtKIvb0WxLBsSjJ8T8sg",
+      "title": "Lecture 4",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "process-description-and-control": {
+          "type": "header",
+          "text": "Process: Description and Control",
+          "value": "process-description-and-control",
+          "line": 8,
+          "column": 0
+        },
+        "requirements-of-os-as-a-process-manager": {
+          "type": "header",
+          "text": "Requirements of OS as a Process Manager",
+          "value": "requirements-of-os-as-a-process-manager",
+          "line": 10,
+          "column": 0
+        },
+        "process": {
+          "type": "header",
+          "text": "Process",
+          "value": "process",
+          "line": 17,
+          "column": 0
+        },
+        "attributes": {
+          "type": "header",
+          "text": "Attributes",
+          "value": "attributes",
+          "line": 28,
+          "column": 0
+        },
+        "process-control-block-pcb": {
+          "type": "header",
+          "text": "Process Control Block (PCB)",
+          "value": "process-control-block-pcb",
+          "line": 41,
+          "column": 0
+        },
+        "running-on-single-resource": {
+          "type": "header",
+          "text": "Running on single resource",
+          "value": "running-on-single-resource",
+          "line": 48,
+          "column": 0
+        },
+        "execution-of-processes-by-processor": {
+          "type": "header",
+          "text": "Execution of Processes by Processor",
+          "value": "execution-of-processes-by-processor",
+          "line": 56,
+          "column": 0
+        },
+        "process-states": {
+          "type": "header",
+          "text": "Process States",
+          "value": "process-states",
+          "line": 66,
+          "column": 0
+        },
+        "note": {
+          "type": "header",
+          "text": "Note",
+          "value": "note",
+          "line": 76,
+          "column": 0
+        },
+        "5-state-process-model": {
+          "type": "header",
+          "text": "5-State Process Model",
+          "value": "5-state-process-model",
+          "line": 84,
+          "column": 0
+        },
+        "state-transitions": {
+          "type": "header",
+          "text": "State Transitions",
+          "value": "state-transitions",
+          "line": 105,
+          "column": 0
+        },
+        "multiple-blocked-queue": {
+          "type": "header",
+          "text": "Multiple Blocked Queue",
+          "value": "multiple-blocked-queue",
+          "line": 115,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Operating System.Lecture 4",
+      "updated": 1630431550375,
+      "created": 1630228148528,
+      "parent": "OGq6U8MXIG3wwETNLR4b6",
+      "children": [],
+      "data": {},
+      "contentHash": "7e9d105f855b4d20c8a5128f688981f2",
+      "custom": {}
+    },
+    "ILfbywfZhvGwrBSdCu8WV": {
+      "id": "ILfbywfZhvGwrBSdCu8WV",
+      "title": "Lecture 3",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "system-calls-and-architecture-of-unix": {
+          "type": "header",
+          "text": "System Calls and Architecture of UNIX",
+          "value": "system-calls-and-architecture-of-unix",
+          "line": 8,
+          "column": 0
+        },
+        "intro-to-system-calls": {
+          "type": "header",
+          "text": "Intro to system calls",
+          "value": "intro-to-system-calls",
+          "line": 10,
+          "column": 0
+        },
+        "implementation-of-system-call": {
+          "type": "header",
+          "text": "Implementation of System Call",
+          "value": "implementation-of-system-call",
+          "line": 17,
+          "column": 0
+        },
+        "relationship-between-api-system-call-and-os": {
+          "type": "header",
+          "text": "Relationship between API, System Call and OS",
+          "value": "relationship-between-api-system-call-and-os",
+          "line": 25,
+          "column": 0
+        },
+        "types-of-system-calls": {
+          "type": "header",
+          "text": "Types of system calls",
+          "value": "types-of-system-calls",
+          "line": 29,
+          "column": 0
+        },
+        "architecture-of-unix": {
+          "type": "header",
+          "text": "Architecture of UNIX",
+          "value": "architecture-of-unix",
+          "line": 37,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Operating System.Lecture 3",
+      "updated": 1630430971753,
+      "created": 1630211824085,
+      "parent": "OGq6U8MXIG3wwETNLR4b6",
+      "children": [],
+      "data": {},
+      "contentHash": "6ff11dbeecbd6a79c073b8594c34eedf",
+      "custom": {}
+    },
+    "DSqySoYnF5H5vOJ3wxCD1": {
+      "id": "DSqySoYnF5H5vOJ3wxCD1",
+      "title": "Lecture 2",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "evolution-of-os-and-kernel": {
+          "type": "header",
+          "text": "Evolution of OS and Kernel",
+          "value": "evolution-of-os-and-kernel",
+          "line": 8,
+          "column": 0
+        },
+        "evolution-of-os": {
+          "type": "header",
+          "text": "Evolution of OS",
+          "value": "evolution-of-os",
+          "line": 10,
+          "column": 0
+        },
+        "serial-processing": {
+          "type": "header",
+          "text": "Serial Processing",
+          "value": "serial-processing",
+          "line": 18,
+          "column": 0
+        },
+        "simple-batch-system": {
+          "type": "header",
+          "text": "Simple Batch System",
+          "value": "simple-batch-system",
+          "line": 30,
+          "column": 0
+        },
+        "uniprogramming": {
+          "type": "header",
+          "text": "Uniprogramming",
+          "value": "uniprogramming",
+          "line": 55,
+          "column": 0
+        },
+        "multiprogramming": {
+          "type": "header",
+          "text": "Multiprogramming",
+          "value": "multiprogramming",
+          "line": 59,
+          "column": 0
+        },
+        "time-sharing-systems": {
+          "type": "header",
+          "text": "Time sharing systems",
+          "value": "time-sharing-systems",
+          "line": 63,
+          "column": 0
+        },
+        "os-structure": {
+          "type": "header",
+          "text": "OS Structure",
+          "value": "os-structure",
+          "line": 71,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Operating System.Lecture 2",
+      "updated": 1630430485504,
+      "created": 1630169451366,
+      "parent": "OGq6U8MXIG3wwETNLR4b6",
+      "children": [],
+      "data": {},
+      "contentHash": "37d1940a89c1eab0615301b8bfacc25c",
+      "custom": {}
+    },
+    "g00gG5RiPotsjv6xxjV5a": {
+      "id": "g00gG5RiPotsjv6xxjV5a",
+      "title": "Lecture 15",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "producerconsumer-cont": {
+          "type": "header",
+          "text": "Producer/Consumer (Cont.)",
+          "value": "producerconsumer-cont",
+          "line": 8,
+          "column": 0
+        },
+        "solution-using-general-semaphores": {
+          "type": "header",
+          "text": "Solution using General Semaphores",
+          "value": "solution-using-general-semaphores",
+          "line": 15,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Operating System.Lecture 15",
+      "updated": 1635914442743,
+      "created": 1635077358801,
+      "parent": "OGq6U8MXIG3wwETNLR4b6",
+      "children": [],
+      "data": {},
+      "contentHash": "bf8b70a929e119650ea89d330bdbf325",
+      "custom": {}
+    },
+    "SWZkc7DdTNxNRy8Wd2tkK": {
+      "id": "SWZkc7DdTNxNRy8Wd2tkK",
+      "title": "Lecture 14",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "semaphores": {
+          "type": "header",
+          "text": "Semaphores",
+          "value": "semaphores",
+          "line": 8,
+          "column": 0
+        },
+        "primitives": {
+          "type": "header",
+          "text": "Primitives",
+          "value": "primitives",
+          "line": 10,
+          "column": 0
+        },
+        "strong-and-weak-semaphore": {
+          "type": "header",
+          "text": "Strong and Weak Semaphore",
+          "value": "strong-and-weak-semaphore",
+          "line": 19,
+          "column": 0
+        },
+        "mutual-exclusion-through-semaphore": {
+          "type": "header",
+          "text": "Mutual Exclusion through Semaphore",
+          "value": "mutual-exclusion-through-semaphore",
+          "line": 23,
+          "column": 0
+        },
+        "producerconsumer-problem": {
+          "type": "header",
+          "text": "Producer/Consumer Problem",
+          "value": "producerconsumer-problem",
+          "line": 28,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Operating System.Lecture 14",
+      "updated": 1635075189235,
+      "created": 1635075189235,
+      "parent": "OGq6U8MXIG3wwETNLR4b6",
+      "children": [],
+      "data": {},
+      "contentHash": "af0a5aa518de507665e528a82ffdfcd8",
+      "custom": {}
+    },
+    "xFvHP34YitP4bVKnj85UO": {
+      "id": "xFvHP34YitP4bVKnj85UO",
+      "title": "Lecture 13",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "hardware-and-software-approaches-for-mutual-exclusion": {
+          "type": "header",
+          "text": "Hardware and Software Approaches for Mutual Exclusion",
+          "value": "hardware-and-software-approaches-for-mutual-exclusion",
+          "line": 8,
+          "column": 0
+        },
+        "special-machine-instructions": {
+          "type": "header",
+          "text": "Special Machine Instructions",
+          "value": "special-machine-instructions",
+          "line": 10,
+          "column": 0
+        },
+        "compareswap-instruction": {
+          "type": "header",
+          "text": "Compare&Swap Instruction",
+          "value": "compareswap-instruction",
+          "line": 14,
+          "column": 0
+        },
+        "exchange-instruction": {
+          "type": "header",
+          "text": "Exchange Instruction",
+          "value": "exchange-instruction",
+          "line": 23,
+          "column": 0
+        },
+        "advantages-of-hardware-approach": {
+          "type": "header",
+          "text": "Advantages of Hardware Approach",
+          "value": "advantages-of-hardware-approach",
+          "line": 29,
+          "column": 0
+        },
+        "disadvantages-of-hardware-approach": {
+          "type": "header",
+          "text": "Disadvantages of Hardware Approach",
+          "value": "disadvantages-of-hardware-approach",
+          "line": 33,
+          "column": 0
+        },
+        "software-approaches": {
+          "type": "header",
+          "text": "Software Approaches",
+          "value": "software-approaches",
+          "line": 38,
+          "column": 0
+        },
+        "dekkers-algorithm": {
+          "type": "header",
+          "text": "Dekker's Algorithm",
+          "value": "dekkers-algorithm",
+          "line": 62,
+          "column": 0
+        },
+        "petersons-algorithm": {
+          "type": "header",
+          "text": "Peterson's Algorithm",
+          "value": "petersons-algorithm",
+          "line": 70,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Operating System.Lecture 13",
+      "updated": 1634100353985,
+      "created": 1634100353985,
+      "parent": "OGq6U8MXIG3wwETNLR4b6",
+      "children": [],
+      "data": {},
+      "contentHash": "e36e235230a1bdad085ee339d7991ed0",
+      "custom": {}
+    },
+    "KpGll9jgwuYnRppkkiNqM": {
+      "id": "KpGll9jgwuYnRppkkiNqM",
+      "title": "Lecture 12",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "concurrency": {
+          "type": "header",
+          "text": "Concurrency",
+          "value": "concurrency",
+          "line": 8,
+          "column": 0
+        },
+        "principles-of-concurrency": {
+          "type": "header",
+          "text": "Principles of Concurrency",
+          "value": "principles-of-concurrency",
+          "line": 10,
+          "column": 0
+        },
+        "key-terms": {
+          "type": "header",
+          "text": "Key Terms",
+          "value": "key-terms",
+          "line": 16,
+          "column": 0
+        },
+        "difficulties-in-concurrency": {
+          "type": "header",
+          "text": "Difficulties in Concurrency",
+          "value": "difficulties-in-concurrency",
+          "line": 29,
+          "column": 0
+        },
+        "enforce-single-access": {
+          "type": "header",
+          "text": "Enforce Single Access",
+          "value": "enforce-single-access",
+          "line": 34,
+          "column": 0
+        },
+        "os-role-in-solving-difficulties": {
+          "type": "header",
+          "text": "OS Role in solving difficulties",
+          "value": "os-role-in-solving-difficulties",
+          "line": 39,
+          "column": 0
+        },
+        "process-interaction": {
+          "type": "header",
+          "text": "Process Interaction",
+          "value": "process-interaction",
+          "line": 44,
+          "column": 0
+        },
+        "mutual-exclusion": {
+          "type": "header",
+          "text": "Mutual Exclusion",
+          "value": "mutual-exclusion",
+          "line": 50,
+          "column": 0
+        },
+        "approaches-to-mutual-exclusion": {
+          "type": "header",
+          "text": "Approaches to Mutual Exclusion",
+          "value": "approaches-to-mutual-exclusion",
+          "line": 58,
+          "column": 0
+        },
+        "hardware-support-for-mutual-exclusion": {
+          "type": "header",
+          "text": "Hardware Support for Mutual Exclusion",
+          "value": "hardware-support-for-mutual-exclusion",
+          "line": 64,
+          "column": 0
+        },
+        "extra-points": {
+          "type": "header",
+          "text": "Extra Points",
+          "value": "extra-points",
+          "line": 79,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Operating System.Lecture 12",
+      "updated": 1634062937767,
+      "created": 1634062937767,
+      "parent": "OGq6U8MXIG3wwETNLR4b6",
+      "children": [],
+      "data": {},
+      "contentHash": "72ee80b3989efbbbc04c301138bab4b5",
+      "custom": {}
+    },
+    "AMV6gT3GOLGpK2t3UpTsG": {
+      "id": "AMV6gT3GOLGpK2t3UpTsG",
+      "title": "Lecture 11",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "threads": {
+          "type": "header",
+          "text": "Threads",
+          "value": "threads",
+          "line": 8,
+          "column": 0
+        },
+        "introduction": {
+          "type": "header",
+          "text": "Introduction",
+          "value": "introduction",
+          "line": 10,
+          "column": 0
+        },
+        "multithreading": {
+          "type": "header",
+          "text": "Multithreading",
+          "value": "multithreading",
+          "line": 17,
+          "column": 0
+        },
+        "single-thread-approach-and-multi-thread-approach": {
+          "type": "header",
+          "text": "Single Thread approach and Multi thread approach",
+          "value": "single-thread-approach-and-multi-thread-approach",
+          "line": 24,
+          "column": 0
+        },
+        "relationship-between-process-and-multithreading": {
+          "type": "header",
+          "text": "Relationship between process and multithreading",
+          "value": "relationship-between-process-and-multithreading",
+          "line": 29,
+          "column": 0
+        },
+        "multithreaded-environment": {
+          "type": "header",
+          "text": "Multithreaded environment",
+          "value": "multithreaded-environment",
+          "line": 33,
+          "column": 0
+        },
+        "thread-vs-process": {
+          "type": "header",
+          "text": "Thread vs Process",
+          "value": "thread-vs-process",
+          "line": 39,
+          "column": 0
+        },
+        "benefits-of-threads": {
+          "type": "header",
+          "text": "Benefits of threads",
+          "value": "benefits-of-threads",
+          "line": 45,
+          "column": 0
+        },
+        "case-study---file-server-application": {
+          "type": "header",
+          "text": "Case study - File Server Application",
+          "value": "case-study---file-server-application",
+          "line": 49,
+          "column": 0
+        },
+        "single-user-system": {
+          "type": "header",
+          "text": "Single User System",
+          "value": "single-user-system",
+          "line": 53,
+          "column": 0
+        },
+        "management-of-thread-at-process-level-and-similarities-with-processes": {
+          "type": "header",
+          "text": "Management of thread at process level and similarities with processes",
+          "value": "management-of-thread-at-process-level-and-similarities-with-processes",
+          "line": 61,
+          "column": 0
+        },
+        "thread-states-and-its-operations": {
+          "type": "header",
+          "text": "Thread states and its operations",
+          "value": "thread-states-and-its-operations",
+          "line": 66,
+          "column": 0
+        },
+        "remote-procedure-call": {
+          "type": "header",
+          "text": "Remote Procedure Call",
+          "value": "remote-procedure-call",
+          "line": 71,
+          "column": 0
+        },
+        "uniprocessor-multithreading": {
+          "type": "header",
+          "text": "Uniprocessor Multithreading",
+          "value": "uniprocessor-multithreading",
+          "line": 81,
+          "column": 0
+        },
+        "thread-synchronization": {
+          "type": "header",
+          "text": "Thread Synchronization",
+          "value": "thread-synchronization",
+          "line": 85,
+          "column": 0
+        },
+        "categories-of-thread-implementation": {
+          "type": "header",
+          "text": "Categories of Thread Implementation",
+          "value": "categories-of-thread-implementation",
+          "line": 90,
+          "column": 0
+        },
+        "combined-approach": {
+          "type": "header",
+          "text": "Combined Approach",
+          "value": "combined-approach",
+          "line": 114,
+          "column": 0
+        },
+        "thread-and-process": {
+          "type": "header",
+          "text": "Thread and Process",
+          "value": "thread-and-process",
+          "line": 119,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Operating System.Lecture 11",
+      "updated": 1634062754283,
+      "created": 1634037178840,
+      "parent": "OGq6U8MXIG3wwETNLR4b6",
+      "children": [],
+      "data": {},
+      "contentHash": "0336efb0e1f0d8a4d50a5dfe995fbecc",
+      "custom": {}
+    },
+    "T92KraeaozDzY0vK436QV": {
+      "id": "T92KraeaozDzY0vK436QV",
+      "title": "Lecture 10",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "scheduling-algorithm-cont": {
+          "type": "header",
+          "text": "Scheduling Algorithm (Cont.)",
+          "value": "scheduling-algorithm-cont",
+          "line": 8,
+          "column": 0
+        },
+        "fair-share-scheduling": {
+          "type": "header",
+          "text": "Fair-share scheduling",
+          "value": "fair-share-scheduling",
+          "line": 10,
+          "column": 0
+        },
+        "traditional-older-unix-scheduling": {
+          "type": "header",
+          "text": "Traditional (older) UNIX Scheduling",
+          "value": "traditional-older-unix-scheduling",
+          "line": 31,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Operating System.Lecture 10",
+      "updated": 1632849363575,
+      "created": 1632829724691,
+      "parent": "OGq6U8MXIG3wwETNLR4b6",
+      "children": [],
+      "data": {},
+      "contentHash": "195dff57861bdddd37931c31ef192d91",
+      "custom": {}
+    },
+    "5RejZTggjV1OupQ9Ob8Og": {
+      "id": "5RejZTggjV1OupQ9Ob8Og",
+      "title": "Lecture 1",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "introduction-to-operating-system": {
+          "type": "header",
+          "text": "Introduction to Operating System",
+          "value": "introduction-to-operating-system",
+          "line": 8,
+          "column": 0
+        },
+        "course-material": {
+          "type": "header",
+          "text": "Course Material",
+          "value": "course-material",
+          "line": 10,
+          "column": 0
+        },
+        "computing-system": {
+          "type": "header",
+          "text": "Computing System",
+          "value": "computing-system",
+          "line": 14,
+          "column": 0
+        },
+        "functions-of-os": {
+          "type": "header",
+          "text": "Functions of OS",
+          "value": "functions-of-os",
+          "line": 25,
+          "column": 0
+        },
+        "objectives-of-os": {
+          "type": "header",
+          "text": "Objectives of OS",
+          "value": "objectives-of-os",
+          "line": 34,
+          "column": 0
+        },
+        "users-of-computing-system": {
+          "type": "header",
+          "text": "Users of Computing System",
+          "value": "users-of-computing-system",
+          "line": 40,
+          "column": 0
+        },
+        "services-provided-by-os": {
+          "type": "header",
+          "text": "Services provided by OS",
+          "value": "services-provided-by-os",
+          "line": 48,
+          "column": 0
+        },
+        "resource-management": {
+          "type": "header",
+          "text": "Resource Management",
+          "value": "resource-management",
+          "line": 60,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Operating System.Lecture 1",
+      "updated": 1630162093225,
+      "created": 1630119169788,
+      "parent": "OGq6U8MXIG3wwETNLR4b6",
+      "children": [],
+      "data": {},
+      "contentHash": "19087009abef2d191e5002481a0b472f",
+      "custom": {}
+    },
+    "SkPPj7voTTRpF7d0XMYNV": {
+      "id": "SkPPj7voTTRpF7d0XMYNV",
+      "title": "Material Science and Engineering",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "courses.Semester 5.Material Science and Engineering",
+      "updated": 1630119372224,
+      "created": 1630119372224,
+      "parent": "O93aKwUCEnkxTR7S8V2eZ",
+      "children": [
+        "0oHWyM9aDZjThfEAsaEaa",
+        "nm7vb2JkMCB2FZOgPPlNP",
+        "7Pn2LE4nKGM3xnppbNKtx",
+        "5WHoNgDkNJViUb6nfDCEY",
+        "8b9mhqeVaeU3RwyIdctOQ",
+        "gE115COqnA5IjRZlhiJt3",
+        "r2CjIsK7LuFFuaiqn6uF6",
+        "WVssHbqYCaBhwzySH5BCm"
+      ],
+      "data": {},
+      "contentHash": "7970d3df8daff466d3c3446774e31e1f",
+      "stub": false,
+      "custom": {
+        "stub": true
+      }
+    },
+    "WVssHbqYCaBhwzySH5BCm": {
+      "id": "WVssHbqYCaBhwzySH5BCm",
+      "title": "Lecture 9",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "burger-vector": {
+          "type": "header",
+          "text": "Burger Vector",
+          "value": "burger-vector",
+          "line": 8,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Material Science and Engineering.Lecture 9",
+      "updated": 1631881533058,
+      "created": 1631879971684,
+      "parent": "SkPPj7voTTRpF7d0XMYNV",
+      "children": [],
+      "data": {},
+      "contentHash": "f0c8d8ce1f18b585fb3669acd98281a1",
+      "custom": {}
+    },
+    "r2CjIsK7LuFFuaiqn6uF6": {
+      "id": "r2CjIsK7LuFFuaiqn6uF6",
+      "title": "Lecture 8",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "courses.Semester 5.Material Science and Engineering.Lecture 8",
+      "updated": 1631533990854,
+      "created": 1631533990854,
+      "parent": "SkPPj7voTTRpF7d0XMYNV",
+      "children": [],
+      "data": {},
+      "contentHash": "78a554db14545b0e96049885ef81130b",
+      "custom": {}
+    },
+    "gE115COqnA5IjRZlhiJt3": {
+      "id": "gE115COqnA5IjRZlhiJt3",
+      "title": "Lecture 7",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "courses.Semester 5.Material Science and Engineering.Lecture 7",
+      "updated": 1631100978457,
+      "created": 1631100894316,
+      "parent": "SkPPj7voTTRpF7d0XMYNV",
+      "children": [],
+      "data": {},
+      "contentHash": "1272a6de2cdedd5e4e88ca5ffc8991d9",
+      "custom": {}
+    },
+    "8b9mhqeVaeU3RwyIdctOQ": {
+      "id": "8b9mhqeVaeU3RwyIdctOQ",
+      "title": "Lecture 5",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "x-ray-diffraction-xrd": {
+          "type": "header",
+          "text": "X-ray Diffraction (XRD)",
+          "value": "x-ray-diffraction-xrd",
+          "line": 8,
+          "column": 0
+        },
+        "key-points": {
+          "type": "header",
+          "text": "Key Points",
+          "value": "key-points",
+          "line": 12,
+          "column": 0
+        },
+        "x-ray-diffractogram-image": {
+          "type": "header",
+          "text": "X-Ray Diffractogram Image",
+          "value": "x-ray-diffractogram-image",
+          "line": 30,
+          "column": 0
+        },
+        "braggs-law": {
+          "type": "header",
+          "text": "Bragg's law",
+          "value": "braggs-law",
+          "line": 34,
+          "column": 0
+        },
+        "x-ray-diffractogram": {
+          "type": "header",
+          "text": "X-Ray Diffractogram",
+          "value": "x-ray-diffractogram",
+          "line": 40,
+          "column": 0
+        },
+        "how-to-identify-which-crystal-structure-sc-bcc-or-fcc": {
+          "type": "header",
+          "text": "How to identify which crystal structure? (SC, BCC or FCC)",
+          "value": "how-to-identify-which-crystal-structure-sc-bcc-or-fcc",
+          "line": 44,
+          "column": 0
+        },
+        "how-to-identify-material-based-on-lattice-parameter": {
+          "type": "header",
+          "text": "How to identify material based on lattice parameter?",
+          "value": "how-to-identify-material-based-on-lattice-parameter",
+          "line": 53,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Material Science and Engineering.Lecture 5",
+      "updated": 1631936415801,
+      "created": 1631075486165,
+      "parent": "SkPPj7voTTRpF7d0XMYNV",
+      "children": [],
+      "data": {},
+      "contentHash": "cdc8935ad2bcef58c7074a49a872013f",
+      "custom": {}
+    },
+    "5WHoNgDkNJViUb6nfDCEY": {
+      "id": "5WHoNgDkNJViUb6nfDCEY",
+      "title": "Lecture 4",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "directions-and-planes": {
+          "type": "header",
+          "text": "Directions and Planes",
+          "value": "directions-and-planes",
+          "line": 8,
+          "column": 0
+        },
+        "points-to-ponder-lecture-3": {
+          "type": "header",
+          "text": "Points to ponder (Lecture 3)",
+          "value": "points-to-ponder-lecture-3",
+          "line": 10,
+          "column": 0
+        },
+        "density-computation": {
+          "type": "header",
+          "text": "Density Computation",
+          "value": "density-computation",
+          "line": 16,
+          "column": 0
+        },
+        "crystal-directions": {
+          "type": "header",
+          "text": "Crystal Directions",
+          "value": "crystal-directions",
+          "line": 22,
+          "column": 0
+        },
+        "extra-points": {
+          "type": "header",
+          "text": "Extra points",
+          "value": "extra-points",
+          "line": 30,
+          "column": 0
+        },
+        "miller-indices": {
+          "type": "header",
+          "text": "Miller Indices",
+          "value": "miller-indices",
+          "line": 50,
+          "column": 0
+        },
+        "how-to-draw-planes": {
+          "type": "header",
+          "text": "How to draw planes?",
+          "value": "how-to-draw-planes",
+          "line": 64,
+          "column": 0
+        },
+        "angle-between-planes": {
+          "type": "header",
+          "text": "Angle between planes",
+          "value": "angle-between-planes",
+          "line": 71,
+          "column": 0
+        },
+        "linear-and-planar-density": {
+          "type": "header",
+          "text": "Linear and Planar Density",
+          "value": "linear-and-planar-density",
+          "line": 75,
+          "column": 0
+        },
+        "points-to-ponder": {
+          "type": "header",
+          "text": "Points to Ponder",
+          "value": "points-to-ponder",
+          "line": 90,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Material Science and Engineering.Lecture 4",
+      "updated": 1631896303807,
+      "created": 1630240499817,
+      "parent": "SkPPj7voTTRpF7d0XMYNV",
+      "children": [],
+      "data": {},
+      "contentHash": "d9dc98e72471c84fa53e9c3af42dc1f8",
+      "custom": {}
+    },
+    "7Pn2LE4nKGM3xnppbNKtx": {
+      "id": "7Pn2LE4nKGM3xnppbNKtx",
+      "title": "Lecture 3",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "crystal-lattice": {
+          "type": "header",
+          "text": "Crystal Lattice",
+          "value": "crystal-lattice",
+          "line": 8,
+          "column": 0
+        },
+        "sorry-for-the-inconvinience-but-please-refer-this-site-for-lecture-3-notes": {
+          "type": "header",
+          "text": "Sorry for the inconvinience but please refer this site for lecture 3 notes.",
+          "value": "sorry-for-the-inconvinience-but-please-refer-this-site-for-lecture-3-notes",
+          "line": 10,
+          "column": 0
+        },
+        "extra-points": {
+          "type": "header",
+          "text": "Extra Points",
+          "value": "extra-points",
+          "line": 12,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Material Science and Engineering.Lecture 3",
+      "updated": 1631843672053,
+      "created": 1630149964439,
+      "parent": "SkPPj7voTTRpF7d0XMYNV",
+      "children": [],
+      "data": {},
+      "contentHash": "6429fca1055b604cad72ea59cd8bcc06",
+      "custom": {}
+    },
+    "nm7vb2JkMCB2FZOgPPlNP": {
+      "id": "nm7vb2JkMCB2FZOgPPlNP",
+      "title": "Lecture 2",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "atomic-structure-bonding-and-energy": {
+          "type": "header",
+          "text": "Atomic Structure, Bonding and Energy",
+          "value": "atomic-structure-bonding-and-energy",
+          "line": 8,
+          "column": 0
+        },
+        "classification-of-materials": {
+          "type": "header",
+          "text": "Classification of materials",
+          "value": "classification-of-materials",
+          "line": 10,
+          "column": 0
+        },
+        "atomic-structure": {
+          "type": "header",
+          "text": "Atomic structure",
+          "value": "atomic-structure",
+          "line": 29,
+          "column": 0
+        },
+        "electronic-structure-of-isolated-atoms": {
+          "type": "header",
+          "text": "Electronic Structure of isolated atoms",
+          "value": "electronic-structure-of-isolated-atoms",
+          "line": 50,
+          "column": 0
+        },
+        "physical-properties-in-periodic-table": {
+          "type": "header",
+          "text": "Physical properties in Periodic table",
+          "value": "physical-properties-in-periodic-table",
+          "line": 65,
+          "column": 0
+        },
+        "bonding-in-solids": {
+          "type": "header",
+          "text": "Bonding in solids",
+          "value": "bonding-in-solids",
+          "line": 69,
+          "column": 0
+        },
+        "potential-energy": {
+          "type": "header",
+          "text": "Potential Energy",
+          "value": "potential-energy",
+          "line": 79,
+          "column": 0
+        },
+        "ionic-bonding": {
+          "type": "header",
+          "text": "Ionic Bonding",
+          "value": "ionic-bonding",
+          "line": 97,
+          "column": 0
+        },
+        "covalent-bonding": {
+          "type": "header",
+          "text": "Covalent Bonding",
+          "value": "covalent-bonding",
+          "line": 108,
+          "column": 0
+        },
+        "metallic-bonding": {
+          "type": "header",
+          "text": "Metallic Bonding",
+          "value": "metallic-bonding",
+          "line": 120,
+          "column": 0
+        },
+        "van-der-waals-bodning": {
+          "type": "header",
+          "text": "Van der waals bodning",
+          "value": "van-der-waals-bodning",
+          "line": 129,
+          "column": 0
+        },
+        "summary-of-bonding": {
+          "type": "header",
+          "text": "Summary of Bonding",
+          "value": "summary-of-bonding",
+          "line": 138,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Material Science and Engineering.Lecture 2",
+      "updated": 1631841095380,
+      "created": 1630125793681,
+      "parent": "SkPPj7voTTRpF7d0XMYNV",
+      "children": [],
+      "data": {},
+      "contentHash": "40d9d889cf1309dc8b4bea6654131b04",
+      "custom": {}
+    },
+    "0oHWyM9aDZjThfEAsaEaa": {
+      "id": "0oHWyM9aDZjThfEAsaEaa",
+      "title": "Lecture 1",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "introduction-to-material-science-and-engineering": {
+          "type": "header",
+          "text": "Introduction to Material Science and Engineering",
+          "value": "introduction-to-material-science-and-engineering",
+          "line": 8,
+          "column": 0
+        },
+        "points-to-ponder": {
+          "type": "header",
+          "text": "Points to Ponder",
+          "value": "points-to-ponder",
+          "line": 10,
+          "column": 0
+        },
+        "assessment-and-evaluation": {
+          "type": "header",
+          "text": "Assessment and Evaluation",
+          "value": "assessment-and-evaluation",
+          "line": 15,
+          "column": 0
+        },
+        "project-details": {
+          "type": "header",
+          "text": "Project Details",
+          "value": "project-details",
+          "line": 23,
+          "column": 0
+        },
+        "course-material": {
+          "type": "header",
+          "text": "Course Material",
+          "value": "course-material",
+          "line": 28,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Material Science and Engineering.Lecture 1",
+      "updated": 1630125562743,
+      "created": 1630119372219,
+      "parent": "SkPPj7voTTRpF7d0XMYNV",
+      "children": [],
+      "data": {},
+      "contentHash": "6f06688031e997f3880d666a88f9f3a5",
+      "custom": {}
+    },
+    "elcUWYUkVJfjM5NLR8toR": {
+      "id": "elcUWYUkVJfjM5NLR8toR",
+      "title": "Identity and Behaviour",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "courses.Semester 5.Identity and Behaviour",
+      "updated": 1630119338524,
+      "created": 1630119338524,
+      "parent": "O93aKwUCEnkxTR7S8V2eZ",
+      "children": [
+        "EzFAqylmlMVOhrO46M14m",
+        "K0kp6URgJ9SnimTcJphcx",
+        "4DCCh2hHBdpltVq4HEWyQ",
+        "UKIGki0vHPK3aRvwbfMJL",
+        "FhX7hQducIuOwozOeLAV3",
+        "UkVqC9tIYjFtHLMGIZjdP",
+        "dIHU5I2fuNmAVSwR5j4Oa",
+        "r6YI7ZxUkVZm6G2BayyMA",
+        "VWODM0wXLRzlc7pAQKsFW",
+        "h6nuaSOE2EeObVvbPLcX5",
+        "OABTbEYYMsKyykJeST1iP",
+        "iwhlO4698omQcNVxlftUA",
+        "hkXKYt8EVrtwXHAbt0h8S",
+        "gloGDHvCoC6hYZlaier0A",
+        "YZpSIBYO0ahxAoUtvM6x2",
+        "KrzCF28wYvtfs2P1b6PTI",
+        "Hb8iZ0Pj4mrwy1vfEV5re",
+        "Rz2Z0FU78qgo7Z71N9CfP",
+        "YTubF8DNYL7XWMcJgiDG3",
+        "sRydRilym4SzymlFfcRS3",
+        "tSllbyBt3ZqkFMyPDbLLE"
+      ],
+      "data": {},
+      "contentHash": "24ca48d1d5be85decd8cf903c197d042",
+      "stub": false,
+      "custom": {
+        "stub": true
+      }
+    },
+    "tSllbyBt3ZqkFMyPDbLLE": {
+      "id": "tSllbyBt3ZqkFMyPDbLLE",
+      "title": "Lecture 9",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "decision-making": {
+          "type": "header",
+          "text": "Decision Making",
+          "value": "decision-making",
+          "line": 8,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Identity and Behaviour.Lecture 9",
+      "updated": 1632640395823,
+      "created": 1632640036695,
+      "parent": "elcUWYUkVJfjM5NLR8toR",
+      "children": [],
+      "data": {},
+      "contentHash": "c452b22c45add83f9ceeb6b18ba21160",
+      "custom": {}
+    },
+    "sRydRilym4SzymlFfcRS3": {
+      "id": "sRydRilym4SzymlFfcRS3",
+      "title": "Lecture 8",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "judgement-and-attribution-theory": {
+          "type": "header",
+          "text": "Judgement and Attribution Theory",
+          "value": "judgement-and-attribution-theory",
+          "line": 8,
+          "column": 0
+        },
+        "judgement-and-shortcuts": {
+          "type": "header",
+          "text": "Judgement and Shortcuts",
+          "value": "judgement-and-shortcuts",
+          "line": 27,
+          "column": 0
+        },
+        "errors-and-biases-in-perception": {
+          "type": "header",
+          "text": "Errors and Biases in Perception",
+          "value": "errors-and-biases-in-perception",
+          "line": 34,
+          "column": 0
+        },
+        "shortcuts-in-judging-others": {
+          "type": "header",
+          "text": "Shortcuts in Judging Others",
+          "value": "shortcuts-in-judging-others",
+          "line": 44,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Identity and Behaviour.Lecture 8",
+      "updated": 1632639950826,
+      "created": 1632637539863,
+      "parent": "elcUWYUkVJfjM5NLR8toR",
+      "children": [],
+      "data": {},
+      "contentHash": "ad153818f638555fcca9e52da9ff7c76",
+      "custom": {}
+    },
+    "YTubF8DNYL7XWMcJgiDG3": {
+      "id": "YTubF8DNYL7XWMcJgiDG3",
+      "title": "Lecture 7",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "perception-and-factors": {
+          "type": "header",
+          "text": "Perception and Factors",
+          "value": "perception-and-factors",
+          "line": 8,
+          "column": 0
+        },
+        "zone-of-proximal-development": {
+          "type": "header",
+          "text": "Zone of Proximal Development",
+          "value": "zone-of-proximal-development",
+          "line": 10,
+          "column": 0
+        },
+        "perception": {
+          "type": "header",
+          "text": "Perception",
+          "value": "perception",
+          "line": 23,
+          "column": 0
+        },
+        "factors-that-influence-perception": {
+          "type": "header",
+          "text": "Factors that influence perception",
+          "value": "factors-that-influence-perception",
+          "line": 29,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Identity and Behaviour.Lecture 7",
+      "updated": 1632637262422,
+      "created": 1632635570056,
+      "parent": "elcUWYUkVJfjM5NLR8toR",
+      "children": [],
+      "data": {},
+      "contentHash": "12da3437441a260423294c44f1bcb487",
+      "custom": {}
+    },
+    "Rz2Z0FU78qgo7Z71N9CfP": {
+      "id": "Rz2Z0FU78qgo7Z71N9CfP",
+      "title": "Lecture 6",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "piagets-and-theory": {
+          "type": "header",
+          "text": "Piaget's and Theory",
+          "value": "piagets-and-theory",
+          "line": 8,
+          "column": 0
+        },
+        "piagets-theory": {
+          "type": "header",
+          "text": "Piaget's Theory",
+          "value": "piagets-theory",
+          "line": 10,
+          "column": 0
+        },
+        "vigotskys-theory": {
+          "type": "header",
+          "text": "Vigotsky's Theory",
+          "value": "vigotskys-theory",
+          "line": 47,
+          "column": 0
+        },
+        "difference-in-perspective-of-both-theories": {
+          "type": "header",
+          "text": "Difference in perspective of both theories",
+          "value": "difference-in-perspective-of-both-theories",
+          "line": 60,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Identity and Behaviour.Lecture 6",
+      "updated": 1631427512954,
+      "created": 1631424905773,
+      "parent": "elcUWYUkVJfjM5NLR8toR",
+      "children": [],
+      "data": {},
+      "contentHash": "944ed26025601ec9ae057c43eb42041e",
+      "custom": {}
+    },
+    "Hb8iZ0Pj4mrwy1vfEV5re": {
+      "id": "Hb8iZ0Pj4mrwy1vfEV5re",
+      "title": "Lecture 5",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "social-learning-theory": {
+          "type": "header",
+          "text": "Social Learning Theory",
+          "value": "social-learning-theory",
+          "line": 8,
+          "column": 0
+        },
+        "social-learning-theory-1": {
+          "type": "header",
+          "text": "Social Learning Theory",
+          "value": "social-learning-theory-1",
+          "line": 10,
+          "column": 0
+        },
+        "how-do-children-learn": {
+          "type": "header",
+          "text": "How do children learn?",
+          "value": "how-do-children-learn",
+          "line": 26,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Identity and Behaviour.Lecture 5",
+      "updated": 1630860463712,
+      "created": 1630858096193,
+      "parent": "elcUWYUkVJfjM5NLR8toR",
+      "children": [],
+      "data": {},
+      "contentHash": "cb59ae0b27761f79af759226c74c0e31",
+      "custom": {}
+    },
+    "KrzCF28wYvtfs2P1b6PTI": {
+      "id": "KrzCF28wYvtfs2P1b6PTI",
+      "title": "Lecture 4",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "learning-and-related-theories": {
+          "type": "header",
+          "text": "Learning and related theories",
+          "value": "learning-and-related-theories",
+          "line": 8,
+          "column": 0
+        },
+        "learning": {
+          "type": "header",
+          "text": "Learning",
+          "value": "learning",
+          "line": 10,
+          "column": 0
+        },
+        "theories": {
+          "type": "header",
+          "text": "Theories",
+          "value": "theories",
+          "line": 19,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Identity and Behaviour.Lecture 4",
+      "updated": 1630854303526,
+      "created": 1630852825524,
+      "parent": "elcUWYUkVJfjM5NLR8toR",
+      "children": [],
+      "data": {},
+      "contentHash": "efeb63d77d864ef58c2abde918474b60",
+      "custom": {}
+    },
+    "YZpSIBYO0ahxAoUtvM6x2": {
+      "id": "YZpSIBYO0ahxAoUtvM6x2",
+      "title": "Lecture 3",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "organization-behaviourist-model": {
+          "type": "header",
+          "text": "Organization-Behaviourist Model",
+          "value": "organization-behaviourist-model",
+          "line": 8,
+          "column": 0
+        },
+        "extra-points": {
+          "type": "header",
+          "text": "Extra Points",
+          "value": "extra-points",
+          "line": 10,
+          "column": 0
+        },
+        "organizational-behaviour-model": {
+          "type": "header",
+          "text": "Organizational Behaviour Model",
+          "value": "organizational-behaviour-model",
+          "line": 16,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Identity and Behaviour.Lecture 3",
+      "updated": 1630852793974,
+      "created": 1630851775590,
+      "parent": "elcUWYUkVJfjM5NLR8toR",
+      "children": [],
+      "data": {},
+      "contentHash": "425e593a055ff8de0bc9b4df9a62e1cd",
+      "custom": {}
+    },
+    "gloGDHvCoC6hYZlaier0A": {
+      "id": "gloGDHvCoC6hYZlaier0A",
+      "title": "Lecture 21",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "emotions-and-mood": {
+          "type": "header",
+          "text": "Emotions and Mood",
+          "value": "emotions-and-mood",
+          "line": 8,
+          "column": 0
+        },
+        "definitions": {
+          "type": "header",
+          "text": "Definitions",
+          "value": "definitions",
+          "line": 10,
+          "column": 0
+        },
+        "moral-emotions": {
+          "type": "header",
+          "text": "Moral emotions",
+          "value": "moral-emotions",
+          "line": 16,
+          "column": 0
+        },
+        "positive-and-negative-affect": {
+          "type": "header",
+          "text": "Positive and Negative Affect",
+          "value": "positive-and-negative-affect",
+          "line": 24,
+          "column": 0
+        },
+        "sources-of-emotions-and-moods": {
+          "type": "header",
+          "text": "Sources of emotions and moods",
+          "value": "sources-of-emotions-and-moods",
+          "line": 28,
+          "column": 0
+        },
+        "functions-of-emotions": {
+          "type": "header",
+          "text": "Functions of emotions",
+          "value": "functions-of-emotions",
+          "line": 52,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Identity and Behaviour.Lecture 21",
+      "updated": 1637728728733,
+      "created": 1637728728733,
+      "parent": "elcUWYUkVJfjM5NLR8toR",
+      "children": [],
+      "data": {},
+      "contentHash": "b2a8bd03c98256ef45245f1a20bf154b",
+      "custom": {}
+    },
+    "hkXKYt8EVrtwXHAbt0h8S": {
+      "id": "hkXKYt8EVrtwXHAbt0h8S",
+      "title": "Lecture 20",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "mbo-self-efficacy-theory-and-expectancy-theory": {
+          "type": "header",
+          "text": "MBO, Self-Efficacy theory and Expectancy theory",
+          "value": "mbo-self-efficacy-theory-and-expectancy-theory",
+          "line": 8,
+          "column": 0
+        },
+        "management-by-objectives-mbo": {
+          "type": "header",
+          "text": "Management by Objectives (MBO)",
+          "value": "management-by-objectives-mbo",
+          "line": 10,
+          "column": 0
+        },
+        "self-efficacy-theory": {
+          "type": "header",
+          "text": "Self-Efficacy theory",
+          "value": "self-efficacy-theory",
+          "line": 15,
+          "column": 0
+        },
+        "expectancy-theory": {
+          "type": "header",
+          "text": "Expectancy theory",
+          "value": "expectancy-theory",
+          "line": 35,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Identity and Behaviour.Lecture 20",
+      "updated": 1637727504266,
+      "created": 1637727504266,
+      "parent": "elcUWYUkVJfjM5NLR8toR",
+      "children": [],
+      "data": {},
+      "contentHash": "192e57a7afe28a6de8067057791a67b8",
+      "custom": {}
+    },
+    "iwhlO4698omQcNVxlftUA": {
+      "id": "iwhlO4698omQcNVxlftUA",
+      "title": "Lecture 2",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "schools-of-psychology-cont": {
+          "type": "header",
+          "text": "Schools of Psychology (Cont.)",
+          "value": "schools-of-psychology-cont",
+          "line": 8,
+          "column": 0
+        },
+        "functionalism": {
+          "type": "header",
+          "text": "Functionalism",
+          "value": "functionalism",
+          "line": 10,
+          "column": 0
+        },
+        "behaviourlism": {
+          "type": "header",
+          "text": "Behaviourlism",
+          "value": "behaviourlism",
+          "line": 20,
+          "column": 0
+        },
+        "gestalt-psychology": {
+          "type": "header",
+          "text": "Gestalt Psychology",
+          "value": "gestalt-psychology",
+          "line": 30,
+          "column": 0
+        },
+        "johari-window": {
+          "type": "header",
+          "text": "Johari Window",
+          "value": "johari-window",
+          "line": 52,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Identity and Behaviour.Lecture 2",
+      "updated": 1630851678636,
+      "created": 1630848418482,
+      "parent": "elcUWYUkVJfjM5NLR8toR",
+      "children": [],
+      "data": {},
+      "contentHash": "f4cd9bc0ba1d6e094012a5843461eb84",
+      "custom": {}
+    },
+    "OABTbEYYMsKyykJeST1iP": {
+      "id": "OABTbEYYMsKyykJeST1iP",
+      "title": "Lecture 19",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "mcclellands-theory-of-needs-reinforcement-theory-sdt-goal-setting-theory": {
+          "type": "header",
+          "text": "McClelland's theory of needs, Reinforcement Theory, SDT, Goal-Setting Theory",
+          "value": "mcclellands-theory-of-needs-reinforcement-theory-sdt-goal-setting-theory",
+          "line": 8,
+          "column": 0
+        },
+        "mcclellands-theory-of-needs": {
+          "type": "header",
+          "text": "McClelland's theory of needs",
+          "value": "mcclellands-theory-of-needs",
+          "line": 10,
+          "column": 0
+        },
+        "reinforcement-theory": {
+          "type": "header",
+          "text": "Reinforcement Theory",
+          "value": "reinforcement-theory",
+          "line": 21,
+          "column": 0
+        },
+        "sdt-self-determination-theory": {
+          "type": "header",
+          "text": "SDT (Self-Determination theory)",
+          "value": "sdt-self-determination-theory",
+          "line": 25,
+          "column": 0
+        },
+        "goal-setting-theory": {
+          "type": "header",
+          "text": "Goal-Setting Theory",
+          "value": "goal-setting-theory",
+          "line": 40,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Identity and Behaviour.Lecture 19",
+      "updated": 1637691069851,
+      "created": 1637690043473,
+      "parent": "elcUWYUkVJfjM5NLR8toR",
+      "children": [],
+      "data": {},
+      "contentHash": "e994c9e645c8e197509c4f18fe594b66",
+      "custom": {}
+    },
+    "h6nuaSOE2EeObVvbPLcX5": {
+      "id": "h6nuaSOE2EeObVvbPLcX5",
+      "title": "Lecture 18",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "courses.Semester 5.Identity and Behaviour.Lecture 18",
+      "updated": 1636290762182,
+      "created": 1636290762182,
+      "parent": "elcUWYUkVJfjM5NLR8toR",
+      "children": [],
+      "data": {},
+      "contentHash": "7afc074c935b248dcc1809b6e27fc19e",
+      "custom": {}
+    },
+    "VWODM0wXLRzlc7pAQKsFW": {
+      "id": "VWODM0wXLRzlc7pAQKsFW",
+      "title": "Lecture 17",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "job-dissatisfaction-and-job-crafting": {
+          "type": "header",
+          "text": "Job Dissatisfaction and Job Crafting",
+          "value": "job-dissatisfaction-and-job-crafting",
+          "line": 9,
+          "column": 0
+        },
+        "extra-points": {
+          "type": "header",
+          "text": "Extra Points",
+          "value": "extra-points",
+          "line": 11,
+          "column": 0
+        },
+        "introduction": {
+          "type": "header",
+          "text": "Introduction",
+          "value": "introduction",
+          "line": 24,
+          "column": 0
+        },
+        "counterproductive-work-behaviour-cwb": {
+          "type": "header",
+          "text": "Counterproductive Work Behaviour (CWB)",
+          "value": "counterproductive-work-behaviour-cwb",
+          "line": 42,
+          "column": 0
+        },
+        "absenteeism": {
+          "type": "header",
+          "text": "Absenteeism",
+          "value": "absenteeism",
+          "line": 50,
+          "column": 0
+        },
+        "turnover": {
+          "type": "header",
+          "text": "Turnover",
+          "value": "turnover",
+          "line": 54,
+          "column": 0
+        },
+        "job-crafting": {
+          "type": "header",
+          "text": "Job Crafting",
+          "value": "job-crafting",
+          "line": 67,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Identity and Behaviour.Lecture 17",
+      "updated": 1635677816365,
+      "created": 1635670587807,
+      "parent": "elcUWYUkVJfjM5NLR8toR",
+      "children": [],
+      "data": {},
+      "contentHash": "bd7138b01b2ebae9f41bed60eb110db0",
+      "custom": {}
+    },
+    "r6YI7ZxUkVZm6G2BayyMA": {
+      "id": "r6YI7ZxUkVZm6G2BayyMA",
+      "title": "Lecture 16",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "attitudes-cont": {
+          "type": "header",
+          "text": "Attitudes (Cont.)",
+          "value": "attitudes-cont",
+          "line": 9,
+          "column": 0
+        },
+        "extra-points": {
+          "type": "header",
+          "text": "Extra Points",
+          "value": "extra-points",
+          "line": 11,
+          "column": 0
+        },
+        "relationship-between-attitude-and-behaviour": {
+          "type": "header",
+          "text": "Relationship between attitude and behaviour",
+          "value": "relationship-between-attitude-and-behaviour",
+          "line": 18,
+          "column": 0
+        },
+        "factors-to-cope-with-cognitive-dissonance": {
+          "type": "header",
+          "text": "Factors to cope with cognitive dissonance",
+          "value": "factors-to-cope-with-cognitive-dissonance",
+          "line": 26,
+          "column": 0
+        },
+        "attitudes-at-work-place": {
+          "type": "header",
+          "text": "Attitudes at Work Place",
+          "value": "attitudes-at-work-place",
+          "line": 31,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Identity and Behaviour.Lecture 16",
+      "updated": 1635670286587,
+      "created": 1635665741115,
+      "parent": "elcUWYUkVJfjM5NLR8toR",
+      "children": [],
+      "data": {},
+      "contentHash": "44007f2abbaf738a7b02c74359d9d763",
+      "custom": {}
+    },
+    "dIHU5I2fuNmAVSwR5j4Oa": {
+      "id": "dIHU5I2fuNmAVSwR5j4Oa",
+      "title": "Lecture 15",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "situation-strength-theory-and-attitudes": {
+          "type": "header",
+          "text": "Situation Strength Theory and Attitudes",
+          "value": "situation-strength-theory-and-attitudes",
+          "line": 9,
+          "column": 0
+        },
+        "introduction": {
+          "type": "header",
+          "text": "Introduction",
+          "value": "introduction",
+          "line": 11,
+          "column": 0
+        },
+        "elementsfactors": {
+          "type": "header",
+          "text": "Elements/Factors",
+          "value": "elementsfactors",
+          "line": 16,
+          "column": 0
+        },
+        "trait-activation-theory": {
+          "type": "header",
+          "text": "Trait Activation Theory",
+          "value": "trait-activation-theory",
+          "line": 39,
+          "column": 0
+        },
+        "attitudes": {
+          "type": "header",
+          "text": "Attitudes",
+          "value": "attitudes",
+          "line": 42,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Identity and Behaviour.Lecture 15",
+      "updated": 1635665533705,
+      "created": 1635663794158,
+      "parent": "elcUWYUkVJfjM5NLR8toR",
+      "children": [],
+      "data": {},
+      "contentHash": "d209e1676c5664e817bef51527fa57f5",
+      "custom": {}
+    },
+    "UkVqC9tIYjFtHLMGIZjdP": {
+      "id": "UkVqC9tIYjFtHLMGIZjdP",
+      "title": "Lecture 14",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "personality-models-cont": {
+          "type": "header",
+          "text": "Personality Models (Cont.)",
+          "value": "personality-models-cont",
+          "line": 9,
+          "column": 0
+        },
+        "openness-to-experience": {
+          "type": "header",
+          "text": "Openness to experience",
+          "value": "openness-to-experience",
+          "line": 11,
+          "column": 0
+        },
+        "agreeableness": {
+          "type": "header",
+          "text": "Agreeableness",
+          "value": "agreeableness",
+          "line": 14,
+          "column": 0
+        },
+        "the-dark-triad": {
+          "type": "header",
+          "text": "The Dark Triad",
+          "value": "the-dark-triad",
+          "line": 21,
+          "column": 0
+        },
+        "other-personality-attributes": {
+          "type": "header",
+          "text": "Other personality attributes",
+          "value": "other-personality-attributes",
+          "line": 31,
+          "column": 0
+        },
+        "z-model-of-dm": {
+          "type": "header",
+          "text": "Z-model of DM",
+          "value": "z-model-of-dm",
+          "line": 41,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Identity and Behaviour.Lecture 14",
+      "updated": 1635663443602,
+      "created": 1635662913029,
+      "parent": "elcUWYUkVJfjM5NLR8toR",
+      "children": [],
+      "data": {},
+      "contentHash": "aa97ea68d9a2be2f9a8e574056ffe891",
+      "custom": {}
+    },
+    "FhX7hQducIuOwozOeLAV3": {
+      "id": "FhX7hQducIuOwozOeLAV3",
+      "title": "Lecture 13",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "personality": {
+          "type": "header",
+          "text": "Personality",
+          "value": "personality",
+          "line": 9,
+          "column": 0
+        },
+        "introduction": {
+          "type": "header",
+          "text": "Introduction",
+          "value": "introduction",
+          "line": 11,
+          "column": 0
+        },
+        "myers-briggs-type-indicator-mbti": {
+          "type": "header",
+          "text": "Myers-Briggs Type Indicator (MBTI)",
+          "value": "myers-briggs-type-indicator-mbti",
+          "line": 26,
+          "column": 0
+        },
+        "big-five-personality-model": {
+          "type": "header",
+          "text": "Big Five Personality Model",
+          "value": "big-five-personality-model",
+          "line": 30,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Identity and Behaviour.Lecture 13",
+      "updated": 1635662901768,
+      "created": 1635661694542,
+      "parent": "elcUWYUkVJfjM5NLR8toR",
+      "children": [],
+      "data": {},
+      "contentHash": "f27f08efcfddb98d4019163f3950da48",
+      "custom": {}
+    },
+    "UKIGki0vHPK3aRvwbfMJL": {
+      "id": "UKIGki0vHPK3aRvwbfMJL",
+      "title": "Lecture 12",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "pj-fit-vs-po-fit-and-hofstede-framework": {
+          "type": "header",
+          "text": "PJ-fit vs PO-fit and Hofstede framework",
+          "value": "pj-fit-vs-po-fit-and-hofstede-framework",
+          "line": 9,
+          "column": 0
+        },
+        "person-job-fit": {
+          "type": "header",
+          "text": "Person-Job Fit",
+          "value": "person-job-fit",
+          "line": 11,
+          "column": 0
+        },
+        "person-organization-fit": {
+          "type": "header",
+          "text": "Person-Organization Fit",
+          "value": "person-organization-fit",
+          "line": 16,
+          "column": 0
+        },
+        "hofstedes-framework": {
+          "type": "header",
+          "text": "Hofstede's Framework",
+          "value": "hofstedes-framework",
+          "line": 22,
+          "column": 0
+        },
+        "extra-points": {
+          "type": "header",
+          "text": "Extra Points",
+          "value": "extra-points",
+          "line": 37,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Identity and Behaviour.Lecture 12",
+      "updated": 1635656402760,
+      "created": 1635656402760,
+      "parent": "elcUWYUkVJfjM5NLR8toR",
+      "children": [],
+      "data": {},
+      "contentHash": "26bd6310a5ed4a05c29669540b5aa49f",
+      "custom": {}
+    },
+    "4DCCh2hHBdpltVq4HEWyQ": {
+      "id": "4DCCh2hHBdpltVq4HEWyQ",
+      "title": "Lecture 11",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "errors-in-decision-making-and-values": {
+          "type": "header",
+          "text": "Errors in Decision Making and Values",
+          "value": "errors-in-decision-making-and-values",
+          "line": 9,
+          "column": 0
+        },
+        "biases-in-dm": {
+          "type": "header",
+          "text": "Biases in DM",
+          "value": "biases-in-dm",
+          "line": 11,
+          "column": 0
+        },
+        "values": {
+          "type": "header",
+          "text": "Values",
+          "value": "values",
+          "line": 38,
+          "column": 0
+        },
+        "types-of-values": {
+          "type": "header",
+          "text": "Types of values",
+          "value": "types-of-values",
+          "line": 46,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Identity and Behaviour.Lecture 11",
+      "updated": 1635656046364,
+      "created": 1635654830571,
+      "parent": "elcUWYUkVJfjM5NLR8toR",
+      "children": [],
+      "data": {},
+      "contentHash": "0b412e3855e1258ba52e74542dbdc657",
+      "custom": {}
+    },
+    "K0kp6URgJ9SnimTcJphcx": {
+      "id": "K0kp6URgJ9SnimTcJphcx",
+      "title": "Lecture 10",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "decision-making-and-its-related-errors": {
+          "type": "header",
+          "text": "Decision Making and its related errors",
+          "value": "decision-making-and-its-related-errors",
+          "line": 8,
+          "column": 0
+        },
+        "rational-decision-making-model": {
+          "type": "header",
+          "text": "Rational decision making model",
+          "value": "rational-decision-making-model",
+          "line": 14,
+          "column": 0
+        },
+        "bounded-rationality": {
+          "type": "header",
+          "text": "Bounded Rationality",
+          "value": "bounded-rationality",
+          "line": 29,
+          "column": 0
+        },
+        "intuition": {
+          "type": "header",
+          "text": "Intuition",
+          "value": "intuition",
+          "line": 40,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Identity and Behaviour.Lecture 10",
+      "updated": 1632647089386,
+      "created": 1632640666042,
+      "parent": "elcUWYUkVJfjM5NLR8toR",
+      "children": [],
+      "data": {},
+      "contentHash": "03022ccde7f0eb3ccdbeeebd709c2df3",
+      "custom": {}
+    },
+    "EzFAqylmlMVOhrO46M14m": {
+      "id": "EzFAqylmlMVOhrO46M14m",
+      "title": "Lecture 1",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "introduction-to-idtb": {
+          "type": "header",
+          "text": "Introduction to IDTB",
+          "value": "introduction-to-idtb",
+          "line": 8,
+          "column": 0
+        },
+        "evaluation-scheme": {
+          "type": "header",
+          "text": "Evaluation Scheme",
+          "value": "evaluation-scheme",
+          "line": 10,
+          "column": 0
+        },
+        "psychology": {
+          "type": "header",
+          "text": "Psychology",
+          "value": "psychology",
+          "line": 20,
+          "column": 0
+        },
+        "schools-of-pyschology": {
+          "type": "header",
+          "text": "Schools of Pyschology",
+          "value": "schools-of-pyschology",
+          "line": 29,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Identity and Behaviour.Lecture 1",
+      "updated": 1630848380769,
+      "created": 1630119338517,
+      "parent": "elcUWYUkVJfjM5NLR8toR",
+      "children": [],
+      "data": {},
+      "contentHash": "26325424746b1b64e63285e023336146",
+      "custom": {}
+    },
+    "znYlAnqQDCB58XxxMMdIl": {
+      "id": "znYlAnqQDCB58XxxMMdIl",
+      "title": "Heritage Conservation",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "courses.Semester 5.Heritage Conservation",
+      "updated": 1630119270428,
+      "created": 1630119270428,
+      "parent": "O93aKwUCEnkxTR7S8V2eZ",
+      "children": [
+        "IQHByKf1X1NgQtCFQQDcv",
+        "fIWeJsyAu0iXBEKa5pDNg",
+        "hZ6cyNep6GRt4D7cm7pJ8",
+        "wcBxmYgYJWMiVUmPvitiq",
+        "GSWww183ePaI3f6BfvI2G",
+        "HFGrSrOHbY9vSu2OTCDm2",
+        "54UG6OenTE0aRCaRqbb5Q",
+        "ZZhXX466ntkC7KeWZov6p",
+        "ZtXmtQgzVVdhNp7thfrI2",
+        "0FioDgzoBdkgjvixTwIfa",
+        "JHVJ2hlBVm0Yi7zxFM08w",
+        "S13mRMe5KEfZGNDi8vrYA",
+        "PTsAZTt7Lv8ccLelOBFAI",
+        "nhetJVdm6SYHiREvRbgN8",
+        "X7n2PwVS2ej0O804ritBy"
+      ],
+      "data": {},
+      "contentHash": "029dbd708d88d3be73511822a2925bcc",
+      "stub": false,
+      "custom": {
+        "stub": true
+      }
+    },
+    "X7n2PwVS2ej0O804ritBy": {
+      "id": "X7n2PwVS2ej0O804ritBy",
+      "title": "Lecture 9",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "wood-cont-and-intro-to-paper": {
+          "type": "header",
+          "text": "Wood (Cont.) and Intro to Paper",
+          "value": "wood-cont-and-intro-to-paper",
+          "line": 9,
+          "column": 0
+        },
+        "thermal-degradation": {
+          "type": "header",
+          "text": "Thermal Degradation",
+          "value": "thermal-degradation",
+          "line": 11,
+          "column": 0
+        },
+        "biological-desgradation": {
+          "type": "header",
+          "text": "Biological Desgradation",
+          "value": "biological-desgradation",
+          "line": 16,
+          "column": 0
+        },
+        "defects-in-polychrome-wood": {
+          "type": "header",
+          "text": "Defects in polychrome wood",
+          "value": "defects-in-polychrome-wood",
+          "line": 20,
+          "column": 0
+        },
+        "prevention-and-conservation": {
+          "type": "header",
+          "text": "Prevention and Conservation",
+          "value": "prevention-and-conservation",
+          "line": 26,
+          "column": 0
+        },
+        "bleaching": {
+          "type": "header",
+          "text": "Bleaching",
+          "value": "bleaching",
+          "line": 49,
+          "column": 0
+        },
+        "extra-points": {
+          "type": "header",
+          "text": "Extra Points",
+          "value": "extra-points",
+          "line": 55,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Heritage Conservation.Lecture 9",
+      "updated": 1634387534028,
+      "created": 1634387534028,
+      "parent": "znYlAnqQDCB58XxxMMdIl",
+      "children": [],
+      "data": {},
+      "contentHash": "f80d7946a5fd04b8832f1843068996cb",
+      "custom": {}
+    },
+    "nhetJVdm6SYHiREvRbgN8": {
+      "id": "nhetJVdm6SYHiREvRbgN8",
+      "title": "Lecture 8",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "wood": {
+          "type": "header",
+          "text": "Wood",
+          "value": "wood",
+          "line": 8,
+          "column": 0
+        },
+        "chemical-properties": {
+          "type": "header",
+          "text": "Chemical Properties",
+          "value": "chemical-properties",
+          "line": 10,
+          "column": 0
+        },
+        "physical-properties": {
+          "type": "header",
+          "text": "Physical Properties",
+          "value": "physical-properties",
+          "line": 14,
+          "column": 0
+        },
+        "directions-of-wood": {
+          "type": "header",
+          "text": "Directions of wood",
+          "value": "directions-of-wood",
+          "line": 21,
+          "column": 0
+        },
+        "shrinkage-curve": {
+          "type": "header",
+          "text": "Shrinkage Curve",
+          "value": "shrinkage-curve",
+          "line": 37,
+          "column": 0
+        },
+        "grains-of-wood": {
+          "type": "header",
+          "text": "Grains of wood",
+          "value": "grains-of-wood",
+          "line": 41,
+          "column": 0
+        },
+        "deterioration": {
+          "type": "header",
+          "text": "Deterioration",
+          "value": "deterioration",
+          "line": 45,
+          "column": 0
+        },
+        "extra-points": {
+          "type": "header",
+          "text": "Extra Points",
+          "value": "extra-points",
+          "line": 59,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Heritage Conservation.Lecture 8",
+      "updated": 1634383433970,
+      "created": 1634381399952,
+      "parent": "znYlAnqQDCB58XxxMMdIl",
+      "children": [],
+      "data": {},
+      "contentHash": "0be7d58b61eaeb283a6da2f39edd5c0d",
+      "custom": {}
+    },
+    "PTsAZTt7Lv8ccLelOBFAI": {
+      "id": "PTsAZTt7Lv8ccLelOBFAI",
+      "title": "Lecture 7",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "ceramic-and-intro-to-wood": {
+          "type": "header",
+          "text": "Ceramic and Intro to Wood",
+          "value": "ceramic-and-intro-to-wood",
+          "line": 8,
+          "column": 0
+        },
+        "firing-stages-of-clay": {
+          "type": "header",
+          "text": "Firing stages of clay",
+          "value": "firing-stages-of-clay",
+          "line": 10,
+          "column": 0
+        },
+        "colors-of-material-at-different-temperature": {
+          "type": "header",
+          "text": "Colors of material at different temperature",
+          "value": "colors-of-material-at-different-temperature",
+          "line": 22,
+          "column": 0
+        },
+        "quartz-inversion-temperature": {
+          "type": "header",
+          "text": "Quartz Inversion Temperature",
+          "value": "quartz-inversion-temperature",
+          "line": 26,
+          "column": 0
+        },
+        "sintering": {
+          "type": "header",
+          "text": "Sintering",
+          "value": "sintering",
+          "line": 37,
+          "column": 0
+        },
+        "vitrification": {
+          "type": "header",
+          "text": "Vitrification",
+          "value": "vitrification",
+          "line": 45,
+          "column": 0
+        },
+        "glazing": {
+          "type": "header",
+          "text": "Glazing",
+          "value": "glazing",
+          "line": 58,
+          "column": 0
+        },
+        "summary-of-stages-of-clay": {
+          "type": "header",
+          "text": "Summary of stages of clay",
+          "value": "summary-of-stages-of-clay",
+          "line": 64,
+          "column": 0
+        },
+        "extra-points": {
+          "type": "header",
+          "text": "Extra Points",
+          "value": "extra-points",
+          "line": 72,
+          "column": 0
+        },
+        "wood": {
+          "type": "header",
+          "text": "Wood",
+          "value": "wood",
+          "line": 78,
+          "column": 0
+        },
+        "surfaces-of-wood": {
+          "type": "header",
+          "text": "Surfaces of wood",
+          "value": "surfaces-of-wood",
+          "line": 85,
+          "column": 0
+        },
+        "important-timbers": {
+          "type": "header",
+          "text": "Important timbers",
+          "value": "important-timbers",
+          "line": 96,
+          "column": 0
+        },
+        "types-of-wood": {
+          "type": "header",
+          "text": "Types of wood",
+          "value": "types-of-wood",
+          "line": 100,
+          "column": 0
+        },
+        "components-of-wood": {
+          "type": "header",
+          "text": "Components of wood",
+          "value": "components-of-wood",
+          "line": 105,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Heritage Conservation.Lecture 7",
+      "updated": 1631422082854,
+      "created": 1631343362460,
+      "parent": "znYlAnqQDCB58XxxMMdIl",
+      "children": [],
+      "data": {},
+      "contentHash": "c3bdd01d23f735055dbf0f11577fed3b",
+      "custom": {}
+    },
+    "S13mRMe5KEfZGNDi8vrYA": {
+      "id": "S13mRMe5KEfZGNDi8vrYA",
+      "title": "Lecture 6",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "steel-and-ceramics": {
+          "type": "header",
+          "text": "Steel and Ceramics",
+          "value": "steel-and-ceramics",
+          "line": 8,
+          "column": 0
+        },
+        "stainless-steel": {
+          "type": "header",
+          "text": "Stainless Steel",
+          "value": "stainless-steel",
+          "line": 10,
+          "column": 0
+        },
+        "ceramics": {
+          "type": "header",
+          "text": "Ceramics",
+          "value": "ceramics",
+          "line": 31,
+          "column": 0
+        },
+        "types-of-clay": {
+          "type": "header",
+          "text": "Types of clay",
+          "value": "types-of-clay",
+          "line": 48,
+          "column": 0
+        },
+        "stages-of-clay": {
+          "type": "header",
+          "text": "Stages of clay",
+          "value": "stages-of-clay",
+          "line": 55,
+          "column": 0
+        },
+        "extra-points": {
+          "type": "header",
+          "text": "Extra Points",
+          "value": "extra-points",
+          "line": 60,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Heritage Conservation.Lecture 6",
+      "updated": 1631340044746,
+      "created": 1631335927151,
+      "parent": "znYlAnqQDCB58XxxMMdIl",
+      "children": [],
+      "data": {},
+      "contentHash": "7ca23887bfab6e51a9777227f34f803e",
+      "custom": {}
+    },
+    "JHVJ2hlBVm0Yi7zxFM08w": {
+      "id": "JHVJ2hlBVm0Yi7zxFM08w",
+      "title": "Lecture 5",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "patina-and-metal-oxide": {
+          "type": "header",
+          "text": "Patina and Metal Oxide",
+          "value": "patina-and-metal-oxide",
+          "line": 8,
+          "column": 0
+        },
+        "patina-continued": {
+          "type": "header",
+          "text": "Patina Continued.",
+          "value": "patina-continued",
+          "line": 10,
+          "column": 0
+        },
+        "malachite-and-azurite-formation": {
+          "type": "header",
+          "text": "Malachite and Azurite formation",
+          "value": "malachite-and-azurite-formation",
+          "line": 29,
+          "column": 0
+        },
+        "iron-oxide": {
+          "type": "header",
+          "text": "Iron Oxide",
+          "value": "iron-oxide",
+          "line": 43,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Heritage Conservation.Lecture 5",
+      "updated": 1631299812342,
+      "created": 1631296209108,
+      "parent": "znYlAnqQDCB58XxxMMdIl",
+      "children": [],
+      "data": {},
+      "contentHash": "5bc72cf7bdee75a1d397ba68f425c0b3",
+      "custom": {}
+    },
+    "0FioDgzoBdkgjvixTwIfa": {
+      "id": "0FioDgzoBdkgjvixTwIfa",
+      "title": "Lecture 4",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "electrochemical-series-and-more-on-metals": {
+          "type": "header",
+          "text": "Electrochemical series and more on metals",
+          "value": "electrochemical-series-and-more-on-metals",
+          "line": 8,
+          "column": 0
+        },
+        "electrochemical-series": {
+          "type": "header",
+          "text": "Electrochemical Series",
+          "value": "electrochemical-series",
+          "line": 16,
+          "column": 0
+        },
+        "galvanic-cell": {
+          "type": "header",
+          "text": "Galvanic Cell",
+          "value": "galvanic-cell",
+          "line": 35,
+          "column": 0
+        },
+        "tarnising-of-silver": {
+          "type": "header",
+          "text": "Tarnising of silver",
+          "value": "tarnising-of-silver",
+          "line": 49,
+          "column": 0
+        },
+        "types-of-oxide": {
+          "type": "header",
+          "text": "Types of oxide",
+          "value": "types-of-oxide",
+          "line": 62,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Heritage Conservation.Lecture 4",
+      "updated": 1631296115136,
+      "created": 1631276732938,
+      "parent": "znYlAnqQDCB58XxxMMdIl",
+      "children": [],
+      "data": {},
+      "contentHash": "eca3df20e1dbb6150a17173d89322421",
+      "custom": {}
+    },
+    "ZtXmtQgzVVdhNp7thfrI2": {
+      "id": "ZtXmtQgzVVdhNp7thfrI2",
+      "title": "Lecture 3",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "hardness-of-stones-and-introduction-to-metals": {
+          "type": "header",
+          "text": "Hardness of Stones and Introduction to metals",
+          "value": "hardness-of-stones-and-introduction-to-metals",
+          "line": 9,
+          "column": 0
+        },
+        "mohs-hardness-scale": {
+          "type": "header",
+          "text": "Mohs Hardness Scale",
+          "value": "mohs-hardness-scale",
+          "line": 11,
+          "column": 0
+        },
+        "use-of-stones-in-monuments": {
+          "type": "header",
+          "text": "Use of stones in monuments",
+          "value": "use-of-stones-in-monuments",
+          "line": 32,
+          "column": 0
+        },
+        "extra-points": {
+          "type": "header",
+          "text": "Extra Points",
+          "value": "extra-points",
+          "line": 53,
+          "column": 0
+        },
+        "extra-points-1": {
+          "type": "header",
+          "text": "Extra Points",
+          "value": "extra-points-1",
+          "line": 82,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Heritage Conservation.Lecture 3",
+      "updated": 1631276687371,
+      "created": 1631265091571,
+      "parent": "znYlAnqQDCB58XxxMMdIl",
+      "children": [],
+      "data": {},
+      "contentHash": "cde5838feed3b523eab65a7fc74596ba",
+      "custom": {}
+    },
+    "ZZhXX466ntkC7KeWZov6p": {
+      "id": "ZZhXX466ntkC7KeWZov6p",
+      "title": "Lecture 2",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "observing-sculptures-and-studying-stones": {
+          "type": "header",
+          "text": "Observing sculptures and studying stones",
+          "value": "observing-sculptures-and-studying-stones",
+          "line": 8,
+          "column": 0
+        },
+        "sorry-for-the-inconvinience-but-please-refer-this-site-for-lecture-2-notes": {
+          "type": "header",
+          "text": "Sorry for the inconvinience but please refer this site for lecture 2 notes.",
+          "value": "sorry-for-the-inconvinience-but-please-refer-this-site-for-lecture-2-notes",
+          "line": 10,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Heritage Conservation.Lecture 2",
+      "updated": 1631265052720,
+      "created": 1631265004033,
+      "parent": "znYlAnqQDCB58XxxMMdIl",
+      "children": [],
+      "data": {},
+      "contentHash": "c38f0d3e08a3a6929438af9f6c1c107b",
+      "custom": {}
+    },
+    "54UG6OenTE0aRCaRqbb5Q": {
+      "id": "54UG6OenTE0aRCaRqbb5Q",
+      "title": "Lecture 15",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "paintings-cont": {
+          "type": "header",
+          "text": "Paintings (Cont.)",
+          "value": "paintings-cont",
+          "line": 8,
+          "column": 0
+        },
+        "acrylic-painting": {
+          "type": "header",
+          "text": "Acrylic Painting",
+          "value": "acrylic-painting",
+          "line": 14,
+          "column": 0
+        },
+        "fresco-painting": {
+          "type": "header",
+          "text": "Fresco Painting",
+          "value": "fresco-painting",
+          "line": 28,
+          "column": 0
+        },
+        "extra-points": {
+          "type": "header",
+          "text": "Extra Points",
+          "value": "extra-points",
+          "line": 45,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Heritage Conservation.Lecture 15",
+      "updated": 1634462653360,
+      "created": 1634454839757,
+      "parent": "znYlAnqQDCB58XxxMMdIl",
+      "children": [],
+      "data": {},
+      "contentHash": "6133e07fbd43d1752bbea7bb3e76c71d",
+      "custom": {}
+    },
+    "HFGrSrOHbY9vSu2OTCDm2": {
+      "id": "HFGrSrOHbY9vSu2OTCDm2",
+      "title": "Lecture 14",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "paintings-cont": {
+          "type": "header",
+          "text": "Paintings (Cont.)",
+          "value": "paintings-cont",
+          "line": 8,
+          "column": 0
+        },
+        "types-of-paint": {
+          "type": "header",
+          "text": "Types of paint",
+          "value": "types-of-paint",
+          "line": 10,
+          "column": 0
+        },
+        "encaustic-painting": {
+          "type": "header",
+          "text": "Encaustic Painting",
+          "value": "encaustic-painting",
+          "line": 14,
+          "column": 0
+        },
+        "watercolor-painting": {
+          "type": "header",
+          "text": "Watercolor Painting",
+          "value": "watercolor-painting",
+          "line": 19,
+          "column": 0
+        },
+        "tempera-painting": {
+          "type": "header",
+          "text": "Tempera Painting",
+          "value": "tempera-painting",
+          "line": 24,
+          "column": 0
+        },
+        "goache-painting": {
+          "type": "header",
+          "text": "Goache Painting",
+          "value": "goache-painting",
+          "line": 28,
+          "column": 0
+        },
+        "difference-between-the-three": {
+          "type": "header",
+          "text": "Difference between the three",
+          "value": "difference-between-the-three",
+          "line": 32,
+          "column": 0
+        },
+        "casein-painting": {
+          "type": "header",
+          "text": "Casein Painting",
+          "value": "casein-painting",
+          "line": 36,
+          "column": 0
+        },
+        "oil-painting": {
+          "type": "header",
+          "text": "Oil Painting",
+          "value": "oil-painting",
+          "line": 40,
+          "column": 0
+        },
+        "extra-points": {
+          "type": "header",
+          "text": "Extra Points",
+          "value": "extra-points",
+          "line": 45,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Heritage Conservation.Lecture 14",
+      "updated": 1634453313174,
+      "created": 1634452274637,
+      "parent": "znYlAnqQDCB58XxxMMdIl",
+      "children": [],
+      "data": {},
+      "contentHash": "c89ce0cd23ebded5a66f57095ac19eae",
+      "custom": {}
+    },
+    "GSWww183ePaI3f6BfvI2G": {
+      "id": "GSWww183ePaI3f6BfvI2G",
+      "title": "Lecture 13",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "textiles-cont": {
+          "type": "header",
+          "text": "Textiles (Cont.)",
+          "value": "textiles-cont",
+          "line": 9,
+          "column": 0
+        },
+        "assignment-details": {
+          "type": "header",
+          "text": "Assignment Details",
+          "value": "assignment-details",
+          "line": 11,
+          "column": 0
+        },
+        "physical-properties-of-silk": {
+          "type": "header",
+          "text": "Physical Properties of Silk",
+          "value": "physical-properties-of-silk",
+          "line": 28,
+          "column": 0
+        },
+        "chemical-properties-of-silk": {
+          "type": "header",
+          "text": "Chemical Properties of Silk",
+          "value": "chemical-properties-of-silk",
+          "line": 40,
+          "column": 0
+        },
+        "physical-properties-of-wool": {
+          "type": "header",
+          "text": "Physical Properties of Wool",
+          "value": "physical-properties-of-wool",
+          "line": 44,
+          "column": 0
+        },
+        "chemical-properties-of-wool": {
+          "type": "header",
+          "text": "Chemical Properties of Wool",
+          "value": "chemical-properties-of-wool",
+          "line": 48,
+          "column": 0
+        },
+        "physical-properties-of-rayon": {
+          "type": "header",
+          "text": "Physical Properties of Rayon",
+          "value": "physical-properties-of-rayon",
+          "line": 52,
+          "column": 0
+        },
+        "pigment": {
+          "type": "header",
+          "text": "Pigment",
+          "value": "pigment",
+          "line": 74,
+          "column": 0
+        },
+        "binder": {
+          "type": "header",
+          "text": "Binder",
+          "value": "binder",
+          "line": 80,
+          "column": 0
+        },
+        "solvent": {
+          "type": "header",
+          "text": "Solvent",
+          "value": "solvent",
+          "line": 84,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Heritage Conservation.Lecture 13",
+      "updated": 1634436927596,
+      "created": 1634435550600,
+      "parent": "znYlAnqQDCB58XxxMMdIl",
+      "children": [],
+      "data": {},
+      "contentHash": "b04427057b0dd7f15c63e731d64384d0",
+      "custom": {}
+    },
+    "wcBxmYgYJWMiVUmPvitiq": {
+      "id": "wcBxmYgYJWMiVUmPvitiq",
+      "title": "Lecture 12",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "textiles": {
+          "type": "header",
+          "text": "Textiles",
+          "value": "textiles",
+          "line": 8,
+          "column": 0
+        },
+        "properties": {
+          "type": "header",
+          "text": "Properties",
+          "value": "properties",
+          "line": 10,
+          "column": 0
+        },
+        "difference-between-cellulose-fibres-and-synthetic-fibres": {
+          "type": "header",
+          "text": "Difference between cellulose fibres and synthetic fibres",
+          "value": "difference-between-cellulose-fibres-and-synthetic-fibres",
+          "line": 25,
+          "column": 0
+        },
+        "physical-properties-of-cotton": {
+          "type": "header",
+          "text": "Physical Properties of Cotton",
+          "value": "physical-properties-of-cotton",
+          "line": 30,
+          "column": 0
+        },
+        "chemical-properties-of-cotton": {
+          "type": "header",
+          "text": "Chemical Properties of Cotton",
+          "value": "chemical-properties-of-cotton",
+          "line": 34,
+          "column": 0
+        },
+        "extra-points": {
+          "type": "header",
+          "text": "Extra Points",
+          "value": "extra-points",
+          "line": 38,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Heritage Conservation.Lecture 12",
+      "updated": 1634401556028,
+      "created": 1634401556028,
+      "parent": "znYlAnqQDCB58XxxMMdIl",
+      "children": [],
+      "data": {},
+      "contentHash": "ecc0742cefa4defc603545d429455138",
+      "custom": {}
+    },
+    "hZ6cyNep6GRt4D7cm7pJ8": {
+      "id": "hZ6cyNep6GRt4D7cm7pJ8",
+      "title": "Lecture 11",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "paper-cont": {
+          "type": "header",
+          "text": "Paper (Cont.)",
+          "value": "paper-cont",
+          "line": 9,
+          "column": 0
+        },
+        "bleaching-cont": {
+          "type": "header",
+          "text": "Bleaching (Cont.)",
+          "value": "bleaching-cont",
+          "line": 11,
+          "column": 0
+        },
+        "sizing-and-loading": {
+          "type": "header",
+          "text": "Sizing and Loading",
+          "value": "sizing-and-loading",
+          "line": 19,
+          "column": 0
+        },
+        "inks": {
+          "type": "header",
+          "text": "Inks",
+          "value": "inks",
+          "line": 32,
+          "column": 0
+        },
+        "extra-points": {
+          "type": "header",
+          "text": "Extra Points",
+          "value": "extra-points",
+          "line": 48,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Heritage Conservation.Lecture 11",
+      "updated": 1634390440605,
+      "created": 1634389501389,
+      "parent": "znYlAnqQDCB58XxxMMdIl",
+      "children": [],
+      "data": {},
+      "contentHash": "86017bbb8f30c0f40bc2c83ccf594b9c",
+      "custom": {}
+    },
+    "fIWeJsyAu0iXBEKa5pDNg": {
+      "id": "fIWeJsyAu0iXBEKa5pDNg",
+      "title": "Lecture 10",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "courses.Semester 5.Heritage Conservation.Lecture 10",
+      "updated": 1634389382384,
+      "created": 1634389382384,
+      "parent": "znYlAnqQDCB58XxxMMdIl",
+      "children": [],
+      "data": {},
+      "contentHash": "c4ccfa7a4251f23c85cc61d0a1226373",
+      "custom": {}
+    },
+    "IQHByKf1X1NgQtCFQQDcv": {
+      "id": "IQHByKf1X1NgQtCFQQDcv",
+      "title": "Lecture 1",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "introduction-to-conservation": {
+          "type": "header",
+          "text": "Introduction to Conservation",
+          "value": "introduction-to-conservation",
+          "line": 8,
+          "column": 0
+        },
+        "sorry-for-the-inconvinience-but-please-refer-this-site-for-lecture-1-notes": {
+          "type": "header",
+          "text": "Sorry for the inconvinience but please refer this site for lecture 1 notes.",
+          "value": "sorry-for-the-inconvinience-but-please-refer-this-site-for-lecture-1-notes",
+          "line": 10,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Heritage Conservation.Lecture 1",
+      "updated": 1631264970227,
+      "created": 1630119280412,
+      "parent": "znYlAnqQDCB58XxxMMdIl",
+      "children": [],
+      "data": {},
+      "contentHash": "9060c0d43d846964b089a6cb454332d3",
+      "custom": {}
+    },
+    "a1PatlsCiz7PYsL111lFm": {
+      "id": "a1PatlsCiz7PYsL111lFm",
+      "title": "Embedded Systems",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "courses.Semester 5.Embedded Systems",
+      "updated": 1630119232629,
+      "created": 1630119232629,
+      "parent": "O93aKwUCEnkxTR7S8V2eZ",
+      "children": [
+        "IbE4ihlzc84msD7sorAYL",
+        "sjDNc2DRFAZ8LSFjWvcu0",
+        "A3IsGzAj8XLATmWJDXU5A",
+        "FjnEH5toyyGyyIpRtRodC",
+        "t5cdX6fxpQrMCh8tkP9fh",
+        "XKgcihMxrAqw7yeah2H5J",
+        "oSMzCzU9jSMnJHCl1447e",
+        "3bgfNmBJjy9QGMXUBbfdm",
+        "3XHaaZqNPSJAFq6B7EP2X",
+        "xv8mxFRFgatxB2DTzHTjj",
+        "LkO7xEErH0QpS7h9pjGop",
+        "9895TjdHhFePvrTEJpTuz",
+        "4xlgD7WfeBwYS1JyODxUT"
+      ],
+      "data": {},
+      "contentHash": "c6e2fdfbb1fa14dfc4160dcde8452414",
+      "stub": false,
+      "custom": {
+        "stub": true
+      }
+    },
+    "4xlgD7WfeBwYS1JyODxUT": {
+      "id": "4xlgD7WfeBwYS1JyODxUT",
+      "title": "Midsem Cheatsheet",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "important-tables": {
+          "type": "header",
+          "text": "Important Tables",
+          "value": "important-tables",
+          "line": 10,
+          "column": 0
+        },
+        "tccr0": {
+          "type": "header",
+          "text": "TCCR0",
+          "value": "tccr0",
+          "line": 11,
+          "column": 0
+        },
+        "tccr1a": {
+          "type": "header",
+          "text": "TCCR1A",
+          "value": "tccr1a",
+          "line": 13,
+          "column": 0
+        },
+        "tccr1b": {
+          "type": "header",
+          "text": "TCCR1B",
+          "value": "tccr1b",
+          "line": 15,
+          "column": 0
+        },
+        "tccr2": {
+          "type": "header",
+          "text": "TCCR2",
+          "value": "tccr2",
+          "line": 17,
+          "column": 0
+        },
+        "interrupt-vector-table": {
+          "type": "header",
+          "text": "Interrupt Vector Table",
+          "value": "interrupt-vector-table",
+          "line": 19,
+          "column": 0
+        },
+        "timsk-for-internal-interrupt": {
+          "type": "header",
+          "text": "TIMSK (FOR INTERNAL INTERRUPT)",
+          "value": "timsk-for-internal-interrupt",
+          "line": 21,
+          "column": 0
+        },
+        "mcucr-for-external-interrupt-mode": {
+          "type": "header",
+          "text": "MCUCR (FOR EXTERNAL INTERRUPT MODE)",
+          "value": "mcucr-for-external-interrupt-mode",
+          "line": 23,
+          "column": 0
+        },
+        "gicr": {
+          "type": "header",
+          "text": "GICR",
+          "value": "gicr",
+          "line": 26,
+          "column": 0
+        },
+        "pull-up": {
+          "type": "header",
+          "text": "Pull Up",
+          "value": "pull-up",
+          "line": 30,
+          "column": 0
+        },
+        "important-circuits": {
+          "type": "header",
+          "text": "Important Circuits",
+          "value": "important-circuits",
+          "line": 33,
+          "column": 0
+        },
+        "hex-to-decimal-code": {
+          "type": "header",
+          "text": "Hex To Decimal Code",
+          "value": "hex-to-decimal-code",
+          "line": 37,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Embedded Systems.Midsem Cheatsheet",
+      "updated": 1633174919802,
+      "created": 1633151288354,
+      "parent": "a1PatlsCiz7PYsL111lFm",
+      "children": [],
+      "data": {},
+      "contentHash": "c7e2de83d61729a2f39ba6cf939a5c70",
+      "custom": {}
+    },
+    "9895TjdHhFePvrTEJpTuz": {
+      "id": "9895TjdHhFePvrTEJpTuz",
+      "title": "Lecture 9",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "points": {
+          "type": "header",
+          "text": "Points",
+          "value": "points",
+          "line": 9,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Embedded Systems.Lecture 9",
+      "updated": 1635140067611,
+      "created": 1635140067611,
+      "parent": "a1PatlsCiz7PYsL111lFm",
+      "children": [],
+      "data": {},
+      "contentHash": "16d61d04cdfdc2c7b3a5efbc303a4ee4",
+      "custom": {}
+    },
+    "LkO7xEErH0QpS7h9pjGop": {
+      "id": "LkO7xEErH0QpS7h9pjGop",
+      "title": "LCD's",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "7-segment-led-lcd-and": {
+          "type": "header",
+          "text": "7 Segment LED, LCD and",
+          "value": "7-segment-led-lcd-and",
+          "line": 8,
+          "column": 0
+        },
+        "extra-points": {
+          "type": "header",
+          "text": "Extra Points",
+          "value": "extra-points",
+          "line": 10,
+          "column": 0
+        },
+        "lcds": {
+          "type": "header",
+          "text": "LCD's",
+          "value": "lcds",
+          "line": 53,
+          "column": 0
+        },
+        "4x4-key-board": {
+          "type": "header",
+          "text": "4X4 Key Board",
+          "value": "4x4-key-board",
+          "line": 93,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Embedded Systems.Lecture 8",
+      "updated": 1637847800570,
+      "created": 1634535324275,
+      "parent": "a1PatlsCiz7PYsL111lFm",
+      "children": [],
+      "data": {},
+      "contentHash": "6af53b0e8f423c0674f3bba6a4aa2949",
+      "custom": {}
+    },
+    "xv8mxFRFgatxB2DTzHTjj": {
+      "id": "xv8mxFRFgatxB2DTzHTjj",
+      "title": "Lecture 7",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "avr-interfacing-with-7-segment-leds": {
+          "type": "header",
+          "text": "AVR Interfacing with 7 segment LEDs",
+          "value": "avr-interfacing-with-7-segment-leds",
+          "line": 8,
+          "column": 0
+        },
+        "leds": {
+          "type": "header",
+          "text": "LEDs",
+          "value": "leds",
+          "line": 10,
+          "column": 0
+        },
+        "7-segment-leds": {
+          "type": "header",
+          "text": "7-Segment LEDs",
+          "value": "7-segment-leds",
+          "line": 20,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Embedded Systems.Lecture 7",
+      "updated": 1634529659508,
+      "created": 1634529035499,
+      "parent": "a1PatlsCiz7PYsL111lFm",
+      "children": [],
+      "data": {},
+      "contentHash": "2471b587e745059dddb0aaf1450dcb70",
+      "custom": {}
+    },
+    "3XHaaZqNPSJAFq6B7EP2X": {
+      "id": "3XHaaZqNPSJAFq6B7EP2X",
+      "title": "Lecture 6",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "external-hardware-interrupts": {
+          "type": "header",
+          "text": "External Hardware Interrupts",
+          "value": "external-hardware-interrupts",
+          "line": 8,
+          "column": 0
+        },
+        "activation": {
+          "type": "header",
+          "text": "Activation",
+          "value": "activation",
+          "line": 10,
+          "column": 0
+        },
+        "features": {
+          "type": "header",
+          "text": "Features",
+          "value": "features",
+          "line": 15,
+          "column": 0
+        },
+        "gifr": {
+          "type": "header",
+          "text": "GIFR",
+          "value": "gifr",
+          "line": 27,
+          "column": 0
+        },
+        "minimum-timing-of-interrupt-signal": {
+          "type": "header",
+          "text": "Minimum timing of Interrupt Signal",
+          "value": "minimum-timing-of-interrupt-signal",
+          "line": 33,
+          "column": 0
+        },
+        "examples": {
+          "type": "header",
+          "text": "Examples",
+          "value": "examples",
+          "line": 38,
+          "column": 0
+        },
+        "interrupt-priority": {
+          "type": "header",
+          "text": "Interrupt Priority",
+          "value": "interrupt-priority",
+          "line": 63,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Embedded Systems.Lecture 6",
+      "updated": 1632723791302,
+      "created": 1632723062497,
+      "parent": "a1PatlsCiz7PYsL111lFm",
+      "children": [],
+      "data": {},
+      "contentHash": "8d3e4dc78d118467df87678d15094d10",
+      "custom": {}
+    },
+    "3bgfNmBJjy9QGMXUBbfdm": {
+      "id": "3bgfNmBJjy9QGMXUBbfdm",
+      "title": "Lecture 5",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "timer-cont-and-interrupt": {
+          "type": "header",
+          "text": "Timer (Cont.) and Interrupt",
+          "value": "timer-cont-and-interrupt",
+          "line": 8,
+          "column": 0
+        },
+        "difference-between-timer-0-and-timer-2": {
+          "type": "header",
+          "text": "Difference between timer 0 and timer 2",
+          "value": "difference-between-timer-0-and-timer-2",
+          "line": 10,
+          "column": 0
+        },
+        "timer-1": {
+          "type": "header",
+          "text": "Timer 1",
+          "value": "timer-1",
+          "line": 18,
+          "column": 0
+        },
+        "interrupt": {
+          "type": "header",
+          "text": "Interrupt",
+          "value": "interrupt",
+          "line": 27,
+          "column": 0
+        },
+        "steps-in-executing-an-interrupt": {
+          "type": "header",
+          "text": "Steps in executing an interrupt",
+          "value": "steps-in-executing-an-interrupt",
+          "line": 61,
+          "column": 0
+        },
+        "external-input": {
+          "type": "header",
+          "text": "External Input",
+          "value": "external-input",
+          "line": 68,
+          "column": 0
+        },
+        "extra-points": {
+          "type": "header",
+          "text": "Extra Points",
+          "value": "extra-points",
+          "line": 73,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Embedded Systems.Lecture 5",
+      "updated": 1632881828985,
+      "created": 1632116048406,
+      "parent": "a1PatlsCiz7PYsL111lFm",
+      "children": [],
+      "data": {},
+      "contentHash": "eccdba55f3d52ad741dc660bbf2a1521",
+      "custom": {}
+    },
+    "oSMzCzU9jSMnJHCl1447e": {
+      "id": "oSMzCzU9jSMnJHCl1447e",
+      "title": "Lecture 4",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "timers-cont": {
+          "type": "header",
+          "text": "Timers (Cont.)",
+          "value": "timers-cont",
+          "line": 8,
+          "column": 0
+        },
+        "ctc-mode": {
+          "type": "header",
+          "text": "CTC Mode",
+          "value": "ctc-mode",
+          "line": 62,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Embedded Systems.Lecture 4",
+      "updated": 1631515853885,
+      "created": 1631511523542,
+      "parent": "a1PatlsCiz7PYsL111lFm",
+      "children": [],
+      "data": {},
+      "contentHash": "ce33f3c9e9f2694c236b78f54d5c93c1",
+      "custom": {}
+    },
+    "XKgcihMxrAqw7yeah2H5J": {
+      "id": "XKgcihMxrAqw7yeah2H5J",
+      "title": "Lecture 3",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "timer-cont": {
+          "type": "header",
+          "text": "Timer (Cont.)",
+          "value": "timer-cont",
+          "line": 8,
+          "column": 0
+        },
+        "extra-points": {
+          "type": "header",
+          "text": "Extra Points",
+          "value": "extra-points",
+          "line": 10,
+          "column": 0
+        },
+        "steps-for-programming": {
+          "type": "header",
+          "text": "Steps for programming",
+          "value": "steps-for-programming",
+          "line": 21,
+          "column": 0
+        },
+        "tifr-circuit": {
+          "type": "header",
+          "text": "TIFR Circuit",
+          "value": "tifr-circuit",
+          "line": 30,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Embedded Systems.Lecture 3",
+      "updated": 1630910764458,
+      "created": 1630905993189,
+      "parent": "a1PatlsCiz7PYsL111lFm",
+      "children": [],
+      "data": {},
+      "contentHash": "1992d6ad20e106f38eefbd19b3c92973",
+      "custom": {}
+    },
+    "t5cdX6fxpQrMCh8tkP9fh": {
+      "id": "t5cdX6fxpQrMCh8tkP9fh",
+      "title": "Lecture 2",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "timers": {
+          "type": "header",
+          "text": "Timers",
+          "value": "timers",
+          "line": 8,
+          "column": 0
+        },
+        "timers-in-avr": {
+          "type": "header",
+          "text": "Timers in AVR",
+          "value": "timers-in-avr",
+          "line": 10,
+          "column": 0
+        },
+        "components": {
+          "type": "header",
+          "text": "Components",
+          "value": "components",
+          "line": 22,
+          "column": 0
+        },
+        "circuit-timer-0": {
+          "type": "header",
+          "text": "Circuit (Timer 0)",
+          "value": "circuit-timer-0",
+          "line": 43,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Embedded Systems.Lecture 2",
+      "updated": 1630820936096,
+      "created": 1630817213184,
+      "parent": "a1PatlsCiz7PYsL111lFm",
+      "children": [],
+      "data": {},
+      "contentHash": "1f67db5bc330223cde75a9ac7fe4789c",
+      "custom": {}
+    },
+    "FjnEH5toyyGyyIpRtRodC": {
+      "id": "FjnEH5toyyGyyIpRtRodC",
+      "title": "Lecture 2 (Lab)",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "coding-program-and-examples": {
+          "type": "header",
+          "text": "Coding Program and Examples",
+          "value": "coding-program-and-examples",
+          "line": 8,
+          "column": 0
+        },
+        "extra-points": {
+          "type": "header",
+          "text": "Extra Points",
+          "value": "extra-points",
+          "line": 10,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Embedded Systems.Lecture 2 (Lab)",
+      "updated": 1630813364714,
+      "created": 1630777809064,
+      "parent": "a1PatlsCiz7PYsL111lFm",
+      "children": [],
+      "data": {},
+      "contentHash": "52d44394a1228cc6c133f3f4d773c454",
+      "custom": {}
+    },
+    "A3IsGzAj8XLATmWJDXU5A": {
+      "id": "A3IsGzAj8XLATmWJDXU5A",
+      "title": "Lecture 1",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "introduction-to-embedded-systems": {
+          "type": "header",
+          "text": "Introduction to Embedded Systems",
+          "value": "introduction-to-embedded-systems",
+          "line": 8,
+          "column": 0
+        },
+        "course-material": {
+          "type": "header",
+          "text": "Course Material",
+          "value": "course-material",
+          "line": 10,
+          "column": 0
+        },
+        "evaluation-scheme": {
+          "type": "header",
+          "text": "Evaluation Scheme",
+          "value": "evaluation-scheme",
+          "line": 14,
+          "column": 0
+        },
+        "microprocessor": {
+          "type": "header",
+          "text": "Microprocessor",
+          "value": "microprocessor",
+          "line": 21,
+          "column": 0
+        },
+        "extra-points": {
+          "type": "header",
+          "text": "Extra Points",
+          "value": "extra-points",
+          "line": 30,
+          "column": 0
+        },
+        "classification": {
+          "type": "header",
+          "text": "Classification",
+          "value": "classification",
+          "line": 44,
+          "column": 0
+        },
+        "components": {
+          "type": "header",
+          "text": "Components",
+          "value": "components",
+          "line": 62,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Embedded Systems.Lecture 1",
+      "updated": 1633112144176,
+      "created": 1630119232624,
+      "parent": "a1PatlsCiz7PYsL111lFm",
+      "children": [],
+      "data": {},
+      "contentHash": "add820d75c721943826cda8d99758938",
+      "custom": {}
+    },
+    "sjDNc2DRFAZ8LSFjWvcu0": {
+      "id": "sjDNc2DRFAZ8LSFjWvcu0",
+      "title": "Lecture 1 (Lab)",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "selection-and-coding": {
+          "type": "header",
+          "text": "Selection and Coding",
+          "value": "selection-and-coding",
+          "line": 8,
+          "column": 0
+        },
+        "this-was-the-lab-session-but-theory-was-taught": {
+          "type": "header",
+          "text": "This was the lab session but theory was taught.",
+          "value": "this-was-the-lab-session-but-theory-was-taught",
+          "line": 10,
+          "column": 2
+        },
+        "criterias-to-select-microcontroller": {
+          "type": "header",
+          "text": "Criteria's to select microcontroller",
+          "value": "criterias-to-select-microcontroller",
+          "line": 12,
+          "column": 0
+        },
+        "harvard-vs-princeton": {
+          "type": "header",
+          "text": "Harvard vs Princeton",
+          "value": "harvard-vs-princeton",
+          "line": 41,
+          "column": 0
+        },
+        "risc-vs-cisc": {
+          "type": "header",
+          "text": "RISC vs CISC",
+          "value": "risc-vs-cisc",
+          "line": 48,
+          "column": 0
+        },
+        "avr-microcontrollers": {
+          "type": "header",
+          "text": "AVR Microcontrollers",
+          "value": "avr-microcontrollers",
+          "line": 64,
+          "column": 0
+        },
+        "extra-points": {
+          "type": "header",
+          "text": "Extra points",
+          "value": "extra-points",
+          "line": 80,
+          "column": 0
+        },
+        "examples-of-program": {
+          "type": "header",
+          "text": "Examples of Program",
+          "value": "examples-of-program",
+          "line": 102,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Embedded Systems.Lecture 1 (Lab)",
+      "updated": 1633113352753,
+      "created": 1632801343461,
+      "parent": "a1PatlsCiz7PYsL111lFm",
+      "children": [],
+      "data": {},
+      "contentHash": "eb59d5ff2e50a97eaeea74efcb8b8cee",
+      "custom": {}
+    },
+    "IbE4ihlzc84msD7sorAYL": {
+      "id": "IbE4ihlzc84msD7sorAYL",
+      "title": "Extra Practice Questions",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "folder-link-mid-sem-papers": {
+          "type": "header",
+          "text": "Folder Link Mid sem Papers",
+          "value": "folder-link-mid-sem-papers",
+          "line": 10,
+          "column": 0
+        },
+        "past-year-mid-sem-solutions": {
+          "type": "header",
+          "text": "Past year mid sem solutions",
+          "value": "past-year-mid-sem-solutions",
+          "line": 12,
+          "column": 0
+        },
+        "mid-sem-2020-q6": {
+          "type": "header",
+          "text": "Mid sem 2020 Q6",
+          "value": "mid-sem-2020-q6",
+          "line": 14,
+          "column": 0
+        },
+        "mid-sem-2020-q7": {
+          "type": "header",
+          "text": "Mid sem 2020 Q7",
+          "value": "mid-sem-2020-q7",
+          "line": 48,
+          "column": 0
+        },
+        "mid-sem-2019-q5": {
+          "type": "header",
+          "text": "Mid sem 2019 Q5",
+          "value": "mid-sem-2019-q5",
+          "line": 106,
+          "column": 0
+        },
+        "mid-sem-2019-q6": {
+          "type": "header",
+          "text": "Mid sem 2019 Q6",
+          "value": "mid-sem-2019-q6",
+          "line": 129,
+          "column": 0
+        },
+        "mid-sem-2019-q7": {
+          "type": "header",
+          "text": "Mid sem 2019 Q7",
+          "value": "mid-sem-2019-q7",
+          "line": 158,
+          "column": 0
+        },
+        "mid-sem-2018-q4": {
+          "type": "header",
+          "text": "Mid sem 2018 Q4",
+          "value": "mid-sem-2018-q4",
+          "line": 193,
+          "column": 0
+        },
+        "mid-sem-2018-q5": {
+          "type": "header",
+          "text": "Mid sem 2018 Q5",
+          "value": "mid-sem-2018-q5",
+          "line": 218,
+          "column": 0
+        },
+        "mid-sem-2018-q6": {
+          "type": "header",
+          "text": "Mid sem 2018 Q6",
+          "value": "mid-sem-2018-q6",
+          "line": 248,
+          "column": 0
+        },
+        "question-1": {
+          "type": "header",
+          "text": "Question 1",
+          "value": "question-1",
+          "line": 296,
+          "column": 0
+        },
+        "question-2": {
+          "type": "header",
+          "text": "Question 2",
+          "value": "question-2",
+          "line": 329,
+          "column": 0
+        },
+        "question-3": {
+          "type": "header",
+          "text": "Question 3",
+          "value": "question-3",
+          "line": 359,
+          "column": 0
+        },
+        "question-4": {
+          "type": "header",
+          "text": "Question 4",
+          "value": "question-4",
+          "line": 393,
+          "column": 0
+        },
+        "question-5": {
+          "type": "header",
+          "text": "Question 5",
+          "value": "question-5",
+          "line": 435,
+          "column": 0
+        },
+        "question-6": {
+          "type": "header",
+          "text": "Question 6",
+          "value": "question-6",
+          "line": 479,
+          "column": 0
+        }
+      },
+      "fname": "courses.Semester 5.Embedded Systems.Extra Practice Questions",
+      "updated": 1633248099143,
+      "created": 1633146584123,
+      "parent": "a1PatlsCiz7PYsL111lFm",
+      "children": [],
+      "data": {},
+      "contentHash": "dc5f3ab8db567be0d3802b3944e07ec8",
+      "custom": {}
+    }
+  },
+  "domains": [
+    {
+      "id": "JEvRiJuvqz4mJX4q7zqJs",
+      "title": "Curated Notes",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "root",
+      "updated": 1630150480330,
+      "created": 1629975412335,
+      "parent": null,
+      "children": [
+        "Jq5ki9jf1QLTdc3DYLRW4",
+        "3ONxZ3Khb7nFPdLxlV1ib"
+      ],
+      "data": {},
+      "contentHash": "f8f9737444f7022ec433cdb6d3c7a764",
+      "custom": {
+        "nav_order": 0,
+        "permalink": "/"
+      },
+      "body": "\n\r\n\r\nYou have reached the home page of my curated notes. I am a third year student pursuing Computer Science and Engineering at Ahmedabad University.\r\n\r\nFeel free to use this resource to its best potential and reach out to me on [Linkedin](https://www.linkedin.com/in/sameep-vani/) and do checkout my [GitHub](https://github.com/Sameep1234)\r\n"
+    }
+  ],
+  "noteIndex": {
+    "id": "JEvRiJuvqz4mJX4q7zqJs",
+    "title": "Curated Notes",
+    "vault": {
+      "fsPath": "vault"
+    },
+    "type": "note",
+    "desc": "",
+    "links": [],
+    "anchors": {},
+    "fname": "root",
+    "updated": 1630150480330,
+    "created": 1629975412335,
+    "parent": null,
+    "children": [
+      "Jq5ki9jf1QLTdc3DYLRW4",
+      "3ONxZ3Khb7nFPdLxlV1ib"
+    ],
+    "data": {},
+    "contentHash": "f8f9737444f7022ec433cdb6d3c7a764",
+    "custom": {
+      "nav_order": 0,
+      "permalink": "/"
+    },
+    "body": "\n\r\n\r\nYou have reached the home page of my curated notes. I am a third year student pursuing Computer Science and Engineering at Ahmedabad University.\r\n\r\nFeel free to use this resource to its best potential and reach out to me on [Linkedin](https://www.linkedin.com/in/sameep-vani/) and do checkout my [GitHub](https://github.com/Sameep1234)\r\n"
+  },
+  "vaults": [
+    {
+      "fsPath": "vault"
+    }
+  ]
+}

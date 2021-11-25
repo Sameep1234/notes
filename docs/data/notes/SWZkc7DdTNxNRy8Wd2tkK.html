@@ -1,0 +1,46 @@
+<h1 id="lecture-14"><a aria-hidden="true" class="anchor-heading" href="#lecture-14"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Lecture 14</h1>
+<h2 id="semaphores"><a aria-hidden="true" class="anchor-heading" href="#semaphores"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Semaphores</h2>
+<h2 id="primitives"><a aria-hidden="true" class="anchor-heading" href="#primitives"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Primitives</h2>
+<ul>
+<li>The fundamental principle is that two or more processes can cooperate by means of simple signals, such that a process can be forced to stop at a specified place until it has recieved a specific signal.</li>
+<li>The three operations that it is allowed are initialization, decrement and increment.</li>
+<li><img src="/notes/assets/images/2021-10-24-17-05-31.png"></li>
+<li>count represents how many initial processes can enter a critical section and thus is generally initalized to 1.</li>
+<li>Binary Semaphore Primitives
+<ul>
+<li><img src="/notes/assets/images/2021-10-24-17-14-54.png"></li>
+</ul>
+</li>
+</ul>
+<h2 id="strong-and-weak-semaphore"><a aria-hidden="true" class="anchor-heading" href="#strong-and-weak-semaphore"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Strong and Weak Semaphore</h2>
+<ul>
+<li><img src="/notes/assets/images/2021-10-24-17-17-13.png"></li>
+</ul>
+<h2 id="mutual-exclusion-through-semaphore"><a aria-hidden="true" class="anchor-heading" href="#mutual-exclusion-through-semaphore"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Mutual Exclusion through Semaphore</h2>
+<ul>
+<li><img src="/notes/assets/images/2021-10-24-17-18-14.png"></li>
+<li><strong>mutex</strong> is similar to binary semaphore, the only difference is that the process which called signal is the only one who can unblock the critical section by calling semwait whereas it was vice versa in binary semaphores.</li>
+</ul>
+<h2 id="producerconsumer-problem"><a aria-hidden="true" class="anchor-heading" href="#producerconsumer-problem"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Producer/Consumer Problem</h2>
+<ul>
+<li><img src="/notes/assets/images/2021-10-24-17-22-44.png"></li>
+<li><img src="/notes/assets/images/2021-10-24-17-23-25.png"></li>
+<li>For now assume that buffer is infinite.
+<ul>
+<li><img src="/notes/assets/images/2021-10-24-17-24-44.png"></li>
+<li><img src="/notes/assets/images/2021-10-24-17-27-25.png"></li>
+<li><img src="/notes/assets/images/2021-10-24-17-28-04.png"></li>
+<li>'n' represents how many items can be consumed.</li>
+<li>'s' is the semaphore used for mutual exclusion whereas 'delay' is the semaphore used for synchronization between producer process and consumer process.</li>
+<li>We have used binary semaphore here.</li>
+<li>The consumer will wait untill producer starts producing.</li>
+<li>Issues
+<ul>
+<li><img src="/notes/assets/images/2021-10-24-17-33-42.png"></li>
+<li><img src="/notes/assets/images/2021-10-24-17-36-03.png"></li>
+<li>Process switch is not handled properly.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>

@@ -1,0 +1,102 @@
+<h1 id="lecture-4"><a aria-hidden="true" class="anchor-heading" href="#lecture-4"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Lecture 4</h1>
+<h2 id="timers-cont"><a aria-hidden="true" class="anchor-heading" href="#timers-cont"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Timers (Cont.)</h2>
+<blockquote>
+<p>Program to generate square wave of time period 100 micro second on Pin 1 of Port A and clock frequency of 1Mz</p>
+</blockquote>
+<pre class="language-c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&#x3C;avr/io.h></span></span>
+
+<span class="token keyword">void</span> <span class="token function">T0Delay</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    TCNT0 <span class="token operator">=</span> <span class="token number">206</span><span class="token punctuation">;</span> <span class="token comment">// Time delay is of 50 microseconds and not 100 microseconds.</span>
+    TCCR0 <span class="token operator">=</span> <span class="token number">0x01</span><span class="token punctuation">;</span> <span class="token comment">// Normal mode and no prescaling</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token punctuation">(</span>TIFR <span class="token operator">&#x26;</span> <span class="token number">0x1</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Check for counter</span>
+    TCCR0 <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token comment">// Stop the clock</span>
+    TIFR <span class="token operator">=</span> <span class="token number">0x1</span><span class="token punctuation">;</span> <span class="token comment">// Reset flags</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    DDRA <span class="token operator">=</span> <span class="token number">0x02</span><span class="token punctuation">;</span> <span class="token comment">// Define PIN 1 of PORTA to be ouput</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        PORTA <span class="token operator">=</span> <span class="token number">0x02</span><span class="token punctuation">;</span> <span class="token comment">// Turn PIN 1 of PORTA on</span>
+        <span class="token function">T0Delay</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Provide time delay</span>
+        PORTA <span class="token operator">=</span> <span class="token number">0x00</span><span class="token punctuation">;</span> <span class="token comment">// Turn PIN 1 of PORTA off</span>
+        <span class="token function">T0Delay</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Proivde time delay</span>
+        <span class="token comment">// This will generate a square wave form.</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<hr>
+<blockquote>
+<p><img src="/notes/assets/images/2021-09-13-11-42-59.png"></p>
+</blockquote>
+<ul>
+<li>The outside signal will come from pins of ports as they can have alternate functions too.</li>
+<li>These pins will take the input from port.</li>
+<li>Follow this for more functions
+<ul>
+<li><img src="/notes/assets/images/2021-09-13-11-44-23.png"></li>
+</ul>
+</li>
+<li>For internal purpose, assume that the clock frequency is 1Mz. <strong>Note that 1Hz is from outside world.</strong></li>
+</ul>
+<pre class="language-c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&#x3C;avr/io.h></span></span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    DDRB <span class="token operator">=</span> <span class="token number">0x00</span><span class="token punctuation">;</span> <span class="token comment">// Declare whole port as input because this is where external signal will arrive.</span>
+    DDRC <span class="token operator">=</span> <span class="token number">0xFF</span><span class="token punctuation">;</span> <span class="token comment">// Declare whole port as output because this is where we will be displaying the count of TCNT.</span>
+    PORTB <span class="token operator">=</span> <span class="token number">0x00</span><span class="token punctuation">;</span> <span class="token comment">// Set PORTB to 0</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// Run forever</span>
+        TCCR0 <span class="token operator">=</span> <span class="token number">0x06</span><span class="token punctuation">;</span> <span class="token comment">// External clock with falling edge value from the table</span>
+        PORTC <span class="token operator">=</span> TCNT0<span class="token punctuation">;</span> <span class="token comment">// Display contents of TCNT0 on PORTC</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="ctc-mode"><a aria-hidden="true" class="anchor-heading" href="#ctc-mode"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>CTC Mode</h2>
+<ul>
+<li>It is compare mode. This means that instead of going till 0xFF, it will drop at the set value.</li>
+<li>It may or may not be equal to 0xFF.</li>
+<li>Now to compare the flag, we compare with 0x02. (i.e flag 1 instead of flag 0).</li>
+<li><strong>This is because the overflow flag is not affected, the compare flag is affected.</strong></li>
+</ul>
+<blockquote>
+<p>Program to generate a square wave of time period 150 microseconds on PIN 1 of PORT A. Assume cystal frequency = 1MHz. use timer in CTC mode.</p>
+</blockquote>
+<ul>
+<li>Note that the delay of 150 microseconds is for the whole wave.</li>
+<li>Thus, if we need a delay for only one part of the wave, we need to use a delay of 75 microseconds.</li>
+<li>Now we want to write the value of OCR0.</li>
+<li>Make sure to change the value of TCCR0 for CTC mode.</li>
+<li>Now, the time duration will depend not only on TCNT0 but also on OCR0.</li>
+<li>In normal mode, we are concerned with FF - TCNT0 value but here we are concerned with OCR0 - TCNT0 which must be 75.</li>
+<li>Note that one must always be careful about which flag are we going to use.</li>
+<li>In <strong>normal mode</strong>, we are waiting for <strong>overflow flag</strong> whereas in <strong>CTC mode</strong> we are waiting for the <strong>compare flag</strong>.</li>
+<li>For simplicity, you can put TCNT0 value to be 0 and OCR0 value to be 75. <strong>The concept remains the same i.e OCR-TCNT should be 75.</strong></li>
+<li></li>
+</ul>
+<pre class="language-c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&#x3C;avr/io.h></span></span>
+
+<span class="token keyword">void</span> <span class="token function">T0Delay</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    TCNT0 <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token comment">// TCNT0 = 0</span>
+    OCR0 <span class="token operator">=</span> <span class="token number">75</span><span class="token punctuation">;</span> <span class="token comment">// OCR0 - TCNT0 = 75 and TCNT0 = 0</span>
+    TCCR0 <span class="token operator">=</span> <span class="token number">0x09</span><span class="token punctuation">;</span> <span class="token comment">// TCCR0 value for CTC mode and no prescaling</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span> <span class="token punctuation">(</span>TIFR <span class="token operator">&#x26;</span> <span class="token number">0x2</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Check 1st bit</span>
+    TCCR0 <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token comment">// Stop clock</span>
+    TIFR <span class="token operator">=</span> <span class="token number">0x2</span><span class="token punctuation">;</span> <span class="token comment">// Reset flags</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    DDRA <span class="token operator">=</span> <span class="token number">0x02</span><span class="token punctuation">;</span> <span class="token comment">// Set PORTA.1 as output pin</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// Run forever</span>
+        PORTA <span class="token operator">=</span> PORTA <span class="token operator">^</span> <span class="token number">0x02</span><span class="token punctuation">;</span> <span class="token comment">// Toggle value at PORTA</span>
+        <span class="token function">T0Delay</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Apply time delay</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<ul>
+<li>Now suppose, we start the value of TCNT0 with 200, then how will the OCR value change?</li>
+<li>For this case, we find the extra distance i.e find from where it "rolls over".</li>
+<li>Thus, the value of OCR must be 19 becuase from 200 to 256, we would have covered 56 values and then 19 values remain to provide a proper delay of 75 microseconds.</li>
+</ul>

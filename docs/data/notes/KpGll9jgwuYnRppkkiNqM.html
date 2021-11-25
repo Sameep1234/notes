@@ -1,0 +1,93 @@
+<h1 id="lecture-12"><a aria-hidden="true" class="anchor-heading" href="#lecture-12"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Lecture 12</h1>
+<h2 id="concurrency"><a aria-hidden="true" class="anchor-heading" href="#concurrency"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Concurrency</h2>
+<h2 id="principles-of-concurrency"><a aria-hidden="true" class="anchor-heading" href="#principles-of-concurrency"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Principles of Concurrency</h2>
+<ul>
+<li><img src="/notes/assets/images/2021-10-12-23-55-10.png"></li>
+<li>Interaction of processes mean sharing, synchronization etc.</li>
+<li><img src="/notes/assets/images/2021-10-12-23-56-09.png"></li>
+</ul>
+<h2 id="key-terms"><a aria-hidden="true" class="anchor-heading" href="#key-terms"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Key Terms</h2>
+<ul>
+<li><img src="/notes/assets/images/2021-10-12-23-59-05.png"></li>
+<li><img src="/notes/assets/images/2021-10-12-23-59-21.png"></li>
+<li>Greatest example of deadlock is traffic jam at a cross road where none of the cars are able to move.</li>
+<li><img src="/notes/assets/images/2021-10-13-00-00-27.png"></li>
+<li>Race Condition: Suppose that two threads are trying to change a variable's value.</li>
+<li>The final value will be defined by that thread which executes later and thus realtive timeing of execution is important.</li>
+<li>Uniprocessor
+<ul>
+<li><img src="/notes/assets/images/2021-10-13-00-02-50.png"></li>
+</ul>
+</li>
+<li>Multiprocessor
+<ul>
+<li><img src="/notes/assets/images/2021-10-13-00-03-49.png"></li>
+</ul>
+</li>
+</ul>
+<h2 id="difficulties-in-concurrency"><a aria-hidden="true" class="anchor-heading" href="#difficulties-in-concurrency"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Difficulties in Concurrency</h2>
+<ul>
+<li><img src="/notes/assets/images/2021-10-13-00-04-49.png"></li>
+<li>If the global resource is not handled properly than it might be left in some adverse state which is not desired.</li>
+</ul>
+<h2 id="enforce-single-access"><a aria-hidden="true" class="anchor-heading" href="#enforce-single-access"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Enforce Single Access</h2>
+<ul>
+<li><img src="/notes/assets/images/2021-10-13-00-11-05.png"></li>
+<li>This method is similar to that of Serial programming whereas each process is executed one after the other.</li>
+</ul>
+<h2 id="os-role-in-solving-difficulties"><a aria-hidden="true" class="anchor-heading" href="#os-role-in-solving-difficulties"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>OS Role in solving difficulties</h2>
+<ul>
+<li><img src="/notes/assets/images/2021-10-13-00-13-01.png"></li>
+<li>Recap: OS keeps track of various processes with the help of PCBs.</li>
+</ul>
+<h2 id="process-interaction"><a aria-hidden="true" class="anchor-heading" href="#process-interaction"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Process Interaction</h2>
+<ul>
+<li><img src="/notes/assets/images/2021-10-13-00-14-30.png"></li>
+<li>Renewable resource means that a resource that can be used by other process even after completion of one process. Eg. Printer</li>
+<li>Consumable resource means that a resource that can not be used by other processes after completion of one process. Eg. Message communication.</li>
+</ul>
+<h2 id="mutual-exclusion"><a aria-hidden="true" class="anchor-heading" href="#mutual-exclusion"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Mutual Exclusion</h2>
+<ul>
+<li>Requirements
+<ul>
+<li><img src="/notes/assets/images/2021-10-13-00-22-32.png"></li>
+<li><img src="/notes/assets/images/2021-10-13-00-24-38.png"></li>
+<li><img src="/notes/assets/images/2021-10-13-00-26-53.png"></li>
+<li>Critical section means a particular code section which uses the same shared resource.</li>
+</ul>
+</li>
+</ul>
+<h2 id="approaches-to-mutual-exclusion"><a aria-hidden="true" class="anchor-heading" href="#approaches-to-mutual-exclusion"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Approaches to Mutual Exclusion</h2>
+<ul>
+<li><img src="/notes/assets/images/2021-10-13-00-27-54.png"></li>
+<li><img src="/notes/assets/images/2021-10-13-00-28-37.png"></li>
+<li>Support from Programming language or OS - Java has synchronize constructor (will be covered in depth later).</li>
+</ul>
+<h2 id="hardware-support-for-mutual-exclusion"><a aria-hidden="true" class="anchor-heading" href="#hardware-support-for-mutual-exclusion"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Hardware Support for Mutual Exclusion</h2>
+<ul>
+<li>Disabling Interrupts
+<ul>
+<li><img src="/notes/assets/images/2021-10-13-00-30-01.png"></li>
+<li>Suppose a process is in critical section and is executing an operation on I/O.</li>
+<li>If, due to some reasons, the process is interrupted and blocked, then only the other process has the chance of getting executed in the same critical section.</li>
+<li>This can be thus solved by disabling the interrupts before entering the critical section.</li>
+<li>Issues
+<ul>
+<li><img src="/notes/assets/images/2021-10-13-00-32-45.png"></li>
+</ul>
+</li>
+<li>Solution
+<ul>
+<li><img src="/notes/assets/images/2021-10-13-00-33-48.png"></li>
+<li><img src="/notes/assets/images/2021-10-13-00-34-32.png"></li>
+<li><img src="/notes/assets/images/2021-10-13-00-34-49.png"></li>
+<li>Refer book for more info on compare and swap and exchange instruction.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="extra-points"><a aria-hidden="true" class="anchor-heading" href="#extra-points"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Extra Points</h2>
+<ul>
+<li><img src="/notes/assets/images/2021-10-13-00-21-32.png"></li>
+</ul>
