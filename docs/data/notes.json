@@ -11,8 +11,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1637851221915,
-      "created": 1637851221915,
+      "updated": 1637899791564,
+      "created": 1637899791564,
       "parent": null,
       "children": [],
       "data": {}
@@ -4876,27 +4876,19 @@
       "type": "note",
       "desc": "",
       "links": [],
-      "anchors": {
-        "points": {
-          "type": "header",
-          "text": "Points",
-          "value": "points",
-          "line": 10,
-          "column": 0
-        }
-      },
+      "anchors": {},
       "fname": "courses.Semester 5.Embedded Systems.Lecture 9",
-      "updated": 1635140067611,
+      "updated": 1637898856515,
       "created": 1635140067611,
       "parent": "a1PatlsCiz7PYsL111lFm",
       "children": [],
       "data": {},
-      "contentHash": "ae3b75779e5fa536c162f9ad382f06ad",
+      "contentHash": "93bd7bf16d13c34658af0edcbb36ec3d",
       "custom": {}
     },
     "bWX1sy8vnuriP2UeDbKAm": {
       "id": "bWX1sy8vnuriP2UeDbKAm",
-      "title": "LCD's",
+      "title": "Lecture 8",
       "vault": {
         "fsPath": "vault"
       },
@@ -4939,7 +4931,7 @@
       "parent": "a1PatlsCiz7PYsL111lFm",
       "children": [],
       "data": {},
-      "contentHash": "b6430ae522121fed2a7ff8e1d197faa8",
+      "contentHash": "eb3eba1f01e73725a8404d653f46a406",
       "custom": {}
     },
     "kYVvIrc2ZBNxaE7rztQ0H": {
@@ -5583,13 +5575,13 @@
         "3ONxZ3Khb7nFPdLxlV1ib",
         "Z2JlSyF7TPv3hFanVQhJd"
       ],
-      "body": "\n\r\n\r\nYou have reached the home page of my curated notes. I am a third year student pursuing Computer Science and Engineering at Ahmedabad University.\r\n\r\nFeel free to use this resource to its best potential and reach out to me on [Linkedin](https://www.linkedin.com/in/sameep-vani/) and do checkout my [GitHub](https://github.com/Sameep1234)\r\n",
       "data": {},
       "contentHash": "e9b530a3175371dde392f83db6e59628",
       "custom": {
         "nav_order": 0,
         "permalink": "/"
-      }
+      },
+      "body": "\n\r\n\r\nYou have reached the home page of my curated notes. I am a third year student pursuing Computer Science and Engineering at Ahmedabad University.\r\n\r\nFeel free to use this resource to its best potential and reach out to me on [Linkedin](https://www.linkedin.com/in/sameep-vani/) and do checkout my [GitHub](https://github.com/Sameep1234)\r\n"
     }
   ],
   "noteIndex": {
@@ -5611,13 +5603,13 @@
       "3ONxZ3Khb7nFPdLxlV1ib",
       "Z2JlSyF7TPv3hFanVQhJd"
     ],
-    "body": "\n\r\n\r\nYou have reached the home page of my curated notes. I am a third year student pursuing Computer Science and Engineering at Ahmedabad University.\r\n\r\nFeel free to use this resource to its best potential and reach out to me on [Linkedin](https://www.linkedin.com/in/sameep-vani/) and do checkout my [GitHub](https://github.com/Sameep1234)\r\n",
     "data": {},
     "contentHash": "e9b530a3175371dde392f83db6e59628",
     "custom": {
       "nav_order": 0,
       "permalink": "/"
-    }
+    },
+    "body": "\n\r\n\r\nYou have reached the home page of my curated notes. I am a third year student pursuing Computer Science and Engineering at Ahmedabad University.\r\n\r\nFeel free to use this resource to its best potential and reach out to me on [Linkedin](https://www.linkedin.com/in/sameep-vani/) and do checkout my [GitHub](https://github.com/Sameep1234)\r\n"
   },
   "vaults": [
     {

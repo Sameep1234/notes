@@ -1,5 +1,93 @@
 <h1 id="lecture-9"><a aria-hidden="true" class="anchor-heading" href="#lecture-9"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Lecture 9</h1>
+<h1 id="keyboard-cont-switches-and-relays"><a aria-hidden="true" class="anchor-heading" href="#keyboard-cont-switches-and-relays"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Keyboard (Cont.), Switches and Relays</h1>
 <h2 id="points"><a aria-hidden="true" class="anchor-heading" href="#points"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Points</h2>
 <ul>
 <li><img src="/notes/assets/images/2021-10-25-11-39-22.png"></li>
+</ul>
+<h2 id="c-program-to-read-keypad-and-send-result-to-portd"><a aria-hidden="true" class="anchor-heading" href="#c-program-to-read-keypad-and-send-result-to-portd"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>C program to read keypad and send result to PORTD</h2>
+<ul>
+<li>Note that here Columns are connected in PC0 - PC3 and rows are connected to PC4 - PC7.</li>
+<li><img src="/notes/assets/images/2021-11-26-09-02-21.png">
+<ul>
+<li>The above code maintains all the initialization work.</li>
+<li>Sets KEY_PRT and other variables to the required values.</li>
+</ul>
+</li>
+<li><img src="/notes/assets/images/2021-11-26-09-03-22.png">
+<ul>
+<li>This part of the code checks whether initially keyboard is pressed then allow everything to complete.</li>
+<li>Then ground all the rows and read the columns</li>
+</ul>
+</li>
+<li><img src="/notes/assets/images/2021-11-26-09-05-23.png">
+<ul>
+<li>If key is pressed, check which one is pressed.</li>
+<li>Thus, one by one we ground the rows and check the value of column.</li>
+</ul>
+</li>
+<li><img src="/notes/assets/images/2021-11-26-09-07-36.png">
+<ul>
+<li>Finally, use the lookup array created in the first image and use it to identify which key was pressed.</li>
+<li>Then, send it to PORTD for output.</li>
+</ul>
+</li>
+</ul>
+<h2 id="extra-points"><a aria-hidden="true" class="anchor-heading" href="#extra-points"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Extra Points</h2>
+<ul>
+<li><img src="/notes/assets/images/2021-11-26-09-16-37.png"></li>
+<li><img src="/notes/assets/images/2021-11-26-09-16-46.png"></li>
+<li>BJT (Bi-polar Junction Transistor) as a switch
+<ul>
+<li><img src="/notes/assets/images/2021-11-26-09-17-35.png"></li>
+</ul>
+</li>
+<li>Transistors
+<ul>
+<li>We can switch devices using transistors</li>
+<li>It amplifies the signals</li>
+<li>Circuit Diagram
+<ul>
+<li><img src="/notes/assets/images/2021-11-26-09-18-34.png"></li>
+</ul>
+</li>
+<li>Darlington Transistors
+<ul>
+<li><img src="/notes/assets/images/2021-11-26-09-19-10.png"></li>
+</ul>
+</li>
+<li>MOSFET as a switch
+<ul>
+<li><img src="/notes/assets/images/2021-11-26-09-20-04.png"></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="relays"><a aria-hidden="true" class="anchor-heading" href="#relays"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Relays</h2>
+<ul>
+<li><img src="/notes/assets/images/2021-11-26-09-20-40.png"></li>
+<li>Components
+<ul>
+<li>Coil</li>
+<li>Spring</li>
+<li>Contacts</li>
+</ul>
+</li>
+<li>Relay Diagrams
+<ul>
+<li><img src="/notes/assets/images/2021-11-26-09-21-38.png"></li>
+</ul>
+</li>
+<li>Limitations of electromechanical relays
+<ul>
+<li>Low life expectancy</li>
+<li>High wear and tear</li>
+</ul>
+</li>
+<li>Advantages of Sold State Relays
+<ul>
+<li>High life expectancy</li>
+<li>Low wear and tear.</li>
+</ul>
+</li>
 </ul>
