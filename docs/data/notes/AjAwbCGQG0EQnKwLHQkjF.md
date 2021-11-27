@@ -1,5 +1,5 @@
 
-# Keyboard (Cont.), Switches and Relays
+# Keyboard (Cont.), Switches, Relays and Opto-Isolators
 
 ## Points
 * ![](/assets/images/2021-10-25-11-39-22.png)
@@ -47,4 +47,12 @@
     * High wear and tear
 * Advantages of Sold State Relays
     * High life expectancy
-    * Low wear and tear.
+    * Low wear and tear
+
+## Opto-Isolators
+* ![](/assets/images/2021-11-26-09-24-53.png)
+* Components
+    * LED
+    * Photo-Transistor
+* Controlling a lamp via optoisolator
+    * ![](/assets/images/2021-11-26-09-27-14.png)

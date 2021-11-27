@@ -11,8 +11,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1637899791564,
-      "created": 1637899791564,
+      "updated": 1638008661207,
+      "created": 1638008661207,
       "parent": null,
       "children": [],
       "data": {}
@@ -337,6 +337,7 @@
         "znYlAnqQDCB58XxxMMdIl",
         "elcUWYUkVJfjM5NLR8toR",
         "SkPPj7voTTRpF7d0XMYNV",
+        "2gOnFhr8Jp8VXElc317uw",
         "OGq6U8MXIG3wwETNLR4b6",
         "BU8smu6Xa4e3tkB0iVHT9"
       ],
@@ -2252,6 +2253,47 @@
       "children": [],
       "data": {},
       "contentHash": "a7928543154086c1e268424e0494cea9",
+      "custom": {}
+    },
+    "2gOnFhr8Jp8VXElc317uw": {
+      "id": "2gOnFhr8Jp8VXElc317uw",
+      "title": "Mechanics of Rigid Bodies",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "courses.Semester 5.Mechanics of Rigid Bodies",
+      "updated": 1638006754271,
+      "created": 1638006754271,
+      "parent": "O93aKwUCEnkxTR7S8V2eZ",
+      "children": [
+        "aIE2iIWFbM78SR4aqFNHx"
+      ],
+      "data": {},
+      "custom": {
+        "stub": true
+      }
+    },
+    "aIE2iIWFbM78SR4aqFNHx": {
+      "id": "aIE2iIWFbM78SR4aqFNHx",
+      "title": "Lecture 1",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "courses.Semester 5.Mechanics of Rigid Bodies.Lecture 1",
+      "updated": 1638007043260,
+      "created": 1638006754265,
+      "parent": "2gOnFhr8Jp8VXElc317uw",
+      "children": [],
+      "data": {},
+      "contentHash": "a518b506ac504378b436a384b1a22e58",
       "custom": {}
     },
     "SkPPj7voTTRpF7d0XMYNV": {
@@ -4745,6 +4787,7 @@
         "lheZKOdjHCWZJ4Qy2gPeI",
         "vm1sh2uLEEM9d6pyZ7syr",
         "9TMxLEguBhbNsImEefOFX",
+        "ofEMyVSSXfsXPcumprwj7",
         "DDPKzTAQzUFdO6TcCSSTF",
         "E2PJ84zJUpVsfytWhaWNF",
         "C10dnDFKygqMWaWd4pUMm",
@@ -4876,14 +4919,57 @@
       "type": "note",
       "desc": "",
       "links": [],
-      "anchors": {},
+      "anchors": {
+        "keyboard-cont-switches-relays-and-opto-isolators": {
+          "type": "header",
+          "text": "Keyboard (Cont.), Switches, Relays and Opto-Isolators",
+          "value": "keyboard-cont-switches-relays-and-opto-isolators",
+          "line": 8,
+          "column": 0
+        },
+        "points": {
+          "type": "header",
+          "text": "Points",
+          "value": "points",
+          "line": 10,
+          "column": 0
+        },
+        "c-program-to-read-keypad-and-send-result-to-portd": {
+          "type": "header",
+          "text": "C program to read keypad and send result to PORTD",
+          "value": "c-program-to-read-keypad-and-send-result-to-portd",
+          "line": 13,
+          "column": 0
+        },
+        "extra-points": {
+          "type": "header",
+          "text": "Extra Points",
+          "value": "extra-points",
+          "line": 28,
+          "column": 0
+        },
+        "relays": {
+          "type": "header",
+          "text": "Relays",
+          "value": "relays",
+          "line": 43,
+          "column": 0
+        },
+        "opto-isolators": {
+          "type": "header",
+          "text": "Opto-Isolators",
+          "value": "opto-isolators",
+          "line": 58,
+          "column": 0
+        }
+      },
       "fname": "courses.Semester 5.Embedded Systems.Lecture 9",
       "updated": 1637898856515,
       "created": 1635140067611,
       "parent": "a1PatlsCiz7PYsL111lFm",
       "children": [],
       "data": {},
-      "contentHash": "93bd7bf16d13c34658af0edcbb36ec3d",
+      "contentHash": "9343b2e8d68a716bf9a7351e4f3be126",
       "custom": {}
     },
     "bWX1sy8vnuriP2UeDbKAm": {
@@ -5275,6 +5361,25 @@
       "children": [],
       "data": {},
       "contentHash": "6fc276d46ee1a72193c3fc9b555bd320",
+      "custom": {}
+    },
+    "ofEMyVSSXfsXPcumprwj7": {
+      "id": "ofEMyVSSXfsXPcumprwj7",
+      "title": "Lecture 10",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "courses.Semester 5.Embedded Systems.Lecture 10",
+      "updated": 1638000069171,
+      "created": 1638000069171,
+      "parent": "a1PatlsCiz7PYsL111lFm",
+      "children": [],
+      "data": {},
+      "contentHash": "27ab4a99076dbba67d66940407b98f05",
       "custom": {}
     },
     "9TMxLEguBhbNsImEefOFX": {
