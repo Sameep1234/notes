@@ -1,1 +1,76 @@
 <h1 id="lecture-10"><a aria-hidden="true" class="anchor-heading" href="#lecture-10"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Lecture 10</h1>
+<h1 id="programs-and-motors-stepper-and-dc"><a aria-hidden="true" class="anchor-heading" href="#programs-and-motors-stepper-and-dc"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Programs and Motors (Stepper and DC)</h1>
+<h2 id="extra-programs"><a aria-hidden="true" class="anchor-heading" href="#extra-programs"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Extra Programs</h2>
+<ul>
+<li><img src="/notes/assets/images/2021-11-27-16-58-48.png"></li>
+</ul>
+<pre class="language-c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&#x3C;avr/io.h></span></span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    DDRA <span class="token operator">=</span> <span class="token number">0x02</span><span class="token punctuation">;</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        PORTA<span class="token punctuation">.</span>b1 <span class="token operator">=</span> PINA<span class="token punctuation">.</span>b0<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<ul>
+<li>Circuit for the above question
+<ul>
+<li><img src="/notes/assets/images/2021-11-27-17-12-13.png"></li>
+</ul>
+</li>
+</ul>
+<h2 id="stepper-motors"><a aria-hidden="true" class="anchor-heading" href="#stepper-motors"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Stepper motors</h2>
+<ul>
+<li>Device that translates electrical pulses into mechanical movements.</li>
+<li>Applications include
+<ul>
+<li>Disk Drives</li>
+<li>Dot matric printers</li>
+<li>Robots</li>
+<li>Industrial Automation</li>
+</ul>
+</li>
+<li>Some specifications
+<ul>
+<li><img src="/notes/assets/images/2021-11-27-17-15-49.png"></li>
+</ul>
+</li>
+<li>Rotor Alignments
+<ul>
+<li><img src="/notes/assets/images/2021-11-27-17-16-05.png"></li>
+</ul>
+</li>
+<li>Windings
+<ul>
+<li><img src="/notes/assets/images/2021-11-27-17-23-49.png"></li>
+</ul>
+</li>
+<li>Avr connection
+<ul>
+<li><img src="/notes/assets/images/2021-11-27-17-23-38.png"></li>
+</ul>
+</li>
+<li>Step Angles
+<ul>
+<li><img src="/notes/assets/images/2021-11-27-17-24-10.png"></li>
+</ul>
+</li>
+<li>Step sequences
+<ul>
+<li><img src="/notes/assets/images/2021-11-27-17-24-29.png"></li>
+</ul>
+</li>
+<li>Question
+<ul>
+<li><img src="/notes/assets/images/2021-11-27-17-25-27.png"></li>
+<li><img src="/notes/assets/images/2021-11-27-17-25-37.png"></li>
+<li><img src="/notes/assets/images/2021-11-27-17-25-52.png"></li>
+<li><img src="/notes/assets/images/2021-11-27-17-45-36.png"></li>
+<li><img src="/notes/assets/images/2021-11-27-17-46-05.png"></li>
+</ul>
+</li>
+</ul>

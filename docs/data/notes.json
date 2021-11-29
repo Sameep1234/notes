@@ -11,8 +11,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1638008661207,
-      "created": 1638008661207,
+      "updated": 1638163696009,
+      "created": 1638163696009,
       "parent": null,
       "children": [],
       "data": {}
@@ -33,6 +33,7 @@
       "parent": null,
       "children": [
         "Jq5ki9jf1QLTdc3DYLRW4",
+        "t5S98zYhQcXKMjbqBsVGg",
         "3ONxZ3Khb7nFPdLxlV1ib",
         "Z2JlSyF7TPv3hFanVQhJd"
       ],
@@ -292,6 +293,65 @@
       "children": [],
       "data": {},
       "contentHash": "1ecd2d27a6855b84e7fe1b72b120d458",
+      "custom": {}
+    },
+    "t5S98zYhQcXKMjbqBsVGg": {
+      "id": "t5S98zYhQcXKMjbqBsVGg",
+      "title": "Cse",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "cse",
+      "updated": 1638163110934,
+      "created": 1638163110934,
+      "parent": "GL4YoVrbDUHLnf946YtXV",
+      "children": [
+        "WM1rF3JkYkR94qZNvgZwB"
+      ],
+      "data": {},
+      "stub": false
+    },
+    "WM1rF3JkYkR94qZNvgZwB": {
+      "id": "WM1rF3JkYkR94qZNvgZwB",
+      "title": "Major",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "cse.major",
+      "updated": 1638163110936,
+      "created": 1638163110936,
+      "parent": "t5S98zYhQcXKMjbqBsVGg",
+      "children": [
+        "1TJXZzN5jY3ap4kCvZ6HL"
+      ],
+      "data": {},
+      "stub": false
+    },
+    "1TJXZzN5jY3ap4kCvZ6HL": {
+      "id": "1TJXZzN5jY3ap4kCvZ6HL",
+      "title": "Major",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "cse.major.md",
+      "updated": 1638163385567,
+      "created": 1638163110928,
+      "parent": "WM1rF3JkYkR94qZNvgZwB",
+      "children": [],
+      "data": {},
+      "contentHash": "9e151ab6c2b15083fd749fe539176663",
       "custom": {}
     },
     "Jq5ki9jf1QLTdc3DYLRW4": {
@@ -2273,6 +2333,8 @@
         "aIE2iIWFbM78SR4aqFNHx"
       ],
       "data": {},
+      "contentHash": "2bd300357354d2beb943ccd4b8fe07f6",
+      "stub": false,
       "custom": {
         "stub": true
       }
@@ -2286,14 +2348,43 @@
       "type": "note",
       "desc": "",
       "links": [],
-      "anchors": {},
+      "anchors": {
+        "introduction": {
+          "type": "header",
+          "text": "Introduction",
+          "value": "introduction",
+          "line": 8,
+          "column": 0
+        },
+        "syllabus": {
+          "type": "header",
+          "text": "Syllabus",
+          "value": "syllabus",
+          "line": 10,
+          "column": 0
+        },
+        "some-revision-topics": {
+          "type": "header",
+          "text": "Some revision topics",
+          "value": "some-revision-topics",
+          "line": 14,
+          "column": 0
+        },
+        "extra-points": {
+          "type": "header",
+          "text": "Extra Points",
+          "value": "extra-points",
+          "line": 27,
+          "column": 0
+        }
+      },
       "fname": "courses.Semester 5.Mechanics of Rigid Bodies.Lecture 1",
       "updated": 1638007043260,
       "created": 1638006754265,
       "parent": "2gOnFhr8Jp8VXElc317uw",
       "children": [],
       "data": {},
-      "contentHash": "a518b506ac504378b436a384b1a22e58",
+      "contentHash": "617e4e4264421acda95c1de6a2456ebb",
       "custom": {}
     },
     "SkPPj7voTTRpF7d0XMYNV": {
@@ -5372,14 +5463,36 @@
       "type": "note",
       "desc": "",
       "links": [],
-      "anchors": {},
+      "anchors": {
+        "programs-and-motors-stepper-and-dc": {
+          "type": "header",
+          "text": "Programs and Motors (Stepper and DC)",
+          "value": "programs-and-motors-stepper-and-dc",
+          "line": 8,
+          "column": 0
+        },
+        "extra-programs": {
+          "type": "header",
+          "text": "Extra Programs",
+          "value": "extra-programs",
+          "line": 10,
+          "column": 0
+        },
+        "stepper-motors": {
+          "type": "header",
+          "text": "Stepper motors",
+          "value": "stepper-motors",
+          "line": 28,
+          "column": 0
+        }
+      },
       "fname": "courses.Semester 5.Embedded Systems.Lecture 10",
-      "updated": 1638000069171,
+      "updated": 1638014140383,
       "created": 1638000069171,
       "parent": "a1PatlsCiz7PYsL111lFm",
       "children": [],
       "data": {},
-      "contentHash": "27ab4a99076dbba67d66940407b98f05",
+      "contentHash": "82cb7d718314e15511195e84fad7334f",
       "custom": {}
     },
     "9TMxLEguBhbNsImEefOFX": {
@@ -5677,6 +5790,7 @@
       "parent": null,
       "children": [
         "Jq5ki9jf1QLTdc3DYLRW4",
+        "t5S98zYhQcXKMjbqBsVGg",
         "3ONxZ3Khb7nFPdLxlV1ib",
         "Z2JlSyF7TPv3hFanVQhJd"
       ],
@@ -5705,6 +5819,7 @@
     "parent": null,
     "children": [
       "Jq5ki9jf1QLTdc3DYLRW4",
+      "t5S98zYhQcXKMjbqBsVGg",
       "3ONxZ3Khb7nFPdLxlV1ib",
       "Z2JlSyF7TPv3hFanVQhJd"
     ],
