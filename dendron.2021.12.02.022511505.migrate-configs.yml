@@ -1,14 +1,12 @@
 useFMTitle: true
 useNoteTitleForLink: true
-noLegacyNoteRef: true
 mermaid: true
 useKatex: true
-usePrettyRefs: true
 dev:
     enablePreviewV2: true
 site:
     siteUrl: 'https://sameep1234.github.io'
-    assetsPrefix: notes
+    assetsPrefix: /notes
     copyAssets: true
     siteHierarchies:
         - root
@@ -32,6 +30,7 @@ commands:
             selectionMode: extract
             confirmVaultOnCreate: false
             leaveTrace: false
+            bubbleUpCreateNew: true
     randomNote: {}
     insertNote:
         initialValue: templates
@@ -65,3 +64,31 @@ workspace:
     maxNoteLength: 204800
     enableUserTags: true
     enableHashTags: true
+    task:
+        name: ''
+        dateFormat: ''
+        addBehavior: childOfCurrent
+        statusSymbols:
+            '': ' '
+            wip: w
+            done: x
+            assigned: a
+            moved: m
+            blocked: b
+            delegated: l
+            dropped: d
+            pending: 'y'
+        prioritySymbols:
+            H: high
+            M: medium
+            L: low
+        todoIntegration: false
+        createTaskSelectionType: selection2link
+preview:
+    enableFMTitle: true
+    enableNoteTitleForLink: true
+    enableMermaid: true
+    enablePrettyRefs: true
+    enableKatex: true
+noLegacyNoteRef: true
+usePrettyRefs: true
