@@ -2,9 +2,155 @@
 id: lheZKOdjHCWZJ4Qy2gPeI
 title: Extra Practice Questions
 desc: ''
-updated: 1633248099143
+updated: 1638466434867
 created: 1633146584123
 ---
+
+
+* ![](/assets/images/2021-12-02-18-03-16.png)
+
+```c
+#include<avr/io.h>
+void main()
+{
+    int i = 0, flag = 0;
+    DDRA = 0xFF;
+    while(1)
+    {
+        PORTB = i;
+        if(flag == 0)
+        {
+            i++;
+            if(i == (255/2))
+            {
+                flag = 1;
+            }
+        }
+        else if(flag==1)
+        {
+            i--;
+            if(i == 0)
+            {
+                flag = 2;
+            }
+        }
+        else if(flag==2){
+            i++;
+            if(i==255) flag = 3;
+        }
+        else{
+            i--;
+            if(i==0) flag=0;
+        }
+    }
+}
+```
+
+
+
+* ![](/assets/images/2021-12-02-18-16-17.png)
+
+```c
+#include<avr/io.h>
+T0delay(){
+    TCNT0 = 206;
+    TCCR0 = 0X01;
+    while(TIFR&0X01 == 0);
+    TIFR = 0X01;
+    TCCR0 = 0X00;
+}
+void main()
+{
+    int i=4,a=1,b=1,c=0;
+    DDRB = 0XFF;
+    while(1){
+        for(i = 3;i>=0;i--)
+        {
+            a << i; 
+            b << 7-i;
+            c = a|b;
+            PORTB = c;
+            T0delay();
+        }
+    }
+}
+```
+* ![](/assets/images/2021-12-02-23-09-06.png)
+```c
+#include<avr/io.h>
+
+int flag = 0;
+void main()
+{
+    DDRA = 0x0F; // 0-3 pin output
+
+    GICR = 0xC0 // Local
+    MCUCR = 0x0F // External mode
+    sei(); // Global
+    while(1)
+    {
+        if(flag == 0)
+        {
+            DDRA = 0x06; // Clockwise
+        }
+        else if(flag == 1)
+        {
+            DDRA = 0x09; // Counter clockwise
+        }
+    }
+}
+
+ISR(INT0_vect)
+{
+    flag = 1;
+}
+
+ISR(INT1_vect)
+{
+    flag = 0;
+}
+```
+
+
+* ![](/assets/images/2021-12-02-23-34-02.png)
+
+```c
+#include<avr/io.h>
+#include<interrupt.h>
+
+int flag = 0;
+
+void main()
+{
+    DDRB = 1 << 3;
+    
+    TCCR0 = 0x69; // 0110 1001
+    TCNT0 = 0;
+    // OCR0 = 127, 255
+    while(1)
+    {
+
+    }
+}
+
+ISR(TIMER0_COMP_vect)
+{
+    if()
+}
+
+ISR(INT0_vect)
+{
+    OCR0 = 127;
+}
+
+ISR(INT1_vect)
+{
+    OCR0 = 127;
+}
+```
+
+
+
 
 
 
