@@ -2,7 +2,7 @@
 id: xlj6wGdQKowx94MW95Ryg
 title: End_Sem Past papers
 desc: ''
-updated: 1638644975554
+updated: 1638687815995
 created: 1638638927432
 ---
 
@@ -123,7 +123,7 @@ void main()
 #### A7
 ```c
 #include<avr/io.h>
-vid main(){
+void main(){
     DDRB = 0XFF;
     int i = 0;
     while(1)
@@ -149,6 +149,174 @@ vid main(){
 ```
 
 #### A8
-```c
+* ![](/assets/images/2021-12-05-10-05-21.png)
+* ![](/assets/images/2021-12-05-10-05-52.png)
+* ![](/assets/images/2021-12-05-10-06-13.png)
+* ![](/assets/images/2021-12-05-10-06-27.png)
+* **Note that you must change some values corresponding to 3X3 keyboard as in the above image it is 4x4 keyboard.**
 
+___
+
+9. d
+10. b (**Note sure**)
+11. Out of syllabus
+12. d
+13. b
+
+## [2019 paper link](https://drive.google.com/drive/u/1/folders/1FYfaFuadfY0DujErCQJNTppBCIYFuUYK)
+
+#### A1
+* ![](/assets/images/2021-12-05-10-14-03.png)
+
+#### A2
+* ![](/assets/images/2021-12-05-10-15-06.png)
+
+#### A3
+* Out of syllabus
+
+#### A4
+```c
+#include<avr/io.h>
+void main(){
+    DDRB = 0XFF;
+    int i = 0;
+    while(1)
+    {
+        for(i = 0;i<(255/2);i++)
+        {
+            PORTA = i;
+        }
+        for(i = (255/2);i>=0;i--)
+        {
+            PORTA = i;
+        }
+        for(i = 0;i<(255);i++)
+        {
+            PORTA = i;
+        }
+        for(i = (255);i>=0;i--)
+        {
+            PORTA = i;
+        }
+    }
+}
 ```
+
+#### A5
+```c
+#include<avr/io.h>
+void T0Delay()
+{
+    TCCR0 = 0x01;
+    TCNT0 = 206;
+    while((TIFR & 0x01) == 0);
+    TIFR = 0x01;
+    TCCR0 = 0x00;
+}
+
+void main()
+{
+    DDRB = 0xFF;
+    int i = 0, a, b;
+    while(1)
+    {
+        for(i = 3;i>=0;i--)
+        {
+            a = 1<<i;
+            b = 1<<(7-i);
+            PORTB = a | b;
+            T0Delay();
+        }
+    }
+}
+```
+
+#### A6
+```c
+/*
+    Green --> A.7
+    Red --> A.6
+*/
+
+#include<avr/io.h>
+
+void main()
+{
+    DDRA = 0XFC;
+
+    while(1){
+        if((PINA.b0 == 1 && PINA.b1 == 0) || (PINA.b0 == 0 && PINA.b1 == 1)) // Only one switch on
+        {
+            OCR0 = 127;
+            TCNT0 = 0x00;
+            TCCR0 = 0x69;
+            PORTA = 0xA0; // Green led on and motor on
+        }
+        else if(PINA.b1 == 1 && PINA.b0 == 1)
+        {
+            OCR0 = 255;
+            TCNT0 = 0;
+            TCCR0 = 0x69;
+            PORTA = 0xA0; // Green led on and motor on
+        }
+        else
+        {
+            PORTA.b6 = 1; // Red led on and motor off
+        }
+    }
+}
+```
+* Circuit Diagram
+    * ![](/assets/images/2021-12-05-10-51-45.png)
+
+#### A7
+```c
+// Pin a.0 = input
+// Pin c.1 and c.2 = output
+#include<avr/io.h>
+
+void main()
+{
+    DDRC = 0xFF;
+    DDRA = 0x00;
+    ADCSRA = 0x87; // Clk/128 prescaler, bit set
+    ADMUX = 0xC0; // Internal Vref, right justified, single-ended input
+
+    while(1)
+    {
+        ADCSRA = 1<<ADSC // Start conversion
+        while(ADCSRA & (1 << ADIF) == 0); // Wait for conversion to complete
+        int temp = ADCL; // Store ADC output to temp variable
+        if(temp > 25 && temp % 2 != 0)
+        {
+            PORTA.b1 = 1; // Turn on one AC system
+        }
+        else if(temp > 25 && temp % 2 == 0)
+        {
+            PORTA.b2 = 1; // Turn on one AC system
+        }
+        else if(temp < 15)
+        {
+            PORTA = 0x00; // Turn off all AC's
+        }
+    }
+}
+```
+
+___
+
+8. **Doubt**
+9. a, b, c
+10. d
+11. Out of syllabus
+12. d
+13. b (not sure though)
+14. g (not sure though)
+15. **Doubt**
+16. Out of syllabus
+17. **Doubt**
+18. **Either Doubt or out of syllabus**
+19. a,d
+20. b
+21. a, b, c, d **Check once**
+22. a, b, c, d **Check once**
