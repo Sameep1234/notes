@@ -1,0 +1,309 @@
+<h1 id="end_sem-past-papers"><a aria-hidden="true" class="anchor-heading" href="#end_sem-past-papers"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>End_Sem Past papers</h1>
+<h2 id="2019-paper"><a aria-hidden="true" class="anchor-heading" href="#2019-paper"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a><a href="https://drive.google.com/drive/u/1/folders/1FYfaFuadfY0DujErCQJNTppBCIYFuUYK">2019 Paper</a></h2>
+<h4 id="a1"><a aria-hidden="true" class="anchor-heading" href="#a1"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>A1</h4>
+<p><img src="/notes/assets/images/2021-12-04-23-10-05.png"></p>
+<h4 id="a3"><a aria-hidden="true" class="anchor-heading" href="#a3"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>A3</h4>
+<p><img src="/notes/assets/images/2021-12-04-23-11-14.png"></p>
+<h4 id="a4"><a aria-hidden="true" class="anchor-heading" href="#a4"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>A4</h4>
+<pre class="language-c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&#x3C;avr/io.h></span></span>
+<span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    DDRA <span class="token operator">=</span> <span class="token number">0x00</span><span class="token punctuation">;</span>
+    DDRB <span class="token operator">=</span> DDRC <span class="token operator">=</span> DDRD <span class="token operator">=</span> <span class="token number">0XFF</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> temp<span class="token punctuation">,</span>x<span class="token punctuation">,</span>d1<span class="token punctuation">,</span>d2<span class="token punctuation">,</span>d3<span class="token punctuation">;</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        temp <span class="token operator">=</span> PINA<span class="token punctuation">;</span>
+        x <span class="token operator">=</span> temp<span class="token operator">/</span><span class="token number">10</span><span class="token punctuation">;</span>
+        d2 <span class="token operator">=</span> x<span class="token operator">%</span><span class="token number">10</span><span class="token punctuation">;</span>
+        d1 <span class="token operator">=</span> temp<span class="token operator">%</span><span class="token number">10</span><span class="token punctuation">;</span>
+        d3 <span class="token operator">=</span> x<span class="token operator">/</span><span class="token number">10</span><span class="token punctuation">;</span>
+        PORTB <span class="token operator">=</span> d1<span class="token punctuation">;</span>
+        PORTC <span class="token operator">=</span> d2<span class="token punctuation">;</span>
+        PORTD <span class="token operator">=</span> d3<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="a5"><a aria-hidden="true" class="anchor-heading" href="#a5"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>A5</h4>
+<pre class="language-c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&#x3C;avr/io.h></span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&#x3C;avr/interrupt.h></span></span>
+<span class="token function">T0delay</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    TCCR0 <span class="token operator">=</span> <span class="token number">0x05</span><span class="token punctuation">;</span>
+    TCNT0 <span class="token operator">=</span> <span class="token number">11</span><span class="token punctuation">;</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span>TIFR<span class="token operator">&#x26;</span><span class="token number">0X01</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    TIFR <span class="token operator">=</span> <span class="token number">0X01</span><span class="token punctuation">;</span>
+    TCCR0 <span class="token operator">=</span> <span class="token number">0X00</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">9</span><span class="token punctuation">;</span>
+
+<span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    DDRA <span class="token operator">=</span> <span class="token number">0xFF</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">int</span> arr<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">0x90</span><span class="token punctuation">,</span> <span class="token number">0x80</span><span class="token punctuation">,</span> <span class="token number">0xF8</span><span class="token punctuation">,</span> <span class="token number">0x82</span><span class="token punctuation">,</span> <span class="token number">0x92</span><span class="token punctuation">,</span> <span class="token number">0x99</span><span class="token punctuation">,</span> <span class="token number">0xB0</span><span class="token punctuation">,</span> <span class="token number">0xA4</span><span class="token punctuation">,</span> <span class="token number">0xF9</span><span class="token punctuation">,</span><span class="token number">0xC0</span><span class="token punctuation">}</span>
+
+    MCUCR <span class="token operator">=</span> <span class="token number">0x01</span><span class="token punctuation">;</span> <span class="token comment">// Modes of external interrupt </span>
+    GICR <span class="token operator">=</span> <span class="token number">0x40</span><span class="token punctuation">;</span> <span class="token comment">// Local interrupt</span>
+    <span class="token function">sei</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Global interrupt</span>
+
+    <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        PORTA <span class="token operator">=</span> arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        i <span class="token operator">-=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>i <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            i <span class="token operator">=</span> <span class="token number">9</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token function">T0delay</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">T0delay</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">T0delay</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">T0delay</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">ISR</span><span class="token punctuation">(</span>INT0_vect<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    i <span class="token operator">=</span> <span class="token number">9</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="a6"><a aria-hidden="true" class="anchor-heading" href="#a6"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>A6</h4>
+<ul>
+<li>Circuit Diagram
+<ul>
+<li><img src="/notes/assets/images/2021-12-05-00-36-49.png"></li>
+</ul>
+</li>
+</ul>
+<pre class="language-c"><code class="language-c"><span class="token comment">/* 
+    Two switches -> b.6,b.7
+    Switch press, PORTB.6 or 7 = 1
+    4 H bridge switch connected to PORTA 1-4
+    Red led at a.6 and greed led to a.7
+    a. If input from Pin 6 of Port B is “1” and input from Pin 7 of Port B is “0”, rotate the
+    motor in clockwise direction.
+    b. If input from Pin 6 of Port B is “0” and input from Pin 7 of Port B is “1”, rotate the
+    motor in counter clockwise direction.
+    c. In all other input conditions, turn off the motor.
+    d. Whenever the motor is ON, rotating in any direction, turn ON the green LED.
+    e. Whenever the motor is OFF, turn on the red LED.
+*/</span>
+
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&#x3C;avr/io.h></span></span>
+
+<span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    DDRB <span class="token operator">=</span> <span class="token number">0x00</span><span class="token punctuation">;</span>
+    DDRA <span class="token operator">=</span> <span class="token number">0xFF</span><span class="token punctuation">;</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>PINB<span class="token punctuation">.</span>b6 <span class="token operator">==</span> <span class="token number">1</span> <span class="token operator">&#x26;&#x26;</span> PINB<span class="token punctuation">.</span>b7 <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            PORTA <span class="token operator">=</span> <span class="token number">0x92</span><span class="token punctuation">;</span> <span class="token comment">// Clockwise direction + Green led</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>PINB<span class="token punctuation">.</span>b7 <span class="token operator">==</span> <span class="token number">1</span> <span class="token operator">&#x26;&#x26;</span> PINB<span class="token punctuation">.</span>b6 <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            PORTA <span class="token operator">=</span> <span class="token number">0x8C</span><span class="token punctuation">;</span> <span class="token comment">// Anticlockwise + Green led</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">else</span>
+        <span class="token punctuation">{</span>
+            PORTA <span class="token operator">=</span> <span class="token number">0x40</span><span class="token punctuation">;</span> <span class="token comment">// Motor off + red led</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="a7"><a aria-hidden="true" class="anchor-heading" href="#a7"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>A7</h4>
+<pre class="language-c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&#x3C;avr/io.h></span></span>
+<span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    DDRB <span class="token operator">=</span> <span class="token number">0XFF</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span>i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&#x3C;</span><span class="token punctuation">(</span><span class="token number">255</span><span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            PORTA <span class="token operator">=</span> i<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span>i <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token number">255</span><span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>i<span class="token operator">>=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">--</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            PORTA <span class="token operator">=</span> i<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span>i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&#x3C;</span><span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">)</span><span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            PORTA <span class="token operator">=</span> i<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span>i <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">)</span><span class="token punctuation">;</span>i<span class="token operator">>=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">--</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            PORTA <span class="token operator">=</span> i<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="a8"><a aria-hidden="true" class="anchor-heading" href="#a8"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>A8</h4>
+<ul>
+<li><img src="/notes/assets/images/2021-12-05-10-05-21.png"></li>
+<li><img src="/notes/assets/images/2021-12-05-10-05-52.png"></li>
+<li><img src="/notes/assets/images/2021-12-05-10-06-13.png"></li>
+<li><img src="/notes/assets/images/2021-12-05-10-06-27.png"></li>
+<li><strong>Note that you must change some values corresponding to 3X3 keyboard as in the above image it is 4x4 keyboard.</strong></li>
+</ul>
+<hr>
+<ol start="9">
+<li>d</li>
+<li>b (<strong>Note sure</strong>)</li>
+<li>Out of syllabus</li>
+<li>d</li>
+<li>b</li>
+</ol>
+<h2 id="2019-paper-link"><a aria-hidden="true" class="anchor-heading" href="#2019-paper-link"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a><a href="https://drive.google.com/drive/u/1/folders/1FYfaFuadfY0DujErCQJNTppBCIYFuUYK">2019 paper link</a></h2>
+<h4 id="a1-1"><a aria-hidden="true" class="anchor-heading" href="#a1-1"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>A1</h4>
+<ul>
+<li><img src="/notes/assets/images/2021-12-05-10-14-03.png"></li>
+</ul>
+<h4 id="a2"><a aria-hidden="true" class="anchor-heading" href="#a2"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>A2</h4>
+<ul>
+<li><img src="/notes/assets/images/2021-12-05-10-15-06.png"></li>
+</ul>
+<h4 id="a3-1"><a aria-hidden="true" class="anchor-heading" href="#a3-1"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>A3</h4>
+<ul>
+<li>Out of syllabus</li>
+</ul>
+<h4 id="a4-1"><a aria-hidden="true" class="anchor-heading" href="#a4-1"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>A4</h4>
+<pre class="language-c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&#x3C;avr/io.h></span></span>
+<span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    DDRB <span class="token operator">=</span> <span class="token number">0XFF</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span>i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&#x3C;</span><span class="token punctuation">(</span><span class="token number">255</span><span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            PORTA <span class="token operator">=</span> i<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span>i <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token number">255</span><span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>i<span class="token operator">>=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">--</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            PORTA <span class="token operator">=</span> i<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span>i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&#x3C;</span><span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">)</span><span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            PORTA <span class="token operator">=</span> i<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span>i <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">)</span><span class="token punctuation">;</span>i<span class="token operator">>=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">--</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            PORTA <span class="token operator">=</span> i<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="a5-1"><a aria-hidden="true" class="anchor-heading" href="#a5-1"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>A5</h4>
+<pre class="language-c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&#x3C;avr/io.h></span></span>
+<span class="token keyword">void</span> <span class="token function">T0Delay</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    TCCR0 <span class="token operator">=</span> <span class="token number">0x01</span><span class="token punctuation">;</span>
+    TCNT0 <span class="token operator">=</span> <span class="token number">206</span><span class="token punctuation">;</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token punctuation">(</span>TIFR <span class="token operator">&#x26;</span> <span class="token number">0x01</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    TIFR <span class="token operator">=</span> <span class="token number">0x01</span><span class="token punctuation">;</span>
+    TCCR0 <span class="token operator">=</span> <span class="token number">0x00</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    DDRB <span class="token operator">=</span> <span class="token number">0xFF</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> a<span class="token punctuation">,</span> b<span class="token punctuation">;</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span>i <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>i<span class="token operator">>=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">--</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            a <span class="token operator">=</span> <span class="token number">1</span><span class="token operator">&#x3C;&#x3C;</span>i<span class="token punctuation">;</span>
+            b <span class="token operator">=</span> <span class="token number">1</span><span class="token operator">&#x3C;&#x3C;</span><span class="token punctuation">(</span><span class="token number">7</span><span class="token operator">-</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            PORTB <span class="token operator">=</span> a <span class="token operator">|</span> b<span class="token punctuation">;</span>
+            <span class="token function">T0Delay</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="a6-1"><a aria-hidden="true" class="anchor-heading" href="#a6-1"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>A6</h4>
+<pre class="language-c"><code class="language-c"><span class="token comment">/*
+    Green --> A.7
+    Red --> A.6
+*/</span>
+
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&#x3C;avr/io.h></span></span>
+
+<span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    DDRA <span class="token operator">=</span> <span class="token number">0XFC</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token punctuation">(</span>PINA<span class="token punctuation">.</span>b0 <span class="token operator">==</span> <span class="token number">1</span> <span class="token operator">&#x26;&#x26;</span> PINA<span class="token punctuation">.</span>b1 <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">||</span> <span class="token punctuation">(</span>PINA<span class="token punctuation">.</span>b0 <span class="token operator">==</span> <span class="token number">0</span> <span class="token operator">&#x26;&#x26;</span> PINA<span class="token punctuation">.</span>b1 <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// Only one switch on</span>
+        <span class="token punctuation">{</span>
+            OCR0 <span class="token operator">=</span> <span class="token number">127</span><span class="token punctuation">;</span>
+            TCNT0 <span class="token operator">=</span> <span class="token number">0x00</span><span class="token punctuation">;</span>
+            TCCR0 <span class="token operator">=</span> <span class="token number">0x69</span><span class="token punctuation">;</span>
+            PORTA <span class="token operator">=</span> <span class="token number">0xA0</span><span class="token punctuation">;</span> <span class="token comment">// Green led on and motor on</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>PINA<span class="token punctuation">.</span>b1 <span class="token operator">==</span> <span class="token number">1</span> <span class="token operator">&#x26;&#x26;</span> PINA<span class="token punctuation">.</span>b0 <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            OCR0 <span class="token operator">=</span> <span class="token number">255</span><span class="token punctuation">;</span>
+            TCNT0 <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+            TCCR0 <span class="token operator">=</span> <span class="token number">0x69</span><span class="token punctuation">;</span>
+            PORTA <span class="token operator">=</span> <span class="token number">0xA0</span><span class="token punctuation">;</span> <span class="token comment">// Green led on and motor on</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">else</span>
+        <span class="token punctuation">{</span>
+            PORTA<span class="token punctuation">.</span>b6 <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> <span class="token comment">// Red led on and motor off</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<ul>
+<li>Circuit Diagram
+<ul>
+<li><img src="/notes/assets/images/2021-12-05-10-51-45.png"></li>
+</ul>
+</li>
+</ul>
+<h4 id="a7-1"><a aria-hidden="true" class="anchor-heading" href="#a7-1"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>A7</h4>
+<pre class="language-c"><code class="language-c"><span class="token comment">// Pin a.0 = input</span>
+<span class="token comment">// Pin c.1 and c.2 = output</span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&#x3C;avr/io.h></span></span>
+
+<span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    DDRC <span class="token operator">=</span> <span class="token number">0xFF</span><span class="token punctuation">;</span>
+    DDRA <span class="token operator">=</span> <span class="token number">0x00</span><span class="token punctuation">;</span>
+    ADCSRA <span class="token operator">=</span> <span class="token number">0x87</span><span class="token punctuation">;</span> <span class="token comment">// Clk/128 prescaler, bit set</span>
+    ADMUX <span class="token operator">=</span> <span class="token number">0xC0</span><span class="token punctuation">;</span> <span class="token comment">// Internal Vref, right justified, single-ended input</span>
+
+    <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        ADCSRA <span class="token operator">=</span> <span class="token number">1</span><span class="token operator">&#x3C;&#x3C;</span>ADSC <span class="token comment">// Start conversion</span>
+        <span class="token keyword">while</span><span class="token punctuation">(</span>ADCSRA <span class="token operator">&#x26;</span> <span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">&#x3C;&#x3C;</span> ADIF<span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Wait for conversion to complete</span>
+        <span class="token keyword">int</span> temp <span class="token operator">=</span> ADCL<span class="token punctuation">;</span> <span class="token comment">// Store ADC output to temp variable</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>temp <span class="token operator">></span> <span class="token number">25</span> <span class="token operator">&#x26;&#x26;</span> temp <span class="token operator">%</span> <span class="token number">2</span> <span class="token operator">!=</span> <span class="token number">0</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            PORTA<span class="token punctuation">.</span>b1 <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> <span class="token comment">// Turn on one AC system</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>temp <span class="token operator">></span> <span class="token number">25</span> <span class="token operator">&#x26;&#x26;</span> temp <span class="token operator">%</span> <span class="token number">2</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            PORTA<span class="token punctuation">.</span>b2 <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> <span class="token comment">// Turn on one AC system</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>temp <span class="token operator">&#x3C;</span> <span class="token number">15</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            PORTA <span class="token operator">=</span> <span class="token number">0x00</span><span class="token punctuation">;</span> <span class="token comment">// Turn off all AC's</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<hr>
+<ol start="8">
+<li><strong>Doubt</strong></li>
+<li>a, b, c</li>
+<li>d</li>
+<li>Out of syllabus</li>
+<li>d</li>
+<li>b (not sure though)</li>
+<li>g (not sure though)</li>
+<li><strong>Doubt</strong></li>
+<li>Out of syllabus</li>
+<li><strong>Doubt</strong></li>
+<li><strong>Either Doubt or out of syllabus</strong></li>
+<li>a,d</li>
+<li>b</li>
+<li>a, b, c, d <strong>Check once</strong></li>
+<li>a, b, c, d <strong>Check once</strong></li>
+</ol>

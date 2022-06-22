@@ -1,0 +1,1142 @@
+{
+  "roots": [
+    {
+      "key": "GL4YoVrbDUHLnf946YtXV",
+      "title": "Curated Notes",
+      "icon": null,
+      "hasTitleNumberOutlined": false,
+      "vaultName": "vault",
+      "navExclude": false,
+      "children": [
+        {
+          "key": "Jq5ki9jf1QLTdc3DYLRW4",
+          "title": "Courses",
+          "icon": "plusOutlined",
+          "hasTitleNumberOutlined": false,
+          "vaultName": "vault",
+          "navExclude": false,
+          "children": [
+            {
+              "key": "O93aKwUCEnkxTR7S8V2eZ",
+              "title": "Semester 5",
+              "icon": "plusOutlined",
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "navExclude": false,
+              "children": [
+                {
+                  "key": "a1PatlsCiz7PYsL111lFm",
+                  "title": "Embedded Systems",
+                  "icon": "plusOutlined",
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "vault",
+                  "navExclude": false,
+                  "children": [
+                    {
+                      "key": "xlj6wGdQKowx94MW95Ryg",
+                      "title": "End_Sem Past papers",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "lheZKOdjHCWZJ4Qy2gPeI",
+                      "title": "Extra Practice Questions",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "9TMxLEguBhbNsImEefOFX",
+                      "title": "Lecture 1",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "vm1sh2uLEEM9d6pyZ7syr",
+                      "title": "Lecture 1 (Lab)",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "ofEMyVSSXfsXPcumprwj7",
+                      "title": "Lecture 10",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "E2PJ84zJUpVsfytWhaWNF",
+                      "title": "Lecture 2",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "DDPKzTAQzUFdO6TcCSSTF",
+                      "title": "Lecture 2 (Lab)",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "C10dnDFKygqMWaWd4pUMm",
+                      "title": "Lecture 3",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "Qohet1HFuVIbSSFcZFNln",
+                      "title": "Lecture 4",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "F6rwo77eZsK7lVh72shS4",
+                      "title": "Lecture 5",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "M6hY9EakKnbEoGjXLVCBg",
+                      "title": "Lecture 6",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "kYVvIrc2ZBNxaE7rztQ0H",
+                      "title": "Lecture 7",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "bWX1sy8vnuriP2UeDbKAm",
+                      "title": "Lecture 8",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "AjAwbCGQG0EQnKwLHQkjF",
+                      "title": "Lecture 9",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "2I3jbdHKDtLSroEW0MAI2",
+                      "title": "Midsem Cheatsheet",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "key": "znYlAnqQDCB58XxxMMdIl",
+                  "title": "Heritage Conservation",
+                  "icon": "plusOutlined",
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "vault",
+                  "navExclude": false,
+                  "children": [
+                    {
+                      "key": "3Ou3dyRfcSRNDVny9QH0v",
+                      "title": "Lecture 1",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "yTtmP4wGYb6N10WQKLJqg",
+                      "title": "Lecture 10",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "OkfgI1xCskUVlnw9hlovI",
+                      "title": "Lecture 11",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "q4ALru72FPfCDOpJQ3rED",
+                      "title": "Lecture 12",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "NWHNf5YLcTI1dNQdQawaU",
+                      "title": "Lecture 13",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "FV5fhz0f0wIugnUdCGedi",
+                      "title": "Lecture 14",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "2WTVmSJpWY9ycvoXn4XaM",
+                      "title": "Lecture 15",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "3jxHt85CT52XxyubyrB0O",
+                      "title": "Lecture 16",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "ilucooYFMIHzjsnX3ZdVF",
+                      "title": "Lecture 17",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "Jbh4nYJn0DG4zOvQNwY9t",
+                      "title": "Lecture 18",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "nQ7UNnZhbSeMDkOvcKpV8",
+                      "title": "Lecture 19",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "qpgkXTjrBO5r0KfikvHNj",
+                      "title": "Lecture 2",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "CDZYFxoXVxlJLcDRk6oFz",
+                      "title": "Lecture 20",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "1DUS2QUjGi4i53R5HkCfG",
+                      "title": "Lecture 21",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "q512rLqI3In62MXDt6bVJ",
+                      "title": "Lecture 22",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "IvZeghEeEkKWgum2BCkG4",
+                      "title": "Lecture 23",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "mLGI73csrg0HQRuCYaTuc",
+                      "title": "Lecture 3",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "ddQYvEgBPuULdLbqptMkZ",
+                      "title": "Lecture 4",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "oXwSNp9SLL9yCVY5csfAP",
+                      "title": "Lecture 5",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "mIY3Oc2xjYCJ5c0va8jgO",
+                      "title": "Lecture 6",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "vLONivbSds9SDKWcfennc",
+                      "title": "Lecture 7",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "PTIJBj6BQldvzxzW3hXRg",
+                      "title": "Lecture 8",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "msMuZ3tcxBnDKpzmZEbkN",
+                      "title": "Lecture 9",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "key": "elcUWYUkVJfjM5NLR8toR",
+                  "title": "Identity and Behaviour",
+                  "icon": "plusOutlined",
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "vault",
+                  "navExclude": false,
+                  "children": [
+                    {
+                      "key": "hv5ahpaOXnFXiebeJE1hT",
+                      "title": "Lecture 1",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "wlNEAAHkrRVqXcCTYL6F2",
+                      "title": "Lecture 10",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "qOChEPFwjnh9YDZBaVjAo",
+                      "title": "Lecture 11",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "myja43P4pP0bqajAjFfeF",
+                      "title": "Lecture 12",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "ejW36RwZlRKYRsFk6HZrV",
+                      "title": "Lecture 13",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "x0DzeXuQr5AxDzZJvpeAl",
+                      "title": "Lecture 14",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "CGUdCz1Xxi3RwJ5fGCCnL",
+                      "title": "Lecture 15",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "7PZJqbHDZJ72GJC86um3V",
+                      "title": "Lecture 16",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "7QiL7Wot2mw6HiR1g11Gt",
+                      "title": "Lecture 17",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "eYztsyl7XHQN2NvMle5fu",
+                      "title": "Lecture 18",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "yYP1zrMPHRddNcKKKoEJG",
+                      "title": "Lecture 19",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "50JzdPAFvTfwTEa6KVUhX",
+                      "title": "Lecture 2",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "GzngmIfl5WheSbjR3ZxKq",
+                      "title": "Lecture 20",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "O9Hn8irX71AXPJjRhqNoD",
+                      "title": "Lecture 21",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "7dbf1rVpM0s0SKbFhLHdq",
+                      "title": "Lecture 3",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "QNwLUTFfsJz5P1NYhElYs",
+                      "title": "Lecture 4",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "KLhV1AemTmvs1cV5rqLPb",
+                      "title": "Lecture 5",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "l99iyW3xTPXWV3Ye1Qjmm",
+                      "title": "Lecture 6",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "9waMUl3QZ9HddSi0LEUhh",
+                      "title": "Lecture 7",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "JW5MTwI7nEjdPUsrqffdC",
+                      "title": "Lecture 8",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "l8G1fLVTHFHMH2HcpgJHz",
+                      "title": "Lecture 9",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "key": "SkPPj7voTTRpF7d0XMYNV",
+                  "title": "Material Science and Engineering",
+                  "icon": "plusOutlined",
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "vault",
+                  "navExclude": false,
+                  "children": [
+                    {
+                      "key": "Q713QFta7rdhGKjmG6yGO",
+                      "title": "Lecture 1",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "KpnKDhNJ6ppoNYHPD0p5U",
+                      "title": "Lecture 2",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "umIJsOqkB1kpOgu6c9zXH",
+                      "title": "Lecture 3",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "JRS98EHNkJiBYK9Ru43oN",
+                      "title": "Lecture 4",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "DNTIDG8Gap81PMCDmyRbh",
+                      "title": "Lecture 5",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "L0bHZ8v0xYFU4atFiLCQU",
+                      "title": "Lecture 7",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "v0dMNXqpH0PE3y7dClbgz",
+                      "title": "Lecture 8",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "lWuRAl5cAM7FXdGBdvEdH",
+                      "title": "Lecture 9",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "key": "2gOnFhr8Jp8VXElc317uw",
+                  "title": "Mechanics of Rigid Bodies",
+                  "icon": "plusOutlined",
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "vault",
+                  "navExclude": false,
+                  "children": [
+                    {
+                      "key": "aIE2iIWFbM78SR4aqFNHx",
+                      "title": "Lecture 1",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "key": "OGq6U8MXIG3wwETNLR4b6",
+                  "title": "Operating System",
+                  "icon": "plusOutlined",
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "vault",
+                  "navExclude": false,
+                  "children": [
+                    {
+                      "key": "Ixq6EKHPeFGFL5Ine7Q88",
+                      "title": "Lecture 1",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "ICa9pujUqLTRQndM6chYc",
+                      "title": "Lecture 10",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "oIZvJD5sS5bPfNsI1IACf",
+                      "title": "Lecture 11",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "xvoRdRebJgnfxMIiHBeT1",
+                      "title": "Lecture 12",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "pp3l5JXxAoNzAiAFQdqjX",
+                      "title": "Lecture 13",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "9VNKwnbcB1p1GfWov2XV9",
+                      "title": "Lecture 14",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "zSIKkEOjZK82QDA6gLngg",
+                      "title": "Lecture 15",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "dZ8QfTe3sVhDx2ZF1TUwl",
+                      "title": "Lecture 2",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "iu2NfxEcaZVlMyzqfOhzh",
+                      "title": "Lecture 3",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "GDGlRMXKe6x8EjWvP07VJ",
+                      "title": "Lecture 4",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "Ecn0Y4Pl4ue0F3gQQg9QX",
+                      "title": "Lecture 5",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "kdXjR2ZeogN1YdeKEK4e2",
+                      "title": "Lecture 6",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "OR9JnGOC5ko3czhGKOQx6",
+                      "title": "Lecture 7",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "a7GkxQryidl8VcaOsqW5E",
+                      "title": "Lecture 8",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "Y15Z6FWUqPX81EPSFIrUX",
+                      "title": "Lecture 9",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "key": "BU8smu6Xa4e3tkB0iVHT9",
+                  "title": "Sensors",
+                  "icon": "plusOutlined",
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "vault",
+                  "navExclude": false,
+                  "children": [
+                    {
+                      "key": "Jqm57aNTtP1pM6WgfkBhW",
+                      "title": "Lecture 1",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "rGu03TP8FBMggz0Zyswe9",
+                      "title": "Lecture 10",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "L57SuvbtLnSlaw4HqypRR",
+                      "title": "Lecture 2",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "Tdjd0mPFGulZGOBl721CU",
+                      "title": "Lecture 3",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "a6CT0mtRRDcyB3rU3cQni",
+                      "title": "Lecture 4",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "ji2KZ3QFAkGuJB0Mvn9Je",
+                      "title": "Lecture 5",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "IqotyWcCthj4L8OnoIpHt",
+                      "title": "Lecture 6",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "lIhVAFZlk6FoqV0XELDC9",
+                      "title": "Lecture 7",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "PWPIeH8CjkY6zLobam03W",
+                      "title": "Lecture 8",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    },
+                    {
+                      "key": "Uz1kmV0hCjDg2vjNXhlmc",
+                      "title": "Lecture 9",
+                      "icon": null,
+                      "hasTitleNumberOutlined": false,
+                      "vaultName": "vault",
+                      "navExclude": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "t5S98zYhQcXKMjbqBsVGg",
+          "title": "Cse",
+          "icon": "plusOutlined",
+          "hasTitleNumberOutlined": false,
+          "vaultName": "vault",
+          "navExclude": false,
+          "children": [
+            {
+              "key": "WM1rF3JkYkR94qZNvgZwB",
+              "title": "Major",
+              "icon": "plusOutlined",
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "navExclude": false,
+              "children": [
+                {
+                  "key": "1TJXZzN5jY3ap4kCvZ6HL",
+                  "title": "Major",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "vault",
+                  "navExclude": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "3ONxZ3Khb7nFPdLxlV1ib",
+          "title": "Stepwellradio",
+          "icon": "plusOutlined",
+          "hasTitleNumberOutlined": false,
+          "vaultName": "vault",
+          "navExclude": false,
+          "children": [
+            {
+              "key": "xm1zwK8k3nHvutw0hqXhh",
+              "title": "Steptech",
+              "icon": "plusOutlined",
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "navExclude": false,
+              "children": [
+                {
+                  "key": "61s7N7vLnGC1g5R3iiIQB",
+                  "title": "Continuous Integration and Continuous Deployment",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "vault",
+                  "navExclude": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "Z2JlSyF7TPv3hFanVQhJd",
+          "title": "User",
+          "icon": "plusOutlined",
+          "hasTitleNumberOutlined": false,
+          "vaultName": "vault",
+          "navExclude": false,
+          "children": [
+            {
+              "key": "KQqTavJbMNZYJnddszn8c",
+              "title": "Master",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "navExclude": false,
+              "children": []
+            },
+            {
+              "key": "ZQnKTzZ9MiNaNiQ8pG7Qr",
+              "title": "V2",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "vault",
+              "navExclude": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "child2parent": {
+    "403": null,
+    "GL4YoVrbDUHLnf946YtXV": null,
+    "Z2JlSyF7TPv3hFanVQhJd": "GL4YoVrbDUHLnf946YtXV",
+    "ZQnKTzZ9MiNaNiQ8pG7Qr": "Z2JlSyF7TPv3hFanVQhJd",
+    "KQqTavJbMNZYJnddszn8c": "Z2JlSyF7TPv3hFanVQhJd",
+    "t5S98zYhQcXKMjbqBsVGg": "GL4YoVrbDUHLnf946YtXV",
+    "WM1rF3JkYkR94qZNvgZwB": "t5S98zYhQcXKMjbqBsVGg",
+    "1TJXZzN5jY3ap4kCvZ6HL": "WM1rF3JkYkR94qZNvgZwB",
+    "Jq5ki9jf1QLTdc3DYLRW4": "GL4YoVrbDUHLnf946YtXV",
+    "O93aKwUCEnkxTR7S8V2eZ": "Jq5ki9jf1QLTdc3DYLRW4",
+    "BU8smu6Xa4e3tkB0iVHT9": "O93aKwUCEnkxTR7S8V2eZ",
+    "Uz1kmV0hCjDg2vjNXhlmc": "BU8smu6Xa4e3tkB0iVHT9",
+    "PWPIeH8CjkY6zLobam03W": "BU8smu6Xa4e3tkB0iVHT9",
+    "lIhVAFZlk6FoqV0XELDC9": "BU8smu6Xa4e3tkB0iVHT9",
+    "IqotyWcCthj4L8OnoIpHt": "BU8smu6Xa4e3tkB0iVHT9",
+    "ji2KZ3QFAkGuJB0Mvn9Je": "BU8smu6Xa4e3tkB0iVHT9",
+    "a6CT0mtRRDcyB3rU3cQni": "BU8smu6Xa4e3tkB0iVHT9",
+    "Tdjd0mPFGulZGOBl721CU": "BU8smu6Xa4e3tkB0iVHT9",
+    "L57SuvbtLnSlaw4HqypRR": "BU8smu6Xa4e3tkB0iVHT9",
+    "rGu03TP8FBMggz0Zyswe9": "BU8smu6Xa4e3tkB0iVHT9",
+    "Jqm57aNTtP1pM6WgfkBhW": "BU8smu6Xa4e3tkB0iVHT9",
+    "OGq6U8MXIG3wwETNLR4b6": "O93aKwUCEnkxTR7S8V2eZ",
+    "Y15Z6FWUqPX81EPSFIrUX": "OGq6U8MXIG3wwETNLR4b6",
+    "a7GkxQryidl8VcaOsqW5E": "OGq6U8MXIG3wwETNLR4b6",
+    "OR9JnGOC5ko3czhGKOQx6": "OGq6U8MXIG3wwETNLR4b6",
+    "kdXjR2ZeogN1YdeKEK4e2": "OGq6U8MXIG3wwETNLR4b6",
+    "Ecn0Y4Pl4ue0F3gQQg9QX": "OGq6U8MXIG3wwETNLR4b6",
+    "GDGlRMXKe6x8EjWvP07VJ": "OGq6U8MXIG3wwETNLR4b6",
+    "iu2NfxEcaZVlMyzqfOhzh": "OGq6U8MXIG3wwETNLR4b6",
+    "dZ8QfTe3sVhDx2ZF1TUwl": "OGq6U8MXIG3wwETNLR4b6",
+    "zSIKkEOjZK82QDA6gLngg": "OGq6U8MXIG3wwETNLR4b6",
+    "9VNKwnbcB1p1GfWov2XV9": "OGq6U8MXIG3wwETNLR4b6",
+    "pp3l5JXxAoNzAiAFQdqjX": "OGq6U8MXIG3wwETNLR4b6",
+    "xvoRdRebJgnfxMIiHBeT1": "OGq6U8MXIG3wwETNLR4b6",
+    "oIZvJD5sS5bPfNsI1IACf": "OGq6U8MXIG3wwETNLR4b6",
+    "ICa9pujUqLTRQndM6chYc": "OGq6U8MXIG3wwETNLR4b6",
+    "Ixq6EKHPeFGFL5Ine7Q88": "OGq6U8MXIG3wwETNLR4b6",
+    "2gOnFhr8Jp8VXElc317uw": "O93aKwUCEnkxTR7S8V2eZ",
+    "aIE2iIWFbM78SR4aqFNHx": "2gOnFhr8Jp8VXElc317uw",
+    "SkPPj7voTTRpF7d0XMYNV": "O93aKwUCEnkxTR7S8V2eZ",
+    "lWuRAl5cAM7FXdGBdvEdH": "SkPPj7voTTRpF7d0XMYNV",
+    "v0dMNXqpH0PE3y7dClbgz": "SkPPj7voTTRpF7d0XMYNV",
+    "L0bHZ8v0xYFU4atFiLCQU": "SkPPj7voTTRpF7d0XMYNV",
+    "DNTIDG8Gap81PMCDmyRbh": "SkPPj7voTTRpF7d0XMYNV",
+    "JRS98EHNkJiBYK9Ru43oN": "SkPPj7voTTRpF7d0XMYNV",
+    "umIJsOqkB1kpOgu6c9zXH": "SkPPj7voTTRpF7d0XMYNV",
+    "KpnKDhNJ6ppoNYHPD0p5U": "SkPPj7voTTRpF7d0XMYNV",
+    "Q713QFta7rdhGKjmG6yGO": "SkPPj7voTTRpF7d0XMYNV",
+    "elcUWYUkVJfjM5NLR8toR": "O93aKwUCEnkxTR7S8V2eZ",
+    "l8G1fLVTHFHMH2HcpgJHz": "elcUWYUkVJfjM5NLR8toR",
+    "JW5MTwI7nEjdPUsrqffdC": "elcUWYUkVJfjM5NLR8toR",
+    "9waMUl3QZ9HddSi0LEUhh": "elcUWYUkVJfjM5NLR8toR",
+    "l99iyW3xTPXWV3Ye1Qjmm": "elcUWYUkVJfjM5NLR8toR",
+    "KLhV1AemTmvs1cV5rqLPb": "elcUWYUkVJfjM5NLR8toR",
+    "QNwLUTFfsJz5P1NYhElYs": "elcUWYUkVJfjM5NLR8toR",
+    "7dbf1rVpM0s0SKbFhLHdq": "elcUWYUkVJfjM5NLR8toR",
+    "O9Hn8irX71AXPJjRhqNoD": "elcUWYUkVJfjM5NLR8toR",
+    "GzngmIfl5WheSbjR3ZxKq": "elcUWYUkVJfjM5NLR8toR",
+    "50JzdPAFvTfwTEa6KVUhX": "elcUWYUkVJfjM5NLR8toR",
+    "yYP1zrMPHRddNcKKKoEJG": "elcUWYUkVJfjM5NLR8toR",
+    "eYztsyl7XHQN2NvMle5fu": "elcUWYUkVJfjM5NLR8toR",
+    "7QiL7Wot2mw6HiR1g11Gt": "elcUWYUkVJfjM5NLR8toR",
+    "7PZJqbHDZJ72GJC86um3V": "elcUWYUkVJfjM5NLR8toR",
+    "CGUdCz1Xxi3RwJ5fGCCnL": "elcUWYUkVJfjM5NLR8toR",
+    "x0DzeXuQr5AxDzZJvpeAl": "elcUWYUkVJfjM5NLR8toR",
+    "ejW36RwZlRKYRsFk6HZrV": "elcUWYUkVJfjM5NLR8toR",
+    "myja43P4pP0bqajAjFfeF": "elcUWYUkVJfjM5NLR8toR",
+    "qOChEPFwjnh9YDZBaVjAo": "elcUWYUkVJfjM5NLR8toR",
+    "wlNEAAHkrRVqXcCTYL6F2": "elcUWYUkVJfjM5NLR8toR",
+    "hv5ahpaOXnFXiebeJE1hT": "elcUWYUkVJfjM5NLR8toR",
+    "znYlAnqQDCB58XxxMMdIl": "O93aKwUCEnkxTR7S8V2eZ",
+    "msMuZ3tcxBnDKpzmZEbkN": "znYlAnqQDCB58XxxMMdIl",
+    "PTIJBj6BQldvzxzW3hXRg": "znYlAnqQDCB58XxxMMdIl",
+    "vLONivbSds9SDKWcfennc": "znYlAnqQDCB58XxxMMdIl",
+    "mIY3Oc2xjYCJ5c0va8jgO": "znYlAnqQDCB58XxxMMdIl",
+    "oXwSNp9SLL9yCVY5csfAP": "znYlAnqQDCB58XxxMMdIl",
+    "ddQYvEgBPuULdLbqptMkZ": "znYlAnqQDCB58XxxMMdIl",
+    "mLGI73csrg0HQRuCYaTuc": "znYlAnqQDCB58XxxMMdIl",
+    "IvZeghEeEkKWgum2BCkG4": "znYlAnqQDCB58XxxMMdIl",
+    "q512rLqI3In62MXDt6bVJ": "znYlAnqQDCB58XxxMMdIl",
+    "1DUS2QUjGi4i53R5HkCfG": "znYlAnqQDCB58XxxMMdIl",
+    "CDZYFxoXVxlJLcDRk6oFz": "znYlAnqQDCB58XxxMMdIl",
+    "qpgkXTjrBO5r0KfikvHNj": "znYlAnqQDCB58XxxMMdIl",
+    "nQ7UNnZhbSeMDkOvcKpV8": "znYlAnqQDCB58XxxMMdIl",
+    "Jbh4nYJn0DG4zOvQNwY9t": "znYlAnqQDCB58XxxMMdIl",
+    "ilucooYFMIHzjsnX3ZdVF": "znYlAnqQDCB58XxxMMdIl",
+    "3jxHt85CT52XxyubyrB0O": "znYlAnqQDCB58XxxMMdIl",
+    "2WTVmSJpWY9ycvoXn4XaM": "znYlAnqQDCB58XxxMMdIl",
+    "FV5fhz0f0wIugnUdCGedi": "znYlAnqQDCB58XxxMMdIl",
+    "NWHNf5YLcTI1dNQdQawaU": "znYlAnqQDCB58XxxMMdIl",
+    "q4ALru72FPfCDOpJQ3rED": "znYlAnqQDCB58XxxMMdIl",
+    "OkfgI1xCskUVlnw9hlovI": "znYlAnqQDCB58XxxMMdIl",
+    "yTtmP4wGYb6N10WQKLJqg": "znYlAnqQDCB58XxxMMdIl",
+    "3Ou3dyRfcSRNDVny9QH0v": "znYlAnqQDCB58XxxMMdIl",
+    "a1PatlsCiz7PYsL111lFm": "O93aKwUCEnkxTR7S8V2eZ",
+    "2I3jbdHKDtLSroEW0MAI2": "a1PatlsCiz7PYsL111lFm",
+    "AjAwbCGQG0EQnKwLHQkjF": "a1PatlsCiz7PYsL111lFm",
+    "bWX1sy8vnuriP2UeDbKAm": "a1PatlsCiz7PYsL111lFm",
+    "kYVvIrc2ZBNxaE7rztQ0H": "a1PatlsCiz7PYsL111lFm",
+    "M6hY9EakKnbEoGjXLVCBg": "a1PatlsCiz7PYsL111lFm",
+    "F6rwo77eZsK7lVh72shS4": "a1PatlsCiz7PYsL111lFm",
+    "Qohet1HFuVIbSSFcZFNln": "a1PatlsCiz7PYsL111lFm",
+    "C10dnDFKygqMWaWd4pUMm": "a1PatlsCiz7PYsL111lFm",
+    "E2PJ84zJUpVsfytWhaWNF": "a1PatlsCiz7PYsL111lFm",
+    "DDPKzTAQzUFdO6TcCSSTF": "a1PatlsCiz7PYsL111lFm",
+    "ofEMyVSSXfsXPcumprwj7": "a1PatlsCiz7PYsL111lFm",
+    "9TMxLEguBhbNsImEefOFX": "a1PatlsCiz7PYsL111lFm",
+    "vm1sh2uLEEM9d6pyZ7syr": "a1PatlsCiz7PYsL111lFm",
+    "lheZKOdjHCWZJ4Qy2gPeI": "a1PatlsCiz7PYsL111lFm",
+    "xlj6wGdQKowx94MW95Ryg": "a1PatlsCiz7PYsL111lFm",
+    "3ONxZ3Khb7nFPdLxlV1ib": "GL4YoVrbDUHLnf946YtXV",
+    "xm1zwK8k3nHvutw0hqXhh": "3ONxZ3Khb7nFPdLxlV1ib",
+    "61s7N7vLnGC1g5R3iiIQB": "xm1zwK8k3nHvutw0hqXhh"
+  }
+}

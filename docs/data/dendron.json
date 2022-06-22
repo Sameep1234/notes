@@ -1,51 +1,17 @@
 {
-  "useFMTitle": true,
-  "useNoteTitleForLink": true,
-  "mermaid": true,
-  "useKatex": true,
   "dev": {
     "enablePreviewV2": true
   },
-  "site": {
-    "siteUrl": "https://sameep1234.github.io",
-    "assetsPrefix": "/notes",
-    "copyAssets": true,
-    "siteHierarchies": [
-      "root"
-    ],
-    "siteRootDir": "docs",
-    "usePrettyRefs": true,
-    "title": "Sameep",
-    "description": "Personal knowledge space",
-    "duplicateNoteBehavior": {
-      "action": "useVault",
-      "payload": [
-        "vault"
-      ]
-    },
-    "author": "Sameep",
-    "logo": "vault/logo.gif",
-    "ga_tracking": "G-VZ67P3SVZE",
-    "siteLastModified": true,
-    "gh_edit_branch": "main",
-    "usePrettyLinks": true,
-    "siteNotesDir": "notes",
-    "siteFaviconPath": "favicon.ico",
-    "gh_edit_link": true,
-    "gh_edit_link_text": "Edit this page on GitHub",
-    "gh_root": "docs/",
-    "gh_edit_view_mode": "edit",
-    "writeStubs": true,
-    "siteIndex": "root"
-  },
-  "version": 4,
+  "version": 5,
   "commands": {
     "lookup": {
       "note": {
         "selectionMode": "extract",
         "confirmVaultOnCreate": false,
         "leaveTrace": false,
-        "bubbleUpCreateNew": true
+        "bubbleUpCreateNew": true,
+        "vaultSelectionModeOnCreate": "smart",
+        "fuzzThreshold": 0.2
       }
     },
     "randomNote": {},
@@ -58,10 +24,12 @@
     },
     "insertNoteIndex": {
       "enableMarker": false
-    }
+    },
+    "copyNoteLink": {},
+    "templateHierarchy": "template"
   },
   "workspace": {
-    "dendronVersion": "0.70.0",
+    "dendronVersion": "0.100.0",
     "vaults": [
       {
         "fsPath": "vault"
@@ -79,7 +47,8 @@
       "addBehavior": "asOwnDomain"
     },
     "graph": {
-      "zoomSpeed": 1
+      "zoomSpeed": 1,
+      "createStub": false
     },
     "enableAutoCreateOnDefinition": false,
     "enableXVaultWikiLink": false,
@@ -111,14 +80,68 @@
         "L": "low"
       },
       "todoIntegration": false,
-      "createTaskSelectionType": "selection2link"
-    }
+      "createTaskSelectionType": "selection2link",
+      "taskCompleteStatus": [
+        "done",
+        "x"
+      ]
+    },
+    "enableHandlebarTemplates": true,
+    "enableEditorDecorations": true,
+    "enableFullHierarchyNoteTitle": false
   },
   "preview": {
     "enableFMTitle": true,
     "enableNoteTitleForLink": true,
     "enableMermaid": true,
     "enablePrettyRefs": true,
-    "enableKatex": true
+    "enableKatex": true,
+    "enableFrontmatterTags": true,
+    "enableHashesForFMTags": false,
+    "automaticallyShowPreview": false
+  },
+  "publishing": {
+    "enableFMTitle": true,
+    "enableNoteTitleForLink": true,
+    "enableMermaid": true,
+    "enablePrettyRefs": true,
+    "enableKatex": true,
+    "assetsPrefix": "/notes",
+    "copyAssets": true,
+    "ga": {
+      "tracking": "G-VZ67P3SVZE"
+    },
+    "logoPath": "vault/logo.gif",
+    "siteHierarchies": [
+      "root"
+    ],
+    "enableSiteLastModified": true,
+    "siteRootDir": "docs",
+    "siteUrl": "https://sameep1234.github.io",
+    "enableFrontmatterTags": true,
+    "enableHashesForFMTags": false,
+    "enableRandomlyColoredTags": true,
+    "duplicateNoteBehavior": {
+      "action": "useVault",
+      "payload": [
+        "vault"
+      ]
+    },
+    "writeStubs": false,
+    "seo": {
+      "title": "Sameep",
+      "description": "Personal knowledge space",
+      "author": "Sameep"
+    },
+    "github": {
+      "enableEditLink": true,
+      "editLinkText": "Edit this page on GitHub",
+      "editBranch": "main",
+      "editViewMode": "tree"
+    },
+    "enablePrettyLinks": true,
+    "enableTaskNotes": true,
+    "siteFaviconPath": "favicon.ico",
+    "siteIndex": "root"
   }
 }
